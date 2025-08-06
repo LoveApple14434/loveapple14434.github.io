@@ -57,12 +57,12 @@
       <nav id="sub-nav">
         
         
-          <a class="nav-icon" href="/atom.xml" title="RSS Feed"><span class="fa fa-rss"></span></a>
+          <a class="nav-icon" href="/atom.xml" title="RSS"><span class="fa fa-rss"></span></a>
         
-        <a class="nav-icon nav-search-btn" title="Suche"><span class="fa fa-search"></span></a>
+        <a class="nav-icon nav-search-btn" title="Buscar"><span class="fa fa-search"></span></a>
       </nav>
       <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Suche"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://loveapple14434.github.io"></form>
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Buscar"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://loveapple14434.github.io"></form>
       </div>
     </div>
   </div>
@@ -101,7 +101,18 @@
 <p><img src="/2025/08/06/DDS%E5%AE%9E%E7%8E%B0%E9%AB%98%E9%A2%91%E4%BF%A1%E5%8F%B7%E5%90%8C%E6%AD%A5/Table1.png"></p>
 <p>由于我们要求输出信号与输入信号同频，而DDS的输出信号是数字合成出来的，因此DDS运行的主频是一定要比这个频率高几倍的，因此这里我们需要开启DDS内部的锁相环倍频器。</p>
 <p>查看AD9959手册上的Frequency Range项下的REFCLK Multiplier Enabled子项可知在开启倍频器的情况下，外部输入的参考时钟频率范围为10-125MHz。</p>
-<details class="lake-collapse"><summary id="uf91dd064"><span class="ne-text">私人吐槽</span></summary><p id="uee6c749a" class="ne-p"><span class="ne-text">这个手册上这个表格的缩进做错了…… </span></p><p id="ud9947e4c" class="ne-p"><span class="ne-text">从Internal VCO Output Frequency Range那一行开始下面的都需要往前减一个缩进……</span></p><p id="u163a7475" class="ne-p"><span class="ne-text">甚至这是整个手册第4页就出现的表格1……也太不上心了……</span></p></details>
+<details class="lake-collapse">
+<summary id="uf91dd064"><span class="ne-text">私人吐槽</span></summary>
+<p id="uee6c749a" class="ne-p"><span class="ne-text">
+> 这个手册上这个表格的缩进做错了…… 
+</span></p>
+<p id="ud9947e4c" class="ne-p"><span class="ne-text">
+> 从Internal VCO Output Frequency Range那一行开始下面的都需要往前减一个缩进……
+</span></p>
+<p id="u163a7475" class="ne-p"><span class="ne-text">
+> 甚至这是整个手册第4页就出现的表格1……也太不上心了……
+</span></p>
+</details>
 事实上，如果查看手册后面的Reference Clock Modes章节可以发现如下这一段：
 
 <blockquote>
@@ -150,7 +161,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://loveapple14434.github.io/2025/08/06/DDS%E5%AE%9E%E7%8E%B0%E9%AB%98%E9%A2%91%E4%BF%A1%E5%8F%B7%E5%90%8C%E6%AD%A5/" data-id="cme02mej10001lo5k7tqy97gd" data-title="DDS实现高频信号同步" class="article-share-link"><span class="fa fa-share">Teilen</span></a>
+      <a data-url="https://loveapple14434.github.io/2025/08/06/DDS%E5%AE%9E%E7%8E%B0%E9%AB%98%E9%A2%91%E4%BF%A1%E5%8F%B7%E5%90%8C%E6%AD%A5/" data-id="cme02qhqz00015k5k1urc75nt" data-title="DDS实现高频信号同步" class="article-share-link"><span class="fa fa-share">Compartir</span></a>
       
       
       
@@ -221,7 +232,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://loveapple14434.github.io/2025/08/06/NUEDC-2022-F/" data-id="cme02meiy0000lo5kgmr1g01r" data-title="NUEDC-2022-F" class="article-share-link"><span class="fa fa-share">Teilen</span></a>
+      <a data-url="https://loveapple14434.github.io/2025/08/06/NUEDC-2022-F/" data-id="cme02qhqx00005k5k11fh5n5y" data-title="NUEDC-2022-F" class="article-share-link"><span class="fa fa-share">Compartir</span></a>
       
       
       
@@ -249,7 +260,7 @@
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Archiv</h3>
+    <h3 class="widget-title">Archivos</h3>
     <div class="widget">
       <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="archives/2025/08/">August 2025</a></li></ul>
     </div>
@@ -259,7 +270,7 @@
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">letzter Beitrag</h3>
+    <h3 class="widget-title">Posts recientes</h3>
     <div class="widget">
       <ul>
         
@@ -285,7 +296,7 @@
     <div id="footer-info" class="inner">
       
       &copy; 2025 LoveApple14434<br>
-      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+      Construido por <a href="https://hexo.io/" target="_blank">Hexo</a>
     </div>
   </div>
 </footer>
