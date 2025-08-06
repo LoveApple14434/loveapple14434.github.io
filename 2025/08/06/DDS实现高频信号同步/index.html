@@ -16,9 +16,9 @@
 <meta property="og:image" content="https://github.com/LoveApple14434/LoveApple14434/2025/08/06/DDS%E5%AE%9E%E7%8E%B0%E9%AB%98%E9%A2%91%E4%BF%A1%E5%8F%B7%E5%90%8C%E6%AD%A5/Table1.png">
 <meta property="og:image" content="https://github.com/LoveApple14434/LoveApple14434/2025/08/06/DDS%E5%AE%9E%E7%8E%B0%E9%AB%98%E9%A2%91%E4%BF%A1%E5%8F%B7%E5%90%8C%E6%AD%A5/FR1_1.png">
 <meta property="og:image" content="https://github.com/LoveApple14434/LoveApple14434/2025/08/06/DDS%E5%AE%9E%E7%8E%B0%E9%AB%98%E9%A2%91%E4%BF%A1%E5%8F%B7%E5%90%8C%E6%AD%A5/FR1_2.png">
-<meta property="og:image" content="https://github.com/LoveApple14434/LoveApple14434/2025/08/06/DDS%E5%AE%9E%E7%8E%B0%E9%AB%98%E9%A2%91%E4%BF%A1%E5%8F%B7%E5%90%8C%E6%AD%A5/FR1+1.png">
+<meta property="og:image" content="https://github.com/LoveApple14434/LoveApple14434/2025/08/06/DDS%E5%AE%9E%E7%8E%B0%E9%AB%98%E9%A2%91%E4%BF%A1%E5%8F%B7%E5%90%8C%E6%AD%A5/FR1_1.png">
 <meta property="article:published_time" content="2025-08-06T12:33:04.000Z">
-<meta property="article:modified_time" content="2025-08-06T14:03:52.178Z">
+<meta property="article:modified_time" content="2025-08-06T14:28:40.158Z">
 <meta property="article:author" content="LoveApple14434">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://github.com/LoveApple14434/LoveApple14434/2025/08/06/DDS%E5%AE%9E%E7%8E%B0%E9%AB%98%E9%A2%91%E4%BF%A1%E5%8F%B7%E5%90%8C%E6%AD%A5/Table1.png">
@@ -118,7 +118,7 @@
 <p>Note that the output frequency of the PLL is restricted to a frequency range of 100 MHz to 500 MHz. However, there is a VCO gain control bit that must be used appropriately. The VCO gain control bit defines two ranges (low&#x2F;high) of frequency output. The VCO gain control bit defaults to low (see Table 1 for details).  </p>
 </blockquote>
 <p>关键信息：PLL锁相环可以将参考时钟倍频，从4倍到20倍，以1倍为步进！</p>
-<p>再结合上面的Table 1，在VCO gain control bit默认设低的情况下，内部的VCO输出频率范围为100~160MHz；而在设高的情况下，VCO输出频率范围为255-500MHz。这个VCO gain control bit在哪呢？在FR1寄存器里，跟倍频系数（接下来我们还会再用到这个系数）在一起。<br><img src="/LoveApple14434/LoveApple14434/2025/08/06/DDS%E5%AE%9E%E7%8E%B0%E9%AB%98%E9%A2%91%E4%BF%A1%E5%8F%B7%E5%90%8C%E6%AD%A5/FR1_1.png"><br><img src="/LoveApple14434/LoveApple14434/2025/08/06/DDS%E5%AE%9E%E7%8E%B0%E9%AB%98%E9%A2%91%E4%BF%A1%E5%8F%B7%E5%90%8C%E6%AD%A5/FR1_2.png"><br><img src="/LoveApple14434/LoveApple14434/2025/08/06/DDS%E5%AE%9E%E7%8E%B0%E9%AB%98%E9%A2%91%E4%BF%A1%E5%8F%B7%E5%90%8C%E6%AD%A5/FR1+1.png"></p>
+<p>再结合上面的Table 1，在VCO gain control bit默认设低的情况下，内部的VCO输出频率范围为100~160MHz；而在设高的情况下，VCO输出频率范围为255-500MHz。这个VCO gain control bit在哪呢？在FR1寄存器里，跟倍频系数（接下来我们还会再用到这个系数）在一起。<br><img src="/LoveApple14434/LoveApple14434/2025/08/06/DDS%E5%AE%9E%E7%8E%B0%E9%AB%98%E9%A2%91%E4%BF%A1%E5%8F%B7%E5%90%8C%E6%AD%A5/FR1_1.png"><br><img src="/LoveApple14434/LoveApple14434/2025/08/06/DDS%E5%AE%9E%E7%8E%B0%E9%AB%98%E9%A2%91%E4%BF%A1%E5%8F%B7%E5%90%8C%E6%AD%A5/FR1_2.png"><br><img src="/LoveApple14434/LoveApple14434/2025/08/06/DDS%E5%AE%9E%E7%8E%B0%E9%AB%98%E9%A2%91%E4%BF%A1%E5%8F%B7%E5%90%8C%E6%AD%A5/FR1_1.png"></p>
 <p>也就是说这两个东西是在编程的时候可以自己写的一个寄存器。查看我的ad9959.c代码里面的Init函数，里面是这么写的：</p>
 <figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">uint8_t</span> FR1_DATA[<span class="number">3</span>] = &#123;<span class="number">0xD3</span>, <span class="number">0x00</span>, <span class="number">0x00</span>&#125;; <span class="comment">// 16 frequency doubling</span></span><br><span class="line"><span class="type">uint8_t</span> CFR_DATA[<span class="number">3</span>] = &#123;<span class="number">0x00</span>, <span class="number">0x03</span>, <span class="number">0x00</span>&#125;; <span class="comment">// default Value = 0x000302</span></span><br><span class="line">_Init_AD9959_GPIO();</span><br><span class="line">InitIO_9959();</span><br><span class="line">InitReset();</span><br><span class="line"></span><br><span class="line">WriteData_AD9959(FR1_ADD, <span class="number">3</span>, FR1_DATA);</span><br><span class="line">WriteData_AD9959(CFR_ADD, <span class="number">3</span>, CFR_DATA);</span><br></pre></td></tr></table></figure>
 
@@ -157,7 +157,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://github.com/LoveApple14434/2025/08/06/DDS%E5%AE%9E%E7%8E%B0%E9%AB%98%E9%A2%91%E4%BF%A1%E5%8F%B7%E5%90%8C%E6%AD%A5/" data-id="cme0243dh0001ko5k8m1xgri9" data-title="DDS实现高频信号同步" class="article-share-link"><span class="fa fa-share">Teilen</span></a>
+      <a data-url="https://github.com/LoveApple14434/2025/08/06/DDS%E5%AE%9E%E7%8E%B0%E9%AB%98%E9%A2%91%E4%BF%A1%E5%8F%B7%E5%90%8C%E6%AD%A5/" data-id="cme02cyyb0000e85k2fudetly" data-title="DDS实现高频信号同步" class="article-share-link"><span class="fa fa-share">Teilen</span></a>
       
       
       
