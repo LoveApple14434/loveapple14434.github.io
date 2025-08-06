@@ -98,8 +98,7 @@
 <p>前天晚上实现了高频信号同步，昨天晚上实现了相位可控。</p>
 <p>原理上很简单：使用外部高频信号取代DDS上的晶振，直接将DDS的时钟挂在外部信号上，这样DDS输出的波形就一定是与外部信号同步的了。</p>
 <p>工作前的基础：已经会使用DDS输出波形。我的驱动是在github上找的一个<a href="https://github.com/Silver-Ray/AD9959_HAL_DRIVER">用hal库驱动AD9959</a>（仅移植了这个项目的ad9959.c与ad9959.h，剩下的main和gpio什么的自己随便写写）。</p>
-<img src="/LoveApple14434/LoveApple14434/2025/08/06/DDS%E5%AE%9E%E7%8E%B0%E9%AB%98%E9%A2%91%E4%BF%A1%E5%8F%B7%E5%90%8C%E6%AD%A5/Table1.png">
-
+<p><img src="/LoveApple14434/LoveApple14434/2025/08/06/DDS%E5%AE%9E%E7%8E%B0%E9%AB%98%E9%A2%91%E4%BF%A1%E5%8F%B7%E5%90%8C%E6%AD%A5/2025/08/06/DDS%E5%AE%9E%E7%8E%B0%E9%AB%98%E9%A2%91%E4%BF%A1%E5%8F%B7%E5%90%8C%E6%AD%A5/Table1.png"></p>
 <p>由于我们要求输出信号与输入信号同频，而DDS的输出信号是数字合成出来的，因此DDS运行的主频是一定要比这个频率高几倍的，因此这里我们需要开启DDS内部的锁相环倍频器。</p>
 <p>查看AD9959手册上的Frequency Range项下的REFCLK Multiplier Enabled子项可知在开启倍频器的情况下，外部输入的参考时钟频率范围为10-125MHz。</p>
 <details class="lake-collapse"><summary id="uf91dd064"><span class="ne-text">私人吐槽</span></summary><p id="uee6c749a" class="ne-p"><span class="ne-text">这个手册上这个表格的缩进做错了…… </span></p><p id="ud9947e4c" class="ne-p"><span class="ne-text">从Internal VCO Output Frequency Range那一行开始下面的都需要往前减一个缩进……</span></p><p id="u163a7475" class="ne-p"><span class="ne-text">甚至这是整个手册第4页就出现的表格1……也太不上心了……</span></p></details>
@@ -112,7 +111,7 @@
 <p>Note that the output frequency of the PLL is restricted to a frequency range of 100 MHz to 500 MHz. However, there is a VCO gain control bit that must be used appropriately. The VCO gain control bit defines two ranges (low&#x2F;high) of frequency output. The VCO gain control bit defaults to low (see Table 1 for details).  </p>
 </blockquote>
 <p>关键信息：PLL锁相环可以将参考时钟倍频，从4倍到20倍，以1倍为步进！</p>
-<p>再结合上面的Table 1，在VCO gain control bit默认设低的情况下，内部的VCO输出频率范围为100~160MHz；而在设高的情况下，VCO输出频率范围为255-500MHz。这个VCO gain control bit在哪呢？在FR1寄存器里，跟倍频系数（接下来我们还会再用到这个系数）在一起。<br><img src="/LoveApple14434/LoveApple14434/2025/08/06/DDS%E5%AE%9E%E7%8E%B0%E9%AB%98%E9%A2%91%E4%BF%A1%E5%8F%B7%E5%90%8C%E6%AD%A5/FR1_1.png"><br><img src="/LoveApple14434/LoveApple14434/2025/08/06/DDS%E5%AE%9E%E7%8E%B0%E9%AB%98%E9%A2%91%E4%BF%A1%E5%8F%B7%E5%90%8C%E6%AD%A5/FR1_2.png"></p>
+<p>再结合上面的Table 1，在VCO gain control bit默认设低的情况下，内部的VCO输出频率范围为100~160MHz；而在设高的情况下，VCO输出频率范围为255-500MHz。这个VCO gain control bit在哪呢？在FR1寄存器里，跟倍频系数（接下来我们还会再用到这个系数）在一起。<br><img src="/LoveApple14434/LoveApple14434/2025/08/06/DDS%E5%AE%9E%E7%8E%B0%E9%AB%98%E9%A2%91%E4%BF%A1%E5%8F%B7%E5%90%8C%E6%AD%A5/08/06/DDS实现高频信号同步/undefined"><br><img src="/LoveApple14434/LoveApple14434/2025/08/06/DDS%E5%AE%9E%E7%8E%B0%E9%AB%98%E9%A2%91%E4%BF%A1%E5%8F%B7%E5%90%8C%E6%AD%A5/08/06/DDS实现高频信号同步/undefined"><br><img src="/LoveApple14434/LoveApple14434/2025/08/06/DDS%E5%AE%9E%E7%8E%B0%E9%AB%98%E9%A2%91%E4%BF%A1%E5%8F%B7%E5%90%8C%E6%AD%A5/FR1+1.png"></p>
 <p>也就是说这两个东西是在编程的时候可以自己写的一个寄存器。查看我的ad9959.c代码里面的Init函数，里面是这么写的：</p>
 <figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">uint8_t</span> FR1_DATA[<span class="number">3</span>] = &#123;<span class="number">0xD3</span>, <span class="number">0x00</span>, <span class="number">0x00</span>&#125;; <span class="comment">// 16 frequency doubling</span></span><br><span class="line"><span class="type">uint8_t</span> CFR_DATA[<span class="number">3</span>] = &#123;<span class="number">0x00</span>, <span class="number">0x03</span>, <span class="number">0x00</span>&#125;; <span class="comment">// default Value = 0x000302</span></span><br><span class="line">_Init_AD9959_GPIO();</span><br><span class="line">InitIO_9959();</span><br><span class="line">InitReset();</span><br><span class="line"></span><br><span class="line">WriteData_AD9959(FR1_ADD, <span class="number">3</span>, FR1_DATA);</span><br><span class="line">WriteData_AD9959(CFR_ADD, <span class="number">3</span>, CFR_DATA);</span><br></pre></td></tr></table></figure>
 
@@ -151,7 +150,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://github.com/LoveApple14434/2025/08/06/DDS%E5%AE%9E%E7%8E%B0%E9%AB%98%E9%A2%91%E4%BF%A1%E5%8F%B7%E5%90%8C%E6%AD%A5/" data-id="cmdzylbrj0001h05khuzf6kjv" data-title="DDS实现高频信号同步" class="article-share-link"><span class="fa fa-share">Teilen</span></a>
+      <a data-url="https://github.com/LoveApple14434/2025/08/06/DDS%E5%AE%9E%E7%8E%B0%E9%AB%98%E9%A2%91%E4%BF%A1%E5%8F%B7%E5%90%8C%E6%AD%A5/" data-id="cme01hdbp00006g5keixh7axl" data-title="DDS实现高频信号同步" class="article-share-link"><span class="fa fa-share">Teilen</span></a>
       
       
       
@@ -185,8 +184,7 @@
     
     <div class="e-content article-entry" itemprop="articleBody">
       
-        <img src="/LoveApple14434/LoveApple14434/2025/08/06/NUEDC-2022-F/topic.jpeg" width="640">
-
+        <p><img src="/LoveApple14434/LoveApple14434/2025/08/06/NUEDC-2022-F/2025/08/06/NUEDC-2022-F/topic.jpeg"></p>
 <p>增加额外要求：AM载波取消500kHz步进限制，可能是10M-30M任意频率</p>
 <p>07月05日</p>
 <p>AM波</p>
@@ -214,15 +212,16 @@
 
 <p>由于赛题中对FM有500kHz步进的规定，因此我们将测得的频率直接拟合到最近的500kHz整数倍频即可。对于AM去掉最后47~50行，会有大约几十kHz的误差。为了准确测得AM的频率，我们将AM混频到大约80kHz处，使用300kHz的采样率进行ADC采集，再进行FFT，找到主带频率反推AM频率，误差可降低到0.1kHz以内。</p>
 <p>今日花了较多时间用来调试代码的自动化测试流程。目前的代码架构逻辑大致如下：</p>
-<img src="/LoveApple14434/LoveApple14434/2025/08/06/NUEDC-2022-F/yuque_mind.jpeg">
+<img src="/LoveApple14434/LoveApple14434/2025/08/06/NUEDC-2022-F/08/06/NUEDC-2022-F/undefined">
 
+<p><img src="/LoveApple14434/LoveApple14434/2025/08/06/NUEDC-2022-F/2025/08/06/NUEDC-2022-F/yuque_mind.jpeg"></p>
 <p>具体细节参看代码与代码注释。</p>
 <p>本题的主要困难点在于对AM取消了500kHz步进限制，这样在AM调制深度较深时会较难获取到AM的载波频率，也就很难进行下一步测量。放大器+比较器然后用计数器计数的方案最高只能做到0.97左右的调制深度，到1.0之后就会有MHz级别的误差了，必须要采用锁相环才能稍微测准一点（10kHz数量级）；而锁相环的锁定范围又不可能覆盖10~30MHz整个带宽（在我们的硬件中，甚至完全不在这个带宽之内），因此要么用多个锁相环来回切换，要么选择进行混频后尝试锁定，多次尝试找到正确的频率。</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://github.com/LoveApple14434/2025/08/06/NUEDC-2022-F/" data-id="cmdzylbrf0000h05k2y47eodz" data-title="NUEDC-2022-F" class="article-share-link"><span class="fa fa-share">Teilen</span></a>
+      <a data-url="https://github.com/LoveApple14434/2025/08/06/NUEDC-2022-F/" data-id="cme01hdbr00016g5kc5tq67ug" data-title="NUEDC-2022-F" class="article-share-link"><span class="fa fa-share">Teilen</span></a>
       
       
       
