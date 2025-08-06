@@ -13,27 +13,27 @@
 <meta property="og:site_name" content="LoveApple14434的主页">
 <meta property="og:description" content="增加额外要求：AM载波取消500kHz步进限制，可能是10M-30M任意频率 07月05日 AM波 技术路线 测量任务：使用单片机GPIO口结合定时器读取载波频率，然后用DDS产生比载波频率略低的本振进行混频，混到低频区后进行低通滤波结合ADC采集，进行FFT，然后找到三个峰值即可计算调制频率与调制深度； 解调任务：使用包络检波解调AM波确保波形同源。 测量任务深入：单片机GPIO口读取采用定时">
 <meta property="og:locale">
-<meta property="og:image" content="https://github.com/LoveApple14434/LoveApple14434/2025/08/06/NUEDC-2022-F/2025/08/06/NUEDC-2022-F/topic.jpeg">
-<meta property="og:image" content="https://github.com/LoveApple14434/LoveApple14434/2025/08/06/NUEDC-2022-F/08/06/NUEDC-2022-F/undefined">
-<meta property="og:image" content="https://github.com/LoveApple14434/LoveApple14434/2025/08/06/NUEDC-2022-F/2025/08/06/NUEDC-2022-F/yuque_mind.jpeg">
+<meta property="og:image" content="https://github.com/LoveApple14434/LoveApple14434/2025/08/06/NUEDC-2022-F/topic.jpeg">
+<meta property="og:image" content="https://github.com/LoveApple14434/LoveApple14434/2025/08/06/NUEDC-2022-F/yuque_mind.jpeg">
+<meta property="og:image" content="https://github.com/LoveApple14434/LoveApple14434/2025/08/06/NUEDC-2022-F/yuque_mind.jpeg">
 <meta property="article:published_time" content="2025-08-06T10:44:09.000Z">
 <meta property="article:modified_time" content="2025-08-06T14:01:25.881Z">
 <meta property="article:author" content="LoveApple14434">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://github.com/LoveApple14434/LoveApple14434/2025/08/06/NUEDC-2022-F/2025/08/06/NUEDC-2022-F/topic.jpeg">
+<meta name="twitter:image" content="https://github.com/LoveApple14434/LoveApple14434/2025/08/06/NUEDC-2022-F/topic.jpeg">
   
-    <link rel="alternate" href="/LoveApple14434/atom.xml" title="LoveApple14434的主页" type="application/atom+xml">
-  
-  
-    <link rel="shortcut icon" href="/LoveApple14434/favicon.png">
+    <link rel="alternate" href="../../../../atom.xml" title="LoveApple14434的主页" type="application/atom+xml">
   
   
+    <link rel="shortcut icon" href="../../../../favicon.png">
   
-<link rel="stylesheet" href="/LoveApple14434/css/style.css">
+  
+  
+<link rel="stylesheet" href="../../../../css/style.css">
 
   
     
-<link rel="stylesheet" href="/LoveApple14434/fancybox/jquery.fancybox.min.css">
+<link rel="stylesheet" href="../../../../fancybox/jquery.fancybox.min.css">
 
   
   
@@ -49,7 +49,7 @@
   <div id="header-outer" class="outer">
     <div id="header-title" class="inner">
       <h1 id="logo-wrap">
-        <a href="/LoveApple14434/" id="logo">LoveApple14434的主页</a>
+        <a href="../../../../index.html" id="logo">LoveApple14434的主页</a>
       </h1>
       
     </div>
@@ -57,15 +57,15 @@
       <nav id="main-nav">
         <a id="main-nav-toggle" class="nav-icon"><span class="fa fa-bars"></span></a>
         
-          <a class="main-nav-link" href="/LoveApple14434/">Home</a>
+          <a class="main-nav-link" href="../../../../index.html">Home</a>
         
-          <a class="main-nav-link" href="/LoveApple14434/archives">Archives</a>
+          <a class="main-nav-link" href="../../../../archives">Archives</a>
         
       </nav>
       <nav id="sub-nav">
         
         
-          <a class="nav-icon" href="/LoveApple14434/atom.xml" title="RSS Feed"><span class="fa fa-rss"></span></a>
+          <a class="nav-icon" href="../../../../atom.xml" title="RSS Feed"><span class="fa fa-rss"></span></a>
         
         <a class="nav-icon nav-search-btn" title="Suche"><span class="fa fa-search"></span></a>
       </nav>
@@ -79,7 +79,7 @@
       <div class="outer">
         <section id="main"><article id="post-NUEDC-2022-F" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
-    <a href="/LoveApple14434/2025/08/06/NUEDC-2022-F/" class="article-date">
+    <a href="" class="article-date">
   <time class="dt-published" datetime="2025-08-06T10:44:09.000Z" itemprop="datePublished">2025-08-06</time>
 </a>
     
@@ -99,7 +99,7 @@
     
     <div class="e-content article-entry" itemprop="articleBody">
       
-        <p><img src="/LoveApple14434/LoveApple14434/2025/08/06/NUEDC-2022-F/2025/08/06/NUEDC-2022-F/topic.jpeg"></p>
+        <p><img src="/LoveApple14434/LoveApple14434/2025/08/06/NUEDC-2022-F/topic.jpeg"></p>
 <p>增加额外要求：AM载波取消500kHz步进限制，可能是10M-30M任意频率</p>
 <p>07月05日</p>
 <p>AM波</p>
@@ -127,16 +127,16 @@
 
 <p>由于赛题中对FM有500kHz步进的规定，因此我们将测得的频率直接拟合到最近的500kHz整数倍频即可。对于AM去掉最后47~50行，会有大约几十kHz的误差。为了准确测得AM的频率，我们将AM混频到大约80kHz处，使用300kHz的采样率进行ADC采集，再进行FFT，找到主带频率反推AM频率，误差可降低到0.1kHz以内。</p>
 <p>今日花了较多时间用来调试代码的自动化测试流程。目前的代码架构逻辑大致如下：</p>
-<img src="/LoveApple14434/LoveApple14434/2025/08/06/NUEDC-2022-F/08/06/NUEDC-2022-F/undefined">
+<img src="/LoveApple14434/LoveApple14434/2025/08/06/NUEDC-2022-F/yuque_mind.jpeg">
 
-<p><img src="/LoveApple14434/LoveApple14434/2025/08/06/NUEDC-2022-F/2025/08/06/NUEDC-2022-F/yuque_mind.jpeg"></p>
+<p><img src="/LoveApple14434/LoveApple14434/2025/08/06/NUEDC-2022-F/yuque_mind.jpeg"></p>
 <p>具体细节参看代码与代码注释。</p>
 <p>本题的主要困难点在于对AM取消了500kHz步进限制，这样在AM调制深度较深时会较难获取到AM的载波频率，也就很难进行下一步测量。放大器+比较器然后用计数器计数的方案最高只能做到0.97左右的调制深度，到1.0之后就会有MHz级别的误差了，必须要采用锁相环才能稍微测准一点（10kHz数量级）；而锁相环的锁定范围又不可能覆盖10~30MHz整个带宽（在我们的硬件中，甚至完全不在这个带宽之内），因此要么用多个锁相环来回切换，要么选择进行混频后尝试锁定，多次尝试找到正确的频率。</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://github.com/LoveApple14434/2025/08/06/NUEDC-2022-F/" data-id="cme01hdbr00016g5kc5tq67ug" data-title="NUEDC-2022-F" class="article-share-link"><span class="fa fa-share">Teilen</span></a>
+      <a data-url="https://github.com/LoveApple14434/2025/08/06/NUEDC-2022-F/" data-id="cme01zf8l0001cs5kfk6w70k8" data-title="NUEDC-2022-F" class="article-share-link"><span class="fa fa-share">Teilen</span></a>
       
       
       
@@ -146,7 +146,7 @@
     
 <nav id="article-nav">
   
-    <a href="/LoveApple14434/2025/08/06/DDS%E5%AE%9E%E7%8E%B0%E9%AB%98%E9%A2%91%E4%BF%A1%E5%8F%B7%E5%90%8C%E6%AD%A5/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="../DDS%E5%AE%9E%E7%8E%B0%E9%AB%98%E9%A2%91%E4%BF%A1%E5%8F%B7%E5%90%8C%E6%AD%A5/" id="article-nav-newer" class="article-nav-link-wrap">
       <strong class="article-nav-caption">Neuer</strong>
       <div class="article-nav-title">
         
@@ -178,7 +178,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Archiv</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/LoveApple14434/archives/2025/08/">August 2025</a></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="../../../../archives/2025/08/">August 2025</a></li></ul>
     </div>
   </div>
 
@@ -191,11 +191,11 @@
       <ul>
         
           <li>
-            <a href="/LoveApple14434/2025/08/06/DDS%E5%AE%9E%E7%8E%B0%E9%AB%98%E9%A2%91%E4%BF%A1%E5%8F%B7%E5%90%8C%E6%AD%A5/">DDS实现高频信号同步</a>
+            <a href="../DDS%E5%AE%9E%E7%8E%B0%E9%AB%98%E9%A2%91%E4%BF%A1%E5%8F%B7%E5%90%8C%E6%AD%A5/">DDS实现高频信号同步</a>
           </li>
         
           <li>
-            <a href="/LoveApple14434/2025/08/06/NUEDC-2022-F/">NUEDC-2022-F</a>
+            <a href="">NUEDC-2022-F</a>
           </li>
         
       </ul>
@@ -220,25 +220,25 @@
     </div>
     <nav id="mobile-nav">
   
-    <a href="/LoveApple14434/" class="mobile-nav-link">Home</a>
+    <a href="../../../../index.html" class="mobile-nav-link">Home</a>
   
-    <a href="/LoveApple14434/archives" class="mobile-nav-link">Archives</a>
+    <a href="../../../../archives" class="mobile-nav-link">Archives</a>
   
 </nav>
     
 
 
-<script src="/LoveApple14434/js/jquery-3.6.4.min.js"></script>
+<script src="../../../../js/jquery-3.6.4.min.js"></script>
 
 
 
   
-<script src="/LoveApple14434/fancybox/jquery.fancybox.min.js"></script>
+<script src="../../../../fancybox/jquery.fancybox.min.js"></script>
 
 
 
 
-<script src="/LoveApple14434/js/script.js"></script>
+<script src="../../../../js/script.js"></script>
 
 
 
