@@ -6,20 +6,20 @@
   
   <title>NUEDC-2022-F | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="增加额外要求：AM载波取消500kHz步进限制，可能是10M-30M任意频率 07月05日 AM波 技术路线 测量任务：使用单片机GPIO口结合定时器读取载波频率，然后用DDS产生比载波频率略低的本振进行混频，混到低频区后进行低通滤波结合ADC采集，进行FFT，然后找到三个峰值即可计算调制频率与调制深度； 解调任务：使用包络检波解调AM波确保波形同源。 测量任务深入：单片机GPIO口读取采用定时">
+  <meta name="description" content="增加额外要求：AM载波取消500kHz步进限制，可能是10M-30M任意频率 07月05日 AM波 技术路线 测量任务：使用单片机GPIO口结合定时器读取载波频率，然后用DDS产生比载波频率略低的本振进行混频，混到低频区后进行低通滤波结合ADC采集，进行FFT，然后找到三个峰值即可计算调制频率与调制深度； 解调任务：使用包络检波解调AM波确保波形同源。 测量任务深入：单片机GPIO口读取采用定">
 <meta property="og:type" content="article">
 <meta property="og:title" content="NUEDC-2022-F">
 <meta property="og:url" content="http://example.com/2025/08/06/NUEDC-2022-F/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="增加额外要求：AM载波取消500kHz步进限制，可能是10M-30M任意频率 07月05日 AM波 技术路线 测量任务：使用单片机GPIO口结合定时器读取载波频率，然后用DDS产生比载波频率略低的本振进行混频，混到低频区后进行低通滤波结合ADC采集，进行FFT，然后找到三个峰值即可计算调制频率与调制深度； 解调任务：使用包络检波解调AM波确保波形同源。 测量任务深入：单片机GPIO口读取采用定时">
+<meta property="og:description" content="增加额外要求：AM载波取消500kHz步进限制，可能是10M-30M任意频率 07月05日 AM波 技术路线 测量任务：使用单片机GPIO口结合定时器读取载波频率，然后用DDS产生比载波频率略低的本振进行混频，混到低频区后进行低通滤波结合ADC采集，进行FFT，然后找到三个峰值即可计算调制频率与调制深度； 解调任务：使用包络检波解调AM波确保波形同源。 测量任务深入：单片机GPIO口读取采用定">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="https://cdn.nlark.com/yuque/0/2025/jpeg/38551157/1751686921688-5eb36034-e2a4-4016-aa45-49552aaaad09.jpeg">
-<meta property="og:image" content="https://cdn.nlark.com/yuque/0/2025/jpeg/38551157/1752239762633-053fcdc6-2db2-4e26-aa4a-ebfd3d665586.jpeg">
-<meta property="article:published_time" content="2025-08-06T10:27:32.000Z">
-<meta property="article:modified_time" content="2025-08-06T10:27:43.973Z">
+<meta property="og:image" content="http://example.com/2025/08/06/NUEDC-2022-F/topic.jpeg">
+<meta property="og:image" content="http://example.com/2025/08/06/NUEDC-2022-F/yuque_mind.jpeg">
+<meta property="article:published_time" content="2025-08-06T10:44:09.000Z">
+<meta property="article:modified_time" content="2025-08-06T10:50:21.615Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://cdn.nlark.com/yuque/0/2025/jpeg/38551157/1751686921688-5eb36034-e2a4-4016-aa45-49552aaaad09.jpeg">
+<meta name="twitter:image" content="http://example.com/2025/08/06/NUEDC-2022-F/topic.jpeg">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -79,7 +79,7 @@
         <section id="main"><article id="post-NUEDC-2022-F" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     <a href="/2025/08/06/NUEDC-2022-F/" class="article-date">
-  <time class="dt-published" datetime="2025-08-06T10:27:32.000Z" itemprop="datePublished">2025-08-06</time>
+  <time class="dt-published" datetime="2025-08-06T10:44:09.000Z" itemprop="datePublished">2025-08-06</time>
 </a>
     
   </div>
@@ -98,7 +98,8 @@
     
     <div class="e-content article-entry" itemprop="articleBody">
       
-        <p><img src="https://cdn.nlark.com/yuque/0/2025/jpeg/38551157/1751686921688-5eb36034-e2a4-4016-aa45-49552aaaad09.jpeg"></p>
+        <img src="/2025/08/06/NUEDC-2022-F/topic.jpeg" width="240">
+
 <p>增加额外要求：AM载波取消500kHz步进限制，可能是10M-30M任意频率</p>
 <p>07月05日</p>
 <p>AM波</p>
@@ -109,7 +110,7 @@
 <p>实测效果</p>
 <p>载波频率：将理想正弦波（假设锁相环已锁定）输入比较器，比较器波形输出至单片机定时计数器的外部触发接口，载波频率测量可测DC-30M+，经过参数调试误差为10Hz数量级；如果将调幅波直接输入至比较器，最高可到0.8调制深度；经过一级放大，最高可至0.98调制深度。</p>
 <p>DDS：写了一个可自由调试的UI，包括点频扫频，可自由调整频率与幅度；缺陷：DDS有时会无响应或错误响应，需要重新发送指令，有时甚至需要重启单片机；产生波形略有失真，可能是阻抗匹配问题（示波器FFT查看，除主频外最大谐波相对幅度-28dB）。</p>
-<p>ADC&amp;FFT：调制频率由于频域分辨率的影响会有十来赫兹的误差，但是由于步进是1kHz所以可以直接取整解决；调制深度计算还需要调试一下参数，总的来说还是正相关的。如果不做任何处理直接FFT，当调制深度低于30%的时候可能会产生信噪比过低，边带被噪声淹没的问题；编写了一个频域上比较严格的滤除算法之后，可以探测到低至约6%的调制深度。</p>
+<p>ADC&amp;FFT：调制频率由于频域分辨率x的影响会有十来赫兹的误差，但是由于步进是1kHz所以可以直接取整解决；调制深度计算还需要调试一下参数，总的来说还是正相关的。如果不做任何处理直接FFT，当调制深度低于30%的时候可能会产生信噪比过低，边带被噪声淹没的问题；编写了一个频域上比较严格的滤除算法之后，可以探测到低至约6%的调制深度。</p>
 <p>07月10日</p>
 <p>AM的测试有点困难，主要是调制深度达到1.0时载波频率会有差不多20kHz的误差，导致之前的混频到10.7kHz的技术方案不太可行，决定改为混频到约50kHz，用更高的采样率去采集。</p>
 <p>今日先测通了FM路线。</p>
@@ -126,14 +127,15 @@
 
 <p>由于赛题中对FM有500kHz步进的规定，因此我们将测得的频率直接拟合到最近的500kHz整数倍频即可。对于AM去掉最后47~50行，会有大约几十kHz的误差。为了准确测得AM的频率，我们将AM混频到大约80kHz处，使用300kHz的采样率进行ADC采集，再进行FFT，找到主带频率反推AM频率，误差可降低到0.1kHz以内。</p>
 <p>今日花了较多时间用来调试代码的自动化测试流程。目前的代码架构逻辑大致如下：</p>
-<p><img src="https://cdn.nlark.com/yuque/0/2025/jpeg/38551157/1752239762633-053fcdc6-2db2-4e26-aa4a-ebfd3d665586.jpeg" alt="画板"></p>
+<img src="/2025/08/06/NUEDC-2022-F/yuque_mind.jpeg">
+
 <p>具体细节参看代码与代码注释。</p>
 <p>本题的主要困难点在于对AM取消了500kHz步进限制，这样在AM调制深度较深时会较难获取到AM的载波频率，也就很难进行下一步测量。放大器+比较器然后用计数器计数的方案最高只能做到0.97左右的调制深度，到1.0之后就会有MHz级别的误差了，必须要采用锁相环才能稍微测准一点（10kHz数量级）；而锁相环的锁定范围又不可能覆盖10~30MHz整个带宽（在我们的硬件中，甚至完全不在这个带宽之内），因此要么用多个锁相环来回切换，要么选择进行混频后尝试锁定，多次尝试找到正确的频率。</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2025/08/06/NUEDC-2022-F/" data-id="cmdztx9000000xc5k5y5p40ao" data-title="NUEDC-2022-F" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      <a data-url="http://example.com/2025/08/06/NUEDC-2022-F/" data-id="cmdzuksi80000h45k9fcm7kau" data-title="NUEDC-2022-F" class="article-share-link"><span class="fa fa-share">Share</span></a>
       
       
       
@@ -141,16 +143,6 @@
   </div>
   
     
-<nav id="article-nav">
-  
-  
-    <a href="/2025/08/06/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Older</strong>
-      <div class="article-nav-title">Hello World</div>
-    </a>
-  
-</nav>
-
   
 </article>
 
@@ -185,10 +177,6 @@
         
           <li>
             <a href="/2025/08/06/NUEDC-2022-F/">NUEDC-2022-F</a>
-          </li>
-        
-          <li>
-            <a href="/2025/08/06/hello-world/">Hello World</a>
           </li>
         
       </ul>
