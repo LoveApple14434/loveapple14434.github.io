@@ -1,230 +1,35 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  
-  
-  <title>NUEDC-2022-F | Hexo</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="增加额外要求：AM载波取消500kHz步进限制，可能是10M-30M任意频率 07月05日 AM波 技术路线 测量任务：使用单片机GPIO口结合定时器读取载波频率，然后用DDS产生比载波频率略低的本振进行混频，混到低频区后进行低通滤波结合ADC采集，进行FFT，然后找到三个峰值即可计算调制频率与调制深度； 解调任务：使用包络检波解调AM波确保波形同源。 测量任务深入：单片机GPIO口读取采用定">
-<meta property="og:type" content="article">
-<meta property="og:title" content="NUEDC-2022-F">
-<meta property="og:url" content="http://example.com/2025/08/06/NUEDC-2022-F/index.html">
-<meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="增加额外要求：AM载波取消500kHz步进限制，可能是10M-30M任意频率 07月05日 AM波 技术路线 测量任务：使用单片机GPIO口结合定时器读取载波频率，然后用DDS产生比载波频率略低的本振进行混频，混到低频区后进行低通滤波结合ADC采集，进行FFT，然后找到三个峰值即可计算调制频率与调制深度； 解调任务：使用包络检波解调AM波确保波形同源。 测量任务深入：单片机GPIO口读取采用定">
-<meta property="og:locale" content="en_US">
-<meta property="og:image" content="http://example.com/2025/08/06/NUEDC-2022-F/topic.jpeg">
-<meta property="og:image" content="http://example.com/2025/08/06/NUEDC-2022-F/yuque_mind.jpeg">
-<meta property="article:published_time" content="2025-08-06T10:44:09.000Z">
-<meta property="article:modified_time" content="2025-08-06T12:12:00.239Z">
-<meta property="article:author" content="John Doe">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http://example.com/2025/08/06/NUEDC-2022-F/topic.jpeg">
-  
-    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
-  
-  
-    <link rel="shortcut icon" href="/favicon.png">
-  
-  
-  
-<link rel="stylesheet" href="/css/style.css">
+extends includes/layout.pug
 
-  
-    
-<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+block content
+  #post
+    if top_img === false
+      include includes/header/post-info.pug
 
-  
-  
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css">
+    article#article-container.container.post-content
+      if theme.noticeOutdate.enable && page.noticeOutdate !== false
+        include includes/post/outdate-notice.pug
+      else
+        !=page.content
+    include includes/post/post-copyright.pug
+    .tag_share
+      if (page.tags.length > 0 && theme.post_meta.post.tags)
+        .post-meta__tag-list
+          each item, index in page.tags.data
+            a(href=url_for(item.path)).post-meta__tags #[=item.name]
+      include includes/third-party/share/index.pug
 
-<meta name="generator" content="Hexo 7.3.0"></head>
+    if theme.reward.enable && theme.reward.QR_code
+      !=partial('includes/post/reward', {}, {cache: true})
 
-<body>
-  <div id="container">
-    <div id="wrap">
-      <header id="header">
-  <div id="banner"></div>
-  <div id="header-outer" class="outer">
-    <div id="header-title" class="inner">
-      <h1 id="logo-wrap">
-        <a href="/" id="logo">Hexo</a>
-      </h1>
-      
-    </div>
-    <div id="header-inner" class="inner">
-      <nav id="main-nav">
-        <a id="main-nav-toggle" class="nav-icon"><span class="fa fa-bars"></span></a>
-        
-          <a class="main-nav-link" href="/">Home</a>
-        
-          <a class="main-nav-link" href="/archives">Archives</a>
-        
-      </nav>
-      <nav id="sub-nav">
-        
-        
-          <a class="nav-icon" href="/atom.xml" title="RSS Feed"><span class="fa fa-rss"></span></a>
-        
-        <a class="nav-icon nav-search-btn" title="Search"><span class="fa fa-search"></span></a>
-      </nav>
-      <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
-      </div>
-    </div>
-  </div>
-</header>
+    //- ad
+    if theme.ad && theme.ad.post
+      .ads-wrap!=theme.ad.post
 
-      <div class="outer">
-        <section id="main"><article id="post-NUEDC-2022-F" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2025/08/06/NUEDC-2022-F/" class="article-date">
-  <time class="dt-published" datetime="2025-08-06T10:44:09.000Z" itemprop="datePublished">2025-08-06</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 class="p-name article-title" itemprop="headline name">
-      NUEDC-2022-F
-    </h1>
-  
+    if theme.post_pagination
+      include includes/pagination.pug
+    if theme.related_post && theme.related_post.enable
+      != related_posts(page,site.posts)
 
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <img src="/2025/08/06/NUEDC-2022-F/topic.jpeg" width="640">
-
-<p>增加额外要求：AM载波取消500kHz步进限制，可能是10M-30M任意频率</p>
-<p>07月05日</p>
-<p>AM波</p>
-<p>技术路线</p>
-<p>测量任务：使用单片机GPIO口结合定时器读取载波频率，然后用DDS产生比载波频率略低的本振进行混频，混到低频区后进行低通滤波结合ADC采集，进行FFT，然后找到三个峰值即可计算调制频率与调制深度；</p>
-<p>解调任务：使用包络检波解调AM波确保波形同源。</p>
-<p>测量任务深入：单片机GPIO口读取采用定时器计数器输入，只能读取高低电平，因此使用高速比较器将AM载波转化成与载波同频的方波再进行测量；又由于AM调制会有一部分幅度过低，比较器可能无法比较，因此使用74HC4046锁相环先将载波频率进行锁定再比较。</p>
-<p>实测效果</p>
-<p>载波频率：将理想正弦波（假设锁相环已锁定）输入比较器，比较器波形输出至单片机定时计数器的外部触发接口，载波频率测量可测DC-30M+，经过参数调试误差为10Hz数量级；如果将调幅波直接输入至比较器，最高可到0.8调制深度；经过一级放大，最高可至0.98调制深度。</p>
-<p>DDS：写了一个可自由调试的UI，包括点频扫频，可自由调整频率与幅度；缺陷：DDS有时会无响应或错误响应，需要重新发送指令，有时甚至需要重启单片机；产生波形略有失真，可能是阻抗匹配问题（示波器FFT查看，除主频外最大谐波相对幅度-28dB）。</p>
-<p>ADC&amp;FFT：调制频率由于频域分辨率x的影响会有十来赫兹的误差，但是由于步进是1kHz所以可以直接取整解决；调制深度计算还需要调试一下参数，总的来说还是正相关的。如果不做任何处理直接FFT，当调制深度低于30%的时候可能会产生信噪比过低，边带被噪声淹没的问题；编写了一个频域上比较严格的滤除算法之后，可以探测到低至约6%的调制深度。</p>
-<p>07月10日</p>
-<p>AM的测试有点困难，主要是调制深度达到1.0时载波频率会有差不多20kHz的误差，导致之前的混频到10.7kHz的技术方案不太可行，决定改为混频到约50kHz，用更高的采样率去采集。</p>
-<p>今日先测通了FM路线。</p>
-<p>载波频率：锁相环锁定范围3-8.5MHz，使用34MHz起始，-4MHz步进本振进行混频后递交给锁相环，以4-8MHz作为有效锁定频段，利用定时器计数器统计脉冲数计算锁定频率反推载波频率，误差10Hz数量级。</p>
-<p>调制频率，调制系数，最大频偏：利用锁相环鉴频器进行FM解调，使用ADC采集解调波形，计算极大值均值与极小值均值作差，进行FFT提取主频率，进而利用Excel的预测线功能拟合计算调制系数，发现不同采集轮次之间波动较大，采用新旧值1：3加权平均的方式进行稳定，误差基本在0.2以内。</p>
-<p>代码调试小技巧：当最终版代码需要全自动化运行，而你又需要先进行调试时，在自动化代码中加入</p>
-<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">LCD_ShowString(<span class="number">0</span>, <span class="number">0</span>, <span class="number">160</span>, <span class="number">32</span>, <span class="number">32</span>, (u8*)<span class="string">&quot;waiting&quot;</span>);</span><br><span class="line">key=<span class="number">0</span>;</span><br><span class="line"><span class="keyword">while</span> (key!=KEY0_PRES) &#123;</span><br><span class="line">	key=KEY_Scan(<span class="number">0</span>);</span><br><span class="line">&#125;</span><br><span class="line">key=<span class="number">0</span>;</span><br><span class="line">LCD_Fill(<span class="number">0</span>, <span class="number">0</span>, lcddev.width, lcddev.height, GRED);</span><br></pre></td></tr></table></figure>
-
-<p>以及更多LCD_Show系列代码，以达到单步调试的目的。（按KEY0进行下一步）</p>
-<p>07月11日</p>
-<p>将整个系统调通了。</p>
-<p>锁相环的锁定频率存在欺骗行为：在大约3<del>10MHz能正常锁定，在大约10</del>12MHz<strong>输出的锁定频率随输入频率增加而下降</strong>，而我们检测只能检测锁相环的输出频率（利用定时器计数器），因此我们即使接收到3<del>10MHz的锁定信号，我们也不能确定锁相环的输入信号就是同频率信号还是10</del>12MHz的“欺骗信号”。解决方法是：我们规定4<del>8MHz为有效锁定范围；由于待测信号载波频率范围为10</del>30MHz，因此我们将DDS本振从38MHz开始向下以1MHz为步进推进直到14MHz为止（共计25个频点），混频后交给锁相环尝试锁定，依然使用单片机的定时器计数器测量锁相环的输出频率，以推算出的载波频率连续三次在误差范围内近似相同为判定载波频率的依据。具体代码如下：</p>
-<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br></pre></td><td class="code"><pre><span class="line">         success_cnt=<span class="number">0</span>;</span><br><span class="line">round_cnt=<span class="number">0</span>;</span><br><span class="line"><span class="keyword">for</span> (<span class="type">int</span> i=<span class="number">0</span>; i&lt;<span class="number">25</span>; i+=<span class="number">1</span>) &#123;</span><br><span class="line">	dds_rate=<span class="number">38</span>*MHz-(<span class="type">uint32_t</span>)i*MHz;</span><br><span class="line">	DDS_data_stack.freq1[<span class="number">0</span>]=dds_rate;</span><br><span class="line">	DDS_data_stack.channel_state[<span class="number">0</span>]=CHANNEL_STATE_SINGLE;</span><br><span class="line">	dds_task((DDS_data*)&amp;DDS_data_stack);</span><br><span class="line">	<span class="comment">// LCD_ShowNum(0, 240, dds_rate, 9, 32);</span></span><br><span class="line">	ChangeSwitchState(Switch_mlt, Swch_mlt_base);</span><br><span class="line">	LCD_ShowString(<span class="number">0</span>, lcddev.height<span class="number">-40</span>, <span class="number">400</span>, <span class="number">32</span>, <span class="number">32</span>, (u8*)<span class="string">&quot;Counting Frequency...   &quot;</span>);</span><br><span class="line">	delay_ms(<span class="number">50</span>);</span><br><span class="line">	HAL_TIM_Base_Start_IT(&amp;htim4);</span><br><span class="line">	delay_ms(<span class="number">300</span>);</span><br><span class="line">	HAL_TIM_Base_Stop_IT(&amp;htim4);</span><br><span class="line">	<span class="keyword">if</span> (base_freq&gt;<span class="number">3.8</span>*MHz &amp;&amp; base_freq&lt;<span class="number">8.2</span>*MHz) &#123;</span><br><span class="line">		<span class="type">uint32_t</span> temp=dds_rate-base_freq;</span><br><span class="line">		<span class="comment">// LCD_ShowNum(160, 500, temp, 9, 32);</span></span><br><span class="line">		<span class="comment">// LCD_ShowNum(160, 460, fm_base_freq, 9, 32);</span></span><br><span class="line">		<span class="keyword">if</span> (success_cnt==<span class="number">0</span>) &#123;</span><br><span class="line">			fm_base_freq=temp;</span><br><span class="line">			success_cnt=<span class="number">1</span>;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">else</span> <span class="keyword">if</span> (abs_minus(fm_base_freq, temp)&lt;<span class="number">250</span>*kHz) &#123;</span><br><span class="line">			<span class="comment">// LCD_ShowNum(160, 540, abs_minus(fm_base_freq, temp), 9, 32);</span></span><br><span class="line">			fm_base_freq=temp;</span><br><span class="line">			success_cnt+=<span class="number">1</span>;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">else</span> &#123;</span><br><span class="line">			success_cnt=<span class="number">1</span>;</span><br><span class="line">			fm_base_freq=temp;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="comment">// LCD_ShowNum(120, 500, success_cnt, 1, 32);</span></span><br><span class="line">		<span class="keyword">if</span> (success_cnt==<span class="number">3</span>) &#123;</span><br><span class="line">			<span class="keyword">break</span>;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">else</span> &#123;</span><br><span class="line">		success_cnt=<span class="number">0</span>;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="comment">// LCD_ShowString(0, 0, 160, 32, 32, (u8*)&quot;waiting&quot;);</span></span><br><span class="line">	<span class="comment">// while (key!=KEY0_PRES) &#123;</span></span><br><span class="line">	<span class="comment">// 	key=KEY_Scan(0);</span></span><br><span class="line">	<span class="comment">// &#125;</span></span><br><span class="line">	<span class="comment">// key=0;</span></span><br><span class="line">	<span class="comment">// LCD_Fill(0, 0, lcddev.width, lcddev.height, GRED);</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="type">uint32_t</span> temp2=fm_base_freq-fm_base_freq%(<span class="number">500</span>*kHz);</span><br><span class="line"><span class="keyword">if</span> (fm_base_freq-temp2&gt;<span class="number">250</span>*kHz) </span><br><span class="line">	temp2+=<span class="number">500</span>*kHz;</span><br><span class="line">fm_base_freq=temp2; </span><br></pre></td></tr></table></figure>
-
-<p>由于赛题中对FM有500kHz步进的规定，因此我们将测得的频率直接拟合到最近的500kHz整数倍频即可。对于AM去掉最后47~50行，会有大约几十kHz的误差。为了准确测得AM的频率，我们将AM混频到大约80kHz处，使用300kHz的采样率进行ADC采集，再进行FFT，找到主带频率反推AM频率，误差可降低到0.1kHz以内。</p>
-<p>今日花了较多时间用来调试代码的自动化测试流程。目前的代码架构逻辑大致如下：</p>
-<img src="/2025/08/06/NUEDC-2022-F/yuque_mind.jpeg">
-
-<p>具体细节参看代码与代码注释。</p>
-<p>本题的主要困难点在于对AM取消了500kHz步进限制，这样在AM调制深度较深时会较难获取到AM的载波频率，也就很难进行下一步测量。放大器+比较器然后用计数器计数的方案最高只能做到0.97左右的调制深度，到1.0之后就会有MHz级别的误差了，必须要采用锁相环才能稍微测准一点（10kHz数量级）；而锁相环的锁定范围又不可能覆盖10~30MHz整个带宽（在我们的硬件中，甚至完全不在这个带宽之内），因此要么用多个锁相环来回切换，要么选择进行混频后尝试锁定，多次尝试找到正确的频率。</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2025/08/06/NUEDC-2022-F/" data-id="cmdzxgo6m00004o5k2t124gbm" data-title="NUEDC-2022-F" class="article-share-link"><span class="fa fa-share">Share</span></a>
-      
-      
-      
-    </footer>
-  </div>
-  
-    
-  
-</article>
-
-
-</section>
-        
-          <aside id="sidebar">
-  
-    
-
-  
-    
-
-  
-    
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Archives</h3>
-    <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2025/08/">August 2025</a></li></ul>
-    </div>
-  </div>
-
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Recent Posts</h3>
-    <div class="widget">
-      <ul>
-        
-          <li>
-            <a href="/2025/08/06/NUEDC-2022-F/">NUEDC-2022-F</a>
-          </li>
-        
-      </ul>
-    </div>
-  </div>
-
-  
-</aside>
-        
-      </div>
-      <footer id="footer">
-  
-  <div class="outer">
-    <div id="footer-info" class="inner">
-      
-      &copy; 2025 John Doe<br>
-      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
-    </div>
-  </div>
-</footer>
-
-    </div>
-    <nav id="mobile-nav">
-  
-    <a href="/" class="mobile-nav-link">Home</a>
-  
-    <a href="/archives" class="mobile-nav-link">Archives</a>
-  
-</nav>
-    
-
-
-<script src="/js/jquery-3.6.4.min.js"></script>
-
-
-
-  
-<script src="/fancybox/jquery.fancybox.min.js"></script>
-
-
-
-
-<script src="/js/script.js"></script>
-
-
-
-
-
-  </div>
-</body>
-</html>
+    if page.comments !== false && theme.comments.use
+      - var commentsJsLoad = true
+      !=partial('includes/third-party/comments/index', {}, {cache: true})
