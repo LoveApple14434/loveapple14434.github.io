@@ -1,13 +1,13 @@
-<!DOCTYPE html><html lang="Chinese" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>Draw | LoveApple14434的主页</title><meta name="author" content="LoveApple14434"><meta name="copyright" content="LoveApple14434"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="ffffff"><meta name="description" content="R:              200              G:              100              B:              50                        #C86432">
+<!DOCTYPE html><html lang="Chinese" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>Draw | LoveApple14434的主页</title><meta name="author" content="LoveApple14434"><meta name="copyright" content="LoveApple14434"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="ffffff"><meta name="description" content="User ID:                                Artwork">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Draw">
 <meta property="og:url" content="https://loveapple.icu/Draw/index.html">
 <meta property="og:site_name" content="LoveApple14434的主页">
-<meta property="og:description" content="R:              200              G:              100              B:              50                        #C86432">
+<meta property="og:description" content="User ID:                                Artwork">
 <meta property="og:locale">
 <meta property="og:image" content="https://loveapple.icu/img/machinist.jpg">
 <meta property="article:published_time" content="2025-08-10T16:00:00.000Z">
-<meta property="article:modified_time" content="2025-08-13T09:56:32.088Z">
+<meta property="article:modified_time" content="2025-08-13T13:00:39.354Z">
 <meta property="article:author" content="LoveApple14434">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://loveapple.icu/img/machinist.jpg"><script type="application/ld+json"></script><link rel="shortcut icon" href="/img/machinist.jpg"><link rel="canonical" href="https://loveapple.icu/Draw/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"><script>
@@ -259,22 +259,8 @@ mjx-container[display="true"] + br {
 <div class="pixel-art-container">
   <!-- 颜色选择工具栏 -->
   <div class="color-toolbar">
-    <div class="color-picker">
-      <label for="red">R:</label>
-      <input type="range" id="red" min="0" max="255" value="200">
-      <span id="red-value">200</span>
-      <br>
-      <label for="green">G:</label>
-      <input type="range" id="green" min="0" max="255" value="100">
-      <span id="green-value">100</span>
-      <br>
-      <label for="blue">B:</label>
-      <input type="range" id="blue" min="0" max="255" value="50">
-      <span id="blue-value">50</span>
-    </div>
-    <div class="color-preview">
-      <div id="current-color" style="background-color: rgb(200, 100, 50)"></div>
-      <div id="color-hex">#C86432</div>
+    <div class="container-color">
+      <input type="color" id="color-input" class="input-color">
     </div>
     <div class="preset-colors">
       <div class="preset" style="background-color: #FF0000"></div>
@@ -289,15 +275,25 @@ mjx-container[display="true"] + br {
       <div class="preset" style="background-color: #06ABE3"></div>
     </div>
   </div>
-  
+
   <!-- 8x8像素网格 -->
   <form id="pixel-form">
     <div class="pixel-grid" id="pixel-grid">
       <!-- 网格将由JS动态生成 -->
     </div>
     <div class="form-controls">
+      <div class="input-box">
+        <label for="UserID" style="margin:auto 0 auto auto; color: white;">User ID:</label>
+        <input type="text" id="UserID" placeholder="如需上传则必填" name="UserID" class="input-text">
+      </div>
+      <div class="input-box">
+        <label for="ArtworkID" style="margin:auto 0 auto auto; color: white;">Artwork ID:</label>
+        <input type="text" id="ArtworkID" placeholder="如需上传则必填" name="ArtWorkID" class="input-text">
+      </div>
+    </div>
+    <div class="form-controls">
       <button type="button" id="clear-btn">清除画板</button>
-      <button type="submit" id="submit-btn">加载作品</button>
+      <button type="submit" id="submit-btn">上传作品</button>
     </div>
   </form>
   
@@ -305,6 +301,33 @@ mjx-container[display="true"] + br {
 </div>
 
 <style>
+.container-color {
+  position: relative;
+  width: 120px;
+  height: 120px;
+  margin: auto;
+}
+.input-color{
+  position: relative;
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin: auto;
+}
+
+.input-box{
+  display: inline-block;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.input-text{
+  min-width: 120px;
+  margin: auto;
+  height: 30px;
+
+}
+
 .pixel-art-container {
   max-width: 800px;
   margin: 0 auto;
@@ -369,6 +392,7 @@ mjx-container[display="true"] + br {
   flex-wrap: wrap;
   gap: 10px;
   max-width: 200px;
+  margin: auto;
 }
 
 .preset {
@@ -397,12 +421,8 @@ mjx-container[display="true"] + br {
   border-radius: 4px;
   padding: 5px;
 }
-
-
-
 @media screen and (min-width: 801px) {.pixel-grid{width: 600px; height: 600px;}}
-@media screen and (min-width: 401px) and (max-width: 800px) {.pixel-grid{width: 300px; height: 300px;}}
-
+@media screen and (max-width: 800px) {.pixel-grid{width: 300px; height: 300px;}}
 
 .pixel {
   background-color: #ecf0f1;
@@ -493,6 +513,11 @@ document.addEventListener('DOMContentLoaded', () => {
   const submitBtn = document.getElementById('submit-btn');
   const pixelForm = document.getElementById('pixel-form');
   const responseMessage = document.getElementById('response-message');
+  // const colorInput = document.querySelector("color-input")
+  let colorInput;
+  colorInput = document.querySelector("#color-input");
+  colorInput.value = "#c86432";
+
   
   // 初始化网格
   function initPixelGrid() {
@@ -515,12 +540,7 @@ document.addEventListener('DOMContentLoaded', () => {
   
   // 更新颜色预览
   function updateColorPreview() {
-    const rgb = `rgb(${currentColor.r}, ${currentColor.g}, ${currentColor.b})`;
-    currentColorDiv.style.backgroundColor = rgb;
-    
-    // 转换为十六进制
-    const hex = rgbToHex(currentColor.r, currentColor.g, currentColor.b);
-    colorHex.textContent = hex;
+    colorInput.value = rgbToHex(currentColor.r, currentColor.g, currentColor.b);
   }
   
   // RGB转十六进制
@@ -530,25 +550,23 @@ document.addEventListener('DOMContentLoaded', () => {
       return hex.length === 1 ? '0' + hex : hex;
     }).join('').toUpperCase();
   }
-  
-  // 颜色滑块事件监听
-  redSlider.addEventListener('input', () => {
-    currentColor.r = parseInt(redSlider.value);
-    redValue.textContent = redSlider.value;
+
+  function hexToRgb(hex) {
+    var result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex);
+    return result ? {
+      r: parseInt(result[1], 16),
+      g: parseInt(result[2], 16),
+      b: parseInt(result[3], 16)
+    } : null;
+  }
+
+// alert(hexToRgb("#0033ff").g); // "51";
+
+  colorInput.addEventListener('change', () =>{
+    currentColor = hexToRgb(colorInput.value);
+    console.log(currentColor);
     updateColorPreview();
-  });
-  
-  greenSlider.addEventListener('input', () => {
-    currentColor.g = parseInt(greenSlider.value);
-    greenValue.textContent = greenSlider.value;
-    updateColorPreview();
-  });
-  
-  blueSlider.addEventListener('input', () => {
-    currentColor.b = parseInt(blueSlider.value);
-    blueValue.textContent = blueSlider.value;
-    updateColorPreview();
-  });
+  })
   
   // 预设颜色点击事件
   presetColors.forEach(preset => {
@@ -560,14 +578,6 @@ document.addEventListener('DOMContentLoaded', () => {
         currentColor.r = parseInt(rgb[0]);
         currentColor.g = parseInt(rgb[1]);
         currentColor.b = parseInt(rgb[2]);
-        
-        redSlider.value = currentColor.r;
-        greenSlider.value = currentColor.g;
-        blueSlider.value = currentColor.b;
-        
-        redValue.textContent = currentColor.r;
-        greenValue.textContent = currentColor.g;
-        blueValue.textContent = currentColor.b;
         
         updateColorPreview();
       }
@@ -598,13 +608,23 @@ document.addEventListener('DOMContentLoaded', () => {
         pixelData.push('transparent');
       }
     });
-    
+
+      let userID;
+      userID = document.querySelector("#UserID");
+      let artworkID;
+      artworkID = document.querySelector("#ArtworkID");
+
     // 创建数据对象
     const data = {
       artwork: pixelData,
       createdAt: new Date().toISOString(),
-      colorCount: pixelData.filter(color => color !== 'transparent').length
+      colorCount: pixelData.filter(color => color !== 'transparent').length,
+      UID: userID.value,
+      ID: artworkID.value
     };
+
+    console.log("data collected:");
+    console.log(data);
     
     try {
       // 发送到后端
@@ -646,4 +666,4 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 </script>
 
-</div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info text-center"><div class="avatar-img"><img src="/img/machinist.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info-name">LoveApple14434</div><div class="author-info-description"></div><div class="site-data"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">5</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">8</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">2</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/LoveApple14434"><i class="fab fa-github"></i><span>Follow Me</span></a></div><div class="sticky_layout"><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>Website Info</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">Article Count :</div><div class="item-count">5</div></div><div class="webinfo-item"><div class="item-name">Unique Visitors :</div><div class="item-count" id="busuanzi_value_site_uv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">Page Views :</div><div class="item-count" id="busuanzi_value_site_pv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">Last Update :</div><div class="item-count" id="last-push-date" data-lastPushDate="2025-08-13T09:57:24.154Z"><i class="fa-solid fa-spinner fa-spin"></i></div></div></div></div></div></div></main><footer id="footer" style="background: pink;"><div class="footer-other"><div class="footer-copyright"><span class="copyright">&copy;&nbsp;2025 By LoveApple14434</span><span class="framework-info"><span>Framework </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo 7.3.0</a><span class="footer-separator">|</span><span>Theme </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly 5.4.3</a></span></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="Toggle Between Light and Dark Mode"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="Toggle Between Single-column and Double-column"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="Settings"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="Back to Top"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><div class="js-pjax"></div><canvas class="fireworks" mobile="false"></canvas><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/fireworks.min.js"></script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
+</div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info text-center"><div class="avatar-img"><img src="/img/machinist.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info-name">LoveApple14434</div><div class="author-info-description"></div><div class="site-data"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">5</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">8</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">2</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/LoveApple14434"><i class="fab fa-github"></i><span>Follow Me</span></a></div><div class="sticky_layout"><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>Website Info</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">Article Count :</div><div class="item-count">5</div></div><div class="webinfo-item"><div class="item-name">Unique Visitors :</div><div class="item-count" id="busuanzi_value_site_uv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">Page Views :</div><div class="item-count" id="busuanzi_value_site_pv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">Last Update :</div><div class="item-count" id="last-push-date" data-lastPushDate="2025-08-13T13:00:43.576Z"><i class="fa-solid fa-spinner fa-spin"></i></div></div></div></div></div></div></main><footer id="footer" style="background: pink;"><div class="footer-other"><div class="footer-copyright"><span class="copyright">&copy;&nbsp;2025 By LoveApple14434</span><span class="framework-info"><span>Framework </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo 7.3.0</a><span class="footer-separator">|</span><span>Theme </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly 5.4.3</a></span></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="Toggle Between Light and Dark Mode"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="Toggle Between Single-column and Double-column"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="Settings"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="Back to Top"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><div class="js-pjax"></div><canvas class="fireworks" mobile="false"></canvas><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/fireworks.min.js"></script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
