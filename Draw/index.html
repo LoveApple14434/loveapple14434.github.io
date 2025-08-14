@@ -7,7 +7,7 @@
 <meta property="og:locale">
 <meta property="og:image" content="https://loveapple.icu/img/machinist.jpg">
 <meta property="article:published_time" content="2025-08-10T16:00:00.000Z">
-<meta property="article:modified_time" content="2025-08-14T08:17:00.307Z">
+<meta property="article:modified_time" content="2025-08-14T09:10:10.458Z">
 <meta property="article:author" content="LoveApple14434">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://loveapple.icu/img/machinist.jpg"><script type="application/ld+json"></script><link rel="shortcut icon" href="/img/machinist.jpg"><link rel="canonical" href="https://loveapple.icu/Draw/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"><script>
@@ -294,9 +294,11 @@ mjx-container[display="true"] + br {
       </div>
     </div>
     <div class="form-controls">
-      <button type="button" id="clear-btn">清除画板</button>
-      <button type="submit" id="submit-btn">上传作品</button>
-      <button type="button" id="load-btn">加载作品</button>
+      <button type="button" id="clear-btn">清除<br>画板</button>
+      <button type="submit" id="submit-btn">保存到<br>云端</button>
+      <button type="button" id="load-btn">从云端<br>加载</button>
+      <button type="submit" id="save-local-btn">保存到<br>本地</button>
+      <button type="button" id="load-local-btn">从本地<br>加载</button>
     </div>
   </form>
   
@@ -414,7 +416,7 @@ mjx-container[display="true"] + br {
 
 .pixel-grid {
   display: grid;
-  grid-template-columns: repeat(16, 1fr);
+  grid-template-columns: repeat(32, 1fr);
   grid-gap: 2px;
   /* width: 300px;
   height: 300px; */
@@ -475,12 +477,22 @@ button {
 }
 
 #load-btn {
-  background-color: #2e5dcc;
+  background-color: #597dd1;
   color: white;
 }
 
 #load-btn:hover {
-  background-color: #2e5dcc;
+  background-color: #597dd1;
+}
+
+#save-local-btn {
+  background-color: #27ae60;
+  color:white;
+}
+
+#load-local-btn {
+  background-color: #597dd1;
+  color: white;
 }
 
 #response-message {
@@ -530,13 +542,15 @@ document.addEventListener('DOMContentLoaded', () => {
   let colorInput;
   colorInput = document.querySelector("#color-input");
   colorInput.value = "#c86432";
-
+  // 获取新按钮的引用
+  const saveLocalBtn = document.getElementById('save-local-btn');
+  const loadLocalBtn = document.getElementById('load-local-btn');
   
   // 初始化网格
   function initPixelGrid() {
     pixelGrid.innerHTML = '';
     
-    for (let i = 0; i < 16*16; i++) {
+    for (let i = 0; i < 1024; i++) {
       const pixel = document.createElement('div');
       pixel.className = 'pixel';
       pixel.dataset.index = i;
@@ -575,6 +589,7 @@ document.addEventListener('DOMContentLoaded', () => {
         pixel.dataset.color = color;
       }
     });
+    return;
   }
 
   // RGB转十六进制
@@ -636,7 +651,7 @@ document.addEventListener('DOMContentLoaded', () => {
     artworkID = document.querySelector("#ArtworkID");
 
     // 验证输入
-    if (!userID || !artworkID) {
+    if (!userID.value || !artworkID.value) {
       showResponse('UserID和ArtworkID不能为空', 'error');
       return;
     }
@@ -661,7 +676,10 @@ document.addEventListener('DOMContentLoaded', () => {
       if (response.ok) {
         showResponse('作品已成功下载！', 'success');
         console.log(result);
-        applyArtworkToCanvas(result.artwork);
+        if(result.artwork.length!=1024){
+          showResponse('作品未成功加载，请联系网站管理员', 'error');
+          return;
+        };
         showResponse('作品已成功加载！', 'success');
       } else {
         showResponse(`下载失败: ${result.message}`, 'error');
@@ -687,10 +705,16 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
 
-      let userID;
-      userID = document.querySelector("#UserID");
-      let artworkID;
-      artworkID = document.querySelector("#ArtworkID");
+    let userID;
+    userID = document.querySelector("#UserID");
+    let artworkID;
+    artworkID = document.querySelector("#ArtworkID");
+
+    // 验证输入
+    if (!userID.value || !artworkID.value) {
+      showResponse('UserID和ArtworkID不能为空', 'error');
+      return;
+    }
 
     // 创建数据对象
     const data = {
@@ -735,10 +759,119 @@ document.addEventListener('DOMContentLoaded', () => {
     }, 3000);
   }
   
+  // 保存在本地功能
+  saveLocalBtn.addEventListener('click', () => {
+    // 收集像素数据
+    const pixels = document.querySelectorAll('.pixel');
+    const pixelData = [];
+    
+    pixels.forEach(pixel => {
+      if (pixel.dataset.color) {
+        pixelData.push(pixel.dataset.color);
+      } else {
+        pixelData.push('transparent');
+      }
+    });
+    
+    // 获取用户ID和作品ID
+    const userID = document.getElementById('UserID').value;
+    const artworkID = document.getElementById('ArtworkID').value;
+    
+    // 创建要保存的数据对象
+    const saveData = {
+      userID,
+      artworkID,
+      artwork: pixelData,
+      savedAt: new Date().toISOString()
+    };
+    
+    // 创建JSON字符串
+    const jsonStr = JSON.stringify(saveData, null, 2);
+    
+    // 创建下载链接
+    const blob = new Blob([jsonStr], { type: 'application/json' });
+    const url = URL.createObjectURL(blob);
+    
+    // 创建下载元素
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = `pixel_art_${userID || 'unknown'}_${artworkID || 'unknown'}_${Date.now()}.json`;
+    document.body.appendChild(a);
+    a.click();
+    
+    // 清理
+    setTimeout(() => {
+      document.body.removeChild(a);
+      URL.revokeObjectURL(url);
+      showResponse('作品已保存到本地！', 'success');
+    }, 100);
+  });
+
+  // 从本地加载功能
+  loadLocalBtn.addEventListener('click', () => {
+    // 创建文件输入元素
+    const input = document.createElement('input');
+    input.type = 'file';
+    input.accept = '.json';
+    
+    input.onchange = e => {
+      const file = e.target.files[0];
+      if (!file) return;
+      
+      const reader = new FileReader();
+      reader.onload = event => {
+        try {
+          const jsonData = JSON.parse(event.target.result);
+          
+          // 应用像素数据
+          applyArtworkToCanvas(jsonData.artwork);
+          
+          // 填充用户ID和作品ID
+          if (jsonData.userID) {
+            document.getElementById('UserID').value = jsonData.userID;
+          }
+          if (jsonData.artworkID) {
+            document.getElementById('ArtworkID').value = jsonData.artworkID;
+          }
+          
+          showResponse('本地作品加载成功！', 'success');
+        } catch (error) {
+          showResponse(`文件解析错误: ${error.message}`, 'error');
+        }
+      };
+      
+      reader.readAsText(file);
+    };
+    
+    input.click();
+  });
+
+  // 确保applyArtworkToCanvas函数已定义
+  function applyArtworkToCanvas(artwork) {
+    const pixels = document.querySelectorAll('.pixel');
+    
+    if (artwork.length !== pixels.length) {
+      showResponse(`数据不匹配: 期望${pixels.length}像素，实际${artwork.length}`, 'error');
+      return;
+    }
+    
+    pixels.forEach((pixel, index) => {
+      const color = artwork[index];
+      
+      if (color === 'transparent') {
+        pixel.style.backgroundColor = '';
+        pixel.removeAttribute('data-color');
+      } else {
+        pixel.style.backgroundColor = color;
+        pixel.dataset.color = color;
+      }
+    });
+  }
+
   // 初始化
   initPixelGrid();
   updateColorPreview();
 });
 </script>
 
-</div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info text-center"><div class="avatar-img"><img src="/img/machinist.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info-name">LoveApple14434</div><div class="author-info-description"></div><div class="site-data"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">5</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">8</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">2</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/LoveApple14434"><i class="fab fa-github"></i><span>Follow Me</span></a></div><div class="sticky_layout"><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>Website Info</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">Article Count :</div><div class="item-count">5</div></div><div class="webinfo-item"><div class="item-name">Unique Visitors :</div><div class="item-count" id="busuanzi_value_site_uv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">Page Views :</div><div class="item-count" id="busuanzi_value_site_pv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">Last Update :</div><div class="item-count" id="last-push-date" data-lastPushDate="2025-08-14T08:17:07.016Z"><i class="fa-solid fa-spinner fa-spin"></i></div></div></div></div></div></div></main><footer id="footer" style="background: pink;"><div class="footer-other"><div class="footer-copyright"><span class="copyright">&copy;&nbsp;2025 By LoveApple14434</span><span class="framework-info"><span>Framework </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo 7.3.0</a><span class="footer-separator">|</span><span>Theme </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly 5.4.3</a></span></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="Toggle Between Light and Dark Mode"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="Toggle Between Single-column and Double-column"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="Settings"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="Back to Top"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><div class="js-pjax"></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
+</div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info text-center"><div class="avatar-img"><img src="/img/machinist.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info-name">LoveApple14434</div><div class="author-info-description"></div><div class="site-data"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">5</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">8</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">2</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/LoveApple14434"><i class="fab fa-github"></i><span>Follow Me</span></a></div><div class="sticky_layout"><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>Website Info</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">Article Count :</div><div class="item-count">5</div></div><div class="webinfo-item"><div class="item-name">Unique Visitors :</div><div class="item-count" id="busuanzi_value_site_uv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">Page Views :</div><div class="item-count" id="busuanzi_value_site_pv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">Last Update :</div><div class="item-count" id="last-push-date" data-lastPushDate="2025-08-14T09:10:16.962Z"><i class="fa-solid fa-spinner fa-spin"></i></div></div></div></div></div></div></main><footer id="footer" style="background: pink;"><div class="footer-other"><div class="footer-copyright"><span class="copyright">&copy;&nbsp;2025 By LoveApple14434</span><span class="framework-info"><span>Framework </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo 7.3.0</a><span class="footer-separator">|</span><span>Theme </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly 5.4.3</a></span></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="Toggle Between Light and Dark Mode"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="Toggle Between Single-column and Double-column"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="Settings"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="Back to Top"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><div class="js-pjax"></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
