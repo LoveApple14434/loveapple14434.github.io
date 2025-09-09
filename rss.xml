@@ -9,8 +9,41 @@
     <atom:link href="https://loveapple.icu/rss.xml" rel="self" type="application/rss+xml"/>
     
     <description></description>
-    <pubDate>Wed, 27 Aug 2025 14:25:23 GMT</pubDate>
+    <pubDate>Tue, 09 Sep 2025 07:14:07 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>部署Friend-Link-House项目:开源社区初探</title>
+      <link>https://loveapple.icu/2025/09/09/%E9%83%A8%E7%BD%B2Friend-Link-House%E9%A1%B9%E7%9B%AE-%E5%BC%80%E6%BA%90%E7%A4%BE%E5%8C%BA%E5%88%9D%E6%8E%A2/</link>
+      <guid>https://loveapple.icu/2025/09/09/%E9%83%A8%E7%BD%B2Friend-Link-House%E9%A1%B9%E7%9B%AE-%E5%BC%80%E6%BA%90%E7%A4%BE%E5%8C%BA%E5%88%9D%E6%8E%A2/</guid>
+      <pubDate>Tue, 09 Sep 2025 03:09:41 GMT</pubDate>
+      
+        
+        
+      <description>&lt;h1 id=&quot;从何而来&quot;&gt;从何而来&lt;/h1&gt;
+&lt;p&gt;在与&lt;a href=&quot;github.com/idealclover&quot;&gt;翠翠&lt;/a&gt;学长交换友链的时候，接触到了学长的&lt;a href=&quot;https://github.com/idealclover/Friend-Link-Ho</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<h1 id="从何而来">从何而来</h1><p>在与<a href="github.com/idealclover">翠翠</a>学长交换友链的时候，接触到了学长的<a href="https://github.com/idealclover/Friend-Link-House">Friend-Link-House</a>这个项目，基于<a href="https://github.com/nju-lug/blogroll">BlogRoll</a>这个项目而来，可以自动订阅他人博客网站上的文章，感觉很有意思，于是想给自己也部署一个。</p><h1 id="如何进展">如何进展</h1><h2 id="先跑起来再说">先跑起来再说</h2><p>首先把仓库fork一份到自己的账户底下，然后clone到了我的服务器上，跑了一遍<code>npm install</code><code>npm run gen</code><code>npm run dev</code>，没遇到什么困难就可以看到网页了。</p><h2 id="订阅源的替换">订阅源的替换</h2><p>接下来就是把订阅的链接从学长的朋友们换成我的朋友们。从学长写好的README以及对main.js的分析中可以得知，每次访问这个网页的时候都会从存储的各RSS源获取最新的xml，而这些RSS源的url则来自于运行<code>npm run gen</code>命令时，从README.md中的表格里提取的信息。手动把表格里的数据换成了目前已经添加友链的几个朋友<del>（反正也没几条，手动复制一下了）</del>，重新跑一遍<code>npm run gen</code><code>npm run dev</code>，就可以看我的朋友们的文章了。</p><h2 id="前端页面样式的修改">前端页面样式的修改</h2><p>虽然跑起来了，但是这个页面的风格跟学长的页面还是完全一致的，总感觉有点忐忑<del>（虽然说只要遵循了MIT许可证就并不会被认为抄袭什么的）</del>，而且这个页面的风格和我自己的<a href="lovapple.icu">个人主页</a>的风格也不太一致。后端没什么我能动手的地方，但是前端的样式还是可以自己scratch一下的。修改了一下背景的颜色，用卡片之类的样式把时间轴上的每篇blog包裹了一下，看起来就跟主页上的风格比较类似了。</p><h2 id="部署到域名">部署到域名</h2><p>使用nginx进行反向代理，一开始写入的配置如下 <figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"># Friend-Link-House代理到友链屋</span><br><span class="line">location /Friend-Link-House/ <span class="punctuation">{</span></span><br><span class="line">root/data/Friend-Link-House/web/dist/;</span><br><span class="line">indexindex.html;</span><br><span class="line"><span class="punctuation">}</span></span><br></pre></td></tr></table></figure>运行<code>nginx -s reload</code>之后，尝试访问<code>loveapple.icu/Friend-Link-House</code>，结果报错503。本来以为是权限的问题，但是提权了之后依然无法访问。遂询问deepseek老师，发现关键是nginx配置反代时的语法，用<code>root</code>会拼接到后面导致访问的位置出错，应该改成<code>alias</code>，最终配置如下：<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"># Friend-Link-House代理到友链屋</span><br><span class="line">location /Friend-Link-House/ <span class="punctuation">{</span></span><br><span class="line">alias/data/Friend-Link-House/web/dist/;</span><br><span class="line">indexindex.html;</span><br><span class="line">try_files $uri $uri/ /newspaper/index.html;</span><br><span class="line"><span class="punctuation">}</span></span><br><span class="line">#资源配置路径</span><br><span class="line">location /assets/ <span class="punctuation">{</span></span><br><span class="line">alias /data/Friend-Link-House/web/dist/assets/;</span><br><span class="line">expires <span class="number">1</span>y;</span><br><span class="line">add_header Cache-Control public;</span><br><span class="line"><span class="punctuation">}</span></span><br></pre></td></tr></table></figure> 经测试即可愉快访问这个域名了。</p><h2 id="主页入口">主页入口</h2><p>有了域名之后，下一个问题就是如何把这个新的页面与原有的主页整合起来。我的个人主页是用hexo博客框架搭建的，使用了butterfly主题。这个主题有一个<code>menu</code>配置项，可以在右上角显示一个菜单栏，可以自定义跳转的相对链接、绝对链接，还可以自定义图标。于是速速配置如下：<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">menu:</span></span><br><span class="line">  <span class="attr">Home:</span> <span class="string">/</span> <span class="string">||</span> <span class="string">fas</span> <span class="string">fa-home</span></span><br><span class="line">  <span class="comment"># List||fas fa-list:</span></span><br><span class="line">    <span class="comment"># Music: /music/ || fas fa-music</span></span><br><span class="line">    <span class="comment"># Movie: /movies/ || fas fa-video</span></span><br><span class="line">  <span class="attr">Articles:</span> <span class="string">/archives/</span> <span class="string">||</span> <span class="string">fa</span> <span class="string">fa-bookmark</span></span><br><span class="line">  <span class="attr">Tags:</span> <span class="string">/tags/</span> <span class="string">||</span> <span class="string">fa</span> <span class="string">fa-tags</span></span><br><span class="line">  <span class="attr">DrawBoard:</span> <span class="string">/Draw/</span> <span class="string">||</span> <span class="string">fa</span> <span class="string">fa-paint-brush</span></span><br><span class="line">  <span class="string">Links</span> <span class="string">||</span> <span class="attr">fas fa-list:</span></span><br><span class="line">    <span class="attr">Link List:</span> <span class="string">/link/</span> <span class="string">||</span> <span class="string">fa</span> <span class="string">fa-link</span></span><br><span class="line">    <span class="attr">Link-House:</span> <span class="string">https://loveapple.icu/Friend-Link-House/</span> <span class="string">||</span> <span class="string">fa</span> <span class="string">fa-newspaper</span></span><br></pre></td></tr></table></figure></p><h1 id="絮语">絮语</h1><p>第一次部署别人做的开源项目，总有一点忐忑，毕竟自己是纯小白，总是担心会不会违反一些社区规则或者道德标准什么的。写作这篇文章的时候，也会担心会不会犯一些小白错误，贻笑大方。但是私以为，作为新手去学习自己不懂的技术，不能陷入文档的陷阱，即使在没有完全理解每一步都在做什么的情况下，也可以先把系统跑起来，在实践与试错的过程中再去慢慢理解一步步的操作。毕竟，比起一看就让人头大的海量文档，还是自己一步步手操更能让人有“实感”。</p>]]></content:encoded>
+      
+      
+      <category domain="https://loveapple.icu/categories/%E6%8A%80%E6%9C%AF%E5%AE%9E%E8%B7%B5/">技术实践</category>
+      
+      
+      <category domain="https://loveapple.icu/tags/%E5%BC%80%E6%BA%90/">开源</category>
+      
+      <category domain="https://loveapple.icu/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/">服务器</category>
+      
+      <category domain="https://loveapple.icu/tags/%E7%BD%91%E7%AB%99%E5%BB%BA%E8%AE%BE/">网站建设</category>
+      
+      <category domain="https://loveapple.icu/tags/RSS%E8%AE%A2%E9%98%85/">RSS订阅</category>
+      
+      
+      <comments>https://loveapple.icu/2025/09/09/%E9%83%A8%E7%BD%B2Friend-Link-House%E9%A1%B9%E7%9B%AE-%E5%BC%80%E6%BA%90%E7%A4%BE%E5%8C%BA%E5%88%9D%E6%8E%A2/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>NJU-Undergraduates-Courses</title>
