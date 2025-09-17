@@ -1,10 +1,12 @@
 User-agent: *
 
 Allow: /
-Allow: /js/
-Allow: /css/
+Allow: /page/
+Allow: /archives/
+Allow: /schedule/
+Allow: /tags/
 
-Disallow: null
+Disallow: /Draw/
 
 Sitemap: https://loveapple.icu/sitemap.xml
 Sitemap: https://loveapple.icu/baidusitemap.xml
