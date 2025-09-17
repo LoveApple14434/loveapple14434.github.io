@@ -1,9 +1,9 @@
 User-agent: *
 
 Allow: /
+Allow: /js/
+Allow: /css/
 
-Disallow: /js/
-Disallow: /css/
 Disallow: /archives/
 Disallow: /page/
 Disallow: /tags/
