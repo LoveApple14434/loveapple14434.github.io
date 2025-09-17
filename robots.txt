@@ -7,4 +7,4 @@ Allow: /css/
 Disallow: null
 
 Sitemap: https://loveapple.icu/sitemap.xml
-Sitemap: https://loveapple.icu/baidusitemap.xml1
+Sitemap: https://loveapple.icu/baidusitemap.xml
