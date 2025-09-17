@@ -5,3 +5,4 @@ Allow: /
 Disallow: /Draw/
 
 Sitemap: https://loveapple.icu/sitemap.xml
+Sitemap: https://loveapple.icu/baidusitemap.xml
