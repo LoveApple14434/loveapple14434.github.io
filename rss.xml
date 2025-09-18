@@ -9,8 +9,31 @@
     <atom:link href="https://loveapple.icu/rss.xml" rel="self" type="application/rss+xml"/>
     
     <description></description>
-    <pubDate>Wed, 10 Sep 2025 11:47:11 GMT</pubDate>
+    <pubDate>Thu, 18 Sep 2025 12:22:44 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>testpage</title>
+      <link>https://loveapple.icu/2025/09/18/testpage/</link>
+      <guid>https://loveapple.icu/2025/09/18/testpage/</guid>
+      <pubDate>Thu, 18 Sep 2025 12:22:44 GMT</pubDate>
+      
+        
+        
+      <description>
+</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[]]></content:encoded>
+      
+      
+      
+      
+      <comments>https://loveapple.icu/2025/09/18/testpage/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>本地开发，远程部署：如何把你的服务器变成Git仓库？</title>

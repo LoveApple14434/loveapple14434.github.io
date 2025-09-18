@@ -6,7 +6,7 @@
   <link href="https://loveapple.icu/atom.xml" rel="self"/>
   
   <link href="https://loveapple.icu/"/>
-  <updated>2025-09-10T11:47:11.405Z</updated>
+  <updated>2025-09-18T12:22:44.843Z</updated>
   <id>https://loveapple.icu/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>testpage</title>
+    <link href="https://loveapple.icu/2025/09/18/testpage/"/>
+    <id>https://loveapple.icu/2025/09/18/testpage/</id>
+    <published>2025-09-18T12:22:44.000Z</published>
+    <updated>2025-09-18T12:22:44.843Z</updated>
+    
+    <content type="html"><![CDATA[]]></content>
+    
+    
+      
+      
+    <summary type="html">
+</summary>
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>本地开发，远程部署：如何把你的服务器变成Git仓库？</title>
