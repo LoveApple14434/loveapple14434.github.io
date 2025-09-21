@@ -2,9 +2,7 @@ User-agent: *
 
 Allow: /
 
-Disallow: /js/
-Disallow: /css/
-Disallow: /images/
+Disallow: /Draw/
 
 Sitemap: https://loveapple.icu/sitemap.xml
 Sitemap: https://loveapple.icu/baidusitemap.xml
