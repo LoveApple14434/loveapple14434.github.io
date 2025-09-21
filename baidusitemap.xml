@@ -2,7 +2,10 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://loveapple.icu/GitAway/</loc>
-    <lastmod>2025-09-21T13:06:18.980Z</lastmod>
+    <lastmod>2025-09-21T13:07:15.419Z</lastmod>
+  </url>  <url>
+    <loc>https://loveapple.icu/Blogroll/</loc>
+    <lastmod>2025-09-21T13:07:08.289Z</lastmod>
   </url>  <url>
     <loc>https://loveapple.icu/Keil2Cmake/</loc>
     <lastmod>2025-09-21T12:48:38.799Z</lastmod>
@@ -27,8 +30,5 @@
   </url>  <url>
     <loc>https://loveapple.icu/NUEDC-2022-F/</loc>
     <lastmod>2025-09-21T09:48:29.117Z</lastmod>
-  </url>  <url>
-    <loc>https://loveapple.icu/Friend-Link-House/</loc>
-    <lastmod>2025-09-21T09:46:39.982Z</lastmod>
   </url>
 </urlset>
