@@ -91,9 +91,9 @@ uVision了（这构式IDE经常卡得要死）。项目仓库见(Keil2Cmake)[htt
       <category domain="https://loveapple.icu/categories/%E6%8A%80%E6%9C%AF%E5%AE%9E%E8%B7%B5/">技术实践</category>
       
       
-      <category domain="https://loveapple.icu/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/">服务器</category>
-      
       <category domain="https://loveapple.icu/tags/%E5%BC%80%E6%BA%90%E9%A1%B9%E7%9B%AE/">开源项目</category>
+      
+      <category domain="https://loveapple.icu/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/">服务器</category>
       
       <category domain="https://loveapple.icu/tags/%E7%BD%91%E7%AB%99%E5%BB%BA%E8%AE%BE/">网站建设</category>
       
@@ -122,7 +122,7 @@ uVision了（这构式IDE经常卡得要死）。项目仓库见(Keil2Cmake)[htt
       <content:encoded><![CDATA[<h3 id="更新">2025/08/27更新</h3><p><strong>本文档后续更新在语雀文档<a href="https://www.yuque.com/greatnju/q-a2.0">南哪助手新生问答&amp;指南2.0（2025版）</a>的总则部分-教务 一节中。</strong></p><p><strong>请关注<a href="https://www.yuque.com/greatnju">南哪助手语雀文档公开知识库</a>，获取更新更全的南哪情报！</strong></p><hr><p>此处存放我与wuhaiyuan同学共同撰写的《南京大学本科生课程体系概论》的一份历史版本。这篇民间文档会向您介绍关于南京大学本科生的教务、选课、转专业等信息。<iframe src="https://docs.google.com/gview?url=https://raw.githubusercontent.com/LoveApple14434/NJU-Undergraduates-Courses/master/document.pdf&embedded=true" style="width:100%; height:600px;" frameborder="0"></iframe></p>]]></content:encoded>
       
       
-      <category domain="https://loveapple.icu/categories/README/">README</category>
+      <category domain="https://loveapple.icu/categories/%E6%8C%87%E5%8C%97/">指北</category>
       
       
       <category domain="https://loveapple.icu/tags/NJU/">NJU</category>
@@ -152,7 +152,7 @@ uVision了（这构式IDE经常卡得要死）。项目仓库见(Keil2Cmake)[htt
       <content:encoded><![CDATA[<blockquote><p>本post专为<a href="loveapple.icu/Draw">LoveApple14434的画板</a>开发。</p></blockquote><h1 id="功能导航">功能导航</h1><p>在<a href="loveapple.icu">LoveApple14434的主页</a>的任意界面中，在右上角导航栏中点击DrawBoard即可进入。</p><h1 id="界面简介">界面简介</h1><figure><img src="/2025/08/14/Draw-Board-README/default.png" alt="Draw Board界面"><figcaption aria-hidden="true">Draw Board界面</figcaption></figure><p>在画板的左上角是颜色选取器，支持拖动选色，RGB数字选色，拾色器取色三种选色方式；右上角是预设颜色，点选可直接将其设置为当前颜色。<img src="/2025/08/14/Draw-Board-README/color.png" alt="取色器"></p><p>画板的主体位置为<span class="math inline">32 × 32</span>的网格，点击任意格子即可在该格中填入左上角所显示的当前选取的颜色。</p><p>画板下方有<code>User ID</code>与<code>Artwork ID</code>的输入框，如果您想将您的作品保存到服务器端，可以任意输入<code>User ID</code>与<code>Artwork ID</code>，然后点击“上传到云端”按钮，即可将作品保存到服务器；下一次访问时，只要输入相同的<code>User ID</code>与<code>Artwork ID</code>，点击“从云端下载”按钮，即可将之前保存的作品加载到工作区。</p><blockquote><p>注意！上传到服务器的作品会覆盖之前上传过的同<code>User ID</code>与<code>Artwork ID</code>的作品，下载时只会下载最新版本。如果是您的不同作品，为了防止互相冲突，请使用不同的<code>Artwork ID</code>加以区分。如果确实不小心覆盖了，请联系网站管理员为您找回数据。</p><p><code>User ID</code>与<code>Artwork ID</code>并未强制要求为数字，理论上您可以使用UTF-8字符集的任意字符命名。</p></blockquote><p>关于另外四个按钮：“清除画板”按钮顾名思义会将当前工作区整体还原；“食用指北”按钮将跳转到本页面；“保存到本地”按钮可将当前工作区的数据下载为json文件，点击“从本地加载”按钮，并上传之前下载的这个json文件，即可恢复工作区数据。</p><h1 id="絮语">⚛️絮语</h1><p>画板功能是在hexo框架的newpage的markdown文件下，用<code></code>直接包裹HTML语言写出来的。然而笔者在这之前其实根本没学过也没用过HTML/CSS/JavaScript，大部分工作都是根据Deepseek给出的代码做一点小小的微调得到的。至于服务器上部署后端服务，笔者也是第一次尝试，也是根据Deepseek给出的Python代码调试出来的。当然，Deepseek也不是万能的，像部署的流程之类的还是得自己上手去设置，颜色选取器的代码也是我自己改的，Deepseek给的是RGB分为三个滑动条的方案，不仅在不同设备上容易产生显示错误，而且功能也受限，没有屏幕拾色器以及直接输入数字这些好用的功能。但是不得不承认，LLM确实给开发流程带来了极大的改变，在没有LLM的情况下，我是无法想象一个之前从未接触过HTML/CSS/JavaScript的人可以一上手就写出这样一个网站的。</p>]]></content:encoded>
       
       
-      <category domain="https://loveapple.icu/categories/README/">README</category>
+      <category domain="https://loveapple.icu/categories/%E6%8C%87%E5%8C%97/">指北</category>
       
       
       
@@ -241,7 +241,7 @@ uVision</description>
       <content:encoded><![CDATA[<h1 id="初识esp32">初识ESP32</h1><p>自己买了一块ESP32的核心板来玩玩，据说这块MCU能跑的频率比较高，性能比较好，而且还集成了WiFi和蓝牙功能，开发工具也比较现代化。</p><p>两个月前自己配过用CMake取代KeiluVision的项目（其实底层还是通过命令行调用Keil带的那个MDK-Arm编译工具链），对CMake算是有一点点基础了解，再加上VSCode是现成的而ArduinoIDE没下载过，于是干脆就跳过ArduinoIDEfor ESP，直接上手ESP-IDF开发。</p><h2 id="什么是esp-idf">什么是ESP-IDF？</h2><p>从原教旨来说，ESP-IDF是乐鑫公司专门为他们的ESP系列MCU定制的一套命令行开发工具，集成了构建、烧录、配置、监视（调试）等等功能。ESP-IDF依赖CMake与Ninja来运行，这与我之前配过的Keil2CMake那个项目也一致，但是ESP-IDF的CMake中主要以ESP-IDF自己定义的一些特殊函数组成，比如<code>idf_build_set_property()</code>以及<code>idf_component_register()</code>等。</p><h2 id="如何上手esp-idf">如何上手ESP-IDF？</h2><p>虽然ESP-IDF需要依赖CMake、Ninja、Python等运行，但是我们并不需要把这些依赖都手动安装一遍（即使你真的手动安装了一遍，ESP-IDF也不会去调用它们的），因为ESP-IDF会自己给自己配一套它需要的环境。我们直接在VSCode的插件商店搜索”ESP-IDF”并安装，在安装好插件后会弹出一个欢迎界面，点击上面的”ConfigureExtension”按钮即可进入ESP-IDF的插件配置页面（如果没见到这个页面的话，在VSCode中按F1然后搜索”&gt;ESP-IDF: configure ESP-IDFExtension”即可），在这里我们可以选用电脑上已下载好的ESP-IDF套件，也可以让它帮我们下载ESP-IDF套件。<img src="/2025/08/07/%E5%88%9D%E8%AF%86ESP32/Configure ESP-IDF.png" alt="Configure ESP-IDF">如果你是初次下载这个插件，电脑上并没有安装过ESP-IDF套件，可以直接点击”EXPRESS”来进行快速配置，或者点击”ADVANCED”来选择指定路径（<del>更推荐这样做，毕竟谁都不希望有东西在自己电脑里拉屎</del>）；如果之后再打开别的ESP项目的时候还弹出这个界面让你配置插件，就可以直接选择”USEEXISTINGSETUP”，快速复用之前的配置。初次下载的时候会比较慢是正常的，以后不用下载了就好了。</p><p>配置好之后，先试试烧一个最简单的示例代码。ESP-IDF会自带很多示例工程，找到之前安装ESP-IDF的文件夹，点进examples里面，找到get-started/hello-world，用vscode打开这个文件夹，就可以配置、构建并烧录你的第一个ESP32工程了。</p><p>打开文件夹之后在页面最下方根据你的开发板型号选择合适的编译与烧录配置。我是从不知名网店买的神秘核心板，应该是非官方型号。板上有CH340，并且看起来没有留JTAG的接口只有一个type-C，所以烧录方式选择的是UART，端口号就选择插上之后在设备管理器里会多出来的那一个，乐鑫设备目标填的是”esp32/customboard”，然后点构建项目、烧录项目就可以了，上手还是很简单的。</p><p>然而在这里我遇到了一点问题：ESP-IDF报告说COM5端口打不开。然而当我自己使用SSCOM之类的串口工具的时候，是可以通过COM5这个串口读到单片机里预先烧好的程序发出的信息的。自习检查ESP-IDF的汇报，发现它说的是MCU没有处在下载模式。经过查询资料发现，下载时单片机的GPIO0引脚需要被拉低，在这个状态下把EN拉低再拉高，才可以进入downloadmode。再查看核心板的原理图，发现GPIO0和EN这两个引脚分别由BOOT和EN这两个按键开关控制。按住BOOT按键，按一下EN按键，松开EN按键后让ESP-IDF开始烧录，就可以成功烧录了，这时候再松开BOOT按键也没关系了。</p><h1 id="絮语">⚛️絮语</h1><p>经过初步的体验，感觉ESP-IDF这一套开发环境的使用体验还是很不错的，不仅仅是表面上看起来更加专业，实际配合VSCode使用起来也比KeiluVision那种卡顿得要死的IDE好很多。</p>]]></content:encoded>
       
       
-      <category domain="https://loveapple.icu/categories/EE/">EE</category>
+      <category domain="https://loveapple.icu/categories/%E6%8A%80%E6%9C%AF%E5%AE%9E%E8%B7%B5/">技术实践</category>
       
       
       <category domain="https://loveapple.icu/tags/MCU/">MCU</category>
