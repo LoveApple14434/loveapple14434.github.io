@@ -18,8 +18,8 @@
   
   <entry>
     <title>一个自制的Keil2Cmake转换器小工具</title>
-    <link href="https://loveapple.icu/2025/09/21/Keil2Cmake/"/>
-    <id>https://loveapple.icu/2025/09/21/Keil2Cmake/</id>
+    <link href="https://loveapple.icu/Keil2Cmake/"/>
+    <id>https://loveapple.icu/Keil2Cmake/</id>
     <published>2025-09-21T09:42:57.000Z</published>
     <updated>2025-09-21T12:48:38.799Z</updated>
     
@@ -46,8 +46,8 @@ uVision了（这构式IDE经常卡得要死）。项目仓库见&lt;a href=&quot
   
   <entry>
     <title>本地开发，远程部署：如何把你的服务器变成Git仓库？</title>
-    <link href="https://loveapple.icu/2025/09/10/GitAway/"/>
-    <id>https://loveapple.icu/2025/09/10/GitAway/</id>
+    <link href="https://loveapple.icu/GitAway/"/>
+    <id>https://loveapple.icu/GitAway/</id>
     <published>2025-09-10T10:48:13.000Z</published>
     <updated>2025-09-21T12:51:49.603Z</updated>
     
@@ -73,8 +73,8 @@ uVision了（这构式IDE经常卡得要死）。项目仓库见&lt;a href=&quot
   
   <entry>
     <title>部署Friend-Link-House项目:开源社区初探</title>
-    <link href="https://loveapple.icu/2025/09/09/Friend-Link-House/"/>
-    <id>https://loveapple.icu/2025/09/09/Friend-Link-House/</id>
+    <link href="https://loveapple.icu/Friend-Link-House/"/>
+    <id>https://loveapple.icu/Friend-Link-House/</id>
     <published>2025-09-09T03:09:41.000Z</published>
     <updated>2025-09-21T09:46:39.982Z</updated>
     
@@ -104,8 +104,8 @@ uVision了（这构式IDE经常卡得要死）。项目仓库见&lt;a href=&quot
   
   <entry>
     <title>NJU-Undergraduates-Courses</title>
-    <link href="https://loveapple.icu/2025/08/16/NJU-Undergraduates-Courses/"/>
-    <id>https://loveapple.icu/2025/08/16/NJU-Undergraduates-Courses/</id>
+    <link href="https://loveapple.icu/NJU-Undergraduates-Courses/"/>
+    <id>https://loveapple.icu/NJU-Undergraduates-Courses/</id>
     <published>2025-08-16T13:19:29.000Z</published>
     <updated>2025-09-21T09:49:10.273Z</updated>
     
@@ -130,8 +130,8 @@ uVision了（这构式IDE经常卡得要死）。项目仓库见&lt;a href=&quot
   
   <entry>
     <title>DrawBoard食用指北</title>
-    <link href="https://loveapple.icu/2025/08/14/Draw-Board-README/"/>
-    <id>https://loveapple.icu/2025/08/14/Draw-Board-README/</id>
+    <link href="https://loveapple.icu/Draw-Board-README/"/>
+    <id>https://loveapple.icu/Draw-Board-README/</id>
     <published>2025-08-14T13:31:24.000Z</published>
     <updated>2025-09-21T09:49:07.162Z</updated>
     
@@ -156,8 +156,8 @@ uVision了（这构式IDE经常卡得要死）。项目仓库见&lt;a href=&quot
   
   <entry>
     <title>奶茶电脑之数据拯救</title>
-    <link href="https://loveapple.icu/2025/08/12/MilkTeaComputer/"/>
-    <id>https://loveapple.icu/2025/08/12/MilkTeaComputer/</id>
+    <link href="https://loveapple.icu/MilkTeaComputer/"/>
+    <id>https://loveapple.icu/MilkTeaComputer/</id>
     <published>2025-08-12T03:21:44.000Z</published>
     <updated>2025-09-21T09:48:47.332Z</updated>
     
@@ -183,8 +183,8 @@ uVision了（这构式IDE经常卡得要死）。项目仓库见&lt;a href=&quot
   
   <entry>
     <title>联想供电疑似通病</title>
-    <link href="https://loveapple.icu/2025/08/12/LenovoPower/"/>
-    <id>https://loveapple.icu/2025/08/12/LenovoPower/</id>
+    <link href="https://loveapple.icu/LenovoPower/"/>
+    <id>https://loveapple.icu/LenovoPower/</id>
     <published>2025-08-12T03:18:43.000Z</published>
     <updated>2025-09-21T09:49:05.744Z</updated>
     
@@ -214,8 +214,8 @@ uVision了（这构式IDE经常卡得要死）。项目仓库见&lt;a href=&quot
   
   <entry>
     <title>初识ESP32</title>
-    <link href="https://loveapple.icu/2025/08/07/HelloESP32/"/>
-    <id>https://loveapple.icu/2025/08/07/HelloESP32/</id>
+    <link href="https://loveapple.icu/HelloESP32/"/>
+    <id>https://loveapple.icu/HelloESP32/</id>
     <published>2025-08-07T10:05:41.000Z</published>
     <updated>2025-09-21T09:49:04.500Z</updated>
     
@@ -243,8 +243,8 @@ uVision</summary>
   
   <entry>
     <title>DDS实现高频信号同步</title>
-    <link href="https://loveapple.icu/2025/07/19/DDS_RFSync/"/>
-    <id>https://loveapple.icu/2025/07/19/DDS_RFSync/</id>
+    <link href="https://loveapple.icu/DDS_RFSync/"/>
+    <id>https://loveapple.icu/DDS_RFSync/</id>
     <published>2025-07-19T05:09:00.000Z</published>
     <updated>2025-09-21T09:48:45.305Z</updated>
     
@@ -272,8 +272,8 @@ uVision</summary>
   
   <entry>
     <title>NUEDC-2022-F</title>
-    <link href="https://loveapple.icu/2025/07/05/NUEDC-2022-F/"/>
-    <id>https://loveapple.icu/2025/07/05/NUEDC-2022-F/</id>
+    <link href="https://loveapple.icu/NUEDC-2022-F/"/>
+    <id>https://loveapple.icu/NUEDC-2022-F/</id>
     <published>2025-07-05T03:41:00.000Z</published>
     <updated>2025-09-21T09:48:29.117Z</updated>
     
