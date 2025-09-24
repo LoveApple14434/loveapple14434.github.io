@@ -9,8 +9,33 @@
     <atom:link href="https://loveapple.icu/rss.xml" rel="self" type="application/rss+xml"/>
     
     <description>LoveApple14434的主页 | Homepage for LoveApple14434</description>
-    <pubDate>Tue, 23 Sep 2025 15:40:45 GMT</pubDate>
+    <pubDate>Wed, 24 Sep 2025 16:16:53 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>安装 Arch Linux</title>
+      <link>https://loveapple.icu/install-arch/</link>
+      <guid>https://loveapple.icu/install-arch/</guid>
+      <pubDate>Wed, 24 Sep 2025 10:49:59 GMT</pubDate>
+      
+      <description>一篇记录个人安装 Arch Linux 经历的博客，重点分享了在校园网环境下解决联网问题以及配置引导程序时的曲折过程，并最终成功从零搭建起一个完整的 Arch 系统。</description>
+      
+      
+      
+      <content:encoded><![CDATA[<h2 id="起因">起因</h2><p>一开是我想安装ArchLinux的理由还挺俗套的，或许是因为觉得Ubuntu有太多人用太寻规蹈矩了想标新立异一下，或许是因为觉得Arch每月一更还挺酷的，或许只是给自己找点事情做熟悉熟悉Linux，或许只是因为觉得用Arch看起来更酷更geek（真的会有吗），总之就这么决定了。</p><p>本文会比较粗略地讲一下我安装ArchLinux的过程，遇到的问题以及我解决的过程。但是由于本文是我安装之后事后写的而非安装过程中一边装一边记录的，所以可能会有些不准确之处，敬请谅解。</p><p>正由于这个原因，<strong>请不要把这篇博客当成安装ArchLinux的教程</strong>。我个人参考的教程主要包括<a href="https://wiki.archlinuxcn.org/wiki/%E5%AE%89%E8%A3%85%E6%8C%87%E5%8D%97" rel="external nofollow noreferrer">安装指南- Arch Linux 中文维基</a>以及<a href="https://arch.icekylin.online/guide/rookie/basic-install" rel="external nofollow noreferrer">Archlinux基础安装 | archlinux 简明指南</a>，还有询问Deepseek与ChatGPT。</p><h2 id="打开镜像">打开镜像</h2><p>我有一个专门用于安装系统的U盘，里面装了Ventoy以及各种镜像。直接从我们学校的<a href="mirrors.nju.edu.cn">镜像站</a>下载ArchLinux的最新ISO镜像，扔到U盘里，然后插U盘重启系统，选择ArchLinux的镜像启动，在一番眼花撩乱啥也看不清的控制台自动输出之后，就进入了一个临时的live环境的root终端。</p><h2 id="连接网络">连接网络</h2><p>依我安装过程中的初步体会，Arch的安装是从这个临时的live环境用<code>pacstrap</code>命令往硬盘挂载的<code>/mnt</code>中下载各种内核与软件包。然而这在校园网环境就有点尴尬了：校园网环境光是连上网络是无法访问外界网络的，必须要经过身份认证才可以，而身份认证一般又依赖浏览器，live环境连图形库应该都没有，遑论浏览器呢？不过也有几个对策：</p><ul><li><p>第一个思路，我们学校的校园网有“无感知认证”功能，为了避免学生每次重连校园网都要重新认证的麻烦，可以为设备开启这个无感知认证服务，这样校园网的身份认证就会记住这个设备，连接时不再需要重复认证。经学校里诸多前辈测试，这个无感知认证记录的是设备MAC号，而我们从Windows切到Linux时用的网卡硬件是同一套，MAC号也是一样的，所以可以沿用这个无感知直接无痛认证。如果你的学校校园网也有类似服务，可以尝试一下。</p></li><li><p>第二个思路，虽然连接不上外网，但是换个思路能不能只在校园网内部完成ArchLinux的安装呢？<code>pacstrap</code>安装与pacman一样可以指定镜像源，如果你的学校有镜像源的话，你可以像我一样先禁用reflector服务，然后手动编辑<code>/etc/pacman.d/mirrorlist</code>，把校园网内部就能访问的镜像站放上去，应该也可以正常使用<code>pacstrap</code>来安装内核与各种包。不过由于我有无感知认证，所以这个方法究竟是否可行我其实并没有实际尝试过。</p></li><li><p>第三个思路，实在不行就用手机热点呗也没什么不好的（）</p></li></ul><h2 id="硬盘分区">硬盘分区</h2><p>我的笔记本里装了两块硬盘，我的打算是一块1T大硬盘给Windows，另一块256GB小硬盘给Linux，反正Linux也能访问到我Windows上的文件。按教程上说的分了一块EFI引导分区（直接给了1G，大点就大点吧也不缺这点空间），一块SWAP分区（教程上说按内存60%或100%，<span class="math inline">32<em>G</em><em>B</em> × 0.6 = 19.2<em>G</em><em>B</em></span>），剩下所有空间全作为Linux主分区。EFI分区格式化为FAT32，主分区格式化为ext4，按教程说的分别挂载到<code>/mnt/boot</code>与<code>/mnt</code>上。</p><h2 id="安装arch">安装Arch</h2><p>按教程说的<code>pacstrap</code>了一堆东西到<code>/mnt</code>去之后，<code>arch-chroot /mnt</code>，就算是正式用起Arch了，虽然还只有一个简陋的命令行界面，并且由于没有配置任何的引导，reboot之后也不能自然地进入这个Arch，还得用介质挂载再chroot。</p><h2 id="所以下一步就是安装grub">所以下一步就是安装GRUB</h2><p>还是按教程照本宣科，用<code>pacman</code>装了一堆包，然后……<code>grub-mkconfig</code>检测到了0个操作系统（悲）。当时已经晚上挺晚的了，也不想再费劲查下去查半天了（事后想想，可能是EFI分区挂载的顺序或者位置不对之类的问题？或者是os-prober的问题？），于是先睡一觉，然后第二天从头开始把所有分区扬了重新装了一边<del>（毕竟是新系统，其实还真不好说扬了重装和查错修改哪个更快）</del>，然后就莫名好了，不仅Arch有了Windows也有了……</p><h2 id="安装arch之后必须要做的那件事">安装Arch之后必须要做的那件事</h2><p><del>当然是<code>pacman -S screenfetch</code>然后<code>screenfetch</code>了，谁不喜欢那个大大的蓝A标呢。</del></p><p>俗人不能免俗，这样的时刻当然得来一张。</p><p><img src="/install-arch/screenfetch.jpg"></p><h2 id="安装桌面环境">安装桌面环境</h2><p>xorg装了，Wayland装了，GNOME装了，跑起来了，好像没遇到啥问题……</p><h2 id="aur才是arch之魂">AUR才是Arch之魂</h2><p>按网上的教程clone并构建了yay，好像也没遇到啥问题……</p><p>至此，一个初步可用的Arch就装好了。</p>]]></content:encoded>
+      
+      
+      <category domain="https://loveapple.icu/categories/%E6%8A%80%E6%9C%AF%E5%AE%9E%E8%B7%B5/">技术实践</category>
+      
+      
+      <category domain="https://loveapple.icu/tags/%E5%AE%89%E8%A3%85%E7%B3%BB%E7%BB%9F/">安装系统</category>
+      
+      <category domain="https://loveapple.icu/tags/Arch-Linux/">Arch Linux</category>
+      
+      
+      <comments>https://loveapple.icu/install-arch/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>换AB面，但是屏幕翻车</title>
