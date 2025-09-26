@@ -8,3 +8,6 @@ https://loveapple.icu/NJU-Undergraduates-Courses/
 https://loveapple.icu/Draw-Board-README/
 https://loveapple.icu/MilkTeaComputer/
 https://loveapple.icu/LenovoPower/
+https://loveapple.icu/HelloESP32/
+https://loveapple.icu/DDS_RFSync/
+https://loveapple.icu/NUEDC-2022-F/
