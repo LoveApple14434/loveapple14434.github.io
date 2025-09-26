@@ -9,7 +9,7 @@
     <atom:link href="https://loveapple.icu/rss.xml" rel="self" type="application/rss+xml"/>
     
     <description>LoveApple14434的主页 | Homepage for LoveApple14434</description>
-    <pubDate>Fri, 26 Sep 2025 05:50:33 GMT</pubDate>
+    <pubDate>Fri, 26 Sep 2025 05:51:18 GMT</pubDate>
     <generator>http://hexo.io/</generator>
     
     <item>
@@ -18,7 +18,7 @@
       <guid>https://loveapple.icu/pacman-mirror/</guid>
       <pubDate>Fri, 26 Sep 2025 04:14:07 GMT</pubDate>
       
-      <description>一篇介绍如何为 Arch Linux 的 pacman 包管理器配置国内镜像源以加速下载的指南。文章详细说明了如何使用 `reflector` 服务自动筛选镜像，并分享了一个自定义脚本技巧，将特定镜像源（如本校镜像）固定排在列表最前，实现自动化与个性化需求的结合。</description>
+      <description>一篇介绍如何为 Arch Linux 的 pacman 包管理器配置国内镜像源以加速下载的指南。文章详细说明了如何使用reflector服务自动筛选镜像，并分享了一个自定义脚本技巧，将特定镜像源（如本校镜像）固定排在列表最前，实现自动化与个性化需求的结合。</description>
       
       
       
