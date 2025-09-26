@@ -1,1 +1,1 @@
-https://loveapple.icu/install-arch/
+https://loveapple.icu/pacman-mirror/
