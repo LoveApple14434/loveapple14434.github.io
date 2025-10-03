@@ -1,3 +1,4 @@
+https://loveapple.icu/PLL-intro/
 https://loveapple.icu/pacman-mirror/
 https://loveapple.icu/install-arch/
 https://loveapple.icu/BreakScreen/
@@ -7,4 +8,3 @@ https://loveapple.icu/Blogroll/
 https://loveapple.icu/NJU-Undergraduates-Courses/
 https://loveapple.icu/Draw-Board-README/
 https://loveapple.icu/MilkTeaComputer/
-https://loveapple.icu/LenovoPower/
