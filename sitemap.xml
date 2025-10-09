@@ -322,6 +322,13 @@
   </url>
   
   <url>
+    <loc>https://loveapple.icu/tags/%E7%BB%B4%E4%BF%AE%E9%9A%8F%E6%83%B3/</loc>
+    <lastmod>2025-10-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://loveapple.icu/tags/%E9%95%9C%E5%83%8F%E6%BA%90/</loc>
     <lastmod>2025-10-09</lastmod>
     <changefreq>weekly</changefreq>
@@ -330,13 +337,6 @@
   
   <url>
     <loc>https://loveapple.icu/tags/Arch-reflector/</loc>
-    <lastmod>2025-10-09</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://loveapple.icu/tags/%E7%BB%B4%E4%BF%AE%E9%9A%8F%E6%83%B3/</loc>
     <lastmod>2025-10-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -359,14 +359,14 @@
   </url>
   
   <url>
-    <loc>https://loveapple.icu/categories/%E6%8C%87%E5%8C%97/</loc>
+    <loc>https://loveapple.icu/categories/%E9%AB%98%E9%A2%91%E7%94%B5%E8%B7%AF/</loc>
     <lastmod>2025-10-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://loveapple.icu/categories/%E9%AB%98%E9%A2%91%E7%94%B5%E8%B7%AF/</loc>
+    <loc>https://loveapple.icu/categories/%E6%8C%87%E5%8C%97/</loc>
     <lastmod>2025-10-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
