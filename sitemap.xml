@@ -2,7 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://loveapple.icu/jgg-hotpot/</loc>
+    <loc>https://loveapple.icu/mine-sweeper/</loc>
+    
+    <lastmod>2025-10-15</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://loveapple.icu/mine-sweeper/minesweeper.json</loc>
     
     <lastmod>2025-10-15</lastmod>
     
@@ -13,7 +22,16 @@
   <url>
     <loc>https://loveapple.icu/how2b-screwer/</loc>
     
-    <lastmod>2025-10-09</lastmod>
+    <lastmod>2025-10-15</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://loveapple.icu/jgg-hotpot/</loc>
+    
+    <lastmod>2025-10-15</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -212,14 +230,21 @@
   </url>
   
   <url>
-    <loc>https://loveapple.icu/tags/MCU/</loc>
+    <loc>https://loveapple.icu/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/</loc>
     <lastmod>2025-10-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://loveapple.icu/tags/ESP32/</loc>
+    <loc>https://loveapple.icu/tags/%E8%BF%9C%E7%A8%8B%E9%83%A8%E7%BD%B2/</loc>
+    <lastmod>2025-10-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://loveapple.icu/tags/EE/</loc>
     <lastmod>2025-10-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -233,21 +258,14 @@
   </url>
   
   <url>
-    <loc>https://loveapple.icu/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/</loc>
+    <loc>https://loveapple.icu/tags/MCU/</loc>
     <lastmod>2025-10-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://loveapple.icu/tags/%E7%BD%91%E7%AB%99%E5%BB%BA%E8%AE%BE/</loc>
-    <lastmod>2025-10-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://loveapple.icu/tags/RSS%E8%AE%A2%E9%98%85/</loc>
+    <loc>https://loveapple.icu/tags/ESP32/</loc>
     <lastmod>2025-10-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -268,7 +286,7 @@
   </url>
   
   <url>
-    <loc>https://loveapple.icu/tags/EE/</loc>
+    <loc>https://loveapple.icu/tags/%E8%BF%9B%E6%B0%B4%E6%9C%BA/</loc>
     <lastmod>2025-10-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -289,21 +307,14 @@
   </url>
   
   <url>
-    <loc>https://loveapple.icu/tags/%E8%BF%9B%E6%B0%B4%E6%9C%BA/</loc>
+    <loc>https://loveapple.icu/tags/%E7%BD%91%E7%AB%99%E5%BB%BA%E8%AE%BE/</loc>
     <lastmod>2025-10-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://loveapple.icu/tags/%E8%BF%9C%E7%A8%8B%E9%83%A8%E7%BD%B2/</loc>
-    <lastmod>2025-10-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://loveapple.icu/tags/%E7%BB%B4%E4%BF%AE%E9%9A%8F%E6%83%B3/</loc>
+    <loc>https://loveapple.icu/tags/RSS%E8%AE%A2%E9%98%85/</loc>
     <lastmod>2025-10-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -317,14 +328,7 @@
   </url>
   
   <url>
-    <loc>https://loveapple.icu/tags/%E5%AE%89%E8%A3%85%E7%B3%BB%E7%BB%9F/</loc>
-    <lastmod>2025-10-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://loveapple.icu/tags/Arch-Linux/</loc>
+    <loc>https://loveapple.icu/tags/%E7%BB%B4%E4%BF%AE%E9%9A%8F%E6%83%B3/</loc>
     <lastmod>2025-10-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -345,7 +349,14 @@
   </url>
   
   <url>
-    <loc>https://loveapple.icu/tags/PLL/</loc>
+    <loc>https://loveapple.icu/tags/%E5%AE%89%E8%A3%85%E7%B3%BB%E7%BB%9F/</loc>
+    <lastmod>2025-10-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://loveapple.icu/tags/Arch-Linux/</loc>
     <lastmod>2025-10-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -365,17 +376,24 @@
     <priority>0.2</priority>
   </url>
   
+  <url>
+    <loc>https://loveapple.icu/tags/PLL/</loc>
+    <lastmod>2025-10-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
 
   
   <url>
-    <loc>https://loveapple.icu/categories/IT%E4%BE%A0%E7%94%B5%E8%84%91%E7%BB%B4%E4%BF%AE/</loc>
+    <loc>https://loveapple.icu/categories/%E6%8C%87%E5%8C%97/</loc>
     <lastmod>2025-10-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://loveapple.icu/categories/%E6%8C%87%E5%8C%97/</loc>
+    <loc>https://loveapple.icu/categories/IT%E4%BE%A0%E7%94%B5%E8%84%91%E7%BB%B4%E4%BF%AE/</loc>
     <lastmod>2025-10-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>

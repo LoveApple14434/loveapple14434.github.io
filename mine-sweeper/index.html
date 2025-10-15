@@ -1,0 +1,760 @@
+<!DOCTYPE html><html lang="Chinese" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>水煮鱼的扫雷记录 | LoveApple14434的主页</title><meta name="author" content="LoveApple14434"><meta name="copyright" content="LoveApple14434"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="ffffff"><meta name="description" content="&lt;div class&#x3D;&quot;spinner&quot;&gt;&lt;&#x2F;div&gt; &lt;p&gt;正在加载记录数据...&lt;&#x2F;p&gt;             &lt;h3&gt;😅 数据加载失败&lt;&#x2F;h3&gt; &lt;p&gt;无法加载扫雷记录数据，请刷新页面重试。&lt;&#x2F;p&gt; &lt;button onclick&#x3D;&quot;loadM">
+<meta property="og:type" content="website">
+<meta property="og:title" content="水煮鱼的扫雷记录">
+<meta property="og:url" content="https://loveapple.icu/mine-sweeper/">
+<meta property="og:site_name" content="LoveApple14434的主页">
+<meta property="og:description" content="&lt;div class&#x3D;&quot;spinner&quot;&gt;&lt;&#x2F;div&gt; &lt;p&gt;正在加载记录数据...&lt;&#x2F;p&gt;             &lt;h3&gt;😅 数据加载失败&lt;&#x2F;h3&gt; &lt;p&gt;无法加载扫雷记录数据，请刷新页面重试。&lt;&#x2F;p&gt; &lt;button onclick&#x3D;&quot;loadM">
+<meta property="og:locale">
+<meta property="og:image" content="https://loveapple.icu/img/machinist.jpg">
+<meta property="article:published_time" content="2025-10-15T08:31:52.000Z">
+<meta property="article:modified_time" content="2025-10-15T10:55:03.396Z">
+<meta property="article:author" content="LoveApple14434">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://loveapple.icu/img/machinist.jpg"><script type="application/ld+json"></script><link rel="shortcut icon" href="/img/machinist.jpg"><link rel="canonical" href="https://loveapple.icu/mine-sweeper/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"><script>
+    (() => {
+      
+    const saveToLocal = {
+      set: (key, value, ttl) => {
+        if (!ttl) return
+        const expiry = Date.now() + ttl * 86400000
+        localStorage.setItem(key, JSON.stringify({ value, expiry }))
+      },
+      get: key => {
+        const itemStr = localStorage.getItem(key)
+        if (!itemStr) return undefined
+        const { value, expiry } = JSON.parse(itemStr)
+        if (Date.now() > expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return value
+      }
+    }
+
+    window.btf = {
+      saveToLocal,
+      getScript: (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        Object.entries(attr).forEach(([key, val]) => script.setAttribute(key, val))
+        script.onload = script.onreadystatechange = () => {
+          if (!script.readyState || /loaded|complete/.test(script.readyState)) resolve()
+        }
+        script.onerror = reject
+        document.head.appendChild(script)
+      }),
+      getCSS: (url, id) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onload = link.onreadystatechange = () => {
+          if (!link.readyState || /loaded|complete/.test(link.readyState)) resolve()
+        }
+        link.onerror = reject
+        document.head.appendChild(link)
+      }),
+      addGlobalFn: (key, fn, name = false, parent = window) => {
+        if (!false && key.startsWith('pjax')) return
+        const globalFn = parent.globalFn || {}
+        globalFn[key] = globalFn[key] || {}
+        globalFn[key][name || Object.keys(globalFn[key]).length] = fn
+        parent.globalFn = globalFn
+      }
+    }
+  
+      
+      const activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      const activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', 'ffffff')
+        }
+      }
+
+      btf.activateDarkMode = activateDarkMode
+      btf.activateLightMode = activateLightMode
+
+      const theme = saveToLocal.get('theme')
+    
+          theme === 'dark' ? activateDarkMode() : theme === 'light' ? activateLightMode() : null
+        
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        document.documentElement.classList.toggle('hide-aside', asideStatus === 'hide')
+      }
+    
+      
+    const detectApple = () => {
+      if (/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)) {
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+  
+    })()
+  </script><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false,"highlightFullpage":false,"highlightMacStyle":false},
+  copy: {
+    success: 'Copy Successful',
+    error: 'Copy Failed',
+    noSupport: 'Browser Not Supported'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: 'Just now',
+    min: 'minutes ago',
+    hour: 'hours ago',
+    day: 'days ago',
+    month: 'months ago'
+  },
+  copyright: undefined,
+  lightbox: 'null',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid/dist/infinitegrid.min.js',
+    buttonText: 'Load More'
+  },
+  isPhotoFigcaption: false,
+  islazyloadPlugin: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '水煮鱼的扫雷记录',
+  isHighlightShrink: false,
+  isToc: false,
+  pageType: 'page'
+}</script><meta name="baidu-site-verification" content="codeva-goeWHw7QfM" /><!-- hexo injector head_end start -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hexo-math@4.0.0/dist/style.css">
+<!-- hexo injector head_end end --><meta name="generator" content="Hexo 7.3.0"><style>mjx-container[jax="SVG"] {
+  direction: ltr;
+}
+
+mjx-container[jax="SVG"] > svg {
+  overflow: visible;
+}
+
+mjx-container[jax="SVG"][display="true"] {
+  display: block;
+  text-align: center;
+  margin: 1em 0;
+}
+
+mjx-container[jax="SVG"][justify="left"] {
+  text-align: left;
+}
+
+mjx-container[jax="SVG"][justify="right"] {
+  text-align: right;
+}
+
+g[data-mml-node="merror"] > g {
+  fill: red;
+  stroke: red;
+}
+
+g[data-mml-node="merror"] > rect[data-background] {
+  fill: yellow;
+  stroke: none;
+}
+
+g[data-mml-node="mtable"] > line[data-line] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node="mtable"] > rect[data-frame] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node="mtable"] > .mjx-dashed {
+  stroke-dasharray: 140;
+}
+
+g[data-mml-node="mtable"] > .mjx-dotted {
+  stroke-linecap: round;
+  stroke-dasharray: 0,140;
+}
+
+g[data-mml-node="mtable"] > svg {
+  overflow: visible;
+}
+
+[jax="SVG"] mjx-tool {
+  display: inline-block;
+  position: relative;
+  width: 0;
+  height: 0;
+}
+
+[jax="SVG"] mjx-tool > mjx-tip {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+mjx-tool > mjx-tip {
+  display: inline-block;
+  padding: .2em;
+  border: 1px solid #888;
+  font-size: 70%;
+  background-color: #F8F8F8;
+  color: black;
+  box-shadow: 2px 2px 5px #AAAAAA;
+}
+
+g[data-mml-node="maction"][data-toggle] {
+  cursor: pointer;
+}
+
+mjx-status {
+  display: block;
+  position: fixed;
+  left: 1em;
+  bottom: 1em;
+  min-width: 25%;
+  padding: .2em .4em;
+  border: 1px solid #888;
+  font-size: 90%;
+  background-color: #F8F8F8;
+  color: black;
+}
+
+foreignObject[data-mjx-xml] {
+  font-family: initial;
+  line-height: normal;
+  overflow: visible;
+}
+
+.MathJax path {
+  stroke-width: 3;
+}
+
+mjx-container[display="true"] {
+  overflow: auto hidden;
+}
+
+mjx-container[display="true"] + br {
+  display: none;
+}
+</style><link rel="alternate" href="/atom.xml" title="LoveApple14434的主页" type="application/atom+xml">
+<link rel="alternate" href="/rss.xml" title="LoveApple14434的主页" type="application/rss+xml">
+</head><body><div id="web_bg" style="background: pink;"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img text-center"><img src="/img/machinist.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data text-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">16</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">25</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">5</div></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fa fa-bookmark"></i><span> Articles</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/Draw/"><i class="fa-fw fa fa-paint-brush"></i><span> DrawBoard</span></a></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fas fa-list"></i><span> Links</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/link/"><i class="fa-fw fa fa-link"></i><span> Link List</span></a></li><li><a class="site-page child" href="https://loveapple.icu/Friend-Link-House/"><i class="fa-fw fa fa-newspaper"></i><span> Link-House</span></a></li></ul></div></div></div></div><div class="page" id="body-wrap"><header class="not-home-page" id="page-header" style="background-image: url(/img/background.png);"><nav id="nav"><span id="blog-info"><a class="nav-site-title" href="/"><span class="site-name">LoveApple14434的主页</span></a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fa fa-bookmark"></i><span> Articles</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/Draw/"><i class="fa-fw fa fa-paint-brush"></i><span> DrawBoard</span></a></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fas fa-list"></i><span> Links</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/link/"><i class="fa-fw fa fa-link"></i><span> Link List</span></a></li><li><a class="site-page child" href="https://loveapple.icu/Friend-Link-House/"><i class="fa-fw fa fa-newspaper"></i><span> Link-House</span></a></li></ul></div></div><div id="toggle-menu"><span class="site-page"><i class="fas fa-bars fa-fw"></i></span></div></div></nav><div id="page-site-info"><h1 id="site-title">水煮鱼的扫雷记录</h1></div></header><main class="layout" id="content-inner"><div id="page"><div class="container" id="article-container"><div id="minesweeper-records">
+<!-- 加载状态 -->
+<div id="loading" class="loading">
+<pre><code>&lt;div class="spinner"&gt;&lt;/div&gt;
+&lt;p&gt;正在加载记录数据...&lt;/p&gt;</code></pre>
+</div>
+<!-- 记录卡片容器 -->
+<section id="records-section" class="records-section" style="display: none;">
+<div id="difficulty-tabs" class="difficulty-tabs">
+
+</div>
+<div id="records-container" class="records-container">
+
+</div>
+</section>
+<!-- 错误信息 -->
+<div id="error-message" class="error-message" style="display: none;">
+<pre><code>&lt;h3&gt;😅 数据加载失败&lt;/h3&gt;
+&lt;p&gt;无法加载扫雷记录数据，请刷新页面重试。&lt;/p&gt;
+&lt;button onclick="loadMinesweeperData()" class="retry-btn"&gt;重试&lt;/button&gt;</code></pre>
+</div>
+<!-- 更新时间 -->
+<footer class="update-info" id="update-info" style="display: none;">
+</footer>
+</div>
+<style>
+/* 基础样式 */
+#minesweeper-records {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+.records-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.records-header h1 {
+  font-size: 2.5rem;
+  margin: 0 0 0.5rem 0;
+  background: linear-gradient(135deg, #ffffffff 30%, #ffc0cb 70%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.subtitle {
+  font-size: 1.1rem;
+  color: var(--text-color);
+  opacity: 0.7;
+  margin: 0;
+}
+
+/* 加载动画 */
+.loading {
+  text-align: center;
+  padding: 3rem;
+}
+
+.spinner {
+  border: 4px solid rgba(0, 0, 0, 0.1);
+  border-left-color: var(--primary-color);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite;
+  margin: 0 auto 1rem;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+/* 记录部分样式 */
+.records-section {
+  margin-bottom: 3rem;
+}
+
+/* 难度标签页 */
+.difficulty-tabs {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.tab-btn {
+  background: var(--card-bg-color);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 0.75rem 1.5rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-weight: 500;
+}
+
+.tab-btn:hover {
+  background: var(--hover-color);
+}
+
+.tab-btn.active {
+  background: var(--primary-color);
+  color: white;
+  border-color: var(--primary-color);
+}
+
+/* 记录容器 */
+.records-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+}
+
+.difficulty-card {
+  background: var(--card-bg-color);
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border: 1px solid var(--border-color);
+  transition: transform 0.2s ease;
+}
+
+.difficulty-card:hover {
+  transform: translateY(-2px);
+}
+
+.difficulty-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 2px solid var(--border-color);
+}
+
+.difficulty-title {
+  margin: 0;
+  font-size: 1.5rem;
+  color: var(--text-color);
+}
+
+.difficulty-size {
+  margin: 0;
+  font-size: 0.9rem;
+  opacity: 0.7;
+  text-align: right;
+}
+
+/* 最佳记录样式 */
+.best-record {
+  background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+  color: white;
+  padding: 1.25rem;
+  border-radius: 8px;
+  margin: 1rem 0;
+  text-align: center;
+}
+
+.best-time {
+  font-size: 2rem;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 0.25rem;
+}
+
+.best-date {
+  font-size: 0.9rem;
+  opacity: 0.9;
+}
+
+/* 记录列表 */
+.record-list {
+  margin-top: 1.5rem;
+}
+
+.record-list h4 {
+  margin: 0 0 1rem 0;
+  font-size: 1rem;
+  color: var(--text-color);
+  text-align: center;
+}
+
+.record-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid var(--border-color);
+  transition: background-color 0.2s ease;
+}
+
+.record-item:hover {
+  background-color: var(--hover-color);
+  margin: 0 -0.5rem;
+  padding: 0.75rem 0.5rem;
+  border-radius: 4px;
+}
+
+.record-item:last-child {
+  border-bottom: none;
+}
+
+.time {
+  font-weight: bold;
+  color: var(--primary-color);
+  font-size: 1.1rem;
+}
+
+.date {
+  color: var(--text-color);
+  opacity: 0.7;
+  font-size: 0.9em;
+}
+
+/* 错误信息 */
+.error-message {
+  text-align: center;
+  padding: 3rem;
+  background: var(--card-bg-color);
+  border-radius: 12px;
+  border: 1px solid var(--border-color);
+}
+
+.retry-btn {
+  background: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 0.75rem 1.5rem;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-top: 1rem;
+  transition: background-color 0.2s ease;
+}
+
+.retry-btn:hover {
+  background: var(--secondary-color);
+}
+
+/* 更新时间 */
+.update-info {
+  text-align: center;
+  margin-top: 3rem;
+  color: var(--text-color);
+  opacity: 0.6;
+  font-size: 0.9rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border-color);
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+  .records-header h1 {
+    font-size: 2rem;
+  }
+  
+  .records-container {
+    grid-template-columns: 1fr;
+  }
+  
+  .difficulty-header {
+    flex-direction: column;
+    text-align: center;
+    gap: 0.5rem;
+  }
+  
+  .difficulty-size {
+    text-align: center;
+  }
+}
+
+/* 主题变量 */
+:root {
+  --primary-color: #ffc0cb;
+  --secondary-color: #af93cbff;
+  --text-color: #be42ff;
+  --card-bg-color: #ffffff;
+  --border-color: #e1e8ed;
+  --hover-color: #f8f9fa;
+}
+
+</style>
+<script>
+// 扫雷记录数据管理
+class MinesweeperRecords {
+  constructor() {
+    this.data = null;
+    this.currentDifficulty = 'beginner';
+    this.init();
+  }
+
+  async init() {
+    await this.loadData();
+    this.setupEventListeners();
+  }
+
+  // 加载数据
+  async loadData() {
+    const loadingEl = document.getElementById('loading');
+    const errorEl = document.getElementById('error-message');
+    const contentSection = document.getElementById('records-section');
+
+    try {
+      loadingEl.style.display = 'block';
+      errorEl.style.display = 'none';
+      contentSection.style.display = 'none';
+
+      // 尝试从 /data/minesweeper.json 加载数据
+      const response = await fetch('./minesweeper.json');
+      
+      if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`);
+      }
+      
+      this.data = await response.json();
+      
+      // 渲染所有内容
+      this.renderAll();
+      
+      // 显示内容区域
+      loadingEl.style.display = 'none';
+      contentSection.style.display = 'block';
+      
+    } catch (error) {
+      console.error('加载扫雷记录数据失败:', error);
+      loadingEl.style.display = 'none';
+      errorEl.style.display = 'block';
+    }
+  }
+
+  // 设置事件监听器
+  setupEventListeners() {
+    // 标签页切换将在渲染时设置
+  }
+
+  // 渲染所有内容
+  renderAll() {
+    this.renderDifficultyTabs();
+    this.renderRecords();
+    this.renderUpdateInfo();
+  }
+
+  // 渲染难度标签页
+  renderDifficultyTabs() {
+    const difficultyTabs = document.getElementById('difficulty-tabs');
+    
+    if (!this.data.records) return;
+
+    difficultyTabs.innerHTML = Object.entries(this.data.records)
+      .map(([key, difficulty]) => `
+        <button class="tab-btn ${key === this.currentDifficulty ? 'active' : ''}" 
+                data-difficulty="${key}">
+          ${difficulty.name}
+        </button>
+      `).join('');
+
+    // 添加标签页切换事件
+    difficultyTabs.querySelectorAll('.tab-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        this.currentDifficulty = btn.dataset.difficulty;
+        this.renderDifficultyTabs();
+        this.renderRecords();
+      });
+    });
+  }
+
+  // 渲染记录
+  renderRecords() {
+    const recordsContainer = document.getElementById('records-container');
+    
+    if (!this.data.records || !this.data.records[this.currentDifficulty]) {
+      recordsContainer.innerHTML = '<p>暂无记录数据</p>';
+      return;
+    }
+
+    const difficulty = this.data.records[this.currentDifficulty];
+    
+    // 为每个难度生成卡片
+    let cardsHTML = '';
+    
+    // 如果当前是单个难度视图，只显示该难度
+    if (this.currentDifficulty) {
+      cardsHTML = this.createDifficultyCard(difficulty);
+    } else {
+      // 显示所有难度（当前不使用此模式）
+      Object.values(this.data.records).forEach(diff => {
+        cardsHTML += this.createDifficultyCard(diff);
+      });
+    }
+    
+    recordsContainer.innerHTML = cardsHTML;
+  }
+
+  // 创建难度卡片
+  createDifficultyCard(difficulty) {
+    return `
+      <div class="difficulty-card">
+        <div class="difficulty-header">
+          <div>
+            <h3 class="difficulty-title">${difficulty.name}</h3>
+          </div>
+          <div>
+            <p class="difficulty-size">${difficulty.size}</p>
+          </div>
+        </div>
+        
+        <div class="best-record">
+          <span class="best-time">${difficulty.best_time} 秒</span>
+          <span class="best-date">最佳记录 • ${difficulty.best_date}</span>
+        </div>
+        
+        <div class="record-list">
+          <h4>📈 历史记录</h4>
+          ${difficulty.all_records && difficulty.all_records.length > 0 
+            ? difficulty.all_records.map(record => `
+                <div class="record-item">
+                  <span class="time">${record.time} 秒</span>
+                  <span class="date">${record.date}</span>
+                </div>
+              `).join('')
+            : '<p>暂无历史记录</p>'
+          }
+        </div>
+      </div>
+    `;
+  }
+
+  // 渲染更新时间
+  renderUpdateInfo() {
+    const updateInfo = document.getElementById('update-info');
+    
+    if (this.data.stats && this.data.stats.last_updated) {
+      updateInfo.style.display = 'block';
+      updateInfo.textContent = `最后更新: ${this.data.stats.last_updated}`;
+    }
+  }
+}
+
+// 页面加载完成后初始化
+document.addEventListener('DOMContentLoaded', () => {
+  window.minesweeperRecords = new MinesweeperRecords();
+});
+
+// 全局重试函数
+window.loadMinesweeperData = function() {
+  if (window.minesweeperRecords) {
+    window.minesweeperRecords.loadData();
+  }
+};
+</script>
+</div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info text-center"><div class="avatar-img"><img src="/img/machinist.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info-name">LoveApple14434</div><div class="author-info-description">LoveApple14434的主页 | Homepage for LoveApple14434</div><div class="site-data"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">16</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">25</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">5</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/LoveApple14434"><i class="fab fa-github"></i><span>Follow Me</span></a></div><div class="sticky_layout"><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>Website Info</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">Article Count :</div><div class="item-count">16</div></div><div class="webinfo-item"><div class="item-name">Total Word Count :</div><div class="item-count">18.4k</div></div><div class="webinfo-item"><div class="item-name">Unique Visitors :</div><div class="item-count" id="busuanzi_value_site_uv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">Page Views :</div><div class="item-count" id="busuanzi_value_site_pv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">Last Update :</div><div class="item-count" id="last-push-date" data-lastPushDate="2025-10-15T10:55:10.566Z"><i class="fa-solid fa-spinner fa-spin"></i></div></div></div></div></div></div></main><footer id="footer" style="background: pink;"><div class="footer-other"><div class="footer-copyright"><span class="copyright">&copy;&nbsp;2025 By LoveApple14434</span><span class="framework-info"><span>Framework </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo 7.3.0</a><span class="footer-separator">|</span><span>Theme </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly 5.4.3</a></span></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="Toggle Between Light and Dark Mode"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="Toggle Between Single-column and Double-column"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="Settings"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="Back to Top"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><div class="js-pjax"><script>(() => {
+  const loadMathjax = () => {
+    if (!window.MathJax) {
+      window.MathJax = {
+        tex: {
+          inlineMath: [['$', '$'], ['\\(', '\\)']],
+          tags: 'none',
+        },
+        chtml: {
+          scale: 1.1
+        },
+        options: {
+          enableMenu: true,
+          renderActions: {
+            findScript: [10, doc => {
+              for (const node of document.querySelectorAll('script[type^="math/tex"]')) {
+                const display = !!node.type.match(/; *mode=display/)
+                const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display)
+                const text = document.createTextNode('')
+                node.parentNode.replaceChild(text, node)
+                math.start = {node: text, delim: '', n: 0}
+                math.end = {node: text, delim: '', n: 0}
+                doc.math.push(math)
+              }
+            }, '']
+          }
+        }
+      }
+
+      const script = document.createElement('script')
+      script.src = 'https://cdn.jsdelivr.net/npm/mathjax/es5/tex-mml-chtml.min.js'
+      script.id = 'MathJax-script'
+      script.async = true
+      document.head.appendChild(script)
+    } else {
+      MathJax.startup.document.state(0)
+      MathJax.texReset()
+      MathJax.typesetPromise()
+    }
+  }
+
+  btf.addGlobalFn('encrypt', loadMathjax, 'mathjax')
+  window.pjax ? loadMathjax() : window.addEventListener('load', loadMathjax)
+})()</script></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
