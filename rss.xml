@@ -9,26 +9,28 @@
     <atom:link href="https://loveapple.icu/rss.xml" rel="self" type="application/rss+xml"/>
     
     <description>射频电子|信息技术|生活记录</description>
-    <pubDate>Mon, 10 Nov 2025 15:49:02 GMT</pubDate>
+    <pubDate>Wed, 12 Nov 2025 11:44:07 GMT</pubDate>
     <generator>http://hexo.io/</generator>
     
     <item>
-      <title>amateur-radio-1</title>
+      <title>业余无线电个人入门经历</title>
       <link>https://loveapple.icu/amateur-radio-1/</link>
       <guid>https://loveapple.icu/amateur-radio-1/</guid>
       <pubDate>Mon, 10 Nov 2025 15:49:02 GMT</pubDate>
       
-        
-        
-      <description>
-</description>
-        
+      <description>一篇关于业余无线电入门的个人经历分享。文章记录了从考证、设台到完成首次通联的全过程，并分享了使用宝峰UV-5R在省中继上与友台成功联络的体验。</description>
       
       
       
-      <content:encoded><![CDATA[]]></content:encoded>
+      <content:encoded><![CDATA[<h2 id="初闻">初闻</h2><p>第一次听说“业余无线电”这个名词是在姜老师的课上，当时他只是随便提了一句，说如果对高频电路感兴趣可以去考一个业余无线电执照，可以对这些神秘的知识有一个更实践上的了解。过了一年之后，partly由于大三了比大二稍微空闲一点，partly由于暑假打电赛的时候对射频电路和无线电这些知识了解更多了一点，总之我终于抽出时间去把这个证考下来了。</p><h2 id="流程">流程</h2><p>玩业余无线电需要的两大证件一个是业余无线电台操作能力验证证书（习惯上简称操作证书），另一个是无线电台执照。打个比方就是，操作证书相当于驾驶证，而无线电台执照相当于行驶证。流程是先参加考试考取操作执照，等网上能查询到你自己的操作执照信息之后就可以再填表申请无线电台执照了。</p><h3 id="考证">考证</h3><p>考证正好安排在数字系统II期中考试前的周末，不过好在数字系统II是开卷考试压力没那么大，因此考证前也算是刷了一段时间题。A类证题目不是很难，主要是相关的法律法规、技术规范、操作规范这些东西。考试形式是机考，33个单选+7个多选，答对30题就算通过，一交卷就会立刻在屏幕上显示成绩，然后跟工作人员签字确认之后就可以走了。</p><h3 id="设台">设台</h3><p>确定考试通过之后就可以购买自己的电台，等APP上可以查询到自己的操作证号之后，就可以申请设台了。我买的是经典型号宝峰UV-5R（不是植入广告，真不是），优点是真的很便宜，缺点是不能像泉盛UV-K6那样随便刷固件。</p><p>根据电台型号，填写设台的申请表上的相关信息（还有个指导文件教你怎么填，还是很贴心的），在网上提交，没两天就可以收到无线电台执照了（比操作证到得还早）。</p><h2 id="首通">首通</h2><p>拿到无线电台执照之后，我很快第一次开始尝试CQ通联。CQ是“seekyou”的谐音，是在无线电频率上寻找友台的一种呼叫方式，一般是先重复几遍“CQ”然后报出自己的呼号并等待别人回应。拿到执照的那个周末我刚好回了在宝华的家里，于是首先尝试了在句容中继上呼叫，但是都没有任何回应，也没受听到别人的呼叫。于是我更换到了省中继频率上，省中继设在紫金山上，距离家里还是比较近的，在阳台上就可以有不错的信号。很快，在11月2日的15:30左右，我通联到了第一个友台，QTH南京市鼓楼区的BD4RFG，使用摩托罗拉3688电台4W功率。</p><h2 id="絮语">絮语</h2><p>目前业余无线电还是非常有趣的一个爱好，希望我可以将这个爱好保持下去。</p>]]></content:encoded>
       
       
+      <category domain="https://loveapple.icu/categories/%E9%AB%98%E9%A2%91%E7%94%B5%E8%B7%AF/">高频电路</category>
+      
+      
+      <category domain="https://loveapple.icu/tags/EE/">EE</category>
+      
+      <category domain="https://loveapple.icu/tags/HAM/">HAM</category>
       
       
       <comments>https://loveapple.icu/amateur-radio-1/#disqus_thread</comments>
