@@ -341,7 +341,7 @@ mjx-container[display="true"] + br {
   window.pjax ? loadMathjax() : window.addEventListener('load', loadMathjax)
 })()</script><script>(() => {
   const isShuoshuo = GLOBAL_CONFIG_SITE.pageType === 'shuoshuo'
-  const option = null
+  const option = {"data-input-position":"top"}
 
   const getGiscusTheme = theme => theme === 'dark' ? 'dark' : 'light'
 
