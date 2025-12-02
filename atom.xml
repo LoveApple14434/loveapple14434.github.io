@@ -115,11 +115,11 @@
     <category term="技术实践" scheme="https://loveapple.icu/categories/%E6%8A%80%E6%9C%AF%E5%AE%9E%E8%B7%B5/"/>
     
     
+    <category term="Linux" scheme="https://loveapple.icu/tags/Linux/"/>
+    
     <category term="开发板" scheme="https://loveapple.icu/tags/%E5%BC%80%E5%8F%91%E6%9D%BF/"/>
     
     <category term="loongarch" scheme="https://loveapple.icu/tags/loongarch/"/>
-    
-    <category term="Linux" scheme="https://loveapple.icu/tags/Linux/"/>
     
   </entry>
   
@@ -199,9 +199,9 @@
     <category term="技术实践" scheme="https://loveapple.icu/categories/%E6%8A%80%E6%9C%AF%E5%AE%9E%E8%B7%B5/"/>
     
     
-    <category term="Linux" scheme="https://loveapple.icu/tags/Linux/"/>
-    
     <category term="Arch Linux" scheme="https://loveapple.icu/tags/Arch-Linux/"/>
+    
+    <category term="Linux" scheme="https://loveapple.icu/tags/Linux/"/>
     
     <category term="镜像源" scheme="https://loveapple.icu/tags/%E9%95%9C%E5%83%8F%E6%BA%90/"/>
     
@@ -224,11 +224,11 @@
     <category term="技术实践" scheme="https://loveapple.icu/categories/%E6%8A%80%E6%9C%AF%E5%AE%9E%E8%B7%B5/"/>
     
     
-    <category term="Linux" scheme="https://loveapple.icu/tags/Linux/"/>
-    
     <category term="安装系统" scheme="https://loveapple.icu/tags/%E5%AE%89%E8%A3%85%E7%B3%BB%E7%BB%9F/"/>
     
     <category term="Arch Linux" scheme="https://loveapple.icu/tags/Arch-Linux/"/>
+    
+    <category term="Linux" scheme="https://loveapple.icu/tags/Linux/"/>
     
   </entry>
   
