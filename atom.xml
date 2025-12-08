@@ -6,7 +6,7 @@
   <link href="https://loveapple.icu/atom.xml" rel="self"/>
   
   <link href="https://loveapple.icu/"/>
-  <updated>2025-11-29T09:30:36.893Z</updated>
+  <updated>2025-12-08T06:57:16.372Z</updated>
   <id>https://loveapple.icu/</id>
   
   <author>
@@ -17,11 +17,32 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Hexo+Butterfly的dark mode开发</title>
+    <link href="https://loveapple.icu/dark-mode/"/>
+    <id>https://loveapple.icu/dark-mode/</id>
+    <published>2025-12-08T04:54:26.000Z</published>
+    <updated>2025-12-08T06:57:16.372Z</updated>
+    
+    
+    <summary type="html">一篇关于为Hexo博客Butterfly主题自定义页面开发黑暗模式适配的实战记录。文章以修复QSL页面在暗黑主题下显示异常为例，展示了如何通过添加CSS选择器快速实现样式切换，并简要剖析了Butterfly主题暗黑模式的实现原理，体现了典型的“Vibe Coding”解决问题风格。</summary>
+    
+    
+    
+    <category term="技术实践" scheme="https://loveapple.icu/categories/%E6%8A%80%E6%9C%AF%E5%AE%9E%E8%B7%B5/"/>
+    
+    
+    <category term="网站建设" scheme="https://loveapple.icu/tags/%E7%BD%91%E7%AB%99%E5%BB%BA%E8%AE%BE/"/>
+    
+    <category term="Vibe Coding" scheme="https://loveapple.icu/tags/Vibe-Coding/"/>
+    
+  </entry>
+  
+  <entry>
     <title>为Hexo博客+Butterfly主题启用Giscus评论系统：一些Bing上搜不到的技巧</title>
     <link href="https://loveapple.icu/giscis-intro/"/>
     <id>https://loveapple.icu/giscis-intro/</id>
     <published>2025-11-29T08:02:51.000Z</published>
-    <updated>2025-11-29T09:30:36.893Z</updated>
+    <updated>2025-12-08T06:57:45.382Z</updated>
     
     
     <summary type="html">一篇关于在Hexo博客中使用Butterfly主题配置Giscus评论系统的实用指南。文章重点分享了如何解决一个官方文档未提及的进阶配置问题：通过正确使用option字段来实现评论框置顶等自定义功能。</summary>
@@ -35,6 +56,8 @@
     
     <category term="评论" scheme="https://loveapple.icu/tags/%E8%AF%84%E8%AE%BA/"/>
     
+    <category term="Vibe Coding" scheme="https://loveapple.icu/tags/Vibe-Coding/"/>
+    
   </entry>
   
   <entry>
@@ -42,7 +65,7 @@
     <link href="https://loveapple.icu/clash-configuration/"/>
     <id>https://loveapple.icu/clash-configuration/</id>
     <published>2025-11-27T09:26:50.000Z</published>
-    <updated>2025-11-29T08:18:11.846Z</updated>
+    <updated>2025-12-08T06:58:10.433Z</updated>
     
     
     <summary type="html">一篇对AI编程助手能力的个人反思。作者通过亲身经历——尝试用Deepseek协助完成一个不熟悉的Clash配置文件定制任务，最终却陷入与AI的反复“搏斗”——论证了“AI几乎不能帮你完成你并不会的任务”这一暴论，并分享了过程中的挫折与感悟。</summary>
@@ -55,6 +78,8 @@
     <category term="服务器" scheme="https://loveapple.icu/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
     
     <category term="随笔" scheme="https://loveapple.icu/tags/%E9%9A%8F%E7%AC%94/"/>
+    
+    <category term="Vibe Coding" scheme="https://loveapple.icu/tags/Vibe-Coding/"/>
     
   </entry>
   

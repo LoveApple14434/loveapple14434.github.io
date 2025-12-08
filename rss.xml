@@ -8,9 +8,32 @@
     
     <atom:link href="https://loveapple.icu/rss.xml" rel="self" type="application/rss+xml"/>
     
-    <description>射频电子|信息技术|生活记录</description>
-    <pubDate>Sat, 29 Nov 2025 09:30:36 GMT</pubDate>
+    <description>技术实践 | 心得分享 | 开源生态&lt;br&gt;射频与微波 | 业余无线电&lt;br&gt;以及水煮鱼的生活记录！</description>
+    <pubDate>Mon, 08 Dec 2025 06:57:16 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>Hexo+Butterfly的dark mode开发</title>
+      <link>https://loveapple.icu/dark-mode/</link>
+      <guid>https://loveapple.icu/dark-mode/</guid>
+      <pubDate>Mon, 08 Dec 2025 04:54:26 GMT</pubDate>
+      
+      <description>一篇关于为Hexo博客Butterfly主题自定义页面开发黑暗模式适配的实战记录。文章以修复QSL页面在暗黑主题下显示异常为例，展示了如何通过添加CSS选择器快速实现样式切换，并简要剖析了Butterfly主题暗黑模式的实现原理，体现了典型的“Vibe Coding”解决问题风格。</description>
+      
+      
+      
+      
+      <category domain="https://loveapple.icu/categories/%E6%8A%80%E6%9C%AF%E5%AE%9E%E8%B7%B5/">技术实践</category>
+      
+      
+      <category domain="https://loveapple.icu/tags/%E7%BD%91%E7%AB%99%E5%BB%BA%E8%AE%BE/">网站建设</category>
+      
+      <category domain="https://loveapple.icu/tags/Vibe-Coding/">Vibe Coding</category>
+      
+      
+      <comments>https://loveapple.icu/dark-mode/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>为Hexo博客+Butterfly主题启用Giscus评论系统：一些Bing上搜不到的技巧</title>
@@ -29,6 +52,8 @@
       <category domain="https://loveapple.icu/tags/%E7%BD%91%E7%AB%99%E5%BB%BA%E8%AE%BE/">网站建设</category>
       
       <category domain="https://loveapple.icu/tags/%E8%AF%84%E8%AE%BA/">评论</category>
+      
+      <category domain="https://loveapple.icu/tags/Vibe-Coding/">Vibe Coding</category>
       
       
       <comments>https://loveapple.icu/giscis-intro/#disqus_thread</comments>
@@ -52,6 +77,8 @@
       <category domain="https://loveapple.icu/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/">服务器</category>
       
       <category domain="https://loveapple.icu/tags/%E9%9A%8F%E7%AC%94/">随笔</category>
+      
+      <category domain="https://loveapple.icu/tags/Vibe-Coding/">Vibe Coding</category>
       
       
       <comments>https://loveapple.icu/clash-configuration/#disqus_thread</comments>
