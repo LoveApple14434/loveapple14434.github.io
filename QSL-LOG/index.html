@@ -7,7 +7,7 @@
 <meta property="og:locale">
 <meta property="og:image" content="https://loveapple.icu/img/machinist.jpg">
 <meta property="article:published_time" content="2025-11-16T08:18:01.000Z">
-<meta property="article:modified_time" content="2025-12-03T11:15:01.278Z">
+<meta property="article:modified_time" content="2025-12-08T04:51:37.729Z">
 <meta property="article:author" content="LoveApple14434">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://loveapple.icu/img/machinist.jpg"><script type="application/ld+json"></script><link rel="shortcut icon" href="/img/machinist.jpg"><link rel="canonical" href="https://loveapple.icu/QSL-LOG/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//www.google-analytics.com" crossorigin=""/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"><script>
@@ -492,14 +492,14 @@ th, td {
 }
 
 th {
-  background-color: #e9ecef;
+  background-color: #e1e3e6;
   position: sticky;
   top: 0;
   font-weight: 600;
 }
 
 tr:nth-child(even) {
-  background-color: #f8f9fa;
+  background-color: #f7f7f7;
 }
 
 tr:hover {
@@ -581,6 +581,76 @@ tr:hover {
     flex-direction: column;
     gap: 5px;
   }
+}
+/* 暗黑模式适配 - 针对 data-theme="dark" */
+[data-theme="dark"] .my-station-card {
+  background: linear-gradient(135deg, #5a3c5a 0%, #3c3c5a 100%);
+  color: #f0f0f0;
+}
+
+[data-theme="dark"] .stats-bar {
+  background-color: #2a2a2a;
+  color: #ccc;
+  border-color: #444;
+}
+
+[data-theme="dark"] .filters {
+  background-color: #2a2a2a;
+  color: #ccc;
+}
+
+[data-theme="dark"] .filters select,
+[data-theme="dark"] .filters input {
+  background-color: #3a3a3a;
+  color: #f0f0f0;
+  border-color: #555;
+}
+
+[data-theme="dark"] #reset-filters {
+  background-color: #5a6268;
+}
+
+[data-theme="dark"] #reset-filters:hover {
+  background-color: #6c757d;
+}
+
+[data-theme="dark"] table {
+  background-color: #1e1e1e;
+  color: #e0e0e0;
+}
+
+[data-theme="dark"] th,
+[data-theme="dark"] td {
+  border-color: #444;
+}
+
+[data-theme="dark"] th {
+  background-color: #2d2d2d;
+  color: #fff;
+}
+
+[data-theme="dark"] tr:nth-child(even) {
+  background-color: #2a2a2a;
+}
+
+[data-theme="dark"] tr:hover {
+  background-color: #3a3a3a;
+}
+
+[data-theme="dark"] .callsign-link {
+  color: #64b5f6;
+}
+
+[data-theme="dark"] .callsign-link:hover {
+  color: #90caf9;
+}
+
+[data-theme="dark"] .my-callsign-link {
+  color: #ffcccb;
+}
+
+[data-theme="dark"] .info-value {
+  background: rgba(255, 255, 255, 0.15);
 }
 </style>
 
