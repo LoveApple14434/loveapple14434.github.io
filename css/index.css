@@ -2119,7 +2119,7 @@ figure.highlight pre .javascript .function {
   float: left;
   overflow: hidden;
   margin: 15px 7px;
-  width: calc(100% / 2 - 15px);
+  width: calc(50% - 15px);
   height: 90px;
   line-height: 17px;
   -webkit-transform: translateZ(0);
