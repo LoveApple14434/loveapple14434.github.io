@@ -6,7 +6,7 @@
   <link href="https://loveapple.icu/atom.xml" rel="self"/>
   
   <link href="https://loveapple.icu/"/>
-  <updated>2025-12-08T06:57:16.372Z</updated>
+  <updated>2025-12-10T14:00:22.061Z</updated>
   <id>https://loveapple.icu/</id>
   
   <author>
@@ -17,18 +17,44 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Hexo+Butterfly深入化自定义：以友链页面卡片宽度调整为例</title>
+    <link href="https://loveapple.icu/link-card-width/"/>
+    <id>https://loveapple.icu/link-card-width/</id>
+    <published>2025-12-09T03:52:08.000Z</published>
+    <updated>2025-12-10T14:00:22.061Z</updated>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;如果只是想学习怎么配置，可以直接跳转到&lt;a href=&quot;#一些尝试以及解决办法&quot;&gt;配置环节&lt;/a&gt;。&lt;/p&gt;
+&lt;h2 id=&quot;需求来源&quot;&gt;需求来源&lt;/h2&gt;
+&lt;p&gt;我的友链页面采用flexcard展示，每个友链是一个card，这个排版是Butterfly主题默认可以启用</summary>
+      
+    
+    
+    
+    <category term="寄术" scheme="https://loveapple.icu/categories/%E5%AF%84%E6%9C%AF/"/>
+    
+    
+    <category term="网站建设" scheme="https://loveapple.icu/tags/%E7%BD%91%E7%AB%99%E5%BB%BA%E8%AE%BE/"/>
+    
+    <category term="随笔" scheme="https://loveapple.icu/tags/%E9%9A%8F%E7%AC%94/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Hexo+Butterfly的dark mode开发</title>
     <link href="https://loveapple.icu/dark-mode/"/>
     <id>https://loveapple.icu/dark-mode/</id>
     <published>2025-12-08T04:54:26.000Z</published>
-    <updated>2025-12-08T06:57:16.372Z</updated>
+    <updated>2025-12-10T10:37:37.247Z</updated>
     
     
     <summary type="html">一篇关于为Hexo博客Butterfly主题自定义页面开发黑暗模式适配的实战记录。文章以修复QSL页面在暗黑主题下显示异常为例，展示了如何通过添加CSS选择器快速实现样式切换，并简要剖析了Butterfly主题暗黑模式的实现原理，体现了典型的“Vibe Coding”解决问题风格。</summary>
     
     
     
-    <category term="技术实践" scheme="https://loveapple.icu/categories/%E6%8A%80%E6%9C%AF%E5%AE%9E%E8%B7%B5/"/>
+    <category term="寄术" scheme="https://loveapple.icu/categories/%E5%AF%84%E6%9C%AF/"/>
     
     
     <category term="网站建设" scheme="https://loveapple.icu/tags/%E7%BD%91%E7%AB%99%E5%BB%BA%E8%AE%BE/"/>
@@ -42,14 +68,14 @@
     <link href="https://loveapple.icu/giscis-intro/"/>
     <id>https://loveapple.icu/giscis-intro/</id>
     <published>2025-11-29T08:02:51.000Z</published>
-    <updated>2025-12-08T06:57:45.382Z</updated>
+    <updated>2025-12-10T10:37:53.152Z</updated>
     
     
     <summary type="html">一篇关于在Hexo博客中使用Butterfly主题配置Giscus评论系统的实用指南。文章重点分享了如何解决一个官方文档未提及的进阶配置问题：通过正确使用option字段来实现评论框置顶等自定义功能。</summary>
     
     
     
-    <category term="技术实践" scheme="https://loveapple.icu/categories/%E6%8A%80%E6%9C%AF%E5%AE%9E%E8%B7%B5/"/>
+    <category term="寄术" scheme="https://loveapple.icu/categories/%E5%AF%84%E6%9C%AF/"/>
     
     
     <category term="网站建设" scheme="https://loveapple.icu/tags/%E7%BD%91%E7%AB%99%E5%BB%BA%E8%AE%BE/"/>
@@ -65,14 +91,14 @@
     <link href="https://loveapple.icu/clash-configuration/"/>
     <id>https://loveapple.icu/clash-configuration/</id>
     <published>2025-11-27T09:26:50.000Z</published>
-    <updated>2025-12-08T06:58:10.433Z</updated>
+    <updated>2025-12-10T10:37:34.191Z</updated>
     
     
     <summary type="html">一篇对AI编程助手能力的个人反思。作者通过亲身经历——尝试用Deepseek协助完成一个不熟悉的Clash配置文件定制任务，最终却陷入与AI的反复“搏斗”——论证了“AI几乎不能帮你完成你并不会的任务”这一暴论，并分享了过程中的挫折与感悟。</summary>
     
     
     
-    <category term="技术实践" scheme="https://loveapple.icu/categories/%E6%8A%80%E6%9C%AF%E5%AE%9E%E8%B7%B5/"/>
+    <category term="寄术" scheme="https://loveapple.icu/categories/%E5%AF%84%E6%9C%AF/"/>
     
     
     <category term="服务器" scheme="https://loveapple.icu/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
@@ -88,14 +114,14 @@
     <link href="https://loveapple.icu/amateur-radio-1/"/>
     <id>https://loveapple.icu/amateur-radio-1/</id>
     <published>2025-11-10T15:49:02.000Z</published>
-    <updated>2025-11-12T11:44:07.823Z</updated>
+    <updated>2025-12-10T10:37:15.088Z</updated>
     
     
     <summary type="html">一篇关于业余无线电入门的个人经历分享。文章记录了从考证、设台到完成首次通联的全过程，并分享了使用宝峰UV-5R在省中继上与友台成功联络的体验。</summary>
     
     
     
-    <category term="高频电路" scheme="https://loveapple.icu/categories/%E9%AB%98%E9%A2%91%E7%94%B5%E8%B7%AF/"/>
+    <category term="寄术" scheme="https://loveapple.icu/categories/%E5%AF%84%E6%9C%AF/"/>
     
     
     <category term="EE" scheme="https://loveapple.icu/tags/EE/"/>
@@ -109,14 +135,14 @@
     <link href="https://loveapple.icu/nju-king-crab/"/>
     <id>https://loveapple.icu/nju-king-crab/</id>
     <published>2025-11-04T03:40:30.000Z</published>
-    <updated>2025-11-04T06:29:19.576Z</updated>
+    <updated>2025-12-10T10:39:35.927Z</updated>
     
     
     <summary type="html">同学：支持。食堂：支持。校领导：支持。网友：反对！</summary>
     
     
     
-    <category term="随笔" scheme="https://loveapple.icu/categories/%E9%9A%8F%E7%AC%94/"/>
+    <category term="牲活" scheme="https://loveapple.icu/categories/%E7%89%B2%E6%B4%BB/"/>
     
     
     <category term="NJU" scheme="https://loveapple.icu/tags/NJU/"/>
@@ -130,14 +156,14 @@
     <link href="https://loveapple.icu/loongarch-linux-1/"/>
     <id>https://loveapple.icu/loongarch-linux-1/</id>
     <published>2025-10-23T02:32:17.000Z</published>
-    <updated>2025-10-23T02:51:52.900Z</updated>
+    <updated>2025-12-10T10:39:22.881Z</updated>
     
     
     <summary type="html">这是一篇关于在龙芯2K1000LA开发板上进行嵌入式Linux开发实践的详细实验报告。文章记录了从环境搭建、内核编译、文件系统制作到交叉编译工具链使用的完整流程，并分享了实验过程中遇到的问题与解决方案。</summary>
     
     
     
-    <category term="技术实践" scheme="https://loveapple.icu/categories/%E6%8A%80%E6%9C%AF%E5%AE%9E%E8%B7%B5/"/>
+    <category term="寄术" scheme="https://loveapple.icu/categories/%E5%AF%84%E6%9C%AF/"/>
     
     
     <category term="Linux" scheme="https://loveapple.icu/tags/Linux/"/>
@@ -153,14 +179,14 @@
     <link href="https://loveapple.icu/jgg-hotpot/"/>
     <id>https://loveapple.icu/jgg-hotpot/</id>
     <published>2025-10-15T07:54:15.000Z</published>
-    <updated>2025-10-15T08:24:45.189Z</updated>
+    <updated>2025-12-10T10:38:52.974Z</updated>
     
     
     <summary type="html">一篇来自旋转小火锅爱好者的探店评测。文章从价格、形式、锅底、小料台到菜品等多个维度，将新开的举高高与常见的龙歌等品牌进行了对比，并最终给出了个人评价与推荐理由。</summary>
     
     
     
-    <category term="吃吃吃" scheme="https://loveapple.icu/categories/%E5%90%83%E5%90%83%E5%90%83/"/>
+    <category term="牲活" scheme="https://loveapple.icu/categories/%E7%89%B2%E6%B4%BB/"/>
     
     
     <category term="旋转小火锅" scheme="https://loveapple.icu/tags/%E6%97%8B%E8%BD%AC%E5%B0%8F%E7%81%AB%E9%94%85/"/>
@@ -174,17 +200,19 @@
     <link href="https://loveapple.icu/how2b-screwer/"/>
     <id>https://loveapple.icu/how2b-screwer/</id>
     <published>2025-10-09T06:57:21.000Z</published>
-    <updated>2025-10-15T08:29:54.861Z</updated>
+    <updated>2025-12-10T10:38:39.908Z</updated>
     
     
     <summary type="html">一篇来自电脑维修志愿者的经验分享，详细总结了笔记本电脑维修中会遇到的各种螺丝类型、其特性及安装注意事项，并提供了当遇到难拧或已拧花的螺丝时的实用处理技巧。</summary>
     
     
     
-    <category term="IT侠电脑维修" scheme="https://loveapple.icu/categories/IT%E4%BE%A0%E7%94%B5%E8%84%91%E7%BB%B4%E4%BF%AE/"/>
+    <category term="寄术" scheme="https://loveapple.icu/categories/%E5%AF%84%E6%9C%AF/"/>
     
     
     <category term="维修随想" scheme="https://loveapple.icu/tags/%E7%BB%B4%E4%BF%AE%E9%9A%8F%E6%83%B3/"/>
+    
+    <category term="IT侠" scheme="https://loveapple.icu/tags/IT%E4%BE%A0/"/>
     
   </entry>
   
@@ -193,14 +221,14 @@
     <link href="https://loveapple.icu/PLL-intro/"/>
     <id>https://loveapple.icu/PLL-intro/</id>
     <published>2025-10-03T03:46:12.000Z</published>
-    <updated>2025-10-03T08:04:50.072Z</updated>
+    <updated>2025-12-10T10:40:10.802Z</updated>
     
     
     <summary type="html">一篇关于锁相环的入门简介。文章从信号同步的实际问题出发，通俗地解释了锁相环的基本工作原理，并介绍了其核心组件——鉴相器与压控振荡器，以及如何通过加入分频器来实现倍频功能。</summary>
     
     
     
-    <category term="高频电路" scheme="https://loveapple.icu/categories/%E9%AB%98%E9%A2%91%E7%94%B5%E8%B7%AF/"/>
+    <category term="寄术" scheme="https://loveapple.icu/categories/%E5%AF%84%E6%9C%AF/"/>
     
     
     <category term="EE" scheme="https://loveapple.icu/tags/EE/"/>
@@ -214,14 +242,14 @@
     <link href="https://loveapple.icu/pacman-mirror/"/>
     <id>https://loveapple.icu/pacman-mirror/</id>
     <published>2025-09-26T04:14:07.000Z</published>
-    <updated>2025-10-23T02:35:08.114Z</updated>
+    <updated>2025-12-10T10:40:07.008Z</updated>
     
     
     <summary type="html">一篇介绍如何为 Arch Linux 的 pacman 包管理器配置国内镜像源以加速下载的指南。文章详细说明了如何使用 reflector 服务自动筛选镜像，并分享了一个自定义脚本技巧，将特定镜像源（如本校镜像）固定排在列表最前，实现自动化与个性化需求的结合。</summary>
     
     
     
-    <category term="技术实践" scheme="https://loveapple.icu/categories/%E6%8A%80%E6%9C%AF%E5%AE%9E%E8%B7%B5/"/>
+    <category term="寄术" scheme="https://loveapple.icu/categories/%E5%AF%84%E6%9C%AF/"/>
     
     
     <category term="Arch Linux" scheme="https://loveapple.icu/tags/Arch-Linux/"/>
@@ -239,14 +267,14 @@
     <link href="https://loveapple.icu/install-arch/"/>
     <id>https://loveapple.icu/install-arch/</id>
     <published>2025-09-24T10:49:59.000Z</published>
-    <updated>2025-10-23T02:35:20.049Z</updated>
+    <updated>2025-12-10T10:38:13.666Z</updated>
     
     
     <summary type="html">一篇记录个人安装 Arch Linux 经历的博客，重点分享了在校园网环境下解决联网问题以及配置引导程序时的曲折过程，并最终成功从零搭建起一个完整的 Arch 系统。</summary>
     
     
     
-    <category term="技术实践" scheme="https://loveapple.icu/categories/%E6%8A%80%E6%9C%AF%E5%AE%9E%E8%B7%B5/"/>
+    <category term="寄术" scheme="https://loveapple.icu/categories/%E5%AF%84%E6%9C%AF/"/>
     
     
     <category term="安装系统" scheme="https://loveapple.icu/tags/%E5%AE%89%E8%A3%85%E7%B3%BB%E7%BB%9F/"/>
@@ -262,21 +290,21 @@
     <link href="https://loveapple.icu/BreakScreen/"/>
     <id>https://loveapple.icu/BreakScreen/</id>
     <published>2025-09-22T06:59:22.000Z</published>
-    <updated>2025-09-23T15:40:45.995Z</updated>
+    <updated>2025-12-10T10:38:26.595Z</updated>
     
     
     <summary type="html">纪录一单thinkbook更换AB面结果屏幕损坏的维修翻车事故。</summary>
     
     
     
-    <category term="IT侠电脑维修" scheme="https://loveapple.icu/categories/IT%E4%BE%A0%E7%94%B5%E8%84%91%E7%BB%B4%E4%BF%AE/"/>
+    <category term="寄术" scheme="https://loveapple.icu/categories/%E5%AF%84%E6%9C%AF/"/>
     
     
     <category term="经验记录归档" scheme="https://loveapple.icu/tags/%E7%BB%8F%E9%AA%8C%E8%AE%B0%E5%BD%95%E5%BD%92%E6%A1%A3/"/>
     
-    <category term="屏幕更换" scheme="https://loveapple.icu/tags/%E5%B1%8F%E5%B9%95%E6%9B%B4%E6%8D%A2/"/>
-    
     <category term="维修翻车记录" scheme="https://loveapple.icu/tags/%E7%BB%B4%E4%BF%AE%E7%BF%BB%E8%BD%A6%E8%AE%B0%E5%BD%95/"/>
+    
+    <category term="IT侠" scheme="https://loveapple.icu/tags/IT%E4%BE%A0/"/>
     
   </entry>
   
@@ -285,19 +313,21 @@
     <link href="https://loveapple.icu/Keil2Cmake/"/>
     <id>https://loveapple.icu/Keil2Cmake/</id>
     <published>2025-09-21T09:42:57.000Z</published>
-    <updated>2025-09-21T13:45:45.923Z</updated>
+    <updated>2025-12-10T10:39:03.510Z</updated>
     
     
     <summary type="html">一个将根据uvprojx文件将keil工程转换到CMake工程的小工具，以便用VSCode取代Keil uVision。</summary>
     
     
     
-    <category term="技术实践" scheme="https://loveapple.icu/categories/%E6%8A%80%E6%9C%AF%E5%AE%9E%E8%B7%B5/"/>
+    <category term="寄术" scheme="https://loveapple.icu/categories/%E5%AF%84%E6%9C%AF/"/>
     
     
     <category term="开源项目" scheme="https://loveapple.icu/tags/%E5%BC%80%E6%BA%90%E9%A1%B9%E7%9B%AE/"/>
     
     <category term="EE" scheme="https://loveapple.icu/tags/EE/"/>
+    
+    <category term="嵌入式开发" scheme="https://loveapple.icu/tags/%E5%B5%8C%E5%85%A5%E5%BC%8F%E5%BC%80%E5%8F%91/"/>
     
   </entry>
   
@@ -306,14 +336,14 @@
     <link href="https://loveapple.icu/GitAway/"/>
     <id>https://loveapple.icu/GitAway/</id>
     <published>2025-09-10T10:48:13.000Z</published>
-    <updated>2025-09-21T13:45:24.668Z</updated>
+    <updated>2025-12-10T10:37:57.272Z</updated>
     
     
     <summary type="html">在本地机上写代码，远程部署到服务器：你的下一个git服务器何必是GitHub？</summary>
     
     
     
-    <category term="技术实践" scheme="https://loveapple.icu/categories/%E6%8A%80%E6%9C%AF%E5%AE%9E%E8%B7%B5/"/>
+    <category term="寄术" scheme="https://loveapple.icu/categories/%E5%AF%84%E6%9C%AF/"/>
     
     
     <category term="服务器" scheme="https://loveapple.icu/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
@@ -327,14 +357,14 @@
     <link href="https://loveapple.icu/Blogroll/"/>
     <id>https://loveapple.icu/Blogroll/</id>
     <published>2025-09-09T03:09:41.000Z</published>
-    <updated>2025-09-21T13:44:58.224Z</updated>
+    <updated>2025-12-10T10:36:19.123Z</updated>
     
     
     <summary type="html">通过RSS自动订阅他人博客网站上的文章</summary>
     
     
     
-    <category term="技术实践" scheme="https://loveapple.icu/categories/%E6%8A%80%E6%9C%AF%E5%AE%9E%E8%B7%B5/"/>
+    <category term="寄术" scheme="https://loveapple.icu/categories/%E5%AF%84%E6%9C%AF/"/>
     
     
     <category term="开源项目" scheme="https://loveapple.icu/tags/%E5%BC%80%E6%BA%90%E9%A1%B9%E7%9B%AE/"/>
@@ -352,14 +382,14 @@
     <link href="https://loveapple.icu/NJU-Undergraduates-Courses/"/>
     <id>https://loveapple.icu/NJU-Undergraduates-Courses/</id>
     <published>2025-08-16T13:19:29.000Z</published>
-    <updated>2025-09-21T13:45:58.820Z</updated>
+    <updated>2025-12-10T10:39:48.410Z</updated>
     
     
     <summary type="html">此处存放我与wuhaiyuan同学共同撰写的《南京大学本科生课程体系概论》的一份历史版本。</summary>
     
     
     
-    <category term="指北" scheme="https://loveapple.icu/categories/%E6%8C%87%E5%8C%97/"/>
+    <category term="杂项" scheme="https://loveapple.icu/categories/%E6%9D%82%E9%A1%B9/"/>
     
     
     <category term="NJU" scheme="https://loveapple.icu/tags/NJU/"/>
@@ -371,14 +401,14 @@
     <link href="https://loveapple.icu/Draw-Board-README/"/>
     <id>https://loveapple.icu/Draw-Board-README/</id>
     <published>2025-08-14T13:31:24.000Z</published>
-    <updated>2025-09-21T13:45:17.731Z</updated>
+    <updated>2025-12-10T10:37:48.944Z</updated>
     
     
     <summary type="html">一个画板小工具的README文档。</summary>
     
     
     
-    <category term="指北" scheme="https://loveapple.icu/categories/%E6%8C%87%E5%8C%97/"/>
+    <category term="寄术" scheme="https://loveapple.icu/categories/%E5%AF%84%E6%9C%AF/"/>
     
     
   </entry>
@@ -388,19 +418,21 @@
     <link href="https://loveapple.icu/MilkTeaComputer/"/>
     <id>https://loveapple.icu/MilkTeaComputer/</id>
     <published>2025-08-12T03:21:44.000Z</published>
-    <updated>2025-09-21T13:39:01.104Z</updated>
+    <updated>2025-12-10T10:39:30.965Z</updated>
     
     
     <summary type="html">奶茶电脑之数据拯救</summary>
     
     
     
-    <category term="IT侠电脑维修" scheme="https://loveapple.icu/categories/IT%E4%BE%A0%E7%94%B5%E8%84%91%E7%BB%B4%E4%BF%AE/"/>
+    <category term="寄术" scheme="https://loveapple.icu/categories/%E5%AF%84%E6%9C%AF/"/>
     
     
     <category term="经验记录归档" scheme="https://loveapple.icu/tags/%E7%BB%8F%E9%AA%8C%E8%AE%B0%E5%BD%95%E5%BD%92%E6%A1%A3/"/>
     
     <category term="进水机" scheme="https://loveapple.icu/tags/%E8%BF%9B%E6%B0%B4%E6%9C%BA/"/>
+    
+    <category term="IT侠" scheme="https://loveapple.icu/tags/IT%E4%BE%A0/"/>
     
   </entry>
   
@@ -409,14 +441,14 @@
     <link href="https://loveapple.icu/LenovoPower/"/>
     <id>https://loveapple.icu/LenovoPower/</id>
     <published>2025-08-12T03:18:43.000Z</published>
-    <updated>2025-09-21T13:45:51.410Z</updated>
+    <updated>2025-12-10T10:39:13.721Z</updated>
     
     
     <summary type="html">联想供电疑似通病，需要拆卸电池解决。</summary>
     
     
     
-    <category term="IT侠电脑维修" scheme="https://loveapple.icu/categories/IT%E4%BE%A0%E7%94%B5%E8%84%91%E7%BB%B4%E4%BF%AE/"/>
+    <category term="寄术" scheme="https://loveapple.icu/categories/%E5%AF%84%E6%9C%AF/"/>
     
     
     <category term="经验记录归档" scheme="https://loveapple.icu/tags/%E7%BB%8F%E9%AA%8C%E8%AE%B0%E5%BD%95%E5%BD%92%E6%A1%A3/"/>
@@ -425,6 +457,8 @@
     
     <category term="供电" scheme="https://loveapple.icu/tags/%E4%BE%9B%E7%94%B5/"/>
     
+    <category term="IT侠" scheme="https://loveapple.icu/tags/IT%E4%BE%A0/"/>
+    
   </entry>
   
   <entry>
@@ -432,14 +466,14 @@
     <link href="https://loveapple.icu/HelloESP32/"/>
     <id>https://loveapple.icu/HelloESP32/</id>
     <published>2025-08-07T10:05:41.000Z</published>
-    <updated>2025-09-21T13:45:31.003Z</updated>
+    <updated>2025-12-10T10:38:02.891Z</updated>
     
     
     <summary type="html">初次使用ESP32：神奇小玩具</summary>
     
     
     
-    <category term="技术实践" scheme="https://loveapple.icu/categories/%E6%8A%80%E6%9C%AF%E5%AE%9E%E8%B7%B5/"/>
+    <category term="寄术" scheme="https://loveapple.icu/categories/%E5%AF%84%E6%9C%AF/"/>
     
     
     <category term="MCU" scheme="https://loveapple.icu/tags/MCU/"/>
@@ -453,14 +487,14 @@
     <link href="https://loveapple.icu/DDS_RFSync/"/>
     <id>https://loveapple.icu/DDS_RFSync/</id>
     <published>2025-07-19T05:09:00.000Z</published>
-    <updated>2025-10-03T03:52:43.364Z</updated>
+    <updated>2025-12-10T10:37:43.654Z</updated>
     
     
     <summary type="html">利用DDS模块，实现高频信号同步，相位可调。</summary>
     
     
     
-    <category term="高频电路" scheme="https://loveapple.icu/categories/%E9%AB%98%E9%A2%91%E7%94%B5%E8%B7%AF/"/>
+    <category term="寄术" scheme="https://loveapple.icu/categories/%E5%AF%84%E6%9C%AF/"/>
     
     
     <category term="NUEDC" scheme="https://loveapple.icu/tags/NUEDC/"/>
@@ -476,14 +510,14 @@
     <link href="https://loveapple.icu/NUEDC-2022-F/"/>
     <id>https://loveapple.icu/NUEDC-2022-F/</id>
     <published>2025-07-05T03:41:00.000Z</published>
-    <updated>2025-10-03T03:52:41.727Z</updated>
+    <updated>2025-12-10T10:40:01.939Z</updated>
     
     
     <summary type="html">做电赛往年题的经验：2022年电赛F题。</summary>
     
     
     
-    <category term="高频电路" scheme="https://loveapple.icu/categories/%E9%AB%98%E9%A2%91%E7%94%B5%E8%B7%AF/"/>
+    <category term="寄术" scheme="https://loveapple.icu/categories/%E5%AF%84%E6%9C%AF/"/>
     
     
     <category term="NUEDC" scheme="https://loveapple.icu/tags/NUEDC/"/>

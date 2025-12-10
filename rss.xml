@@ -9,8 +9,36 @@
     <atom:link href="https://loveapple.icu/rss.xml" rel="self" type="application/rss+xml"/>
     
     <description>技术实践 | 心得分享 | 开源生态&lt;br&gt;射频与微波 | 业余无线电&lt;br&gt;以及水煮鱼的生活记录！</description>
-    <pubDate>Mon, 08 Dec 2025 06:57:16 GMT</pubDate>
+    <pubDate>Wed, 10 Dec 2025 14:00:22 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>Hexo+Butterfly深入化自定义：以友链页面卡片宽度调整为例</title>
+      <link>https://loveapple.icu/link-card-width/</link>
+      <guid>https://loveapple.icu/link-card-width/</guid>
+      <pubDate>Tue, 09 Dec 2025 03:52:08 GMT</pubDate>
+      
+        
+        
+      <description>&lt;p&gt;如果只是想学习怎么配置，可以直接跳转到&lt;a href=&quot;#一些尝试以及解决办法&quot;&gt;配置环节&lt;/a&gt;。&lt;/p&gt;
+&lt;h2 id=&quot;需求来源&quot;&gt;需求来源&lt;/h2&gt;
+&lt;p&gt;我的友链页面采用flexcard展示，每个友链是一个card，这个排版是Butterfly主题默认可以启用</description>
+        
+      
+      
+      
+      
+      <category domain="https://loveapple.icu/categories/%E5%AF%84%E6%9C%AF/">寄术</category>
+      
+      
+      <category domain="https://loveapple.icu/tags/%E7%BD%91%E7%AB%99%E5%BB%BA%E8%AE%BE/">网站建设</category>
+      
+      <category domain="https://loveapple.icu/tags/%E9%9A%8F%E7%AC%94/">随笔</category>
+      
+      
+      <comments>https://loveapple.icu/link-card-width/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>Hexo+Butterfly的dark mode开发</title>
@@ -23,7 +51,7 @@
       
       
       
-      <category domain="https://loveapple.icu/categories/%E6%8A%80%E6%9C%AF%E5%AE%9E%E8%B7%B5/">技术实践</category>
+      <category domain="https://loveapple.icu/categories/%E5%AF%84%E6%9C%AF/">寄术</category>
       
       
       <category domain="https://loveapple.icu/tags/%E7%BD%91%E7%AB%99%E5%BB%BA%E8%AE%BE/">网站建设</category>
@@ -46,7 +74,7 @@
       
       
       
-      <category domain="https://loveapple.icu/categories/%E6%8A%80%E6%9C%AF%E5%AE%9E%E8%B7%B5/">技术实践</category>
+      <category domain="https://loveapple.icu/categories/%E5%AF%84%E6%9C%AF/">寄术</category>
       
       
       <category domain="https://loveapple.icu/tags/%E7%BD%91%E7%AB%99%E5%BB%BA%E8%AE%BE/">网站建设</category>
@@ -71,7 +99,7 @@
       
       
       
-      <category domain="https://loveapple.icu/categories/%E6%8A%80%E6%9C%AF%E5%AE%9E%E8%B7%B5/">技术实践</category>
+      <category domain="https://loveapple.icu/categories/%E5%AF%84%E6%9C%AF/">寄术</category>
       
       
       <category domain="https://loveapple.icu/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/">服务器</category>
@@ -96,7 +124,7 @@
       
       
       
-      <category domain="https://loveapple.icu/categories/%E9%AB%98%E9%A2%91%E7%94%B5%E8%B7%AF/">高频电路</category>
+      <category domain="https://loveapple.icu/categories/%E5%AF%84%E6%9C%AF/">寄术</category>
       
       
       <category domain="https://loveapple.icu/tags/EE/">EE</category>
@@ -119,7 +147,7 @@
       
       
       
-      <category domain="https://loveapple.icu/categories/%E9%9A%8F%E7%AC%94/">随笔</category>
+      <category domain="https://loveapple.icu/categories/%E7%89%B2%E6%B4%BB/">牲活</category>
       
       
       <category domain="https://loveapple.icu/tags/NJU/">NJU</category>
@@ -142,7 +170,7 @@
       
       
       
-      <category domain="https://loveapple.icu/categories/%E6%8A%80%E6%9C%AF%E5%AE%9E%E8%B7%B5/">技术实践</category>
+      <category domain="https://loveapple.icu/categories/%E5%AF%84%E6%9C%AF/">寄术</category>
       
       
       <category domain="https://loveapple.icu/tags/Linux/">Linux</category>
@@ -167,7 +195,7 @@
       
       
       
-      <category domain="https://loveapple.icu/categories/%E5%90%83%E5%90%83%E5%90%83/">吃吃吃</category>
+      <category domain="https://loveapple.icu/categories/%E7%89%B2%E6%B4%BB/">牲活</category>
       
       
       <category domain="https://loveapple.icu/tags/%E6%97%8B%E8%BD%AC%E5%B0%8F%E7%81%AB%E9%94%85/">旋转小火锅</category>
@@ -190,10 +218,12 @@
       
       
       
-      <category domain="https://loveapple.icu/categories/IT%E4%BE%A0%E7%94%B5%E8%84%91%E7%BB%B4%E4%BF%AE/">IT侠电脑维修</category>
+      <category domain="https://loveapple.icu/categories/%E5%AF%84%E6%9C%AF/">寄术</category>
       
       
       <category domain="https://loveapple.icu/tags/%E7%BB%B4%E4%BF%AE%E9%9A%8F%E6%83%B3/">维修随想</category>
+      
+      <category domain="https://loveapple.icu/tags/IT%E4%BE%A0/">IT侠</category>
       
       
       <comments>https://loveapple.icu/how2b-screwer/#disqus_thread</comments>
@@ -211,7 +241,7 @@
       
       
       
-      <category domain="https://loveapple.icu/categories/%E9%AB%98%E9%A2%91%E7%94%B5%E8%B7%AF/">高频电路</category>
+      <category domain="https://loveapple.icu/categories/%E5%AF%84%E6%9C%AF/">寄术</category>
       
       
       <category domain="https://loveapple.icu/tags/EE/">EE</category>
@@ -234,7 +264,7 @@
       
       
       
-      <category domain="https://loveapple.icu/categories/%E6%8A%80%E6%9C%AF%E5%AE%9E%E8%B7%B5/">技术实践</category>
+      <category domain="https://loveapple.icu/categories/%E5%AF%84%E6%9C%AF/">寄术</category>
       
       
       <category domain="https://loveapple.icu/tags/Arch-Linux/">Arch Linux</category>
@@ -261,7 +291,7 @@
       
       
       
-      <category domain="https://loveapple.icu/categories/%E6%8A%80%E6%9C%AF%E5%AE%9E%E8%B7%B5/">技术实践</category>
+      <category domain="https://loveapple.icu/categories/%E5%AF%84%E6%9C%AF/">寄术</category>
       
       
       <category domain="https://loveapple.icu/tags/%E5%AE%89%E8%A3%85%E7%B3%BB%E7%BB%9F/">安装系统</category>
@@ -286,14 +316,14 @@
       
       
       
-      <category domain="https://loveapple.icu/categories/IT%E4%BE%A0%E7%94%B5%E8%84%91%E7%BB%B4%E4%BF%AE/">IT侠电脑维修</category>
+      <category domain="https://loveapple.icu/categories/%E5%AF%84%E6%9C%AF/">寄术</category>
       
       
       <category domain="https://loveapple.icu/tags/%E7%BB%8F%E9%AA%8C%E8%AE%B0%E5%BD%95%E5%BD%92%E6%A1%A3/">经验记录归档</category>
       
-      <category domain="https://loveapple.icu/tags/%E5%B1%8F%E5%B9%95%E6%9B%B4%E6%8D%A2/">屏幕更换</category>
-      
       <category domain="https://loveapple.icu/tags/%E7%BB%B4%E4%BF%AE%E7%BF%BB%E8%BD%A6%E8%AE%B0%E5%BD%95/">维修翻车记录</category>
+      
+      <category domain="https://loveapple.icu/tags/IT%E4%BE%A0/">IT侠</category>
       
       
       <comments>https://loveapple.icu/BreakScreen/#disqus_thread</comments>
@@ -311,12 +341,14 @@
       
       
       
-      <category domain="https://loveapple.icu/categories/%E6%8A%80%E6%9C%AF%E5%AE%9E%E8%B7%B5/">技术实践</category>
+      <category domain="https://loveapple.icu/categories/%E5%AF%84%E6%9C%AF/">寄术</category>
       
       
       <category domain="https://loveapple.icu/tags/%E5%BC%80%E6%BA%90%E9%A1%B9%E7%9B%AE/">开源项目</category>
       
       <category domain="https://loveapple.icu/tags/EE/">EE</category>
+      
+      <category domain="https://loveapple.icu/tags/%E5%B5%8C%E5%85%A5%E5%BC%8F%E5%BC%80%E5%8F%91/">嵌入式开发</category>
       
       
       <comments>https://loveapple.icu/Keil2Cmake/#disqus_thread</comments>
@@ -334,7 +366,7 @@
       
       
       
-      <category domain="https://loveapple.icu/categories/%E6%8A%80%E6%9C%AF%E5%AE%9E%E8%B7%B5/">技术实践</category>
+      <category domain="https://loveapple.icu/categories/%E5%AF%84%E6%9C%AF/">寄术</category>
       
       
       <category domain="https://loveapple.icu/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/">服务器</category>
@@ -357,7 +389,7 @@
       
       
       
-      <category domain="https://loveapple.icu/categories/%E6%8A%80%E6%9C%AF%E5%AE%9E%E8%B7%B5/">技术实践</category>
+      <category domain="https://loveapple.icu/categories/%E5%AF%84%E6%9C%AF/">寄术</category>
       
       
       <category domain="https://loveapple.icu/tags/%E5%BC%80%E6%BA%90%E9%A1%B9%E7%9B%AE/">开源项目</category>
@@ -384,7 +416,7 @@
       
       
       
-      <category domain="https://loveapple.icu/categories/%E6%8C%87%E5%8C%97/">指北</category>
+      <category domain="https://loveapple.icu/categories/%E6%9D%82%E9%A1%B9/">杂项</category>
       
       
       <category domain="https://loveapple.icu/tags/NJU/">NJU</category>
@@ -405,7 +437,7 @@
       
       
       
-      <category domain="https://loveapple.icu/categories/%E6%8C%87%E5%8C%97/">指北</category>
+      <category domain="https://loveapple.icu/categories/%E5%AF%84%E6%9C%AF/">寄术</category>
       
       
       
@@ -424,12 +456,14 @@
       
       
       
-      <category domain="https://loveapple.icu/categories/IT%E4%BE%A0%E7%94%B5%E8%84%91%E7%BB%B4%E4%BF%AE/">IT侠电脑维修</category>
+      <category domain="https://loveapple.icu/categories/%E5%AF%84%E6%9C%AF/">寄术</category>
       
       
       <category domain="https://loveapple.icu/tags/%E7%BB%8F%E9%AA%8C%E8%AE%B0%E5%BD%95%E5%BD%92%E6%A1%A3/">经验记录归档</category>
       
       <category domain="https://loveapple.icu/tags/%E8%BF%9B%E6%B0%B4%E6%9C%BA/">进水机</category>
+      
+      <category domain="https://loveapple.icu/tags/IT%E4%BE%A0/">IT侠</category>
       
       
       <comments>https://loveapple.icu/MilkTeaComputer/#disqus_thread</comments>
@@ -447,7 +481,7 @@
       
       
       
-      <category domain="https://loveapple.icu/categories/IT%E4%BE%A0%E7%94%B5%E8%84%91%E7%BB%B4%E4%BF%AE/">IT侠电脑维修</category>
+      <category domain="https://loveapple.icu/categories/%E5%AF%84%E6%9C%AF/">寄术</category>
       
       
       <category domain="https://loveapple.icu/tags/%E7%BB%8F%E9%AA%8C%E8%AE%B0%E5%BD%95%E5%BD%92%E6%A1%A3/">经验记录归档</category>
@@ -455,6 +489,8 @@
       <category domain="https://loveapple.icu/tags/Lenovo/">Lenovo</category>
       
       <category domain="https://loveapple.icu/tags/%E4%BE%9B%E7%94%B5/">供电</category>
+      
+      <category domain="https://loveapple.icu/tags/IT%E4%BE%A0/">IT侠</category>
       
       
       <comments>https://loveapple.icu/LenovoPower/#disqus_thread</comments>
@@ -472,7 +508,7 @@
       
       
       
-      <category domain="https://loveapple.icu/categories/%E6%8A%80%E6%9C%AF%E5%AE%9E%E8%B7%B5/">技术实践</category>
+      <category domain="https://loveapple.icu/categories/%E5%AF%84%E6%9C%AF/">寄术</category>
       
       
       <category domain="https://loveapple.icu/tags/MCU/">MCU</category>
@@ -495,7 +531,7 @@
       
       
       
-      <category domain="https://loveapple.icu/categories/%E9%AB%98%E9%A2%91%E7%94%B5%E8%B7%AF/">高频电路</category>
+      <category domain="https://loveapple.icu/categories/%E5%AF%84%E6%9C%AF/">寄术</category>
       
       
       <category domain="https://loveapple.icu/tags/NUEDC/">NUEDC</category>
@@ -520,7 +556,7 @@
       
       
       
-      <category domain="https://loveapple.icu/categories/%E9%AB%98%E9%A2%91%E7%94%B5%E8%B7%AF/">高频电路</category>
+      <category domain="https://loveapple.icu/categories/%E5%AF%84%E6%9C%AF/">寄术</category>
       
       
       <category domain="https://loveapple.icu/tags/NUEDC/">NUEDC</category>
