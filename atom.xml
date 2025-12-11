@@ -6,7 +6,7 @@
   <link href="https://loveapple.icu/atom.xml" rel="self"/>
   
   <link href="https://loveapple.icu/"/>
-  <updated>2025-12-10T14:00:22.061Z</updated>
+  <updated>2025-12-11T03:26:00.250Z</updated>
   <id>https://loveapple.icu/</id>
   
   <author>
@@ -17,19 +17,35 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>龙歌三店横评：来自2025年12月的南京</title>
+    <link href="https://loveapple.icu/loonger-hotpot-Dec25/"/>
+    <id>https://loveapple.icu/loonger-hotpot-Dec25/</id>
+    <published>2025-12-11T02:44:00.000Z</published>
+    <updated>2025-12-11T03:26:00.250Z</updated>
+    
+    
+    <summary type="html">这篇2025年12月的博客横向对比了南京三家龙歌旋转小火锅分店（栖霞万达茂、马群招商花园城、新街口东方福莱德）。作者从饮料种类、招牌鸭血的供应稳定性以及近期新品（如麻薯鱼豆腐）的口感等方面，梳理了各家门店的异同与个人体验。</summary>
+    
+    
+    
+    <category term="牲活" scheme="https://loveapple.icu/categories/%E7%89%B2%E6%B4%BB/"/>
+    
+    
+    <category term="旋转小火锅" scheme="https://loveapple.icu/tags/%E6%97%8B%E8%BD%AC%E5%B0%8F%E7%81%AB%E9%94%85/"/>
+    
+    <category term="吃吃吃" scheme="https://loveapple.icu/tags/%E5%90%83%E5%90%83%E5%90%83/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Hexo+Butterfly深入化自定义：以友链页面卡片宽度调整为例</title>
     <link href="https://loveapple.icu/link-card-width/"/>
     <id>https://loveapple.icu/link-card-width/</id>
     <published>2025-12-09T03:52:08.000Z</published>
-    <updated>2025-12-10T14:00:22.061Z</updated>
+    <updated>2025-12-11T03:26:29.828Z</updated>
     
     
-      
-      
-    <summary type="html">&lt;p&gt;如果只是想学习怎么配置，可以直接跳转到&lt;a href=&quot;#一些尝试以及解决办法&quot;&gt;配置环节&lt;/a&gt;。&lt;/p&gt;
-&lt;h2 id=&quot;需求来源&quot;&gt;需求来源&lt;/h2&gt;
-&lt;p&gt;我的友链页面采用flexcard展示，每个友链是一个card，这个排版是Butterfly主题默认可以启用</summary>
-      
+    <summary type="html">这篇博客详细介绍了如何深度自定义Hexo的Butterfly主题，以解决友链页面卡片因宽度不足导致内容显示不全的问题。作者通过直接修改主题的styl文件，将每行显示三个卡片调整为两个，并取消了描述文字的单行限制，实现了更优雅的友链排版。</summary>
     
     
     
@@ -68,7 +84,7 @@
     <link href="https://loveapple.icu/giscis-intro/"/>
     <id>https://loveapple.icu/giscis-intro/</id>
     <published>2025-11-29T08:02:51.000Z</published>
-    <updated>2025-12-10T10:37:53.152Z</updated>
+    <updated>2025-12-11T02:45:39.412Z</updated>
     
     
     <summary type="html">一篇关于在Hexo博客中使用Butterfly主题配置Giscus评论系统的实用指南。文章重点分享了如何解决一个官方文档未提及的进阶配置问题：通过正确使用option字段来实现评论框置顶等自定义功能。</summary>
@@ -82,7 +98,7 @@
     
     <category term="Vibe Coding" scheme="https://loveapple.icu/tags/Vibe-Coding/"/>
     
-    <category term="评论" scheme="https://loveapple.icu/tags/%E8%AF%84%E8%AE%BA/"/>
+    <category term="评论系统" scheme="https://loveapple.icu/tags/%E8%AF%84%E8%AE%BA%E7%B3%BB%E7%BB%9F/"/>
     
   </entry>
   
@@ -210,9 +226,9 @@
     <category term="寄术" scheme="https://loveapple.icu/categories/%E5%AF%84%E6%9C%AF/"/>
     
     
-    <category term="维修随想" scheme="https://loveapple.icu/tags/%E7%BB%B4%E4%BF%AE%E9%9A%8F%E6%83%B3/"/>
-    
     <category term="IT侠" scheme="https://loveapple.icu/tags/IT%E4%BE%A0/"/>
+    
+    <category term="维修随想" scheme="https://loveapple.icu/tags/%E7%BB%B4%E4%BF%AE%E9%9A%8F%E6%83%B3/"/>
     
   </entry>
   
@@ -300,11 +316,11 @@
     <category term="寄术" scheme="https://loveapple.icu/categories/%E5%AF%84%E6%9C%AF/"/>
     
     
+    <category term="IT侠" scheme="https://loveapple.icu/tags/IT%E4%BE%A0/"/>
+    
     <category term="经验记录归档" scheme="https://loveapple.icu/tags/%E7%BB%8F%E9%AA%8C%E8%AE%B0%E5%BD%95%E5%BD%92%E6%A1%A3/"/>
     
     <category term="维修翻车记录" scheme="https://loveapple.icu/tags/%E7%BB%B4%E4%BF%AE%E7%BF%BB%E8%BD%A6%E8%AE%B0%E5%BD%95/"/>
-    
-    <category term="IT侠" scheme="https://loveapple.icu/tags/IT%E4%BE%A0/"/>
     
   </entry>
   
@@ -323,11 +339,11 @@
     <category term="寄术" scheme="https://loveapple.icu/categories/%E5%AF%84%E6%9C%AF/"/>
     
     
-    <category term="开源项目" scheme="https://loveapple.icu/tags/%E5%BC%80%E6%BA%90%E9%A1%B9%E7%9B%AE/"/>
-    
     <category term="EE" scheme="https://loveapple.icu/tags/EE/"/>
     
     <category term="嵌入式开发" scheme="https://loveapple.icu/tags/%E5%B5%8C%E5%85%A5%E5%BC%8F%E5%BC%80%E5%8F%91/"/>
+    
+    <category term="开源项目" scheme="https://loveapple.icu/tags/%E5%BC%80%E6%BA%90%E9%A1%B9%E7%9B%AE/"/>
     
   </entry>
   
@@ -428,11 +444,11 @@
     <category term="寄术" scheme="https://loveapple.icu/categories/%E5%AF%84%E6%9C%AF/"/>
     
     
+    <category term="IT侠" scheme="https://loveapple.icu/tags/IT%E4%BE%A0/"/>
+    
     <category term="经验记录归档" scheme="https://loveapple.icu/tags/%E7%BB%8F%E9%AA%8C%E8%AE%B0%E5%BD%95%E5%BD%92%E6%A1%A3/"/>
     
     <category term="进水机" scheme="https://loveapple.icu/tags/%E8%BF%9B%E6%B0%B4%E6%9C%BA/"/>
-    
-    <category term="IT侠" scheme="https://loveapple.icu/tags/IT%E4%BE%A0/"/>
     
   </entry>
   
@@ -451,13 +467,13 @@
     <category term="寄术" scheme="https://loveapple.icu/categories/%E5%AF%84%E6%9C%AF/"/>
     
     
+    <category term="IT侠" scheme="https://loveapple.icu/tags/IT%E4%BE%A0/"/>
+    
     <category term="经验记录归档" scheme="https://loveapple.icu/tags/%E7%BB%8F%E9%AA%8C%E8%AE%B0%E5%BD%95%E5%BD%92%E6%A1%A3/"/>
     
     <category term="Lenovo" scheme="https://loveapple.icu/tags/Lenovo/"/>
     
     <category term="供电" scheme="https://loveapple.icu/tags/%E4%BE%9B%E7%94%B5/"/>
-    
-    <category term="IT侠" scheme="https://loveapple.icu/tags/IT%E4%BE%A0/"/>
     
   </entry>
   
