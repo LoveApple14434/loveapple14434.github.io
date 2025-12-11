@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://loveapple.icu/QSL-LOG/log.json</loc>
+    
+    <lastmod>2025-12-11</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://loveapple.icu/link-card-width/</loc>
     
     <lastmod>2025-12-11</lastmod>
@@ -221,15 +230,6 @@
     <loc>https://loveapple.icu/QSL-LOG/</loc>
     
     <lastmod>2025-12-08</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://loveapple.icu/QSL-LOG/log.json</loc>
-    
-    <lastmod>2025-12-03</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
