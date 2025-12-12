@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://loveapple.icu/pacman-mirror/</loc>
+    
+    <lastmod>2025-12-12</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://loveapple.icu/QSL-LOG/log.json</loc>
     
     <lastmod>2025-12-11</lastmod>
@@ -39,15 +48,6 @@
   
   <url>
     <loc>https://loveapple.icu/PLL-intro/</loc>
-    
-    <lastmod>2025-12-10</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://loveapple.icu/pacman-mirror/</loc>
     
     <lastmod>2025-12-10</lastmod>
     

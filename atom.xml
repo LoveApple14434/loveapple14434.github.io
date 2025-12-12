@@ -258,7 +258,7 @@
     <link href="https://loveapple.icu/pacman-mirror/"/>
     <id>https://loveapple.icu/pacman-mirror/</id>
     <published>2025-09-26T04:14:07.000Z</published>
-    <updated>2025-12-10T10:40:07.008Z</updated>
+    <updated>2025-12-12T14:10:24.894Z</updated>
     
     
     <summary type="html">一篇介绍如何为 Arch Linux 的 pacman 包管理器配置国内镜像源以加速下载的指南。文章详细说明了如何使用 reflector 服务自动筛选镜像，并分享了一个自定义脚本技巧，将特定镜像源（如本校镜像）固定排在列表最前，实现自动化与个性化需求的结合。</summary>
