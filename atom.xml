@@ -6,7 +6,7 @@
   <link href="https://loveapple.icu/atom.xml" rel="self"/>
   
   <link href="https://loveapple.icu/"/>
-  <updated>2025-12-11T03:26:00.250Z</updated>
+  <updated>2025-12-13T11:48:59.773Z</updated>
   <id>https://loveapple.icu/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Random Image API上线</title>
+    <link href="https://loveapple.icu/my-image-building/"/>
+    <id>https://loveapple.icu/my-image-building/</id>
+    <published>2025-12-13T11:16:35.000Z</published>
+    <updated>2025-12-13T11:48:59.773Z</updated>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;前因&quot;&gt;前因&lt;/h2&gt;
+&lt;p&gt;之前用&lt;a href=&quot;https://mikus.ink/&quot; rel=&quot;external nofollow noreferrer&quot;&gt;&lt;span class=&quot;citation&quot; data-cites=&quot;mikus&quot;&gt;@mikus&lt;</summary>
+      
+    
+    
+    
+    
+    <category term="服务器" scheme="https://loveapple.icu/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
+    
+    <category term="网站建设" scheme="https://loveapple.icu/tags/%E7%BD%91%E7%AB%99%E5%BB%BA%E8%AE%BE/"/>
+    
+    <category term="Vibe Coding" scheme="https://loveapple.icu/tags/Vibe-Coding/"/>
+    
+    <category term="API" scheme="https://loveapple.icu/tags/API/"/>
+    
+  </entry>
   
   <entry>
     <title>龙歌三店横评：来自2025年12月的南京</title>

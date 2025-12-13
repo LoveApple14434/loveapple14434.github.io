@@ -8,9 +8,38 @@
     
     <atom:link href="https://loveapple.icu/rss.xml" rel="self" type="application/rss+xml"/>
     
-    <description>射频电子|信息技术|生活记录</description>
-    <pubDate>Thu, 11 Dec 2025 03:26:00 GMT</pubDate>
+    <description>技术实践 | 心得分享 | 开源生态&lt;br&gt;射频与微波 | 业余无线电&lt;br&gt;以及水煮鱼的生活记录！</description>
+    <pubDate>Sat, 13 Dec 2025 11:48:59 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>Random Image API上线</title>
+      <link>https://loveapple.icu/my-image-building/</link>
+      <guid>https://loveapple.icu/my-image-building/</guid>
+      <pubDate>Sat, 13 Dec 2025 11:16:35 GMT</pubDate>
+      
+        
+        
+      <description>&lt;h2 id=&quot;前因&quot;&gt;前因&lt;/h2&gt;
+&lt;p&gt;之前用&lt;a href=&quot;https://mikus.ink/&quot; rel=&quot;external nofollow noreferrer&quot;&gt;&lt;span class=&quot;citation&quot; data-cites=&quot;mikus&quot;&gt;@mikus&lt;</description>
+        
+      
+      
+      
+      
+      
+      <category domain="https://loveapple.icu/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/">服务器</category>
+      
+      <category domain="https://loveapple.icu/tags/%E7%BD%91%E7%AB%99%E5%BB%BA%E8%AE%BE/">网站建设</category>
+      
+      <category domain="https://loveapple.icu/tags/Vibe-Coding/">Vibe Coding</category>
+      
+      <category domain="https://loveapple.icu/tags/API/">API</category>
+      
+      
+      <comments>https://loveapple.icu/my-image-building/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>龙歌三店横评：来自2025年12月的南京</title>
