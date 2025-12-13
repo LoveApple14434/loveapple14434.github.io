@@ -6,7 +6,7 @@
   <link href="https://loveapple.icu/atom.xml" rel="self"/>
   
   <link href="https://loveapple.icu/"/>
-  <updated>2025-12-13T11:50:28.017Z</updated>
+  <updated>2025-12-13T11:52:00.457Z</updated>
   <id>https://loveapple.icu/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://loveapple.icu/my-image-building/"/>
     <id>https://loveapple.icu/my-image-building/</id>
     <published>2025-12-13T11:16:35.000Z</published>
-    <updated>2025-12-13T11:50:28.017Z</updated>
+    <updated>2025-12-13T11:52:00.457Z</updated>
     
     
     <summary type="html">这篇博客记录了作者因依赖的随机图片API失效，从而自主搭建替代服务的过程。通过Python脚本从Pexels图库采集图片，并使用Flask框架快速部署，最终提供了一个可返回随机或指定图片的简易API，旨在为自己的博客及其他项目提供稳定的图片服务。</summary>
