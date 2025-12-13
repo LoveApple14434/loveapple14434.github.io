@@ -8,8 +8,8 @@
     
     <atom:link href="https://loveapple.icu/rss.xml" rel="self" type="application/rss+xml"/>
     
-    <description>技术实践 | 心得分享 | 开源生态&lt;br&gt;射频与微波 | 业余无线电&lt;br&gt;以及水煮鱼的生活记录！</description>
-    <pubDate>Sat, 13 Dec 2025 11:48:59 GMT</pubDate>
+    <description>射频电子|信息技术|生活记录</description>
+    <pubDate>Sat, 13 Dec 2025 11:50:28 GMT</pubDate>
     <generator>http://hexo.io/</generator>
     
     <item>
@@ -18,14 +18,12 @@
       <guid>https://loveapple.icu/my-image-building/</guid>
       <pubDate>Sat, 13 Dec 2025 11:16:35 GMT</pubDate>
       
-        
-        
-      <description>&lt;h2 id=&quot;前因&quot;&gt;前因&lt;/h2&gt;
-&lt;p&gt;之前用&lt;a href=&quot;https://mikus.ink/&quot; rel=&quot;external nofollow noreferrer&quot;&gt;&lt;span class=&quot;citation&quot; data-cites=&quot;mikus&quot;&gt;@mikus&lt;</description>
-        
+      <description>这篇博客记录了作者因依赖的随机图片API失效，从而自主搭建替代服务的过程。通过Python脚本从Pexels图库采集图片，并使用Flask框架快速部署，最终提供了一个可返回随机或指定图片的简易API，旨在为自己的博客及其他项目提供稳定的图片服务。</description>
       
       
       
+      
+      <category domain="https://loveapple.icu/categories/%E5%AF%84%E6%9C%AF/">寄术</category>
       
       
       <category domain="https://loveapple.icu/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/">服务器</category>
