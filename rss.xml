@@ -9,8 +9,29 @@
     <atom:link href="https://loveapple.icu/rss.xml" rel="self" type="application/rss+xml"/>
     
     <description>开源技术实践者 &amp; 射频电子新人 | LoveApple14434 的个人领地 | 一条爱苹果的水煮鱼。深度分享射频/微波、业余无线电硬核技术笔记，开源项目技术实践以及博客网站建设经验，IT侠笔记本维修随录，兼谈NJU校园趣闻与水煮鱼的生活思考。探索技术前沿，记录成长点滴。</description>
-    <pubDate>Sat, 13 Dec 2025 14:26:32 GMT</pubDate>
+    <pubDate>Thu, 18 Dec 2025 03:47:18 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>在网页中插入icons</title>
+      <link>https://loveapple.icu/iconfont-inject/</link>
+      <guid>https://loveapple.icu/iconfont-inject/</guid>
+      <pubDate>Thu, 18 Dec 2025 03:18:56 GMT</pubDate>
+      
+      <description>这篇博客详细介绍了如何在Hexo博客的Butterfly主题中集成自定义图标库。作者以阿里巴巴矢量图标库（iconfont）为例，讲解了从下载图标文件、配置CSS路径到在页面中插入并美化图标的完整步骤，帮助用户扩展Butterfly主题默认图标集之外的个性化选择。</description>
+      
+      
+      
+      
+      <category domain="https://loveapple.icu/categories/%E5%AF%84%E6%9C%AF/">寄术</category>
+      
+      
+      <category domain="https://loveapple.icu/tags/%E7%BD%91%E7%AB%99%E5%BB%BA%E8%AE%BE/">网站建设</category>
+      
+      
+      <comments>https://loveapple.icu/iconfont-inject/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>F**k Bing Webmaster!</title>
