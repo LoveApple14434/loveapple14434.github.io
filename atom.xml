@@ -205,9 +205,9 @@
     <category term="牲活" scheme="https://loveapple.icu/categories/%E7%89%B2%E6%B4%BB/"/>
     
     
-    <category term="随笔" scheme="https://loveapple.icu/tags/%E9%9A%8F%E7%AC%94/"/>
-    
     <category term="NJU" scheme="https://loveapple.icu/tags/NJU/"/>
+    
+    <category term="随笔" scheme="https://loveapple.icu/tags/%E9%9A%8F%E7%AC%94/"/>
     
   </entry>
   
@@ -383,11 +383,11 @@
     <category term="寄术" scheme="https://loveapple.icu/categories/%E5%AF%84%E6%9C%AF/"/>
     
     
+    <category term="开源项目" scheme="https://loveapple.icu/tags/%E5%BC%80%E6%BA%90%E9%A1%B9%E7%9B%AE/"/>
+    
     <category term="EE" scheme="https://loveapple.icu/tags/EE/"/>
     
     <category term="嵌入式开发" scheme="https://loveapple.icu/tags/%E5%B5%8C%E5%85%A5%E5%BC%8F%E5%BC%80%E5%8F%91/"/>
-    
-    <category term="开源项目" scheme="https://loveapple.icu/tags/%E5%BC%80%E6%BA%90%E9%A1%B9%E7%9B%AE/"/>
     
   </entry>
   
@@ -427,9 +427,9 @@
     <category term="寄术" scheme="https://loveapple.icu/categories/%E5%AF%84%E6%9C%AF/"/>
     
     
-    <category term="服务器" scheme="https://loveapple.icu/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
-    
     <category term="开源项目" scheme="https://loveapple.icu/tags/%E5%BC%80%E6%BA%90%E9%A1%B9%E7%9B%AE/"/>
+    
+    <category term="服务器" scheme="https://loveapple.icu/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
     
     <category term="网站建设" scheme="https://loveapple.icu/tags/%E7%BD%91%E7%AB%99%E5%BB%BA%E8%AE%BE/"/>
     
@@ -557,9 +557,9 @@
     <category term="寄术" scheme="https://loveapple.icu/categories/%E5%AF%84%E6%9C%AF/"/>
     
     
-    <category term="EE" scheme="https://loveapple.icu/tags/EE/"/>
-    
     <category term="NUEDC" scheme="https://loveapple.icu/tags/NUEDC/"/>
+    
+    <category term="EE" scheme="https://loveapple.icu/tags/EE/"/>
     
     <category term="DDS" scheme="https://loveapple.icu/tags/DDS/"/>
     
@@ -580,9 +580,9 @@
     <category term="寄术" scheme="https://loveapple.icu/categories/%E5%AF%84%E6%9C%AF/"/>
     
     
-    <category term="EE" scheme="https://loveapple.icu/tags/EE/"/>
-    
     <category term="NUEDC" scheme="https://loveapple.icu/tags/NUEDC/"/>
+    
+    <category term="EE" scheme="https://loveapple.icu/tags/EE/"/>
     
   </entry>
   
