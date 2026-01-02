@@ -9,8 +9,27 @@
     <atom:link href="https://loveapple.icu/rss.xml" rel="self" type="application/rss+xml"/>
     
     <description>开源技术实践者 &amp; 射频电子新人 | LoveApple14434 的个人领地 | 一条爱苹果的水煮鱼。深度分享射频/微波、业余无线电硬核技术笔记，开源项目技术实践以及博客网站建设经验，IT侠笔记本维修随录，兼谈NJU校园趣闻与水煮鱼的生活思考。探索技术前沿，记录成长点滴。</description>
-    <pubDate>Thu, 18 Dec 2025 03:47:18 GMT</pubDate>
+    <pubDate>Fri, 02 Jan 2026 11:04:28 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>无题</title>
+      <link>https://loveapple.icu/view-1/</link>
+      <guid>https://loveapple.icu/view-1/</guid>
+      <pubDate>Fri, 02 Jan 2026 10:24:41 GMT</pubDate>
+      
+      <description>近日观互联网有感</description>
+      
+      
+      
+      
+      <category domain="https://loveapple.icu/categories/%E9%B1%BC%E8%AE%BA/">鱼论</category>
+      
+      
+      
+      <comments>https://loveapple.icu/view-1/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>在网页中插入icons</title>
@@ -234,7 +253,7 @@
       
       
       
-      <category domain="https://loveapple.icu/categories/%E7%89%B2%E6%B4%BB/">牲活</category>
+      <category domain="https://loveapple.icu/categories/%E9%B1%BC%E8%AE%BA/">鱼论</category>
       
       
       <category domain="https://loveapple.icu/tags/NJU/">NJU</category>
