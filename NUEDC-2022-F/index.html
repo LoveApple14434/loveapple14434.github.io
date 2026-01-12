@@ -1,0 +1,436 @@
+<!DOCTYPE html><html lang="zh" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>NUEDC-2022-F | LoveApple14434的主页</title><meta name="author" content="LoveApple14434"><meta name="copyright" content="LoveApple14434"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="ffffff"><meta name="description" content="做电赛往年题的经验：2022年电赛F题。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="NUEDC-2022-F">
+<meta property="og:url" content="https://loveapple.icu/NUEDC-2022-F/">
+<meta property="og:site_name" content="LoveApple14434的主页">
+<meta property="og:description" content="做电赛往年题的经验：2022年电赛F题。">
+<meta property="og:locale">
+<meta property="og:image" content="https://loveapple.icu/img-api/random-image?2636">
+<meta property="article:published_time" content="2025-07-05T02:41:00.000Z">
+<meta property="article:modified_time" content="2025-12-10T10:40:01.939Z">
+<meta property="article:author" content="LoveApple14434">
+<meta property="article:tag" content="NUEDC">
+<meta property="article:tag" content="EE">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://loveapple.icu/img-api/random-image?2636"><script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "NUEDC-2022-F",
+  "url": "https://loveapple.icu/NUEDC-2022-F/",
+  "image": "https://loveapple.icu/img-api/random-image?2636",
+  "datePublished": "2025-07-05T02:41:00.000Z",
+  "dateModified": "2025-12-10T10:40:01.939Z",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "LoveApple14434",
+      "url": "https://loveapple.icu"
+    }
+  ]
+}</script><link rel="shortcut icon" href="/img/machinist.jpg"><link rel="canonical" href="https://loveapple.icu/NUEDC-2022-F/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//www.google-analytics.com" crossorigin=""/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><script>
+    (() => {
+      
+    const saveToLocal = {
+      set: (key, value, ttl) => {
+        if (!ttl) return
+        const expiry = Date.now() + ttl * 86400000
+        localStorage.setItem(key, JSON.stringify({ value, expiry }))
+      },
+      get: key => {
+        const itemStr = localStorage.getItem(key)
+        if (!itemStr) return undefined
+        const { value, expiry } = JSON.parse(itemStr)
+        if (Date.now() > expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return value
+      }
+    }
+
+    window.btf = {
+      saveToLocal,
+      getScript: (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        Object.entries(attr).forEach(([key, val]) => script.setAttribute(key, val))
+        script.onload = script.onreadystatechange = () => {
+          if (!script.readyState || /loaded|complete/.test(script.readyState)) resolve()
+        }
+        script.onerror = reject
+        document.head.appendChild(script)
+      }),
+      getCSS: (url, id) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onload = link.onreadystatechange = () => {
+          if (!link.readyState || /loaded|complete/.test(link.readyState)) resolve()
+        }
+        link.onerror = reject
+        document.head.appendChild(link)
+      }),
+      addGlobalFn: (key, fn, name = false, parent = window) => {
+        if (!false && key.startsWith('pjax')) return
+        const globalFn = parent.globalFn || {}
+        globalFn[key] = globalFn[key] || {}
+        globalFn[key][name || Object.keys(globalFn[key]).length] = fn
+        parent.globalFn = globalFn
+      }
+    }
+  
+      
+      const activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      const activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', 'ffffff')
+        }
+      }
+
+      btf.activateDarkMode = activateDarkMode
+      btf.activateLightMode = activateLightMode
+
+      const theme = saveToLocal.get('theme')
+    
+          theme === 'dark' ? activateDarkMode() : theme === 'light' ? activateLightMode() : null
+        
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        document.documentElement.classList.toggle('hide-aside', asideStatus === 'hide')
+      }
+    
+      
+    const detectApple = () => {
+      if (/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)) {
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+  
+    })()
+  </script><script async="async" src="https://www.googletagmanager.com/gtag/js?id=G-S7TKJ52XWZ"></script><script>window.dataLayer = window.dataLayer || []
+function gtag(){dataLayer.push(arguments)}
+gtag('js', new Date())
+gtag('config', 'G-S7TKJ52XWZ')
+btf.addGlobalFn('pjaxComplete', () => {
+  gtag('config', 'G-S7TKJ52XWZ', {'page_path': window.location.pathname})
+}, 'google_analytics')
+</script><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false,"highlightFullpage":false,"highlightMacStyle":false},
+  copy: {
+    success: 'Copy Successful',
+    error: 'Copy Failed',
+    noSupport: 'Browser Not Supported'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: 'days',
+  dateSuffix: {
+    just: 'Just now',
+    min: 'minutes ago',
+    hour: 'hours ago',
+    day: 'days ago',
+    month: 'months ago'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid/dist/infinitegrid.min.js',
+    buttonText: 'Load More'
+  },
+  isPhotoFigcaption: false,
+  islazyloadPlugin: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'NUEDC-2022-F',
+  isHighlightShrink: false,
+  isToc: false,
+  pageType: 'post'
+}</script><meta name="baidu-site-verification" content="codeva-goeWHw7QfM" /><link rel="stylesheet" href=" /css/fonts.css"><link rel="stylesheet" href=" /css/iconfont.css"<!-- hexo injector head_end start -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hexo-math@4.0.0/dist/style.css">
+<!-- hexo injector head_end end --><meta name="generator" content="Hexo 7.3.0"><style>mjx-container[jax="SVG"] {
+  direction: ltr;
+}
+
+mjx-container[jax="SVG"] > svg {
+  overflow: visible;
+}
+
+mjx-container[jax="SVG"][display="true"] {
+  display: block;
+  text-align: center;
+  margin: 1em 0;
+}
+
+mjx-container[jax="SVG"][justify="left"] {
+  text-align: left;
+}
+
+mjx-container[jax="SVG"][justify="right"] {
+  text-align: right;
+}
+
+g[data-mml-node="merror"] > g {
+  fill: red;
+  stroke: red;
+}
+
+g[data-mml-node="merror"] > rect[data-background] {
+  fill: yellow;
+  stroke: none;
+}
+
+g[data-mml-node="mtable"] > line[data-line] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node="mtable"] > rect[data-frame] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node="mtable"] > .mjx-dashed {
+  stroke-dasharray: 140;
+}
+
+g[data-mml-node="mtable"] > .mjx-dotted {
+  stroke-linecap: round;
+  stroke-dasharray: 0,140;
+}
+
+g[data-mml-node="mtable"] > svg {
+  overflow: visible;
+}
+
+[jax="SVG"] mjx-tool {
+  display: inline-block;
+  position: relative;
+  width: 0;
+  height: 0;
+}
+
+[jax="SVG"] mjx-tool > mjx-tip {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+mjx-tool > mjx-tip {
+  display: inline-block;
+  padding: .2em;
+  border: 1px solid #888;
+  font-size: 70%;
+  background-color: #F8F8F8;
+  color: black;
+  box-shadow: 2px 2px 5px #AAAAAA;
+}
+
+g[data-mml-node="maction"][data-toggle] {
+  cursor: pointer;
+}
+
+mjx-status {
+  display: block;
+  position: fixed;
+  left: 1em;
+  bottom: 1em;
+  min-width: 25%;
+  padding: .2em .4em;
+  border: 1px solid #888;
+  font-size: 90%;
+  background-color: #F8F8F8;
+  color: black;
+}
+
+foreignObject[data-mjx-xml] {
+  font-family: initial;
+  line-height: normal;
+  overflow: visible;
+}
+
+.MathJax path {
+  stroke-width: 3;
+}
+
+mjx-container[display="true"] {
+  overflow: auto hidden;
+}
+
+mjx-container[display="true"] + br {
+  display: none;
+}
+</style><link rel="alternate" href="/atom.xml" title="LoveApple14434的主页" type="application/atom+xml">
+<link rel="alternate" href="/rss.xml" title="LoveApple14434的主页" type="application/rss+xml">
+</head><body><div id="web_bg" style="background: pink;"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img text-center"><img src="/img/machinist.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data text-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">30</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">39</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">4</div></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/QSL-LOG/"><i class="fa-fw fa fa-tower-broadcast"></i><span> QSL</span></a></div><div class="menus_item"><a class="site-page" href="/img-api/"><i class="fa-fw fa fa-image"></i><span> Image</span></a></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fas fa-gamepad"></i><span> Features</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/Draw/"><i class="fa-fw fa fa-paint-brush"></i><span> DrawBoard</span></a></li><li><a class="site-page child" href="/mine-sweeper/"><i class="fa-fw fas fa-bomb"></i><span> Mine-Sweeper Records</span></a></li></ul></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fas fa-list"></i><span> Links</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/link/"><i class="fa-fw fa fa-link"></i><span> Link List</span></a></li><li><a class="site-page child" href="https://loveapple.icu/Friend-Link-House/"><i class="fa-fw fa fa-newspaper"></i><span> Link-House</span></a></li></ul></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url(https://loveapple.icu/img-api/random-image?2636);"><nav id="nav"><span id="blog-info"><a class="nav-site-title" href="/"><span class="site-name">LoveApple14434的主页</span></a><a class="nav-page-title" href="/"><span class="site-name">NUEDC-2022-F</span><span class="site-name"><i class="fa-solid fa-circle-arrow-left"></i><span>  Back to Home</span></span></a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/QSL-LOG/"><i class="fa-fw fa fa-tower-broadcast"></i><span> QSL</span></a></div><div class="menus_item"><a class="site-page" href="/img-api/"><i class="fa-fw fa fa-image"></i><span> Image</span></a></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fas fa-gamepad"></i><span> Features</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/Draw/"><i class="fa-fw fa fa-paint-brush"></i><span> DrawBoard</span></a></li><li><a class="site-page child" href="/mine-sweeper/"><i class="fa-fw fas fa-bomb"></i><span> Mine-Sweeper Records</span></a></li></ul></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fas fa-list"></i><span> Links</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/link/"><i class="fa-fw fa fa-link"></i><span> Link List</span></a></li><li><a class="site-page child" href="https://loveapple.icu/Friend-Link-House/"><i class="fa-fw fa fa-newspaper"></i><span> Link-House</span></a></li></ul></div></div><div id="toggle-menu"><span class="site-page"><i class="fas fa-bars fa-fw"></i></span></div></div></nav><div id="post-info"><h1 class="post-title">NUEDC-2022-F</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">Created</span><time class="post-meta-date-created" datetime="2025-07-05T02:41:00.000Z" title="Created 2025-07-05 11:41:00">2025-07-05</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">Updated</span><time class="post-meta-date-updated" datetime="2025-12-10T10:40:01.939Z" title="Updated 2025-12-10 19:40:01">2025-12-10</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E5%AF%84%E6%9C%AF/">寄术</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">Word Count:</span><span class="word-count">1.8k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">Reading Time:</span><span>6mins</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title=""><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">Post Views:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="container post-content" id="article-container"><p><img src="/NUEDC-2022-F/topic.jpeg"></p>
+<p>增加额外要求：AM载波取消500kHz步进限制，可能是10M-30M任意频率</p>
+<p>07月05日</p>
+<p>AM波</p>
+<p>技术路线</p>
+<p>测量任务：使用单片机GPIO口结合定时器读取载波频率，然后用DDS产生比载波频率略低的本振进行混频，混到低频区后进行低通滤波结合ADC采集，进行FFT，然后找到三个峰值即可计算调制频率与调制深度；</p>
+<p>解调任务：使用包络检波解调AM波确保波形同源。</p>
+<p>测量任务深入：单片机GPIO口读取采用定时器计数器输入，只能读取高低电平，因此使用高速比较器将AM载波转化成与载波同频的方波再进行测量；又由于AM调制会有一部分幅度过低，比较器可能无法比较，因此使用74HC4046锁相环先将载波频率进行锁定再比较。</p>
+<p>实测效果</p>
+<p>载波频率：将理想正弦波（假设锁相环已锁定）输入比较器，比较器波形输出至单片机定时计数器的外部触发接口，载波频率测量可测DC-30M+，经过参数调试误差为10Hz数量级；如果将调幅波直接输入至比较器，最高可到0.8调制深度；经过一级放大，最高可至0.98调制深度。</p>
+<p>DDS：写了一个可自由调试的UI，包括点频扫频，可自由调整频率与幅度；缺陷：DDS有时会无响应或错误响应，需要重新发送指令，有时甚至需要重启单片机；产生波形略有失真，可能是阻抗匹配问题（示波器FFT查看，除主频外最大谐波相对幅度-28dB）。</p>
+<p>ADC&amp;FFT：调制频率由于频域分辨率x的影响会有十来赫兹的误差，但是由于步进是1kHz所以可以直接取整解决；调制深度计算还需要调试一下参数，总的来说还是正相关的。如果不做任何处理直接FFT，当调制深度低于30%的时候可能会产生信噪比过低，边带被噪声淹没的问题；编写了一个频域上比较严格的滤除算法之后，可以探测到低至约6%的调制深度。</p>
+<p>07月10日</p>
+<p>AM的测试有点困难，主要是调制深度达到1.0时载波频率会有差不多20kHz的误差，导致之前的混频到10.7kHz的技术方案不太可行，决定改为混频到约50kHz，用更高的采样率去采集。</p>
+<p>今日先测通了FM路线。</p>
+<p>载波频率：锁相环锁定范围3-8.5MHz，使用34MHz起始，-4MHz步进本振进行混频后递交给锁相环，以4-8MHz作为有效锁定频段，利用定时器计数器统计脉冲数计算锁定频率反推载波频率，误差10Hz数量级。</p>
+<p>调制频率，调制系数，最大频偏：利用锁相环鉴频器进行FM解调，使用ADC采集解调波形，计算极大值均值与极小值均值作差，进行FFT提取主频率，进而利用Excel的预测线功能拟合计算调制系数，发现不同采集轮次之间波动较大，采用新旧值1：3加权平均的方式进行稳定，误差基本在0.2以内。</p>
+<p>代码调试小技巧：当最终版代码需要全自动化运行，而你又需要先进行调试时，在自动化代码中加入</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">LCD_ShowString(<span class="number">0</span>, <span class="number">0</span>, <span class="number">160</span>, <span class="number">32</span>, <span class="number">32</span>, (u8*)<span class="string">"waiting"</span>);</span><br><span class="line">key=<span class="number">0</span>;</span><br><span class="line"><span class="keyword">while</span> (key!=KEY0_PRES) {</span><br><span class="line">	key=KEY_Scan(<span class="number">0</span>);</span><br><span class="line">}</span><br><span class="line">key=<span class="number">0</span>;</span><br><span class="line">LCD_Fill(<span class="number">0</span>, <span class="number">0</span>, lcddev.width, lcddev.height, GRED);</span><br></pre></td></tr></table></figure>
+<p>以及更多LCD_Show系列代码，以达到单步调试的目的。（按KEY0进行下一步）</p>
+<p>07月11日</p>
+<p>将整个系统调通了。</p>
+<p>锁相环的锁定频率存在欺骗行为：在大约3<sub>10MHz能正常锁定，在大约10</sub>12MHz<strong>输出的锁定频率随输入频率增加而下降</strong>，而我们检测只能检测锁相环的输出频率（利用定时器计数器），因此我们即使接收到3<sub>10MHz的锁定信号，我们也不能确定锁相环的输入信号就是同频率信号还是10</sub>12MHz的“欺骗信号”。解决方法是：我们规定4<sub>8MHz为有效锁定范围；由于待测信号载波频率范围为10</sub>30MHz，因此我们将DDS本振从38MHz开始向下以1MHz为步进推进直到14MHz为止（共计25个频点），混频后交给锁相环尝试锁定，依然使用单片机的定时器计数器测量锁相环的输出频率，以推算出的载波频率连续三次在误差范围内近似相同为判定载波频率的依据。具体代码如下：</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br></pre></td><td class="code"><pre><span class="line">         success_cnt=<span class="number">0</span>;</span><br><span class="line">round_cnt=<span class="number">0</span>;</span><br><span class="line"><span class="keyword">for</span> (<span class="type">int</span> i=<span class="number">0</span>; i&lt;<span class="number">25</span>; i+=<span class="number">1</span>) {</span><br><span class="line">	dds_rate=<span class="number">38</span>*MHz-(<span class="type">uint32_t</span>)i*MHz;</span><br><span class="line">	DDS_data_stack.freq1[<span class="number">0</span>]=dds_rate;</span><br><span class="line">	DDS_data_stack.channel_state[<span class="number">0</span>]=CHANNEL_STATE_SINGLE;</span><br><span class="line">	dds_task((DDS_data*)&amp;DDS_data_stack);</span><br><span class="line">	<span class="comment">// LCD_ShowNum(0, 240, dds_rate, 9, 32);</span></span><br><span class="line">	ChangeSwitchState(Switch_mlt, Swch_mlt_base);</span><br><span class="line">	LCD_ShowString(<span class="number">0</span>, lcddev.height<span class="number">-40</span>, <span class="number">400</span>, <span class="number">32</span>, <span class="number">32</span>, (u8*)<span class="string">"Counting Frequency...   "</span>);</span><br><span class="line">	delay_ms(<span class="number">50</span>);</span><br><span class="line">	HAL_TIM_Base_Start_IT(&amp;htim4);</span><br><span class="line">	delay_ms(<span class="number">300</span>);</span><br><span class="line">	HAL_TIM_Base_Stop_IT(&amp;htim4);</span><br><span class="line">	<span class="keyword">if</span> (base_freq&gt;<span class="number">3.8</span>*MHz &amp;&amp; base_freq&lt;<span class="number">8.2</span>*MHz) {</span><br><span class="line">		<span class="type">uint32_t</span> temp=dds_rate-base_freq;</span><br><span class="line">		<span class="comment">// LCD_ShowNum(160, 500, temp, 9, 32);</span></span><br><span class="line">		<span class="comment">// LCD_ShowNum(160, 460, fm_base_freq, 9, 32);</span></span><br><span class="line">		<span class="keyword">if</span> (success_cnt==<span class="number">0</span>) {</span><br><span class="line">			fm_base_freq=temp;</span><br><span class="line">			success_cnt=<span class="number">1</span>;</span><br><span class="line">		}</span><br><span class="line">		<span class="keyword">else</span> <span class="keyword">if</span> (abs_minus(fm_base_freq, temp)&lt;<span class="number">250</span>*kHz) {</span><br><span class="line">			<span class="comment">// LCD_ShowNum(160, 540, abs_minus(fm_base_freq, temp), 9, 32);</span></span><br><span class="line">			fm_base_freq=temp;</span><br><span class="line">			success_cnt+=<span class="number">1</span>;</span><br><span class="line">		}</span><br><span class="line">		<span class="keyword">else</span> {</span><br><span class="line">			success_cnt=<span class="number">1</span>;</span><br><span class="line">			fm_base_freq=temp;</span><br><span class="line">		}</span><br><span class="line">		<span class="comment">// LCD_ShowNum(120, 500, success_cnt, 1, 32);</span></span><br><span class="line">		<span class="keyword">if</span> (success_cnt==<span class="number">3</span>) {</span><br><span class="line">			<span class="keyword">break</span>;</span><br><span class="line">		}</span><br><span class="line">	}</span><br><span class="line">	<span class="keyword">else</span> {</span><br><span class="line">		success_cnt=<span class="number">0</span>;</span><br><span class="line">	}</span><br><span class="line">	<span class="comment">// LCD_ShowString(0, 0, 160, 32, 32, (u8*)"waiting");</span></span><br><span class="line">	<span class="comment">// while (key!=KEY0_PRES) {</span></span><br><span class="line">	<span class="comment">// 	key=KEY_Scan(0);</span></span><br><span class="line">	<span class="comment">// }</span></span><br><span class="line">	<span class="comment">// key=0;</span></span><br><span class="line">	<span class="comment">// LCD_Fill(0, 0, lcddev.width, lcddev.height, GRED);</span></span><br><span class="line">}</span><br><span class="line"><span class="type">uint32_t</span> temp2=fm_base_freq-fm_base_freq%(<span class="number">500</span>*kHz);</span><br><span class="line"><span class="keyword">if</span> (fm_base_freq-temp2&gt;<span class="number">250</span>*kHz) </span><br><span class="line">	temp2+=<span class="number">500</span>*kHz;</span><br><span class="line">fm_base_freq=temp2; </span><br></pre></td></tr></table></figure>
+<p>由于赛题中对FM有500kHz步进的规定，因此我们将测得的频率直接拟合到最近的500kHz整数倍频即可。对于AM去掉最后47~50行，会有大约几十kHz的误差。为了准确测得AM的频率，我们将AM混频到大约80kHz处，使用300kHz的采样率进行ADC采集，再进行FFT，找到主带频率反推AM频率，误差可降低到0.1kHz以内。</p>
+<p>今日花了较多时间用来调试代码的自动化测试流程。目前的代码架构逻辑大致如下：</p>
+<p><img src="/NUEDC-2022-F/yuque_mind.jpeg"></p>
+<p><img src="/NUEDC-2022-F/yuque_mind.jpeg"></p>
+<p>具体细节参看代码与代码注释。</p>
+<p>本题的主要困难点在于对AM取消了500kHz步进限制，这样在AM调制深度较深时会较难获取到AM的载波频率，也就很难进行下一步测量。放大器+比较器然后用计数器计数的方案最高只能做到0.97左右的调制深度，到1.0之后就会有MHz级别的误差了，必须要采用锁相环才能稍微测准一点（10kHz数量级）；而锁相环的锁定范围又不可能覆盖10~30MHz整个带宽（在我们的硬件中，甚至完全不在这个带宽之内），因此要么用多个锁相环来回切换，要么选择进行混频后尝试锁定，多次尝试找到正确的频率。</p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta"><i class="fas fa-circle-user fa-fw"></i>Author: </span><span class="post-copyright-info"><a href="https://loveapple.icu">LoveApple14434</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta"><i class="fas fa-square-arrow-up-right fa-fw"></i>Link: </span><span class="post-copyright-info"><a href="https://loveapple.icu/NUEDC-2022-F/">https://loveapple.icu/NUEDC-2022-F/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta"><i class="fas fa-circle-exclamation fa-fw"></i>Copyright Notice: </span><span class="post-copyright-info">All articles on this blog are licensed under <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> unless otherwise stated.</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/NUEDC/">NUEDC</a><a class="post-meta__tags" href="/tags/EE/">EE</a></div><div class="post-share"><div class="social-share" data-image="https://loveapple.icu/img-api/random-image?2636" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><a class="pagination-related full-width" href="/DDS_RFSync/" title="DDS实现高频信号同步"><img class="cover" src="https://random.mikus.ink/pc?5922" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="info"><div class="info-1"><div class="info-item-1">Previous</div><div class="info-item-2">DDS实现高频信号同步</div></div><div class="info-2"><div class="info-item-1">利用DDS模块，实现高频信号同步，相位可调。</div></div></div></a></nav><hr class="custom-hr"/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> Comments</span></div></div><div class="comment-wrap"><div><div id="giscus-wrap"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info text-center"><div class="avatar-img"><img src="/img/machinist.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info-name">LoveApple14434</div><div class="author-info-description">技术实践 | 心得分享 | 开源生态<br>射频与微波 | 业余无线电<br>以及水煮鱼的生活记录！</div><div class="site-data"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">30</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">39</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">4</div></a></div><a id="card-info-btn" href="Tencent://message/?uin=1985671808&amp;Site=loveapple.icu&amp;Menu=yes"><i class="fa-brands fa-qq"></i><span>Add me via QQ</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>Announcement</span></div><div class="announcement_content">封面图片来自<a target="_blank" rel="noopener" href="https://www.pexels.com">Pexels.com<img src="https://images.pexels.com/lib/api/pexels.png" width="100px"/><img src="https://images.pexels.com/lib/api/pexels-white.png" width="100px"/></a><br>以及<a target="_blank" rel="noopener" href="https://mikus.ink">@mikus</a>的随机图片API</div></div><div class="sticky_layout"></div></div></main><footer id="footer" style="background: pink;"><div class="footer-other"><div class="footer-copyright"><span class="copyright">&copy;&nbsp;2025 - 2026 By LoveApple14434</span><span class="framework-info"><span>Framework </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo 7.3.0</a><span class="footer-separator">|</span><span>Theme </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly 5.4.3</a></span></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="Reading Mode"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="Toggle Between Light and Dark Mode"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="Toggle Between Single-column and Double-column"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="Settings"><i class="fas fa-cog fa-spin"></i></button><a id="to_comment" href="#post-comment" title="Scroll to Comments"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="Back to Top"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.umd.min.js"></script><div class="js-pjax"><script>(() => {
+  const loadMathjax = () => {
+    if (!window.MathJax) {
+      window.MathJax = {
+        tex: {
+          inlineMath: [['$', '$'], ['\\(', '\\)']],
+          tags: 'none',
+        },
+        chtml: {
+          scale: 1.1
+        },
+        options: {
+          enableMenu: true,
+          renderActions: {
+            findScript: [10, doc => {
+              for (const node of document.querySelectorAll('script[type^="math/tex"]')) {
+                const display = !!node.type.match(/; *mode=display/)
+                const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display)
+                const text = document.createTextNode('')
+                node.parentNode.replaceChild(text, node)
+                math.start = {node: text, delim: '', n: 0}
+                math.end = {node: text, delim: '', n: 0}
+                doc.math.push(math)
+              }
+            }, '']
+          }
+        }
+      }
+
+      const script = document.createElement('script')
+      script.src = 'https://cdn.jsdelivr.net/npm/mathjax/es5/tex-mml-chtml.min.js'
+      script.id = 'MathJax-script'
+      script.async = true
+      document.head.appendChild(script)
+    } else {
+      MathJax.startup.document.state(0)
+      MathJax.texReset()
+      MathJax.typesetPromise()
+    }
+  }
+
+  btf.addGlobalFn('encrypt', loadMathjax, 'mathjax')
+  window.pjax ? loadMathjax() : window.addEventListener('load', loadMathjax)
+})()</script><script>(() => {
+  const isShuoshuo = GLOBAL_CONFIG_SITE.pageType === 'shuoshuo'
+  const option = {"data-input-position":"top"}
+
+  const getGiscusTheme = theme => theme === 'dark' ? 'dark' : 'light'
+
+  const createScriptElement = config => {
+    const ele = document.createElement('script')
+    Object.entries(config).forEach(([key, value]) => {
+      ele.setAttribute(key, value)
+    })
+    return ele
+  }
+
+  const loadGiscus = (el = document, key) => {
+    const mappingConfig = isShuoshuo
+      ? { 'data-mapping': 'specific', 'data-term': key }
+      : { 'data-mapping': (option && option['data-mapping']) || 'pathname' }
+
+    const giscusConfig = {
+      src: 'https://giscus.app/client.js',
+      'data-repo': 'loveapple14434/loveapple14434.github.io',
+      'data-repo-id': 'R_kgDOLVLb7Q',
+      'data-category-id': 'DIC_kwDOLVLb7c4CzLc8',
+      'data-theme': getGiscusTheme(document.documentElement.getAttribute('data-theme')),
+      'data-reactions-enabled': '1',
+      crossorigin: 'anonymous',
+      async: true,
+      ...option,
+      ...mappingConfig
+    }
+
+    const scriptElement = createScriptElement(giscusConfig)
+
+    el.querySelector('#giscus-wrap').appendChild(scriptElement)
+
+    if (isShuoshuo) {
+      window.shuoshuoComment.destroyGiscus = () => {
+        if (el.children.length) {
+          el.innerHTML = ''
+          el.classList.add('no-comment')
+        }
+      }
+    }
+  }
+
+  const changeGiscusTheme = theme => {
+    const iframe = document.querySelector('#giscus-wrap iframe')
+    if (iframe) {
+      const message = {
+        giscus: {
+          setConfig: {
+            theme: getGiscusTheme(theme)
+          }
+        }
+      }
+      iframe.contentWindow.postMessage(message, 'https://giscus.app')
+    }
+  }
+
+  btf.addGlobalFn('themeChange', changeGiscusTheme, 'giscus')
+
+  if (isShuoshuo) {
+    'Giscus' === 'Giscus'
+      ? window.shuoshuoComment = { loadComment: loadGiscus }
+      : window.loadOtherComment = loadGiscus
+    return
+  }
+
+  if ('Giscus' === 'Giscus' || !false) {
+    if (false) btf.loadComment(document.getElementById('giscus-wrap'), loadGiscus)
+    else loadGiscus()
+  } else {
+    window.loadOtherComment = loadGiscus
+  }
+})()</script></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>

@@ -1,0 +1,730 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"
+  xmlns:atom="http://www.w3.org/2005/Atom"
+  xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>LoveApple14434的主页</title>
+    <link>https://loveapple.icu/</link>
+    
+    <atom:link href="https://loveapple.icu/rss.xml" rel="self" type="application/rss+xml"/>
+    
+    <description>开源技术实践者 &amp; 射频电子新人 | LoveApple14434 的个人领地 | 一条爱苹果的水煮鱼。深度分享射频/微波、业余无线电硬核技术笔记，开源项目技术实践以及博客网站建设经验，IT侠笔记本维修随录，兼谈NJU校园趣闻与水煮鱼的生活思考。探索技术前沿，记录成长点滴。</description>
+    <pubDate>Mon, 12 Jan 2026 14:30:31 GMT</pubDate>
+    <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>水煮鱼的济州岛旅行日记：Day1</title>
+      <link>https://loveapple.icu/Jeju-day-1/</link>
+      <guid>https://loveapple.icu/Jeju-day-1/</guid>
+      <pubDate>Mon, 12 Jan 2026 11:13:36 GMT</pubDate>
+      
+        
+        
+      <description>&lt;h2 id=&quot;前夜&quot;&gt;前夜&lt;/h2&gt;
+&lt;p&gt;1月11日早上起床直接地铁到南京南站，然后高铁到上海站（G1大标杆真快，1h速通了），接着坐地铁到龙阳路，然后坐磁浮到上海浦东国际机场，接着从浦东直飞济州岛。落地济州岛是当地时间（UTC+9）晚上九点左右，直接暴走4km+到酒店。&lt;</description>
+        
+      
+      
+      
+      
+      <category domain="https://loveapple.icu/categories/%E7%89%B2%E6%B4%BB/">牲活</category>
+      
+      
+      <category domain="https://loveapple.icu/tags/%E6%97%85%E8%A1%8C/">旅行</category>
+      
+      <category domain="https://loveapple.icu/tags/%E6%B5%8E%E5%B7%9E%E5%B2%9B/">济州岛</category>
+      
+      
+      <comments>https://loveapple.icu/Jeju-day-1/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>N5105小主机初配置</title>
+      <link>https://loveapple.icu/N5105-1/</link>
+      <guid>https://loveapple.icu/N5105-1/</guid>
+      <pubDate>Sat, 10 Jan 2026 10:59:57 GMT</pubDate>
+      
+      <description>一篇尚未写完的blog</description>
+      
+      
+      
+      
+      <category domain="https://loveapple.icu/categories/%E5%AF%84%E6%9C%AF/">寄术</category>
+      
+      
+      <category domain="https://loveapple.icu/tags/%E5%B0%8F%E4%B8%BB%E6%9C%BA/">小主机</category>
+      
+      <category domain="https://loveapple.icu/tags/OpenWRT%E8%BD%AF%E8%B7%AF%E7%94%B1/">OpenWRT软路由</category>
+      
+      <category domain="https://loveapple.icu/tags/NAS/">NAS</category>
+      
+      
+      <comments>https://loveapple.icu/N5105-1/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>无题</title>
+      <link>https://loveapple.icu/view-1/</link>
+      <guid>https://loveapple.icu/view-1/</guid>
+      <pubDate>Fri, 02 Jan 2026 09:24:41 GMT</pubDate>
+      
+      <description>近日观互联网有感</description>
+      
+      
+      
+      
+      <category domain="https://loveapple.icu/categories/%E9%B1%BC%E8%AE%BA/">鱼论</category>
+      
+      
+      
+      <comments>https://loveapple.icu/view-1/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>在网页中插入icons</title>
+      <link>https://loveapple.icu/iconfont-inject/</link>
+      <guid>https://loveapple.icu/iconfont-inject/</guid>
+      <pubDate>Thu, 18 Dec 2025 02:18:56 GMT</pubDate>
+      
+      <description>这篇博客详细介绍了如何在Hexo博客的Butterfly主题中集成自定义图标库。作者以阿里巴巴矢量图标库（iconfont）为例，讲解了从下载图标文件、配置CSS路径到在页面中插入并美化图标的完整步骤，帮助用户扩展Butterfly主题默认图标集之外的个性化选择。</description>
+      
+      
+      
+      
+      <category domain="https://loveapple.icu/categories/%E5%AF%84%E6%9C%AF/">寄术</category>
+      
+      
+      <category domain="https://loveapple.icu/tags/%E7%BD%91%E7%AB%99%E5%BB%BA%E8%AE%BE/">网站建设</category>
+      
+      
+      <comments>https://loveapple.icu/iconfont-inject/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>F**k Bing Webmaster!</title>
+      <link>https://loveapple.icu/fk-bing-webmaster/</link>
+      <guid>https://loveapple.icu/fk-bing-webmaster/</guid>
+      <pubDate>Sat, 13 Dec 2025 13:16:21 GMT</pubDate>
+      
+      <description>这篇博客是作者对Bing搜索引擎的一篇情绪化抱怨。文章详细列举了其四个月来为促使Bing收录网站首页所做的各种努力，包括提交URL、站点地图、配置IndexNow等，但均告失败，仅收到官方模板化的拒绝回复。作者对此感到极度沮丧和愤怒，认为Bing的反馈机制缺乏具体指导，让人投诉无门。</description>
+      
+      
+      
+      
+      <category domain="https://loveapple.icu/categories/%E5%AF%84%E6%9C%AF/">寄术</category>
+      
+      
+      <category domain="https://loveapple.icu/tags/%E7%BD%91%E7%AB%99%E5%BB%BA%E8%AE%BE/">网站建设</category>
+      
+      
+      <comments>https://loveapple.icu/fk-bing-webmaster/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>Random Image API上线</title>
+      <link>https://loveapple.icu/my-image-building/</link>
+      <guid>https://loveapple.icu/my-image-building/</guid>
+      <pubDate>Sat, 13 Dec 2025 10:16:35 GMT</pubDate>
+      
+      <description>这篇博客记录了作者因依赖的随机图片API失效，从而自主搭建替代服务的过程。通过Python脚本从Pexels图库采集图片，并使用Flask框架快速部署，最终提供了一个可返回随机或指定图片的简易API，旨在为自己的博客及其他项目提供稳定的图片服务。</description>
+      
+      
+      
+      
+      <category domain="https://loveapple.icu/categories/%E5%AF%84%E6%9C%AF/">寄术</category>
+      
+      
+      <category domain="https://loveapple.icu/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/">服务器</category>
+      
+      <category domain="https://loveapple.icu/tags/%E7%BD%91%E7%AB%99%E5%BB%BA%E8%AE%BE/">网站建设</category>
+      
+      <category domain="https://loveapple.icu/tags/Vibe-Coding/">Vibe Coding</category>
+      
+      <category domain="https://loveapple.icu/tags/API/">API</category>
+      
+      
+      <comments>https://loveapple.icu/my-image-building/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>龙歌三店横评：来自2025年12月的南京</title>
+      <link>https://loveapple.icu/loonger-hotpot-Dec25/</link>
+      <guid>https://loveapple.icu/loonger-hotpot-Dec25/</guid>
+      <pubDate>Thu, 11 Dec 2025 01:44:00 GMT</pubDate>
+      
+      <description>这篇2025年12月的博客横向对比了南京三家龙歌旋转小火锅分店（栖霞万达茂、马群招商花园城、新街口东方福莱德）。作者从饮料种类、招牌鸭血的供应稳定性以及近期新品（如麻薯鱼豆腐）的口感等方面，梳理了各家门店的异同与个人体验。</description>
+      
+      
+      
+      
+      <category domain="https://loveapple.icu/categories/%E7%89%B2%E6%B4%BB/">牲活</category>
+      
+      
+      <category domain="https://loveapple.icu/tags/%E6%97%8B%E8%BD%AC%E5%B0%8F%E7%81%AB%E9%94%85/">旋转小火锅</category>
+      
+      <category domain="https://loveapple.icu/tags/%E5%90%83%E5%90%83%E5%90%83/">吃吃吃</category>
+      
+      
+      <comments>https://loveapple.icu/loonger-hotpot-Dec25/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>Hexo+Butterfly深入化自定义：以友链页面卡片宽度调整为例</title>
+      <link>https://loveapple.icu/link-card-width/</link>
+      <guid>https://loveapple.icu/link-card-width/</guid>
+      <pubDate>Tue, 09 Dec 2025 02:52:08 GMT</pubDate>
+      
+      <description>这篇博客详细介绍了如何深度自定义Hexo的Butterfly主题，以解决友链页面卡片因宽度不足导致内容显示不全的问题。作者通过直接修改主题的styl文件，将每行显示三个卡片调整为两个，并取消了描述文字的单行限制，实现了更优雅的友链排版。</description>
+      
+      
+      
+      
+      <category domain="https://loveapple.icu/categories/%E5%AF%84%E6%9C%AF/">寄术</category>
+      
+      
+      <category domain="https://loveapple.icu/tags/%E7%BD%91%E7%AB%99%E5%BB%BA%E8%AE%BE/">网站建设</category>
+      
+      <category domain="https://loveapple.icu/tags/%E9%9A%8F%E7%AC%94/">随笔</category>
+      
+      
+      <comments>https://loveapple.icu/link-card-width/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>Hexo+Butterfly的dark mode开发</title>
+      <link>https://loveapple.icu/dark-mode/</link>
+      <guid>https://loveapple.icu/dark-mode/</guid>
+      <pubDate>Mon, 08 Dec 2025 03:54:26 GMT</pubDate>
+      
+      <description>一篇关于为Hexo博客Butterfly主题自定义页面开发黑暗模式适配的实战记录。文章以修复QSL页面在暗黑主题下显示异常为例，展示了如何通过添加CSS选择器快速实现样式切换，并简要剖析了Butterfly主题暗黑模式的实现原理，体现了典型的“Vibe Coding”解决问题风格。</description>
+      
+      
+      
+      
+      <category domain="https://loveapple.icu/categories/%E5%AF%84%E6%9C%AF/">寄术</category>
+      
+      
+      <category domain="https://loveapple.icu/tags/%E7%BD%91%E7%AB%99%E5%BB%BA%E8%AE%BE/">网站建设</category>
+      
+      <category domain="https://loveapple.icu/tags/Vibe-Coding/">Vibe Coding</category>
+      
+      
+      <comments>https://loveapple.icu/dark-mode/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>为Hexo博客+Butterfly主题启用Giscus评论系统：一些Bing上搜不到的技巧</title>
+      <link>https://loveapple.icu/giscis-intro/</link>
+      <guid>https://loveapple.icu/giscis-intro/</guid>
+      <pubDate>Sat, 29 Nov 2025 07:02:51 GMT</pubDate>
+      
+      <description>一篇关于在Hexo博客中使用Butterfly主题配置Giscus评论系统的实用指南。文章重点分享了如何解决一个官方文档未提及的进阶配置问题：通过正确使用option字段来实现评论框置顶等自定义功能。</description>
+      
+      
+      
+      
+      <category domain="https://loveapple.icu/categories/%E5%AF%84%E6%9C%AF/">寄术</category>
+      
+      
+      <category domain="https://loveapple.icu/tags/%E7%BD%91%E7%AB%99%E5%BB%BA%E8%AE%BE/">网站建设</category>
+      
+      <category domain="https://loveapple.icu/tags/Vibe-Coding/">Vibe Coding</category>
+      
+      <category domain="https://loveapple.icu/tags/%E8%AF%84%E8%AE%BA%E7%B3%BB%E7%BB%9F/">评论系统</category>
+      
+      
+      <comments>https://loveapple.icu/giscis-intro/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>暴论：AI（几乎）不能帮你完成你并不会的任务</title>
+      <link>https://loveapple.icu/clash-configuration/</link>
+      <guid>https://loveapple.icu/clash-configuration/</guid>
+      <pubDate>Thu, 27 Nov 2025 08:26:50 GMT</pubDate>
+      
+      <description>一篇对AI编程助手能力的个人反思。作者通过亲身经历——尝试用Deepseek协助完成一个不熟悉的Clash配置文件定制任务，最终却陷入与AI的反复“搏斗”——论证了“AI几乎不能帮你完成你并不会的任务”这一暴论，并分享了过程中的挫折与感悟。</description>
+      
+      
+      
+      
+      <category domain="https://loveapple.icu/categories/%E5%AF%84%E6%9C%AF/">寄术</category>
+      
+      
+      <category domain="https://loveapple.icu/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/">服务器</category>
+      
+      <category domain="https://loveapple.icu/tags/Vibe-Coding/">Vibe Coding</category>
+      
+      <category domain="https://loveapple.icu/tags/%E9%9A%8F%E7%AC%94/">随笔</category>
+      
+      
+      <comments>https://loveapple.icu/clash-configuration/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>业余无线电个人入门经历</title>
+      <link>https://loveapple.icu/amateur-radio-1/</link>
+      <guid>https://loveapple.icu/amateur-radio-1/</guid>
+      <pubDate>Mon, 10 Nov 2025 14:49:02 GMT</pubDate>
+      
+      <description>一篇关于业余无线电入门的个人经历分享。文章记录了从考证、设台到完成首次通联的全过程，并分享了使用宝峰UV-5R在省中继上与友台成功联络的体验。</description>
+      
+      
+      
+      
+      <category domain="https://loveapple.icu/categories/%E5%AF%84%E6%9C%AF/">寄术</category>
+      
+      
+      <category domain="https://loveapple.icu/tags/EE/">EE</category>
+      
+      <category domain="https://loveapple.icu/tags/HAM/">HAM</category>
+      
+      
+      <comments>https://loveapple.icu/amateur-radio-1/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>NJU九食堂惊现帝王蟹：丰俭由人乃常态，温室育花实可悲</title>
+      <link>https://loveapple.icu/nju-king-crab/</link>
+      <guid>https://loveapple.icu/nju-king-crab/</guid>
+      <pubDate>Tue, 04 Nov 2025 02:40:30 GMT</pubDate>
+      
+      <description>同学：支持。食堂：支持。校领导：支持。网友：反对！</description>
+      
+      
+      
+      
+      <category domain="https://loveapple.icu/categories/%E9%B1%BC%E8%AE%BA/">鱼论</category>
+      
+      
+      <category domain="https://loveapple.icu/tags/NJU/">NJU</category>
+      
+      <category domain="https://loveapple.icu/tags/%E9%9A%8F%E7%AC%94/">随笔</category>
+      
+      
+      <comments>https://loveapple.icu/nju-king-crab/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>数字系统II第一次实验报告</title>
+      <link>https://loveapple.icu/loongarch-linux-1/</link>
+      <guid>https://loveapple.icu/loongarch-linux-1/</guid>
+      <pubDate>Thu, 23 Oct 2025 01:32:17 GMT</pubDate>
+      
+      <description>这是一篇关于在龙芯2K1000LA开发板上进行嵌入式Linux开发实践的详细实验报告。文章记录了从环境搭建、内核编译、文件系统制作到交叉编译工具链使用的完整流程，并分享了实验过程中遇到的问题与解决方案。</description>
+      
+      
+      
+      
+      <category domain="https://loveapple.icu/categories/%E5%AF%84%E6%9C%AF/">寄术</category>
+      
+      
+      <category domain="https://loveapple.icu/tags/Linux/">Linux</category>
+      
+      <category domain="https://loveapple.icu/tags/%E5%BC%80%E5%8F%91%E6%9D%BF/">开发板</category>
+      
+      <category domain="https://loveapple.icu/tags/loongarch/">loongarch</category>
+      
+      
+      <comments>https://loveapple.icu/loongarch-linux-1/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>举高高旋转小火锅评测</title>
+      <link>https://loveapple.icu/jgg-hotpot/</link>
+      <guid>https://loveapple.icu/jgg-hotpot/</guid>
+      <pubDate>Wed, 15 Oct 2025 06:54:15 GMT</pubDate>
+      
+      <description>一篇来自旋转小火锅爱好者的探店评测。文章从价格、形式、锅底、小料台到菜品等多个维度，将新开的举高高与常见的龙歌等品牌进行了对比，并最终给出了个人评价与推荐理由。</description>
+      
+      
+      
+      
+      <category domain="https://loveapple.icu/categories/%E7%89%B2%E6%B4%BB/">牲活</category>
+      
+      
+      <category domain="https://loveapple.icu/tags/%E6%97%8B%E8%BD%AC%E5%B0%8F%E7%81%AB%E9%94%85/">旋转小火锅</category>
+      
+      <category domain="https://loveapple.icu/tags/%E5%90%83%E5%90%83%E5%90%83/">吃吃吃</category>
+      
+      
+      <comments>https://loveapple.icu/jgg-hotpot/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>如何打好螺丝？</title>
+      <link>https://loveapple.icu/how2b-screwer/</link>
+      <guid>https://loveapple.icu/how2b-screwer/</guid>
+      <pubDate>Thu, 09 Oct 2025 05:57:21 GMT</pubDate>
+      
+      <description>一篇来自电脑维修志愿者的经验分享，详细总结了笔记本电脑维修中会遇到的各种螺丝类型、其特性及安装注意事项，并提供了当遇到难拧或已拧花的螺丝时的实用处理技巧。</description>
+      
+      
+      
+      
+      <category domain="https://loveapple.icu/categories/%E5%AF%84%E6%9C%AF/">寄术</category>
+      
+      
+      <category domain="https://loveapple.icu/tags/IT%E4%BE%A0/">IT侠</category>
+      
+      <category domain="https://loveapple.icu/tags/%E7%BB%B4%E4%BF%AE%E9%9A%8F%E6%83%B3/">维修随想</category>
+      
+      
+      <comments>https://loveapple.icu/how2b-screwer/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>锁相环技术入门简介</title>
+      <link>https://loveapple.icu/PLL-intro/</link>
+      <guid>https://loveapple.icu/PLL-intro/</guid>
+      <pubDate>Fri, 03 Oct 2025 02:46:12 GMT</pubDate>
+      
+      <description>一篇关于锁相环的入门简介。文章从信号同步的实际问题出发，通俗地解释了锁相环的基本工作原理，并介绍了其核心组件——鉴相器与压控振荡器，以及如何通过加入分频器来实现倍频功能。</description>
+      
+      
+      
+      
+      <category domain="https://loveapple.icu/categories/%E5%AF%84%E6%9C%AF/">寄术</category>
+      
+      
+      <category domain="https://loveapple.icu/tags/EE/">EE</category>
+      
+      <category domain="https://loveapple.icu/tags/PLL/">PLL</category>
+      
+      
+      <comments>https://loveapple.icu/PLL-intro/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>Arch Linux本土化配置：为pacman指定镜像源</title>
+      <link>https://loveapple.icu/pacman-mirror/</link>
+      <guid>https://loveapple.icu/pacman-mirror/</guid>
+      <pubDate>Fri, 26 Sep 2025 03:14:07 GMT</pubDate>
+      
+      <description>一篇介绍如何为 Arch Linux 的 pacman 包管理器配置国内镜像源以加速下载的指南。文章详细说明了如何使用 reflector 服务自动筛选镜像，并分享了一个自定义脚本技巧，将特定镜像源（如本校镜像）固定排在列表最前，实现自动化与个性化需求的结合。</description>
+      
+      
+      
+      
+      <category domain="https://loveapple.icu/categories/%E5%AF%84%E6%9C%AF/">寄术</category>
+      
+      
+      <category domain="https://loveapple.icu/tags/Arch-Linux/">Arch Linux</category>
+      
+      <category domain="https://loveapple.icu/tags/Linux/">Linux</category>
+      
+      <category domain="https://loveapple.icu/tags/%E9%95%9C%E5%83%8F%E6%BA%90/">镜像源</category>
+      
+      <category domain="https://loveapple.icu/tags/Arch-reflector/">Arch reflector</category>
+      
+      
+      <comments>https://loveapple.icu/pacman-mirror/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>安装 Arch Linux</title>
+      <link>https://loveapple.icu/install-arch/</link>
+      <guid>https://loveapple.icu/install-arch/</guid>
+      <pubDate>Wed, 24 Sep 2025 09:49:59 GMT</pubDate>
+      
+      <description>一篇记录个人安装 Arch Linux 经历的博客，重点分享了在校园网环境下解决联网问题以及配置引导程序时的曲折过程，并最终成功从零搭建起一个完整的 Arch 系统。</description>
+      
+      
+      
+      
+      <category domain="https://loveapple.icu/categories/%E5%AF%84%E6%9C%AF/">寄术</category>
+      
+      
+      <category domain="https://loveapple.icu/tags/%E5%AE%89%E8%A3%85%E7%B3%BB%E7%BB%9F/">安装系统</category>
+      
+      <category domain="https://loveapple.icu/tags/Arch-Linux/">Arch Linux</category>
+      
+      <category domain="https://loveapple.icu/tags/Linux/">Linux</category>
+      
+      
+      <comments>https://loveapple.icu/install-arch/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>换AB面，但是屏幕翻车</title>
+      <link>https://loveapple.icu/BreakScreen/</link>
+      <guid>https://loveapple.icu/BreakScreen/</guid>
+      <pubDate>Mon, 22 Sep 2025 05:59:22 GMT</pubDate>
+      
+      <description>纪录一单thinkbook更换AB面结果屏幕损坏的维修翻车事故。</description>
+      
+      
+      
+      
+      <category domain="https://loveapple.icu/categories/%E5%AF%84%E6%9C%AF/">寄术</category>
+      
+      
+      <category domain="https://loveapple.icu/tags/IT%E4%BE%A0/">IT侠</category>
+      
+      <category domain="https://loveapple.icu/tags/%E7%BB%8F%E9%AA%8C%E8%AE%B0%E5%BD%95%E5%BD%92%E6%A1%A3/">经验记录归档</category>
+      
+      <category domain="https://loveapple.icu/tags/%E7%BB%B4%E4%BF%AE%E7%BF%BB%E8%BD%A6%E8%AE%B0%E5%BD%95/">维修翻车记录</category>
+      
+      
+      <comments>https://loveapple.icu/BreakScreen/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>一个自制的Keil2Cmake转换器小工具</title>
+      <link>https://loveapple.icu/Keil2Cmake/</link>
+      <guid>https://loveapple.icu/Keil2Cmake/</guid>
+      <pubDate>Sun, 21 Sep 2025 08:42:57 GMT</pubDate>
+      
+      <description>一个将根据uvprojx文件将keil工程转换到CMake工程的小工具，以便用VSCode取代Keil uVision。</description>
+      
+      
+      
+      
+      <category domain="https://loveapple.icu/categories/%E5%AF%84%E6%9C%AF/">寄术</category>
+      
+      
+      <category domain="https://loveapple.icu/tags/%E5%BC%80%E6%BA%90%E9%A1%B9%E7%9B%AE/">开源项目</category>
+      
+      <category domain="https://loveapple.icu/tags/EE/">EE</category>
+      
+      <category domain="https://loveapple.icu/tags/%E5%B5%8C%E5%85%A5%E5%BC%8F%E5%BC%80%E5%8F%91/">嵌入式开发</category>
+      
+      
+      <comments>https://loveapple.icu/Keil2Cmake/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>本地开发，远程部署：如何把你的服务器变成Git仓库？</title>
+      <link>https://loveapple.icu/GitAway/</link>
+      <guid>https://loveapple.icu/GitAway/</guid>
+      <pubDate>Wed, 10 Sep 2025 09:48:13 GMT</pubDate>
+      
+      <description>在本地机上写代码，远程部署到服务器：你的下一个git服务器何必是GitHub？</description>
+      
+      
+      
+      
+      <category domain="https://loveapple.icu/categories/%E5%AF%84%E6%9C%AF/">寄术</category>
+      
+      
+      <category domain="https://loveapple.icu/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/">服务器</category>
+      
+      <category domain="https://loveapple.icu/tags/%E8%BF%9C%E7%A8%8B%E9%83%A8%E7%BD%B2/">远程部署</category>
+      
+      
+      <comments>https://loveapple.icu/GitAway/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>部署Friend-Link-House项目:开源社区初探</title>
+      <link>https://loveapple.icu/Blogroll/</link>
+      <guid>https://loveapple.icu/Blogroll/</guid>
+      <pubDate>Tue, 09 Sep 2025 02:09:41 GMT</pubDate>
+      
+      <description>通过RSS自动订阅他人博客网站上的文章</description>
+      
+      
+      
+      
+      <category domain="https://loveapple.icu/categories/%E5%AF%84%E6%9C%AF/">寄术</category>
+      
+      
+      <category domain="https://loveapple.icu/tags/%E5%BC%80%E6%BA%90%E9%A1%B9%E7%9B%AE/">开源项目</category>
+      
+      <category domain="https://loveapple.icu/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/">服务器</category>
+      
+      <category domain="https://loveapple.icu/tags/%E7%BD%91%E7%AB%99%E5%BB%BA%E8%AE%BE/">网站建设</category>
+      
+      <category domain="https://loveapple.icu/tags/RSS%E8%AE%A2%E9%98%85/">RSS订阅</category>
+      
+      
+      <comments>https://loveapple.icu/Blogroll/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>NJU-Undergraduates-Courses</title>
+      <link>https://loveapple.icu/NJU-Undergraduates-Courses/</link>
+      <guid>https://loveapple.icu/NJU-Undergraduates-Courses/</guid>
+      <pubDate>Sat, 16 Aug 2025 12:19:29 GMT</pubDate>
+      
+      <description>此处存放我与wuhaiyuan同学共同撰写的《南京大学本科生课程体系概论》的一份历史版本。</description>
+      
+      
+      
+      
+      <category domain="https://loveapple.icu/categories/%E6%9D%82%E9%A1%B9/">杂项</category>
+      
+      
+      <category domain="https://loveapple.icu/tags/NJU/">NJU</category>
+      
+      
+      <comments>https://loveapple.icu/NJU-Undergraduates-Courses/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>DrawBoard食用指北</title>
+      <link>https://loveapple.icu/Draw-Board-README/</link>
+      <guid>https://loveapple.icu/Draw-Board-README/</guid>
+      <pubDate>Thu, 14 Aug 2025 12:31:24 GMT</pubDate>
+      
+      <description>一个画板小工具的README文档。</description>
+      
+      
+      
+      
+      <category domain="https://loveapple.icu/categories/%E5%AF%84%E6%9C%AF/">寄术</category>
+      
+      
+      
+      <comments>https://loveapple.icu/Draw-Board-README/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>奶茶电脑之数据拯救</title>
+      <link>https://loveapple.icu/MilkTeaComputer/</link>
+      <guid>https://loveapple.icu/MilkTeaComputer/</guid>
+      <pubDate>Tue, 12 Aug 2025 02:21:44 GMT</pubDate>
+      
+      <description>奶茶电脑之数据拯救</description>
+      
+      
+      
+      
+      <category domain="https://loveapple.icu/categories/%E5%AF%84%E6%9C%AF/">寄术</category>
+      
+      
+      <category domain="https://loveapple.icu/tags/IT%E4%BE%A0/">IT侠</category>
+      
+      <category domain="https://loveapple.icu/tags/%E7%BB%8F%E9%AA%8C%E8%AE%B0%E5%BD%95%E5%BD%92%E6%A1%A3/">经验记录归档</category>
+      
+      <category domain="https://loveapple.icu/tags/%E8%BF%9B%E6%B0%B4%E6%9C%BA/">进水机</category>
+      
+      
+      <comments>https://loveapple.icu/MilkTeaComputer/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>联想供电疑似通病</title>
+      <link>https://loveapple.icu/LenovoPower/</link>
+      <guid>https://loveapple.icu/LenovoPower/</guid>
+      <pubDate>Tue, 12 Aug 2025 02:18:43 GMT</pubDate>
+      
+      <description>联想供电疑似通病，需要拆卸电池解决。</description>
+      
+      
+      
+      
+      <category domain="https://loveapple.icu/categories/%E5%AF%84%E6%9C%AF/">寄术</category>
+      
+      
+      <category domain="https://loveapple.icu/tags/IT%E4%BE%A0/">IT侠</category>
+      
+      <category domain="https://loveapple.icu/tags/%E7%BB%8F%E9%AA%8C%E8%AE%B0%E5%BD%95%E5%BD%92%E6%A1%A3/">经验记录归档</category>
+      
+      <category domain="https://loveapple.icu/tags/Lenovo/">Lenovo</category>
+      
+      <category domain="https://loveapple.icu/tags/%E4%BE%9B%E7%94%B5/">供电</category>
+      
+      
+      <comments>https://loveapple.icu/LenovoPower/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>初识ESP32</title>
+      <link>https://loveapple.icu/HelloESP32/</link>
+      <guid>https://loveapple.icu/HelloESP32/</guid>
+      <pubDate>Thu, 07 Aug 2025 09:05:41 GMT</pubDate>
+      
+      <description>初次使用ESP32：神奇小玩具</description>
+      
+      
+      
+      
+      <category domain="https://loveapple.icu/categories/%E5%AF%84%E6%9C%AF/">寄术</category>
+      
+      
+      <category domain="https://loveapple.icu/tags/MCU/">MCU</category>
+      
+      <category domain="https://loveapple.icu/tags/ESP32/">ESP32</category>
+      
+      
+      <comments>https://loveapple.icu/HelloESP32/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>DDS实现高频信号同步</title>
+      <link>https://loveapple.icu/DDS_RFSync/</link>
+      <guid>https://loveapple.icu/DDS_RFSync/</guid>
+      <pubDate>Sat, 19 Jul 2025 04:09:00 GMT</pubDate>
+      
+      <description>利用DDS模块，实现高频信号同步，相位可调。</description>
+      
+      
+      
+      
+      <category domain="https://loveapple.icu/categories/%E5%AF%84%E6%9C%AF/">寄术</category>
+      
+      
+      <category domain="https://loveapple.icu/tags/NUEDC/">NUEDC</category>
+      
+      <category domain="https://loveapple.icu/tags/EE/">EE</category>
+      
+      <category domain="https://loveapple.icu/tags/DDS/">DDS</category>
+      
+      
+      <comments>https://loveapple.icu/DDS_RFSync/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>NUEDC-2022-F</title>
+      <link>https://loveapple.icu/NUEDC-2022-F/</link>
+      <guid>https://loveapple.icu/NUEDC-2022-F/</guid>
+      <pubDate>Sat, 05 Jul 2025 02:41:00 GMT</pubDate>
+      
+      <description>做电赛往年题的经验：2022年电赛F题。</description>
+      
+      
+      
+      
+      <category domain="https://loveapple.icu/categories/%E5%AF%84%E6%9C%AF/">寄术</category>
+      
+      
+      <category domain="https://loveapple.icu/tags/NUEDC/">NUEDC</category>
+      
+      <category domain="https://loveapple.icu/tags/EE/">EE</category>
+      
+      
+      <comments>https://loveapple.icu/NUEDC-2022-F/#disqus_thread</comments>
+      
+    </item>
+    
+  </channel>
+</rss>

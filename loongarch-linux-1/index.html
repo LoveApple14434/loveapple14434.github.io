@@ -1,0 +1,561 @@
+<!DOCTYPE html><html lang="zh" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>数字系统II第一次实验报告 | LoveApple14434的主页</title><meta name="author" content="LoveApple14434"><meta name="copyright" content="LoveApple14434"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="ffffff"><meta name="description" content="这是一篇关于在龙芯2K1000LA开发板上进行嵌入式Linux开发实践的详细实验报告。文章记录了从环境搭建、内核编译、文件系统制作到交叉编译工具链使用的完整流程，并分享了实验过程中遇到的问题与解决方案。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="数字系统II第一次实验报告">
+<meta property="og:url" content="https://loveapple.icu/loongarch-linux-1/">
+<meta property="og:site_name" content="LoveApple14434的主页">
+<meta property="og:description" content="这是一篇关于在龙芯2K1000LA开发板上进行嵌入式Linux开发实践的详细实验报告。文章记录了从环境搭建、内核编译、文件系统制作到交叉编译工具链使用的完整流程，并分享了实验过程中遇到的问题与解决方案。">
+<meta property="og:locale">
+<meta property="og:image" content="https://loveapple.icu/img-api/random-image?6870">
+<meta property="article:published_time" content="2025-10-23T01:32:17.000Z">
+<meta property="article:modified_time" content="2025-12-10T10:39:22.881Z">
+<meta property="article:author" content="LoveApple14434">
+<meta property="article:tag" content="Linux">
+<meta property="article:tag" content="开发板">
+<meta property="article:tag" content="loongarch">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://loveapple.icu/img-api/random-image?6870"><script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "数字系统II第一次实验报告",
+  "url": "https://loveapple.icu/loongarch-linux-1/",
+  "image": "https://loveapple.icu/img-api/random-image?6870",
+  "datePublished": "2025-10-23T01:32:17.000Z",
+  "dateModified": "2025-12-10T10:39:22.881Z",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "LoveApple14434",
+      "url": "https://loveapple.icu"
+    }
+  ]
+}</script><link rel="shortcut icon" href="/img/machinist.jpg"><link rel="canonical" href="https://loveapple.icu/loongarch-linux-1/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//www.google-analytics.com" crossorigin=""/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><script>
+    (() => {
+      
+    const saveToLocal = {
+      set: (key, value, ttl) => {
+        if (!ttl) return
+        const expiry = Date.now() + ttl * 86400000
+        localStorage.setItem(key, JSON.stringify({ value, expiry }))
+      },
+      get: key => {
+        const itemStr = localStorage.getItem(key)
+        if (!itemStr) return undefined
+        const { value, expiry } = JSON.parse(itemStr)
+        if (Date.now() > expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return value
+      }
+    }
+
+    window.btf = {
+      saveToLocal,
+      getScript: (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        Object.entries(attr).forEach(([key, val]) => script.setAttribute(key, val))
+        script.onload = script.onreadystatechange = () => {
+          if (!script.readyState || /loaded|complete/.test(script.readyState)) resolve()
+        }
+        script.onerror = reject
+        document.head.appendChild(script)
+      }),
+      getCSS: (url, id) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onload = link.onreadystatechange = () => {
+          if (!link.readyState || /loaded|complete/.test(link.readyState)) resolve()
+        }
+        link.onerror = reject
+        document.head.appendChild(link)
+      }),
+      addGlobalFn: (key, fn, name = false, parent = window) => {
+        if (!false && key.startsWith('pjax')) return
+        const globalFn = parent.globalFn || {}
+        globalFn[key] = globalFn[key] || {}
+        globalFn[key][name || Object.keys(globalFn[key]).length] = fn
+        parent.globalFn = globalFn
+      }
+    }
+  
+      
+      const activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      const activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', 'ffffff')
+        }
+      }
+
+      btf.activateDarkMode = activateDarkMode
+      btf.activateLightMode = activateLightMode
+
+      const theme = saveToLocal.get('theme')
+    
+          theme === 'dark' ? activateDarkMode() : theme === 'light' ? activateLightMode() : null
+        
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        document.documentElement.classList.toggle('hide-aside', asideStatus === 'hide')
+      }
+    
+      
+    const detectApple = () => {
+      if (/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)) {
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+  
+    })()
+  </script><script async="async" src="https://www.googletagmanager.com/gtag/js?id=G-S7TKJ52XWZ"></script><script>window.dataLayer = window.dataLayer || []
+function gtag(){dataLayer.push(arguments)}
+gtag('js', new Date())
+gtag('config', 'G-S7TKJ52XWZ')
+btf.addGlobalFn('pjaxComplete', () => {
+  gtag('config', 'G-S7TKJ52XWZ', {'page_path': window.location.pathname})
+}, 'google_analytics')
+</script><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false,"highlightFullpage":false,"highlightMacStyle":false},
+  copy: {
+    success: 'Copy Successful',
+    error: 'Copy Failed',
+    noSupport: 'Browser Not Supported'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: 'days',
+  dateSuffix: {
+    just: 'Just now',
+    min: 'minutes ago',
+    hour: 'hours ago',
+    day: 'days ago',
+    month: 'months ago'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid/dist/infinitegrid.min.js',
+    buttonText: 'Load More'
+  },
+  isPhotoFigcaption: false,
+  islazyloadPlugin: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '数字系统II第一次实验报告',
+  isHighlightShrink: false,
+  isToc: true,
+  pageType: 'post'
+}</script><meta name="baidu-site-verification" content="codeva-goeWHw7QfM" /><link rel="stylesheet" href=" /css/fonts.css"><link rel="stylesheet" href=" /css/iconfont.css"<!-- hexo injector head_end start -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hexo-math@4.0.0/dist/style.css">
+<!-- hexo injector head_end end --><meta name="generator" content="Hexo 7.3.0"><style>mjx-container[jax="SVG"] {
+  direction: ltr;
+}
+
+mjx-container[jax="SVG"] > svg {
+  overflow: visible;
+}
+
+mjx-container[jax="SVG"][display="true"] {
+  display: block;
+  text-align: center;
+  margin: 1em 0;
+}
+
+mjx-container[jax="SVG"][justify="left"] {
+  text-align: left;
+}
+
+mjx-container[jax="SVG"][justify="right"] {
+  text-align: right;
+}
+
+g[data-mml-node="merror"] > g {
+  fill: red;
+  stroke: red;
+}
+
+g[data-mml-node="merror"] > rect[data-background] {
+  fill: yellow;
+  stroke: none;
+}
+
+g[data-mml-node="mtable"] > line[data-line] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node="mtable"] > rect[data-frame] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node="mtable"] > .mjx-dashed {
+  stroke-dasharray: 140;
+}
+
+g[data-mml-node="mtable"] > .mjx-dotted {
+  stroke-linecap: round;
+  stroke-dasharray: 0,140;
+}
+
+g[data-mml-node="mtable"] > svg {
+  overflow: visible;
+}
+
+[jax="SVG"] mjx-tool {
+  display: inline-block;
+  position: relative;
+  width: 0;
+  height: 0;
+}
+
+[jax="SVG"] mjx-tool > mjx-tip {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+mjx-tool > mjx-tip {
+  display: inline-block;
+  padding: .2em;
+  border: 1px solid #888;
+  font-size: 70%;
+  background-color: #F8F8F8;
+  color: black;
+  box-shadow: 2px 2px 5px #AAAAAA;
+}
+
+g[data-mml-node="maction"][data-toggle] {
+  cursor: pointer;
+}
+
+mjx-status {
+  display: block;
+  position: fixed;
+  left: 1em;
+  bottom: 1em;
+  min-width: 25%;
+  padding: .2em .4em;
+  border: 1px solid #888;
+  font-size: 90%;
+  background-color: #F8F8F8;
+  color: black;
+}
+
+foreignObject[data-mjx-xml] {
+  font-family: initial;
+  line-height: normal;
+  overflow: visible;
+}
+
+.MathJax path {
+  stroke-width: 3;
+}
+
+mjx-container[display="true"] {
+  overflow: auto hidden;
+}
+
+mjx-container[display="true"] + br {
+  display: none;
+}
+</style><link rel="alternate" href="/atom.xml" title="LoveApple14434的主页" type="application/atom+xml">
+<link rel="alternate" href="/rss.xml" title="LoveApple14434的主页" type="application/rss+xml">
+</head><body><div id="web_bg" style="background: pink;"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img text-center"><img src="/img/machinist.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data text-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">30</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">39</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">4</div></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/QSL-LOG/"><i class="fa-fw fa fa-tower-broadcast"></i><span> QSL</span></a></div><div class="menus_item"><a class="site-page" href="/img-api/"><i class="fa-fw fa fa-image"></i><span> Image</span></a></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fas fa-gamepad"></i><span> Features</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/Draw/"><i class="fa-fw fa fa-paint-brush"></i><span> DrawBoard</span></a></li><li><a class="site-page child" href="/mine-sweeper/"><i class="fa-fw fas fa-bomb"></i><span> Mine-Sweeper Records</span></a></li></ul></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fas fa-list"></i><span> Links</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/link/"><i class="fa-fw fa fa-link"></i><span> Link List</span></a></li><li><a class="site-page child" href="https://loveapple.icu/Friend-Link-House/"><i class="fa-fw fa fa-newspaper"></i><span> Link-House</span></a></li></ul></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url(https://loveapple.icu/img-api/random-image?6870);"><nav id="nav"><span id="blog-info"><a class="nav-site-title" href="/"><span class="site-name">LoveApple14434的主页</span></a><a class="nav-page-title" href="/"><span class="site-name">数字系统II第一次实验报告</span><span class="site-name"><i class="fa-solid fa-circle-arrow-left"></i><span>  Back to Home</span></span></a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/QSL-LOG/"><i class="fa-fw fa fa-tower-broadcast"></i><span> QSL</span></a></div><div class="menus_item"><a class="site-page" href="/img-api/"><i class="fa-fw fa fa-image"></i><span> Image</span></a></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fas fa-gamepad"></i><span> Features</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/Draw/"><i class="fa-fw fa fa-paint-brush"></i><span> DrawBoard</span></a></li><li><a class="site-page child" href="/mine-sweeper/"><i class="fa-fw fas fa-bomb"></i><span> Mine-Sweeper Records</span></a></li></ul></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fas fa-list"></i><span> Links</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/link/"><i class="fa-fw fa fa-link"></i><span> Link List</span></a></li><li><a class="site-page child" href="https://loveapple.icu/Friend-Link-House/"><i class="fa-fw fa fa-newspaper"></i><span> Link-House</span></a></li></ul></div></div><div id="toggle-menu"><span class="site-page"><i class="fas fa-bars fa-fw"></i></span></div></div></nav><div id="post-info"><h1 class="post-title">数字系统II第一次实验报告</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">Created</span><time class="post-meta-date-created" datetime="2025-10-23T01:32:17.000Z" title="Created 2025-10-23 10:32:17">2025-10-23</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">Updated</span><time class="post-meta-date-updated" datetime="2025-12-10T10:39:22.881Z" title="Updated 2025-12-10 19:39:22">2025-12-10</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E5%AF%84%E6%9C%AF/">寄术</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">Word Count:</span><span class="word-count">4.6k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">Reading Time:</span><span>16mins</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title=""><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">Post Views:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="container post-content" id="article-container"><h1 id="实验目的">实验目的</h1>
+<ul>
+<li><p>了解嵌入式开发环境，掌握内核的下载与启动过程</p></li>
+<li><p>了解Linux内核编译过程，学会配置内核编译选项与内核剪裁等</p></li>
+<li><p>了解Linux文件系统的制作、烧录与挂载等</p></li>
+<li><p>掌握交叉编译工具链的使用，了解上位机/目标机概念</p></li>
+</ul>
+<h1 id="实验环境">实验环境</h1>
+<p>实验基于Loongarch架构的龙芯教育派开发板平台，芯片为龙芯2k1000LA，Loongarch架构。上位机环境为Ubuntu
+20.04，配备交叉编译工具链与minicom串口调试工具。</p>
+<h1 id="实验过程">实验过程</h1>
+<h2 id="在目标机上烧录linux并挂载文件系统">在目标机上烧录Linux并挂载文件系统</h2>
+<p>本节中暂不讨论Linux内核的编译与文件系统的制作过程，直接使用实验提供的内核镜像与文件系统镜像进行烧录与挂载。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">$ ifconfig  <span class="comment"># 查看本机IP地址，这里我的机器上是192.168.208.22</span></span><br><span class="line">$ minicom <span class="comment"># 启动串口，按开发板重启按钮</span></span><br><span class="line"><span class="comment"># 等待出现“Press 'c' to command-line”提示时按c键进入PMON环境</span></span><br><span class="line">PMON&gt; ifconfig syn0 192.168.208.122  </span><br><span class="line"><span class="comment"># 根据实验室环境，开发板地址可设为对应上位机地址+100，避免冲突</span></span><br><span class="line">PMON&gt; load tftp://192.168.208.22/vmlinuz  <span class="comment"># 下载内核镜像</span></span><br><span class="line">PMON&gt; initrd tftp://192.168.208.22/ramdisk_loongarch.cpio.gz </span><br><span class="line"><span class="comment"># 为龙芯开发板提供的RAMFS文件系统</span></span><br><span class="line">PMON&gt; g console=ttyS0,115200 rdinit=/sbin/init </span><br><span class="line"><span class="comment"># 启动内核，指定控制台端口与波特率，指定起始位置</span></span><br></pre></td></tr></table></figure>
+<p>接下来会出现提示<code>Please press Enter to activate this console</code>，我们按提示按Enter键即可进入开发板上的Linux环境。</p>
+<h2 id="体验交叉编译工具链">体验交叉编译工具链</h2>
+<p>上位机环境为x86架构的Ubuntu系统，而目标机环境为Loongarch架构的Linux系统，虽然C语言编写一些简单的程序（比如HelloWorld）时，需要写的具体代码与架构无关，但是在不同的架构上肯定不能运行同一个程序，其中的关键就是把代码翻译成程序的编译过程。在上位机上编写程序，并编译成可以在目标机上运行的程序，这个过程就是交叉编译，使用的编译工具链就是交叉编译工具链。</p>
+<p>在实验室的Ubuntu上位机上预装了针对Loongarch-GNU-Linux的交叉工具链，位于<code>/opt/cross-tools</code>路径下。首先我们把工具链路径添加到上位机的PATH环境变量中，这样每次调用就不用输入完整路径了：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="built_in">export</span> PATH=/opt/cross-tools/bin:<span class="variable">$PATH</span></span><br></pre></td></tr></table></figure>
+<p>编写一个简单的hello.c文件</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span> {</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">"Hello from NJU!\n"</span>);</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">}</span><br></pre></td></tr></table></figure>
+<p>接下来分别用默认工具链和交叉编译工具链编译出两份不同的程序。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">$ gcc ./hello.c -o ./hello_x86 </span><br><span class="line"><span class="comment"># 这里使用的是上位机Ubuntu系统安装时自带的gcc工具链</span></span><br><span class="line">$ loongarch64-linux-gnu-gcc ./hello.c -o ./hello_arch </span><br><span class="line"><span class="comment"># 这里使用的是/opt/cross-tools/bin中的工具链</span></span><br><span class="line">$ <span class="built_in">cp</span> ./hello_arch /srv/nfs4/loveapple/</span><br><span class="line">$ <span class="built_in">cp</span> ./hello_x86 /srv/nfs4/loveapple/ </span><br><span class="line"><span class="comment"># 将编译出的程序拷贝到/srv/nfs4中的一个自建文件夹里</span></span><br><span class="line"><span class="comment">#以方便目标机上的Linux挂载网络文件系统并执行程序</span></span><br></pre></td></tr></table></figure>
+<p>在上位机上分别尝试执行两个程序。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ ./hello_x86</span><br><span class="line">Hello from NJU!</span><br><span class="line">$ ./hello_arch</span><br><span class="line">bash: cannot execute binary file: Exec format error</span><br></pre></td></tr></table></figure>
+<p>这里由于hell_arch是使用交叉工具链编译，适用于loongarch架构上运行的，所以运行时会产生报错。我们像之前所说在开发板上启动Linux系统，然后按如下步骤设置IP地址并挂载网络文件系统服务（NFS,
+Network File System）：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&gt; ifconfig eth0 192.168.208.122</span><br><span class="line">&gt; mount -t nfs 192.168.208.22:/mnt/nfs4/loveapple /mnt/loveapple</span><br><span class="line">&gt; <span class="built_in">ls</span> /mnt/loveapple -l</span><br></pre></td></tr></table></figure>
+<p>这里我们可以看到命令前面的引导符号不是$而是#，这是因为我们处在root用户环境下。</p>
+<p>执行ls命令后，此时应该能看见之前在上位机上放入的两个程序，我们来尝试运行。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">/ &gt; <span class="built_in">cd</span> /mnt/loveapple</span><br><span class="line">/mnt/loveapple &gt; ./hello_x86</span><br><span class="line">./hello_x86: line 13: ????B???: not found</span><br><span class="line">./hello_x86: line 0: ? not found</span><br><span class="line">./hello_x86: line 1: ELF???? not found</span><br><span class="line">./hello_x86: line 15: syntax error: unexpected <span class="string">"("</span></span><br><span class="line"></span><br><span class="line">/mnt/loveapple &gt; ./hello_arch</span><br><span class="line">Hello from NJU!</span><br></pre></td></tr></table></figure>
+<p>这里执行为x86编译的可执行文件时，会报错，而执行为loongarch编译的可执行文件时，则可正常执行。所谓交叉编译，就是在上位机上对程序代码进行编写开发，使用交叉工具链进行编译，从而传递给目标机进行执行。</p>
+<h2 id="编译linux内核">编译Linux内核</h2>
+<p>Linux内核是开源的，一般来说可从网络上进行下载，这里由于实验室是内网环境，我们改为从教师机上使用基于ssh链接的scp工具获取Linux内核源码。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="built_in">mkdir</span> -p ~/loveapple/core</span><br><span class="line">$ <span class="built_in">cd</span> ~/loveapple/core <span class="comment"># 使用自建的目录，与其他同学区分</span></span><br><span class="line">$ ssh student@192.168.208.22</span><br><span class="line">$ <span class="built_in">ls</span> ~ </span><br><span class="line"><span class="comment"># 先使用ssh登录到教师机上，用ls命令查看有那些文件，以方便scp下载指定路径</span></span><br><span class="line"><span class="comment"># 这里发现~（即/home/student）路径下有ramdisk_img.gz，ramdisk_loong.cpio.gz，busybox-1.29.2.tar.gz，linux_4.19.190.7.9.orig.tar.gz这几个比较有用的文件</span></span><br><span class="line">$ <span class="built_in">exit</span></span><br><span class="line">$ scp student@192.168.208.88:~/linux_4.19.190.7.9.orig.tar.gz .</span><br><span class="line"> <span class="comment">#将教师机上的文件通过scp目录拷贝到当前路径</span></span><br><span class="line">$ tar -zxvf ./linux_4.19.190.7.9.orig.tar.gz <span class="comment"># tar命令解压</span></span><br><span class="line">$ <span class="built_in">cd</span> ./linux_4.19.190.7.9</span><br></pre></td></tr></table></figure>
+<p>这里我们成功进入了存放Linux内核源码的文件夹。在该文件夹中有Makefile文件规定可执行的<code>make</code>指令。这里为了交叉编译，我们首先要为make环境设置对应的环境变量<code>ARCH</code>与<code>CROSS_COMPILE</code>。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="built_in">export</span> ARCH=loongarch</span><br><span class="line">$ <span class="built_in">export</span> CROSS_COMPILE=loongarch64-linux-gnu-</span><br></pre></td></tr></table></figure>
+<p>这里<code>ARCH</code>指定了编译目标的架构，而<code>CROSS_COMPILE</code>指定了工具链的前缀，后缀则为GNU工具链统一的<code>gcc</code>，<code>as</code>，<code>ar</code>等等工具名称。通过<code>export</code>设置的环境变量不具有永久性，仅对当前会话有效，因此每次重新启动bash时，都需要重新<code>export</code>一次。</p>
+<p>Linux内核编译时可选的配置选项很多，这里我们首先加载一下对这套板卡的缺省配置（defconfig）。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ make loongson_2k1000_defconfig</span><br></pre></td></tr></table></figure>
+<p>接下来，还有很多可以自定义的配置项，我们可以使用menuconfig图形化界面加以配置。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ make menuconfig</span><br></pre></td></tr></table></figure>
+<p>修改好配置之后，就可以进行编译了。可以用-j选项指定编译的线程数，加快编译进度。目标为vmlinuz内核文件。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ make -j8 vmlinuz</span><br></pre></td></tr></table></figure>
+<p>编译完成之后，我们在tftpboot文件夹下新建一个自己的文件夹，依然是与其他同学做出区分，然后将编译好的vmlinuz文件拷贝的该文件夹下，这样之后就可以通过tftp协议来load自己的内核了。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="built_in">mkdir</span> /srv/tftpboot/loveapple</span><br><span class="line">$ <span class="built_in">cp</span> ./vmlinuz /srv/tftpboot/loveapple/vmlinuz_0909</span><br></pre></td></tr></table></figure>
+<h2 id="制作文件系统">制作文件系统</h2>
+<p>一般的文件系统需要的硬件资源比较多，这里我们选择可统一编译的轻量化的文件系统busybox。</p>
+<p>之前ssh登录教师机时已经看到教师机上有busybox的压缩包，我们依然是使用scp命令传输下来。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="built_in">mkdir</span> ~/loveapple/busybox</span><br><span class="line">$ <span class="built_in">cd</span> ~/loveapple/busybox</span><br><span class="line">$ scp student@192.168.208.88:~/busybox-1.29.2.tar.gz</span><br><span class="line">$ tar -zxvf ./busybox-1.29.2.tar.gz</span><br><span class="line">$ <span class="built_in">cd</span> ./busybox-1.29.2</span><br></pre></td></tr></table></figure>
+<p>之前已经export过相应的环境变量了，这里如果没有重启过bash会话的话，可以不重新export，直接进行设置、编译与安装。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ make defconfig</span><br><span class="line">$ make menuconfig <span class="comment"># 这里我推荐勾选Settings-&gt;Build Options-&gt;Build static binary (no shared libs)</span></span><br><span class="line">$ make -j8</span><br><span class="line">$ make install</span><br></pre></td></tr></table></figure>
+<p>如果没有特殊配置过安装路径的话，<code>make install</code>会默认将busybox安装于<code>./_install</code>下。</p>
+<p>接下来我们还要对这个新系统做一些修改，规定一些启动时的初始化行为。在之前启动时的<code>g</code>命令中，我们曾规定过<code>rdinit=/sbin/init</code>，这是Linux内核启动并挂载文件系统后自动执行的脚本。虽然这个脚本是busybox编译安装时就自动生成的，但是我们依然还需要做出一些额外的配置。在_install文件夹下新建一个<code>/etc</code>目录，在该目录中新建<code>inittab</code>,<code>rc</code>,<code>motd</code>三个文件。接下来一定要注意，在提及这个etc目录时，一定要使用<code>./etc/</code>，而非<code>/etc/</code>（会指向上位机自己的etc文件夹）。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="built_in">cd</span> ./_install</span><br><span class="line">$ <span class="built_in">mkdir</span> etc</span><br><span class="line">$ vim ./etc/inittab <span class="comment"># 随后编辑inittab文件</span></span><br><span class="line">$ vim ./etc/rc <span class="comment"># 随后编辑rc文件</span></span><br><span class="line">$ <span class="built_in">chmod</span> +x ./etc/rc 给rc文件赋予可执行权限</span><br><span class="line">$ vim ./etc/motd <span class="comment"># 随后编辑motd文件</span></span><br></pre></td></tr></table></figure>
+<p><code>inittab</code>是初始化系统设置的关键配置文件，比如系统初始化过程，执行脚本所用的解释器，关机对应的指令等等。我编写的<code>inittab</code>内容如下：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># /etc/inittab</span></span><br><span class="line"></span><br><span class="line">::sysinit:/etc/init.d/rcS</span><br><span class="line">::askfirst:-/bin/sh</span><br><span class="line"></span><br><span class="line">::ctrlaltdel:/sbin/reboot</span><br><span class="line">::shutdown:/bin/umount -a -r</span><br></pre></td></tr></table></figure>
+<p><code>rc</code>文件则是刚刚我们规定的<code>/etc/init.d/rcS</code>软连接到的真正脚本文件。因此我们还要进行<code>rcS</code>到<code>rc</code>的软连接。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="built_in">mkdir</span> ./etc/init.d</span><br><span class="line">$ <span class="built_in">ln</span> -s ./etc/rc ./etc/init.d/rcS</span><br></pre></td></tr></table></figure>
+<p>我编写的<code>rc</code>文件如下：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#!/bin/sh</span></span><br><span class="line">hostname Loongson</span><br><span class="line">mount -t proc proc /proc</span><br><span class="line">mount -t sysfs sysfs /sys</span><br><span class="line"><span class="built_in">cat</span> /etc/motd</span><br><span class="line"></span><br><span class="line"><span class="comment">#ifconfig eth0 192.168.208.123</span></span><br><span class="line"><span class="built_in">mkdir</span> /LoveApple</span><br><span class="line"><span class="comment">#mount 192.168.208.22:/srv/nfs4/loveapple /LoveApple -o nolock,proto=tcp</span></span><br></pre></td></tr></table></figure>
+<p>最后三行我本来适用于自动执行NFS挂载操作的，但是实测发现<code>rc</code>脚本执行太早，网卡还没有配置好就尝试执行这几条指令了，导致NFS挂载失败并在控制台中弹出报错，于是我便注释掉了两句，只留下了创建文件夹的语句。</p>
+<p>最后是<code>motd</code>文件(<strong>M</strong>essage
+<strong>O</strong>f
+<strong>T</strong>o<strong>D</strong>ay)，我们在<code>rc</code>中让脚本<code>cat</code>出这个文件的内容，因此我们在<code>motd</code>中写的内容会在系统启动时显示，类似于一个标识。这里我编写的<code>motd</code>文件如下：</p>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">===================================</span><br><span class="line">     Welcome to Linux World!       </span><br><span class="line">===================================</span><br><span class="line">    Ported by LoveApple 14434      </span><br><span class="line">===================================</span><br><span class="line">Say Hello to Everybody! Love U All!</span><br><span class="line">===================================</span><br></pre></td></tr></table></figure>
+<p>接下来我们将编译出的ramdisk_img挂载，并将_install文件夹中安装的文件复制到挂载点中，最后制作归档文件，以方便目标机通过tftp加载。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">$ mount ramdisk_img <span class="comment"># 根据/etc/fstab的配置，会将ramdisk_img挂载到/mnt/ramdisk/下</span></span><br><span class="line">$ <span class="built_in">cp</span> ./_install/* /mnt/ramdisk/ -r</span><br><span class="line">$ <span class="built_in">cd</span> /mnt/ramdisk/</span><br><span class="line">$ find . | cpio -H newc -o | gzip -9 &gt; /srv/tftpboot/loveapple/initrd_0916.cpio.gz <span class="comment"># 直接放入tftp文件夹即可</span></span><br><span class="line">$ <span class="built_in">cd</span> -</span><br><span class="line">$ umount /mnt/ramdisk <span class="comment"># 及时卸载挂载点</span></span><br></pre></td></tr></table></figure>
+<p>然后按第一小节所述进入开发板的PMON环境，加载我们自己编译的内核与文件系统。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">PMON&gt; ifconfig syn0 192.168.208.122</span><br><span class="line">PMON&gt; load tftp://192.168.208.22/loveapple/vmlinuz_0909</span><br><span class="line">PMON&gt; initrd tftp://192.168.208.22/loveapple/initrd_0916.cpio.gz</span><br><span class="line">PMON&gt; g console=ttyS0,115200 rdinit=/sbin/init</span><br></pre></td></tr></table></figure>
+<p>注意这里我们的文件是存放在<code>/srv/tftpboot</code>底下的子文件夹里的，使用tftp协议传输时要输入相对路径。稍等几秒让Linux内核与文件系统启动，我们就可以第一次看到我们自己编译的内核与文件系统了。</p>
+<h2 id="制作动态链接库">制作动态链接库</h2>
+<p>前面编译安装busybox时我们选择构建静态二进制文件，不使用shared
+libs。这为我们省去了拷贝动态链接库的烦恼，但是也会让之后我们在目标机上运行其他需要动态链接库的程序遇到一些困难。接下来我们介绍一下使用动态链接库的办法。</p>
+<p>进入到busybox的源码文件夹，使用如下命令查看busybox需要的动态链接器与共享库：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ readelf -l busybox | grep interpreter</span><br><span class="line">$ readelf -d busybox | grep NEEDED</span><br></pre></td></tr></table></figure>
+<p>为了存放链接器与共享库，我们需要在<code>/usr/</code>下建立<code>lib/</code>与<code>lib64/</code>文件夹，还需要在根目录建立<code>/lib64/</code>文件夹，并从交叉工具链附带的库文件中将这些链接器与共享库文件拷贝过来。注意上面命令所列出的链接器与共享库均为软链接，不能直接拷贝，而要用<code>ls -l</code>指令看到具体的链接关系，并拷贝其对应的目标文件，再手动建立相应的软链接关系。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="built_in">cd</span> ./_install</span><br><span class="line">$ <span class="built_in">mkdir</span> -p /usr/lib64</span><br><span class="line">$ <span class="built_in">mkdir</span> /usr/lib</span><br><span class="line">$ <span class="built_in">ln</span> -s /usr/lib64 ./lib64</span><br><span class="line">$ <span class="built_in">ls</span> -l /opt/cross-tools/loongarch64-linux-gnu/sysroot/lib64</span><br><span class="line">$ <span class="built_in">cp</span> /opt/cross-tools/loongarch64-linux-gnu/sysroot/lib64/{ld-2.28.so, libc-2.28.so, libm-2.28.so, libresolv-2.28.so} ./usr/lib64</span><br><span class="line">$ <span class="built_in">cd</span> ./usr/lib64</span><br><span class="line">$ <span class="built_in">ln</span> -s ld-2.28.so ld.so.1</span><br><span class="line">$ <span class="built_in">ln</span> -s libc-2.28.so libc.so.6</span><br><span class="line">$ <span class="built_in">ln</span> -s libm-2.28.so libm.so.6</span><br><span class="line">$ <span class="built_in">ln</span> -s libresolv-2.28.so libresolv.so.2</span><br></pre></td></tr></table></figure>
+<p>接下来我们再像之前一样重新制作一个归档文件(<code>.cpio.gz</code>)，并在开发板上启动，实验效果与之前相同，但是新启动的文件系统中有<code>lib64</code>与其具体内容。</p>
+<h1 id="遇到的问题与感悟">遇到的问题与感悟</h1>
+<ul>
+<li><p>在开发板上执行命令是使用串口（通过USB连接到上位机）进行数据传输，但是<code>load</code>与<code>initrd</code>指令通过<code>tftp</code>服务传输文件要借助网络。当<code>load</code>或<code>initrd</code>命令没有反应时，首先检查开发板有没有插上网线，其次通过<code>ping</code>命令检查网络是否通畅，再其次检查<code>tftp://\&lt;IP\&gt;/</code>后面的路径与文件名是否正确。正常来说如果命令正确执行并正在加载时，会出现一串16进制数字，一个括号包裹的文件类型（(ELF)或(BIN)），以及一个会转圈的字符（轮流显示|/-）。</p></li>
+<li><p>在上位机开发时，如果要进行文件夹切换，如果不记得每一级文件夹的结构，比如其目录下有什么子目录与文件名之类的，不需要一点点<code>cd</code>一点点<code>ls</code>，而可以<code>cd &lt;部分路径&gt;</code>然后按tab键，Ubuntu会把可能的补全列在下面，并且保留你已经输入过的命令部分。善用tab补全可以节省很多手打文件名的烦恼，也可以避免不少输入错误导致的问题。</p></li>
+<li><p>当命令执行失败或者遇到系统无法启动之类的问题时，可以认真看看报错信息。</p></li>
+<li><p>当我第一次从构建静态二进制文件转为使用动态共享链接库时，一直给我报错说找不到<code>libm.so.6</code>，但是我明明拷贝了文件并建立了软链接。后来发现是<code>/usr</code>底下少建立了<code>/lib</code>文件夹。</p></li>
+<li><p>我尝试把文件系统的归档文件整合进内核编译过程中，首先把<code>initrd.cpio.gz</code>文件拷贝到Linux编译的文件夹中，然后<code>make menuconfig</code>并在相关设置中制定RAMFS的文件路径，保存退出，重新<code>make -j8</code>，生成新的vmlinuz内核，当我尝试仅<code>load</code>这个vmlinuz内核并尝试用<code>g</code>命令启动时，会与之前正确步骤中一样输出一大堆调试信息，但是缺少<code>Press Enter to enable this console</code>提示，个人推测是内核和文件系统都成功加载了，但是console指定有问题，或者是启动脚本的路径没有正确被找到。由于实验时间限制，尚未解决这一问题。</p></li>
+</ul>
+<h1 id="实验总结">实验总结</h1>
+<p>本次实验基于龙芯2K1000LA开发板，系统地完成了嵌入式Linux开发环境的搭建与核心流程的实践。通过本次实验，我主要获得了以下收获：</p>
+<ul>
+<li><p><strong>掌握了嵌入式Linux开发的基本流程</strong>：亲身体验了从内核配置编译、文件系统制作到最终烧录启动的完整过程，对嵌入式系统的组成和启动流程有了直观且深入的理解。</p></li>
+<li><p><strong>理解了交叉编译的核心概念</strong>：通过在上位机（x86）编译出能在目标机（LoongArch）上运行的程序，深刻体会了交叉编译工具链在跨平台开发中的关键作用，以及不同架构下二进制文件的不可兼容性。</p></li>
+<li><p><strong>提升了问题分析与解决能力</strong>：在实验过程中，遇到了如tftp加载失败、动态链接库缺失、文件系统启动异常等问题。通过分析错误信息、检查网络配置和文件路径，我学会了系统地排查和解决问题的方法，并认识到启动脚本执行时机的重要性。</p></li>
+<li><p><strong>熟悉了关键工具的使用</strong>：熟练掌握了menuconfig进行内核剪裁、BusyBox构建轻量级文件系统、以及使用cpio和gzip制作根文件系统镜像等核心技能。</p></li>
+</ul>
+<p>总而言之，本实验不仅让我掌握了具体的操作技能，更重要的是建立了对嵌入式系统”自上而下”的整体认识，为后续更深层次的嵌入式开发打下了坚实的基础。</p>
+<h1 id="实验过程照片">实验过程照片</h1>
+<p>由于实验上位机不连接外网，不方便截图传输到个人电脑上，因此这里均使用手机拍屏而非截屏。所幸照片仅作为实验过程的证据，而非实验过程的描述，相对而言不算特别关键。</p>
+<figure>
+<img src="/loongarch-linux-1/1.jpg" alt="PMON环境启动"><span class="image-caption">PMON环境启动</span>
+<figcaption aria-hidden="true">PMON环境启动</figcaption>
+</figure>
+<figure>
+<img src="/loongarch-linux-1/2.jpg" alt="PMON环境下配置网络"><span class="image-caption">PMON环境下配置网络</span>
+<figcaption aria-hidden="true">PMON环境下配置网络</figcaption>
+</figure>
+<figure>
+<img src="/loongarch-linux-1/3.jpg" alt="在开发板上启动现成的Linux内核与文件系统"><span class="image-caption">在开发板上启动现成的Linux内核与文件系统</span>
+<figcaption aria-hidden="true">在开发板上启动现成的Linux内核与文件系统</figcaption>
+</figure>
+<figure>
+<img src="/loongarch-linux-1/4.jpg" alt="在上位机上运行两种程序的不同结果"><span class="image-caption">在上位机上运行两种程序的不同结果</span>
+<figcaption aria-hidden="true">在上位机上运行两种程序的不同结果</figcaption>
+</figure>
+<figure>
+<img src="/loongarch-linux-1/5.jpg" alt="在目标机上运行两种程序的不同结果"><span class="image-caption">在目标机上运行两种程序的不同结果</span>
+<figcaption aria-hidden="true">在目标机上运行两种程序的不同结果</figcaption>
+</figure>
+<figure>
+<img src="/loongarch-linux-1/6.jpg" alt="下载Linux内核压缩包并解压"><span class="image-caption">下载Linux内核压缩包并解压</span>
+<figcaption aria-hidden="true">下载Linux内核压缩包并解压</figcaption>
+</figure>
+<figure>
+<img src="/loongarch-linux-1/8.jpg" alt="安装busybox"><span class="image-caption">安装busybox</span>
+<figcaption aria-hidden="true">安装busybox</figcaption>
+</figure>
+<figure>
+<img src="/loongarch-linux-1/9.jpg" alt="制作ramdisk_img镜像"><span class="image-caption">制作ramdisk_img镜像</span>
+<figcaption aria-hidden="true">制作ramdisk_img镜像</figcaption>
+</figure>
+<figure>
+<img src="/loongarch-linux-1/10.jpg" alt="编写Message of Today"><span class="image-caption">编写Message of Today</span>
+<figcaption aria-hidden="true">编写Message of Today</figcaption>
+</figure>
+<figure>
+<img src="/loongarch-linux-1/11.jpg" alt="第一次成功启动我自己的内核与文件系统"><span class="image-caption">第一次成功启动我自己的内核与文件系统</span>
+<figcaption aria-hidden="true">第一次成功启动我自己的内核与文件系统</figcaption>
+</figure>
+<figure>
+<img src="/loongarch-linux-1/12.jpg" alt="在我自己的内核与文件系统上执行一些简单命令"><span class="image-caption">在我自己的内核与文件系统上执行一些简单命令</span>
+<figcaption aria-hidden="true">在我自己的内核与文件系统上执行一些简单命令</figcaption>
+</figure>
+<figure>
+<img src="/loongarch-linux-1/13.jpg" alt="将tftpboot中我的文件整合到一个单独目录中，并进行加载与启动"><span class="image-caption">将tftpboot中我的文件整合到一个单独目录中，并进行加载与启动</span>
+<figcaption aria-hidden="true">将tftpboot中我的文件整合到一个单独目录中，并进行加载与启动</figcaption>
+</figure>
+<figure>
+<img src="/loongarch-linux-1/14.jpg" alt="在目标机上尝试新建用户与组，设置密码"><span class="image-caption">在目标机上尝试新建用户与组，设置密码</span>
+<figcaption aria-hidden="true">在目标机上尝试新建用户与组，设置密码</figcaption>
+</figure>
+<figure>
+<img src="/loongarch-linux-1/15.jpg" alt="目标机也要合理关机，不要粗暴拔电哦"><span class="image-caption">目标机也要合理关机，不要粗暴拔电哦</span>
+<figcaption aria-hidden="true">目标机也要合理关机，不要粗暴拔电哦</figcaption>
+</figure>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta"><i class="fas fa-circle-user fa-fw"></i>Author: </span><span class="post-copyright-info"><a href="https://loveapple.icu">LoveApple14434</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta"><i class="fas fa-square-arrow-up-right fa-fw"></i>Link: </span><span class="post-copyright-info"><a href="https://loveapple.icu/loongarch-linux-1/">https://loveapple.icu/loongarch-linux-1/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta"><i class="fas fa-circle-exclamation fa-fw"></i>Copyright Notice: </span><span class="post-copyright-info">All articles on this blog are licensed under <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> unless otherwise stated.</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/Linux/">Linux</a><a class="post-meta__tags" href="/tags/%E5%BC%80%E5%8F%91%E6%9D%BF/">开发板</a><a class="post-meta__tags" href="/tags/loongarch/">loongarch</a></div><div class="post-share"><div class="social-share" data-image="https://loveapple.icu/img-api/random-image?6870" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><a class="pagination-related" href="/nju-king-crab/" title="NJU九食堂惊现帝王蟹：丰俭由人乃常态，温室育花实可悲"><img class="cover" src="https://loveapple.icu/img-api/random-image?2216" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="info"><div class="info-1"><div class="info-item-1">Previous</div><div class="info-item-2">NJU九食堂惊现帝王蟹：丰俭由人乃常态，温室育花实可悲</div></div><div class="info-2"><div class="info-item-1">同学：支持。食堂：支持。校领导：支持。网友：反对！</div></div></div></a><a class="pagination-related" href="/jgg-hotpot/" title="举高高旋转小火锅评测"><img class="cover" src="https://random.mikus.ink/pc?3025" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="info text-right"><div class="info-1"><div class="info-item-1">Next</div><div class="info-item-2">举高高旋转小火锅评测</div></div><div class="info-2"><div class="info-item-1">一篇来自旋转小火锅爱好者的探店评测。文章从价格、形式、锅底、小料台到菜品等多个维度，将新开的举高高与常见的龙歌等品牌进行了对比，并最终给出了个人评价与推荐理由。</div></div></div></a></nav><hr class="custom-hr"/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> Comments</span></div></div><div class="comment-wrap"><div><div id="giscus-wrap"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info text-center"><div class="avatar-img"><img src="/img/machinist.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info-name">LoveApple14434</div><div class="author-info-description">技术实践 | 心得分享 | 开源生态<br>射频与微波 | 业余无线电<br>以及水煮鱼的生活记录！</div><div class="site-data"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">30</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">39</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">4</div></a></div><a id="card-info-btn" href="Tencent://message/?uin=1985671808&amp;Site=loveapple.icu&amp;Menu=yes"><i class="fa-brands fa-qq"></i><span>Add me via QQ</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>Announcement</span></div><div class="announcement_content">封面图片来自<a target="_blank" rel="noopener" href="https://www.pexels.com">Pexels.com<img src="https://images.pexels.com/lib/api/pexels.png" width="100px"/><img src="https://images.pexels.com/lib/api/pexels-white.png" width="100px"/></a><br>以及<a target="_blank" rel="noopener" href="https://mikus.ink">@mikus</a>的随机图片API</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>Contents</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%AE%9E%E9%AA%8C%E7%9B%AE%E7%9A%84"><span class="toc-number">1.</span> <span class="toc-text">实验目的</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%AE%9E%E9%AA%8C%E7%8E%AF%E5%A2%83"><span class="toc-number">2.</span> <span class="toc-text">实验环境</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%AE%9E%E9%AA%8C%E8%BF%87%E7%A8%8B"><span class="toc-number">3.</span> <span class="toc-text">实验过程</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9C%A8%E7%9B%AE%E6%A0%87%E6%9C%BA%E4%B8%8A%E7%83%A7%E5%BD%95linux%E5%B9%B6%E6%8C%82%E8%BD%BD%E6%96%87%E4%BB%B6%E7%B3%BB%E7%BB%9F"><span class="toc-number">3.1.</span> <span class="toc-text">在目标机上烧录Linux并挂载文件系统</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BD%93%E9%AA%8C%E4%BA%A4%E5%8F%89%E7%BC%96%E8%AF%91%E5%B7%A5%E5%85%B7%E9%93%BE"><span class="toc-number">3.2.</span> <span class="toc-text">体验交叉编译工具链</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%BC%96%E8%AF%91linux%E5%86%85%E6%A0%B8"><span class="toc-number">3.3.</span> <span class="toc-text">编译Linux内核</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%88%B6%E4%BD%9C%E6%96%87%E4%BB%B6%E7%B3%BB%E7%BB%9F"><span class="toc-number">3.4.</span> <span class="toc-text">制作文件系统</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%88%B6%E4%BD%9C%E5%8A%A8%E6%80%81%E9%93%BE%E6%8E%A5%E5%BA%93"><span class="toc-number">3.5.</span> <span class="toc-text">制作动态链接库</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98%E4%B8%8E%E6%84%9F%E6%82%9F"><span class="toc-number">4.</span> <span class="toc-text">遇到的问题与感悟</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%AE%9E%E9%AA%8C%E6%80%BB%E7%BB%93"><span class="toc-number">5.</span> <span class="toc-text">实验总结</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%AE%9E%E9%AA%8C%E8%BF%87%E7%A8%8B%E7%85%A7%E7%89%87"><span class="toc-number">6.</span> <span class="toc-text">实验过程照片</span></a></li></ol></div></div></div></div></main><footer id="footer" style="background: pink;"><div class="footer-other"><div class="footer-copyright"><span class="copyright">&copy;&nbsp;2025 - 2026 By LoveApple14434</span><span class="framework-info"><span>Framework </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo 7.3.0</a><span class="footer-separator">|</span><span>Theme </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly 5.4.3</a></span></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="Reading Mode"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="Toggle Between Light and Dark Mode"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="Toggle Between Single-column and Double-column"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="Settings"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="Table of Contents"><i class="fas fa-list-ul"></i></button><a id="to_comment" href="#post-comment" title="Scroll to Comments"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="Back to Top"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.umd.min.js"></script><div class="js-pjax"><script>(() => {
+  const loadMathjax = () => {
+    if (!window.MathJax) {
+      window.MathJax = {
+        tex: {
+          inlineMath: [['$', '$'], ['\\(', '\\)']],
+          tags: 'none',
+        },
+        chtml: {
+          scale: 1.1
+        },
+        options: {
+          enableMenu: true,
+          renderActions: {
+            findScript: [10, doc => {
+              for (const node of document.querySelectorAll('script[type^="math/tex"]')) {
+                const display = !!node.type.match(/; *mode=display/)
+                const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display)
+                const text = document.createTextNode('')
+                node.parentNode.replaceChild(text, node)
+                math.start = {node: text, delim: '', n: 0}
+                math.end = {node: text, delim: '', n: 0}
+                doc.math.push(math)
+              }
+            }, '']
+          }
+        }
+      }
+
+      const script = document.createElement('script')
+      script.src = 'https://cdn.jsdelivr.net/npm/mathjax/es5/tex-mml-chtml.min.js'
+      script.id = 'MathJax-script'
+      script.async = true
+      document.head.appendChild(script)
+    } else {
+      MathJax.startup.document.state(0)
+      MathJax.texReset()
+      MathJax.typesetPromise()
+    }
+  }
+
+  btf.addGlobalFn('encrypt', loadMathjax, 'mathjax')
+  window.pjax ? loadMathjax() : window.addEventListener('load', loadMathjax)
+})()</script><script>(() => {
+  const isShuoshuo = GLOBAL_CONFIG_SITE.pageType === 'shuoshuo'
+  const option = {"data-input-position":"top"}
+
+  const getGiscusTheme = theme => theme === 'dark' ? 'dark' : 'light'
+
+  const createScriptElement = config => {
+    const ele = document.createElement('script')
+    Object.entries(config).forEach(([key, value]) => {
+      ele.setAttribute(key, value)
+    })
+    return ele
+  }
+
+  const loadGiscus = (el = document, key) => {
+    const mappingConfig = isShuoshuo
+      ? { 'data-mapping': 'specific', 'data-term': key }
+      : { 'data-mapping': (option && option['data-mapping']) || 'pathname' }
+
+    const giscusConfig = {
+      src: 'https://giscus.app/client.js',
+      'data-repo': 'loveapple14434/loveapple14434.github.io',
+      'data-repo-id': 'R_kgDOLVLb7Q',
+      'data-category-id': 'DIC_kwDOLVLb7c4CzLc8',
+      'data-theme': getGiscusTheme(document.documentElement.getAttribute('data-theme')),
+      'data-reactions-enabled': '1',
+      crossorigin: 'anonymous',
+      async: true,
+      ...option,
+      ...mappingConfig
+    }
+
+    const scriptElement = createScriptElement(giscusConfig)
+
+    el.querySelector('#giscus-wrap').appendChild(scriptElement)
+
+    if (isShuoshuo) {
+      window.shuoshuoComment.destroyGiscus = () => {
+        if (el.children.length) {
+          el.innerHTML = ''
+          el.classList.add('no-comment')
+        }
+      }
+    }
+  }
+
+  const changeGiscusTheme = theme => {
+    const iframe = document.querySelector('#giscus-wrap iframe')
+    if (iframe) {
+      const message = {
+        giscus: {
+          setConfig: {
+            theme: getGiscusTheme(theme)
+          }
+        }
+      }
+      iframe.contentWindow.postMessage(message, 'https://giscus.app')
+    }
+  }
+
+  btf.addGlobalFn('themeChange', changeGiscusTheme, 'giscus')
+
+  if (isShuoshuo) {
+    'Giscus' === 'Giscus'
+      ? window.shuoshuoComment = { loadComment: loadGiscus }
+      : window.loadOtherComment = loadGiscus
+    return
+  }
+
+  if ('Giscus' === 'Giscus' || !false) {
+    if (false) btf.loadComment(document.getElementById('giscus-wrap'), loadGiscus)
+    else loadGiscus()
+  } else {
+    window.loadOtherComment = loadGiscus
+  }
+})()</script></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>

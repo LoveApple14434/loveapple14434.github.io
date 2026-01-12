@@ -1,0 +1,11 @@
+User-agent: *
+
+Allow: /
+
+Disallow: /js/
+Disallow: /css/
+Disallow: /tags/
+Disallow: /categories/
+Disallow: /archives/
+
+Sitemap: https://loveapple.icu/sitemap.xml
