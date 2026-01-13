@@ -6,7 +6,7 @@
   <link href="https://loveapple.icu/atom.xml" rel="self"/>
   
   <link href="https://loveapple.icu/"/>
-  <updated>2026-01-12T15:52:18.753Z</updated>
+  <updated>2026-01-13T13:52:25.444Z</updated>
   <id>https://loveapple.icu/</id>
   
   <author>
@@ -17,11 +17,37 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>水煮鱼的济州岛旅行日记：Day2</title>
+    <link href="https://loveapple.icu/Jeju-day-2/"/>
+    <id>https://loveapple.icu/Jeju-day-2/</id>
+    <published>2026-01-13T12:39:14.000Z</published>
+    <updated>2026-01-13T13:52:25.444Z</updated>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;行程&quot;&gt;行程&lt;/h2&gt;
+&lt;p&gt;今日的总体行程是游览济州岛南部的柱状节理带-偶来小路路线7-每日偶来市场。济州岛的行政规划是济州特别自治道，下辖2个市，包括济州市（首府）与西归浦市，今天的行程主要就是游览西归浦市。&lt;/p&gt;
+&lt;h2 id=&quot;柱状节理带&quot;&gt;柱状节理</summary>
+      
+    
+    
+    
+    <category term="牲活" scheme="https://loveapple.icu/categories/%E7%89%B2%E6%B4%BB/"/>
+    
+    
+    <category term="旅行" scheme="https://loveapple.icu/tags/%E6%97%85%E8%A1%8C/"/>
+    
+    <category term="济州岛" scheme="https://loveapple.icu/tags/%E6%B5%8E%E5%B7%9E%E5%B2%9B/"/>
+    
+  </entry>
+  
+  <entry>
     <title>水煮鱼的济州岛旅行日记：Day1</title>
     <link href="https://loveapple.icu/Jeju-day-1/"/>
     <id>https://loveapple.icu/Jeju-day-1/</id>
     <published>2026-01-12T11:13:36.000Z</published>
-    <updated>2026-01-12T15:52:18.753Z</updated>
+    <updated>2026-01-13T12:39:10.881Z</updated>
     
     
     <summary type="html">这篇博客是作者济州岛旅行的首日游记，记录了紧凑的“特种兵”行程。一天内游玩了牛岛（骑电助力自行车环岛）、城山日出峰（徒步登顶）和涉地可支（海岸栈道）三个主要景点，并以一顿极具性价比的本地烤肉自助餐收尾。日记充满了对自然风光、人文体验和美食的生动描述，展现了充实而疲惫的第一天。</summary>
@@ -463,9 +489,9 @@
     <category term="寄术" scheme="https://loveapple.icu/categories/%E5%AF%84%E6%9C%AF/"/>
     
     
-    <category term="开源项目" scheme="https://loveapple.icu/tags/%E5%BC%80%E6%BA%90%E9%A1%B9%E7%9B%AE/"/>
-    
     <category term="EE" scheme="https://loveapple.icu/tags/EE/"/>
+    
+    <category term="开源项目" scheme="https://loveapple.icu/tags/%E5%BC%80%E6%BA%90%E9%A1%B9%E7%9B%AE/"/>
     
     <category term="嵌入式开发" scheme="https://loveapple.icu/tags/%E5%B5%8C%E5%85%A5%E5%BC%8F%E5%BC%80%E5%8F%91/"/>
     
