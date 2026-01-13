@@ -9,7 +9,7 @@
     <atom:link href="https://loveapple.icu/rss.xml" rel="self" type="application/rss+xml"/>
     
     <description>开源技术实践者 &amp; 射频电子新人 | LoveApple14434 的个人领地 | 一条爱苹果的水煮鱼。深度分享射频/微波、业余无线电硬核技术笔记，开源项目技术实践以及博客网站建设经验，IT侠笔记本维修随录，兼谈NJU校园趣闻与水煮鱼的生活思考。探索技术前沿，记录成长点滴。</description>
-    <pubDate>Tue, 13 Jan 2026 13:52:25 GMT</pubDate>
+    <pubDate>Tue, 13 Jan 2026 14:37:07 GMT</pubDate>
     <generator>http://hexo.io/</generator>
     
     <item>
@@ -18,12 +18,7 @@
       <guid>https://loveapple.icu/Jeju-day-2/</guid>
       <pubDate>Tue, 13 Jan 2026 12:39:14 GMT</pubDate>
       
-        
-        
-      <description>&lt;h2 id=&quot;行程&quot;&gt;行程&lt;/h2&gt;
-&lt;p&gt;今日的总体行程是游览济州岛南部的柱状节理带-偶来小路路线7-每日偶来市场。济州岛的行政规划是济州特别自治道，下辖2个市，包括济州市（首府）与西归浦市，今天的行程主要就是游览西归浦市。&lt;/p&gt;
-&lt;h2 id=&quot;柱状节理带&quot;&gt;柱状节理</description>
-        
+      <description>这篇博客记录了济州岛旅行的第二天行程。作者游览了西归浦市的柱状节理带地质奇观，徒步了风景优美的偶来小路路线7（包括海边栈道、Sammaebong峰及城市公园），并深入当地的每日偶来市场，品尝了炸菜卷、铁板鱿鱼和备受好评的黑猪肉泡菜卷等多种小吃，体验了自然风光与市井美食相结合的一天。</description>
       
       
       
@@ -526,9 +521,9 @@
       <category domain="https://loveapple.icu/categories/%E5%AF%84%E6%9C%AF/">寄术</category>
       
       
-      <category domain="https://loveapple.icu/tags/EE/">EE</category>
-      
       <category domain="https://loveapple.icu/tags/%E5%BC%80%E6%BA%90%E9%A1%B9%E7%9B%AE/">开源项目</category>
+      
+      <category domain="https://loveapple.icu/tags/EE/">EE</category>
       
       <category domain="https://loveapple.icu/tags/%E5%B5%8C%E5%85%A5%E5%BC%8F%E5%BC%80%E5%8F%91/">嵌入式开发</category>
       
