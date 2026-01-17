@@ -9,14 +9,66 @@
     <atom:link href="https://loveapple.icu/rss.xml" rel="self" type="application/rss+xml"/>
     
     <description>开源技术实践者 &amp; 射频电子新人 | LoveApple14434 的个人领地 | 一条爱苹果的水煮鱼。深度分享射频/微波、业余无线电硬核技术笔记，开源项目技术实践以及博客网站建设经验，IT侠笔记本维修随录，兼谈NJU校园趣闻与水煮鱼的生活思考。探索技术前沿，记录成长点滴。</description>
-    <pubDate>Tue, 13 Jan 2026 14:40:25 GMT</pubDate>
+    <pubDate>Sat, 17 Jan 2026 14:02:35 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>水煮鱼的济州岛旅行日记：Day4</title>
+      <link>https://loveapple.icu/Jeju-day-4/</link>
+      <guid>https://loveapple.icu/Jeju-day-4/</guid>
+      <pubDate>Sat, 17 Jan 2026 11:00:24 GMT</pubDate>
+      
+        
+        
+      <description>&lt;h2 id=&quot;行程&quot;&gt;行程&lt;/h2&gt;
+&lt;p&gt;第四天的行程是汉拿山攀登-济州市区散步。&lt;/p&gt;
+&lt;h2 id=&quot;汉拿山&quot;&gt;汉拿山&lt;/h2&gt;
+&lt;p&gt;想要登顶汉拿山顶峰有两条路线，城板岳登山路难度较低，观音寺登山路难度较高，两条线路都需要提前预约。我们预约了6点到8点期间进入城</description>
+        
+      
+      
+      
+      
+      <category domain="https://loveapple.icu/categories/%E7%89%B2%E6%B4%BB/">牲活</category>
+      
+      
+      <category domain="https://loveapple.icu/tags/%E6%97%85%E8%A1%8C/">旅行</category>
+      
+      <category domain="https://loveapple.icu/tags/%E6%B5%8E%E5%B7%9E%E5%B2%9B/">济州岛</category>
+      
+      
+      <comments>https://loveapple.icu/Jeju-day-4/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>水煮鱼的济州岛旅行日记：Day3</title>
+      <link>https://loveapple.icu/Jeju-day-3/</link>
+      <guid>https://loveapple.icu/Jeju-day-3/</guid>
+      <pubDate>Sat, 17 Jan 2026 11:00:16 GMT</pubDate>
+      
+      <description>这篇博客记录了济州岛旅行的第三天行程。作者游览了以花卉和精致造景为主的山茶花之丘，欣赏了西海岸挟才海水浴场的白色沙滩与清澈海水，并在涯月邑的沿海咖啡街观赏日落、享受悠闲时光。最后以一顿辛辣鲜美的明太鱼汤饭结束一天，日记中充满了对自然景色与慢节奏旅行的惬意感受。</description>
+      
+      
+      
+      
+      <category domain="https://loveapple.icu/categories/%E7%89%B2%E6%B4%BB/">牲活</category>
+      
+      
+      <category domain="https://loveapple.icu/tags/%E6%97%85%E8%A1%8C/">旅行</category>
+      
+      <category domain="https://loveapple.icu/tags/%E6%B5%8E%E5%B7%9E%E5%B2%9B/">济州岛</category>
+      
+      
+      <comments>https://loveapple.icu/Jeju-day-3/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>水煮鱼的济州岛旅行日记：Day2</title>
       <link>https://loveapple.icu/Jeju-day-2/</link>
       <guid>https://loveapple.icu/Jeju-day-2/</guid>
-      <pubDate>Tue, 13 Jan 2026 12:39:14 GMT</pubDate>
+      <pubDate>Tue, 13 Jan 2026 13:39:14 GMT</pubDate>
       
       <description>这篇博客记录了济州岛旅行的第二天行程。作者游览了西归浦市的柱状节理带地质奇观，徒步了风景优美的偶来小路路线7（包括海边栈道、Sammaebong峰及城市公园），并深入当地的每日偶来市场，品尝了炸菜卷、铁板鱿鱼和备受好评的黑猪肉泡菜卷等多种小吃，体验了自然风光与市井美食相结合的一天。</description>
       
@@ -39,7 +91,7 @@
       <title>水煮鱼的济州岛旅行日记：Day1</title>
       <link>https://loveapple.icu/Jeju-day-1/</link>
       <guid>https://loveapple.icu/Jeju-day-1/</guid>
-      <pubDate>Mon, 12 Jan 2026 11:13:36 GMT</pubDate>
+      <pubDate>Mon, 12 Jan 2026 12:13:36 GMT</pubDate>
       
       <description>这篇博客是作者济州岛旅行的首日游记，记录了紧凑的“特种兵”行程。一天内游玩了牛岛（骑电助力自行车环岛）、城山日出峰（徒步登顶）和涉地可支（海岸栈道）三个主要景点，并以一顿极具性价比的本地烤肉自助餐收尾。日记充满了对自然风光、人文体验和美食的生动描述，展现了充实而疲惫的第一天。</description>
       
@@ -62,9 +114,9 @@
       <title>N5105小主机初配置</title>
       <link>https://loveapple.icu/N5105-1/</link>
       <guid>https://loveapple.icu/N5105-1/</guid>
-      <pubDate>Sat, 10 Jan 2026 10:59:57 GMT</pubDate>
+      <pubDate>Sat, 10 Jan 2026 11:59:57 GMT</pubDate>
       
-      <description>一篇尚未写完的blog</description>
+      <description>这篇博客详细记录了在N5105小主机上安装并初步配置OpenWRT软路由的过程。作者从下载镜像、使用Ventoy启动盘写入系统开始，逐步完成了网络接口的划分（LAN/WAN）、DHCP设置，并通过校园网认证使设备成功联网。教程到此暂告段落，为后续接入AP等扩展功能做准备。</description>
       
       
       
@@ -76,8 +128,6 @@
       
       <category domain="https://loveapple.icu/tags/OpenWRT%E8%BD%AF%E8%B7%AF%E7%94%B1/">OpenWRT软路由</category>
       
-      <category domain="https://loveapple.icu/tags/NAS/">NAS</category>
-      
       
       <comments>https://loveapple.icu/N5105-1/#disqus_thread</comments>
       
@@ -87,7 +137,7 @@
       <title>无题</title>
       <link>https://loveapple.icu/view-1/</link>
       <guid>https://loveapple.icu/view-1/</guid>
-      <pubDate>Fri, 02 Jan 2026 09:24:41 GMT</pubDate>
+      <pubDate>Fri, 02 Jan 2026 10:24:41 GMT</pubDate>
       
       <description>近日观互联网有感</description>
       
@@ -106,7 +156,7 @@
       <title>在网页中插入icons</title>
       <link>https://loveapple.icu/iconfont-inject/</link>
       <guid>https://loveapple.icu/iconfont-inject/</guid>
-      <pubDate>Thu, 18 Dec 2025 02:18:56 GMT</pubDate>
+      <pubDate>Thu, 18 Dec 2025 03:18:56 GMT</pubDate>
       
       <description>这篇博客详细介绍了如何在Hexo博客的Butterfly主题中集成自定义图标库。作者以阿里巴巴矢量图标库（iconfont）为例，讲解了从下载图标文件、配置CSS路径到在页面中插入并美化图标的完整步骤，帮助用户扩展Butterfly主题默认图标集之外的个性化选择。</description>
       
@@ -127,7 +177,7 @@
       <title>F**k Bing Webmaster!</title>
       <link>https://loveapple.icu/fk-bing-webmaster/</link>
       <guid>https://loveapple.icu/fk-bing-webmaster/</guid>
-      <pubDate>Sat, 13 Dec 2025 13:16:21 GMT</pubDate>
+      <pubDate>Sat, 13 Dec 2025 14:16:21 GMT</pubDate>
       
       <description>这篇博客是作者对Bing搜索引擎的一篇情绪化抱怨。文章详细列举了其四个月来为促使Bing收录网站首页所做的各种努力，包括提交URL、站点地图、配置IndexNow等，但均告失败，仅收到官方模板化的拒绝回复。作者对此感到极度沮丧和愤怒，认为Bing的反馈机制缺乏具体指导，让人投诉无门。</description>
       
@@ -148,7 +198,7 @@
       <title>Random Image API上线</title>
       <link>https://loveapple.icu/my-image-building/</link>
       <guid>https://loveapple.icu/my-image-building/</guid>
-      <pubDate>Sat, 13 Dec 2025 10:16:35 GMT</pubDate>
+      <pubDate>Sat, 13 Dec 2025 11:16:35 GMT</pubDate>
       
       <description>这篇博客记录了作者因依赖的随机图片API失效，从而自主搭建替代服务的过程。通过Python脚本从Pexels图库采集图片，并使用Flask框架快速部署，最终提供了一个可返回随机或指定图片的简易API，旨在为自己的博客及其他项目提供稳定的图片服务。</description>
       
@@ -175,7 +225,7 @@
       <title>龙歌三店横评：来自2025年12月的南京</title>
       <link>https://loveapple.icu/loonger-hotpot-Dec25/</link>
       <guid>https://loveapple.icu/loonger-hotpot-Dec25/</guid>
-      <pubDate>Thu, 11 Dec 2025 01:44:00 GMT</pubDate>
+      <pubDate>Thu, 11 Dec 2025 02:44:00 GMT</pubDate>
       
       <description>这篇2025年12月的博客横向对比了南京三家龙歌旋转小火锅分店（栖霞万达茂、马群招商花园城、新街口东方福莱德）。作者从饮料种类、招牌鸭血的供应稳定性以及近期新品（如麻薯鱼豆腐）的口感等方面，梳理了各家门店的异同与个人体验。</description>
       
@@ -198,7 +248,7 @@
       <title>Hexo+Butterfly深入化自定义：以友链页面卡片宽度调整为例</title>
       <link>https://loveapple.icu/link-card-width/</link>
       <guid>https://loveapple.icu/link-card-width/</guid>
-      <pubDate>Tue, 09 Dec 2025 02:52:08 GMT</pubDate>
+      <pubDate>Tue, 09 Dec 2025 03:52:08 GMT</pubDate>
       
       <description>这篇博客详细介绍了如何深度自定义Hexo的Butterfly主题，以解决友链页面卡片因宽度不足导致内容显示不全的问题。作者通过直接修改主题的styl文件，将每行显示三个卡片调整为两个，并取消了描述文字的单行限制，实现了更优雅的友链排版。</description>
       
@@ -221,7 +271,7 @@
       <title>Hexo+Butterfly的dark mode开发</title>
       <link>https://loveapple.icu/dark-mode/</link>
       <guid>https://loveapple.icu/dark-mode/</guid>
-      <pubDate>Mon, 08 Dec 2025 03:54:26 GMT</pubDate>
+      <pubDate>Mon, 08 Dec 2025 04:54:26 GMT</pubDate>
       
       <description>一篇关于为Hexo博客Butterfly主题自定义页面开发黑暗模式适配的实战记录。文章以修复QSL页面在暗黑主题下显示异常为例，展示了如何通过添加CSS选择器快速实现样式切换，并简要剖析了Butterfly主题暗黑模式的实现原理，体现了典型的“Vibe Coding”解决问题风格。</description>
       
@@ -244,7 +294,7 @@
       <title>为Hexo博客+Butterfly主题启用Giscus评论系统：一些Bing上搜不到的技巧</title>
       <link>https://loveapple.icu/giscis-intro/</link>
       <guid>https://loveapple.icu/giscis-intro/</guid>
-      <pubDate>Sat, 29 Nov 2025 07:02:51 GMT</pubDate>
+      <pubDate>Sat, 29 Nov 2025 08:02:51 GMT</pubDate>
       
       <description>一篇关于在Hexo博客中使用Butterfly主题配置Giscus评论系统的实用指南。文章重点分享了如何解决一个官方文档未提及的进阶配置问题：通过正确使用option字段来实现评论框置顶等自定义功能。</description>
       
@@ -269,7 +319,7 @@
       <title>暴论：AI（几乎）不能帮你完成你并不会的任务</title>
       <link>https://loveapple.icu/clash-configuration/</link>
       <guid>https://loveapple.icu/clash-configuration/</guid>
-      <pubDate>Thu, 27 Nov 2025 08:26:50 GMT</pubDate>
+      <pubDate>Thu, 27 Nov 2025 09:26:50 GMT</pubDate>
       
       <description>一篇对AI编程助手能力的个人反思。作者通过亲身经历——尝试用Deepseek协助完成一个不熟悉的Clash配置文件定制任务，最终却陷入与AI的反复“搏斗”——论证了“AI几乎不能帮你完成你并不会的任务”这一暴论，并分享了过程中的挫折与感悟。</description>
       
@@ -294,7 +344,7 @@
       <title>业余无线电个人入门经历</title>
       <link>https://loveapple.icu/amateur-radio-1/</link>
       <guid>https://loveapple.icu/amateur-radio-1/</guid>
-      <pubDate>Mon, 10 Nov 2025 14:49:02 GMT</pubDate>
+      <pubDate>Mon, 10 Nov 2025 15:49:02 GMT</pubDate>
       
       <description>一篇关于业余无线电入门的个人经历分享。文章记录了从考证、设台到完成首次通联的全过程，并分享了使用宝峰UV-5R在省中继上与友台成功联络的体验。</description>
       
@@ -317,7 +367,7 @@
       <title>NJU九食堂惊现帝王蟹：丰俭由人乃常态，温室育花实可悲</title>
       <link>https://loveapple.icu/nju-king-crab/</link>
       <guid>https://loveapple.icu/nju-king-crab/</guid>
-      <pubDate>Tue, 04 Nov 2025 02:40:30 GMT</pubDate>
+      <pubDate>Tue, 04 Nov 2025 03:40:30 GMT</pubDate>
       
       <description>同学：支持。食堂：支持。校领导：支持。网友：反对！</description>
       
@@ -340,7 +390,7 @@
       <title>数字系统II第一次实验报告</title>
       <link>https://loveapple.icu/loongarch-linux-1/</link>
       <guid>https://loveapple.icu/loongarch-linux-1/</guid>
-      <pubDate>Thu, 23 Oct 2025 01:32:17 GMT</pubDate>
+      <pubDate>Thu, 23 Oct 2025 02:32:17 GMT</pubDate>
       
       <description>这是一篇关于在龙芯2K1000LA开发板上进行嵌入式Linux开发实践的详细实验报告。文章记录了从环境搭建、内核编译、文件系统制作到交叉编译工具链使用的完整流程，并分享了实验过程中遇到的问题与解决方案。</description>
       
@@ -365,7 +415,7 @@
       <title>举高高旋转小火锅评测</title>
       <link>https://loveapple.icu/jgg-hotpot/</link>
       <guid>https://loveapple.icu/jgg-hotpot/</guid>
-      <pubDate>Wed, 15 Oct 2025 06:54:15 GMT</pubDate>
+      <pubDate>Wed, 15 Oct 2025 07:54:15 GMT</pubDate>
       
       <description>一篇来自旋转小火锅爱好者的探店评测。文章从价格、形式、锅底、小料台到菜品等多个维度，将新开的举高高与常见的龙歌等品牌进行了对比，并最终给出了个人评价与推荐理由。</description>
       
@@ -388,7 +438,7 @@
       <title>如何打好螺丝？</title>
       <link>https://loveapple.icu/how2b-screwer/</link>
       <guid>https://loveapple.icu/how2b-screwer/</guid>
-      <pubDate>Thu, 09 Oct 2025 05:57:21 GMT</pubDate>
+      <pubDate>Thu, 09 Oct 2025 06:57:21 GMT</pubDate>
       
       <description>一篇来自电脑维修志愿者的经验分享，详细总结了笔记本电脑维修中会遇到的各种螺丝类型、其特性及安装注意事项，并提供了当遇到难拧或已拧花的螺丝时的实用处理技巧。</description>
       
@@ -411,7 +461,7 @@
       <title>锁相环技术入门简介</title>
       <link>https://loveapple.icu/PLL-intro/</link>
       <guid>https://loveapple.icu/PLL-intro/</guid>
-      <pubDate>Fri, 03 Oct 2025 02:46:12 GMT</pubDate>
+      <pubDate>Fri, 03 Oct 2025 03:46:12 GMT</pubDate>
       
       <description>一篇关于锁相环的入门简介。文章从信号同步的实际问题出发，通俗地解释了锁相环的基本工作原理，并介绍了其核心组件——鉴相器与压控振荡器，以及如何通过加入分频器来实现倍频功能。</description>
       
@@ -434,7 +484,7 @@
       <title>Arch Linux本土化配置：为pacman指定镜像源</title>
       <link>https://loveapple.icu/pacman-mirror/</link>
       <guid>https://loveapple.icu/pacman-mirror/</guid>
-      <pubDate>Fri, 26 Sep 2025 03:14:07 GMT</pubDate>
+      <pubDate>Fri, 26 Sep 2025 04:14:07 GMT</pubDate>
       
       <description>一篇介绍如何为 Arch Linux 的 pacman 包管理器配置国内镜像源以加速下载的指南。文章详细说明了如何使用 reflector 服务自动筛选镜像，并分享了一个自定义脚本技巧，将特定镜像源（如本校镜像）固定排在列表最前，实现自动化与个性化需求的结合。</description>
       
@@ -461,7 +511,7 @@
       <title>安装 Arch Linux</title>
       <link>https://loveapple.icu/install-arch/</link>
       <guid>https://loveapple.icu/install-arch/</guid>
-      <pubDate>Wed, 24 Sep 2025 09:49:59 GMT</pubDate>
+      <pubDate>Wed, 24 Sep 2025 10:49:59 GMT</pubDate>
       
       <description>一篇记录个人安装 Arch Linux 经历的博客，重点分享了在校园网环境下解决联网问题以及配置引导程序时的曲折过程，并最终成功从零搭建起一个完整的 Arch 系统。</description>
       
@@ -486,7 +536,7 @@
       <title>换AB面，但是屏幕翻车</title>
       <link>https://loveapple.icu/BreakScreen/</link>
       <guid>https://loveapple.icu/BreakScreen/</guid>
-      <pubDate>Mon, 22 Sep 2025 05:59:22 GMT</pubDate>
+      <pubDate>Mon, 22 Sep 2025 06:59:22 GMT</pubDate>
       
       <description>纪录一单thinkbook更换AB面结果屏幕损坏的维修翻车事故。</description>
       
@@ -511,7 +561,7 @@
       <title>一个自制的Keil2Cmake转换器小工具</title>
       <link>https://loveapple.icu/Keil2Cmake/</link>
       <guid>https://loveapple.icu/Keil2Cmake/</guid>
-      <pubDate>Sun, 21 Sep 2025 08:42:57 GMT</pubDate>
+      <pubDate>Sun, 21 Sep 2025 09:42:57 GMT</pubDate>
       
       <description>一个将根据uvprojx文件将keil工程转换到CMake工程的小工具，以便用VSCode取代Keil uVision。</description>
       
@@ -536,7 +586,7 @@
       <title>本地开发，远程部署：如何把你的服务器变成Git仓库？</title>
       <link>https://loveapple.icu/GitAway/</link>
       <guid>https://loveapple.icu/GitAway/</guid>
-      <pubDate>Wed, 10 Sep 2025 09:48:13 GMT</pubDate>
+      <pubDate>Wed, 10 Sep 2025 10:48:13 GMT</pubDate>
       
       <description>在本地机上写代码，远程部署到服务器：你的下一个git服务器何必是GitHub？</description>
       
@@ -559,7 +609,7 @@
       <title>部署Friend-Link-House项目:开源社区初探</title>
       <link>https://loveapple.icu/Blogroll/</link>
       <guid>https://loveapple.icu/Blogroll/</guid>
-      <pubDate>Tue, 09 Sep 2025 02:09:41 GMT</pubDate>
+      <pubDate>Tue, 09 Sep 2025 03:09:41 GMT</pubDate>
       
       <description>通过RSS自动订阅他人博客网站上的文章</description>
       
@@ -586,7 +636,7 @@
       <title>NJU-Undergraduates-Courses</title>
       <link>https://loveapple.icu/NJU-Undergraduates-Courses/</link>
       <guid>https://loveapple.icu/NJU-Undergraduates-Courses/</guid>
-      <pubDate>Sat, 16 Aug 2025 12:19:29 GMT</pubDate>
+      <pubDate>Sat, 16 Aug 2025 13:19:29 GMT</pubDate>
       
       <description>此处存放我与wuhaiyuan同学共同撰写的《南京大学本科生课程体系概论》的一份历史版本。</description>
       
@@ -607,7 +657,7 @@
       <title>DrawBoard食用指北</title>
       <link>https://loveapple.icu/Draw-Board-README/</link>
       <guid>https://loveapple.icu/Draw-Board-README/</guid>
-      <pubDate>Thu, 14 Aug 2025 12:31:24 GMT</pubDate>
+      <pubDate>Thu, 14 Aug 2025 13:31:24 GMT</pubDate>
       
       <description>一个画板小工具的README文档。</description>
       
@@ -626,7 +676,7 @@
       <title>奶茶电脑之数据拯救</title>
       <link>https://loveapple.icu/MilkTeaComputer/</link>
       <guid>https://loveapple.icu/MilkTeaComputer/</guid>
-      <pubDate>Tue, 12 Aug 2025 02:21:44 GMT</pubDate>
+      <pubDate>Tue, 12 Aug 2025 03:21:44 GMT</pubDate>
       
       <description>奶茶电脑之数据拯救</description>
       
@@ -651,7 +701,7 @@
       <title>联想供电疑似通病</title>
       <link>https://loveapple.icu/LenovoPower/</link>
       <guid>https://loveapple.icu/LenovoPower/</guid>
-      <pubDate>Tue, 12 Aug 2025 02:18:43 GMT</pubDate>
+      <pubDate>Tue, 12 Aug 2025 03:18:43 GMT</pubDate>
       
       <description>联想供电疑似通病，需要拆卸电池解决。</description>
       
@@ -678,7 +728,7 @@
       <title>初识ESP32</title>
       <link>https://loveapple.icu/HelloESP32/</link>
       <guid>https://loveapple.icu/HelloESP32/</guid>
-      <pubDate>Thu, 07 Aug 2025 09:05:41 GMT</pubDate>
+      <pubDate>Thu, 07 Aug 2025 10:05:41 GMT</pubDate>
       
       <description>初次使用ESP32：神奇小玩具</description>
       
@@ -701,7 +751,7 @@
       <title>DDS实现高频信号同步</title>
       <link>https://loveapple.icu/DDS_RFSync/</link>
       <guid>https://loveapple.icu/DDS_RFSync/</guid>
-      <pubDate>Sat, 19 Jul 2025 04:09:00 GMT</pubDate>
+      <pubDate>Sat, 19 Jul 2025 05:09:00 GMT</pubDate>
       
       <description>利用DDS模块，实现高频信号同步，相位可调。</description>
       
@@ -726,7 +776,7 @@
       <title>NUEDC-2022-F</title>
       <link>https://loveapple.icu/NUEDC-2022-F/</link>
       <guid>https://loveapple.icu/NUEDC-2022-F/</guid>
-      <pubDate>Sat, 05 Jul 2025 02:41:00 GMT</pubDate>
+      <pubDate>Sat, 05 Jul 2025 03:41:00 GMT</pubDate>
       
       <description>做电赛往年题的经验：2022年电赛F题。</description>
       
