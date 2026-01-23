@@ -9,8 +9,39 @@
     <atom:link href="https://loveapple.icu/rss.xml" rel="self" type="application/rss+xml"/>
     
     <description>开源技术实践者 &amp; 射频电子新人 | LoveApple14434 的个人领地 | 一条爱苹果的水煮鱼。深度分享射频/微波、业余无线电硬核技术笔记，开源项目技术实践以及博客网站建设经验，IT侠笔记本维修随录，兼谈NJU校园趣闻与水煮鱼的生活思考。探索技术前沿，记录成长点滴。</description>
-    <pubDate>Sat, 17 Jan 2026 14:04:03 GMT</pubDate>
+    <pubDate>Fri, 23 Jan 2026 06:53:08 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>N5105软路由：WiFi配置</title>
+      <link>https://loveapple.icu/N5105-2/</link>
+      <guid>https://loveapple.icu/N5105-2/</guid>
+      <pubDate>Sun, 18 Jan 2026 05:11:32 GMT</pubDate>
+      
+        
+        
+      <description>&lt;h2 id=&quot;前情提要&quot;&gt;前情提要&lt;/h2&gt;
+&lt;p&gt;上一集我们讲到给小主机刷了openwrt并且连上了网。昨天下午在咸鱼下单了一台小米的AX3000E路由器，今天下午就到货了，正好拿来当AP用。&lt;/p&gt;
+&lt;h2 id=&quot;硬件接口配置&quot;&gt;硬件接口配置&lt;/h2&gt;
+&lt;p&gt;之前我</description>
+        
+      
+      
+      
+      
+      <category domain="https://loveapple.icu/categories/%E5%AF%84%E6%9C%AF/">寄术</category>
+      
+      
+      <category domain="https://loveapple.icu/tags/%E5%B0%8F%E4%B8%BB%E6%9C%BA/">小主机</category>
+      
+      <category domain="https://loveapple.icu/tags/OpenWRT%E8%BD%AF%E8%B7%AF%E7%94%B1/">OpenWRT软路由</category>
+      
+      <category domain="https://loveapple.icu/tags/WiFi/">WiFi</category>
+      
+      
+      <comments>https://loveapple.icu/N5105-2/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>水煮鱼的济州岛旅行日记：Day4</title>

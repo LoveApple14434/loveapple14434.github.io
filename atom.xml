@@ -6,7 +6,7 @@
   <link href="https://loveapple.icu/atom.xml" rel="self"/>
   
   <link href="https://loveapple.icu/"/>
-  <updated>2026-01-17T14:04:03.639Z</updated>
+  <updated>2026-01-23T06:53:08.680Z</updated>
   <id>https://loveapple.icu/</id>
   
   <author>
@@ -15,6 +15,35 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>N5105软路由：WiFi配置</title>
+    <link href="https://loveapple.icu/N5105-2/"/>
+    <id>https://loveapple.icu/N5105-2/</id>
+    <published>2026-01-18T05:11:32.000Z</published>
+    <updated>2026-01-23T06:53:08.680Z</updated>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;前情提要&quot;&gt;前情提要&lt;/h2&gt;
+&lt;p&gt;上一集我们讲到给小主机刷了openwrt并且连上了网。昨天下午在咸鱼下单了一台小米的AX3000E路由器，今天下午就到货了，正好拿来当AP用。&lt;/p&gt;
+&lt;h2 id=&quot;硬件接口配置&quot;&gt;硬件接口配置&lt;/h2&gt;
+&lt;p&gt;之前我</summary>
+      
+    
+    
+    
+    <category term="寄术" scheme="https://loveapple.icu/categories/%E5%AF%84%E6%9C%AF/"/>
+    
+    
+    <category term="小主机" scheme="https://loveapple.icu/tags/%E5%B0%8F%E4%B8%BB%E6%9C%BA/"/>
+    
+    <category term="OpenWRT软路由" scheme="https://loveapple.icu/tags/OpenWRT%E8%BD%AF%E8%B7%AF%E7%94%B1/"/>
+    
+    <category term="WiFi" scheme="https://loveapple.icu/tags/WiFi/"/>
+    
+  </entry>
   
   <entry>
     <title>水煮鱼的济州岛旅行日记：Day4</title>
@@ -105,7 +134,7 @@
     <link href="https://loveapple.icu/N5105-1/"/>
     <id>https://loveapple.icu/N5105-1/</id>
     <published>2026-01-10T11:59:57.000Z</published>
-    <updated>2026-01-17T10:56:13.899Z</updated>
+    <updated>2026-01-18T05:10:50.147Z</updated>
     
     
     <summary type="html">这篇博客详细记录了在N5105小主机上安装并初步配置OpenWRT软路由的过程。作者从下载镜像、使用Ventoy启动盘写入系统开始，逐步完成了网络接口的划分（LAN/WAN）、DHCP设置，并通过校园网认证使设备成功联网。教程到此暂告段落，为后续接入AP等扩展功能做准备。</summary>
