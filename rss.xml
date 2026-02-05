@@ -9,8 +9,60 @@
     <atom:link href="https://loveapple.icu/rss.xml" rel="self" type="application/rss+xml"/>
     
     <description>开源技术实践者 &amp; 射频电子新人 | LoveApple14434 的个人领地 | 一条爱苹果的水煮鱼。深度分享射频/微波、业余无线电硬核技术笔记，开源项目技术实践以及博客网站建设经验，IT侠笔记本维修随录，兼谈NJU校园趣闻与水煮鱼的生活思考。探索技术前沿，记录成长点滴。</description>
-    <pubDate>Fri, 23 Jan 2026 06:53:08 GMT</pubDate>
+    <pubDate>Thu, 05 Feb 2026 17:06:49 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>N5105NAS：配置WebDav服务</title>
+      <link>https://loveapple.icu/N5105-4/</link>
+      <guid>https://loveapple.icu/N5105-4/</guid>
+      <pubDate>Thu, 05 Feb 2026 16:11:41 GMT</pubDate>
+      
+      <description>这篇博客简要介绍了如何在N5105家庭服务器上配置WebDav服务，实现简易的私人网盘功能。服务端通过iStoreOS应用商店便捷安装GoWebDav并进行基础设置；客户端则在Windows系统上通过修改注册表和支持HTTP连接，将服务端映射为网络驱动器。整个过程门槛较低，适合个人快速搭建内网文件共享服务。</description>
+      
+      
+      
+      
+      <category domain="https://loveapple.icu/categories/%E5%AF%84%E6%9C%AF/">寄术</category>
+      
+      
+      <category domain="https://loveapple.icu/tags/NAS/">NAS</category>
+      
+      <category domain="https://loveapple.icu/tags/WebDav/">WebDav</category>
+      
+      
+      <comments>https://loveapple.icu/N5105-4/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>N5105服务器：如何从公网访问？</title>
+      <link>https://loveapple.icu/N5105-3/</link>
+      <guid>https://loveapple.icu/N5105-3/</guid>
+      <pubDate>Mon, 26 Jan 2026 15:56:18 GMT</pubDate>
+      
+      <description>这篇博客详细对比了三种实现内网服务器公网访问的方案：Zerotier直连、Zerotier配合云服务器中转以及Cloudflare Tunnel。作者基于iStoreOS系统搭建了多项服务，并从配置难度、带宽表现和适用场景等方面分析了每种方法的优缺点，并通过实测数据为读者提供了直观的参考，帮助你根据自身网络条件选择合适的内网穿透方案。</description>
+      
+      
+      
+      
+      <category domain="https://loveapple.icu/categories/%E5%AF%84%E6%9C%AF/">寄术</category>
+      
+      
+      <category domain="https://loveapple.icu/tags/%E5%B0%8F%E4%B8%BB%E6%9C%BA/">小主机</category>
+      
+      <category domain="https://loveapple.icu/tags/NAS/">NAS</category>
+      
+      <category domain="https://loveapple.icu/tags/CloudFlare-Tunnel-Zero-Trust/">CloudFlare Tunnel Zero Trust</category>
+      
+      <category domain="https://loveapple.icu/tags/Zerotier/">Zerotier</category>
+      
+      <category domain="https://loveapple.icu/tags/%E7%A9%BF%E9%80%8F/">穿透</category>
+      
+      
+      <comments>https://loveapple.icu/N5105-3/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>N5105软路由：WiFi配置</title>
@@ -18,13 +70,7 @@
       <guid>https://loveapple.icu/N5105-2/</guid>
       <pubDate>Sun, 18 Jan 2026 05:11:32 GMT</pubDate>
       
-        
-        
-      <description>&lt;h2 id=&quot;前情提要&quot;&gt;前情提要&lt;/h2&gt;
-&lt;p&gt;上一集我们讲到给小主机刷了openwrt并且连上了网。昨天下午在咸鱼下单了一台小米的AX3000E路由器，今天下午就到货了，正好拿来当AP用。&lt;/p&gt;
-&lt;h2 id=&quot;硬件接口配置&quot;&gt;硬件接口配置&lt;/h2&gt;
-&lt;p&gt;之前我</description>
-        
+      <description>这篇博客详细介绍了在N5105软路由上配置WiFi的后续步骤。作者将ETH2接口桥接到LAN，连接小米AX3000E路由器并设置为AP模式。随后安装并配置openclash，解决了依赖冲突与文件传输问题，确保局域网内所有设备能便捷地科学上网。</description>
       
       
       
