@@ -9,8 +9,34 @@
     <atom:link href="https://loveapple.icu/rss.xml" rel="self" type="application/rss+xml"/>
     
     <description>开源技术实践者 &amp; 射频电子新人 | LoveApple14434 的个人领地 | 一条爱苹果的水煮鱼。深度分享射频/微波、业余无线电硬核技术笔记，开源项目技术实践以及博客网站建设经验，IT侠笔记本维修随录，兼谈NJU校园趣闻与水煮鱼的生活思考。探索技术前沿，记录成长点滴。</description>
-    <pubDate>Fri, 06 Feb 2026 07:38:38 GMT</pubDate>
+    <pubDate>Fri, 06 Feb 2026 15:10:12 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>局域网下的家庭影音服务实践对比</title>
+      <link>https://loveapple.icu/home-video-services/</link>
+      <guid>https://loveapple.icu/home-video-services/</guid>
+      <pubDate>Fri, 06 Feb 2026 13:58:50 GMT</pubDate>
+      
+        
+        
+      <description>&lt;p&gt;今天下午放假回家，想在电视上放点东西看看，以前一直是把电脑端出来，然后把电视的HDMI插到电脑上投屏看的，但是我的笔记本的HDMI走的是独显输出，而独显直连耗电量又比较大，要搬就得把适配器一起搬出来，而且墙上的插座插了电视+路由器+机顶盒之后已经插不下电脑了，还得找插排，这</description>
+        
+      
+      
+      
+      
+      <category domain="https://loveapple.icu/categories/%E5%AF%84%E6%9C%AF/">寄术</category>
+      
+      
+      <category domain="https://loveapple.icu/tags/SAMBA/">SAMBA</category>
+      
+      <category domain="https://loveapple.icu/tags/DLNA/">DLNA</category>
+      
+      
+      <comments>https://loveapple.icu/home-video-services/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>N5105NAS：配置WebDav服务</title>

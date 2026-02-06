@@ -6,7 +6,7 @@
   <link href="https://loveapple.icu/atom.xml" rel="self"/>
   
   <link href="https://loveapple.icu/"/>
-  <updated>2026-02-06T07:38:38.609Z</updated>
+  <updated>2026-02-06T15:10:12.124Z</updated>
   <id>https://loveapple.icu/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>局域网下的家庭影音服务实践对比</title>
+    <link href="https://loveapple.icu/home-video-services/"/>
+    <id>https://loveapple.icu/home-video-services/</id>
+    <published>2026-02-06T13:58:50.000Z</published>
+    <updated>2026-02-06T15:10:12.124Z</updated>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;今天下午放假回家，想在电视上放点东西看看，以前一直是把电脑端出来，然后把电视的HDMI插到电脑上投屏看的，但是我的笔记本的HDMI走的是独显输出，而独显直连耗电量又比较大，要搬就得把适配器一起搬出来，而且墙上的插座插了电视+路由器+机顶盒之后已经插不下电脑了，还得找插排，这</summary>
+      
+    
+    
+    
+    <category term="寄术" scheme="https://loveapple.icu/categories/%E5%AF%84%E6%9C%AF/"/>
+    
+    
+    <category term="SAMBA" scheme="https://loveapple.icu/tags/SAMBA/"/>
+    
+    <category term="DLNA" scheme="https://loveapple.icu/tags/DLNA/"/>
+    
+  </entry>
   
   <entry>
     <title>N5105NAS：配置WebDav服务</title>
