@@ -6,7 +6,7 @@
   <link href="https://loveapple.icu/atom.xml" rel="self"/>
   
   <link href="https://loveapple.icu/"/>
-  <updated>2026-02-06T07:23:07.017Z</updated>
+  <updated>2026-02-06T07:38:38.609Z</updated>
   <id>https://loveapple.icu/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://loveapple.icu/N5105-4/"/>
     <id>https://loveapple.icu/N5105-4/</id>
     <published>2026-02-05T16:11:41.000Z</published>
-    <updated>2026-02-06T07:23:07.017Z</updated>
+    <updated>2026-02-06T07:38:38.609Z</updated>
     
     
     <summary type="html">这篇博客简要介绍了如何在N5105家庭服务器上配置WebDav服务，实现简易的私人网盘功能。服务端通过iStoreOS应用商店便捷安装GoWebDav并进行基础设置；客户端则在Windows系统上通过修改注册表和支持HTTP连接，将服务端映射为网络驱动器。整个过程门槛较低，适合个人快速搭建内网文件共享服务。</summary>
