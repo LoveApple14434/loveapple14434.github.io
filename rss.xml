@@ -9,8 +9,35 @@
     <atom:link href="https://loveapple.icu/rss.xml" rel="self" type="application/rss+xml"/>
     
     <description>开源技术实践者 &amp; 射频电子新人 | LoveApple14434 的个人领地 | 一条爱苹果的水煮鱼。深度分享射频/微波、业余无线电硬核技术笔记，开源项目技术实践以及博客网站建设经验，IT侠笔记本维修随录，兼谈NJU校园趣闻与水煮鱼的生活思考。探索技术前沿，记录成长点滴。</description>
-    <pubDate>Fri, 06 Feb 2026 15:10:12 GMT</pubDate>
+    <pubDate>Mon, 09 Feb 2026 05:08:39 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>为云服务器配置clash-for-linux</title>
+      <link>https://loveapple.icu/clash-for-linux/</link>
+      <guid>https://loveapple.icu/clash-for-linux/</guid>
+      <pubDate>Mon, 09 Feb 2026 04:43:44 GMT</pubDate>
+      
+        
+        
+      <description>&lt;blockquote&gt;
+&lt;p&gt;本文仅针对开源软件配置进行技术交流，与“翻墙”（未经批准擅自使用非法工具或服务绕过国家防火墙，访问境外互联网的行为）无关。我们应当自觉遵守网络管理法规，共同维护良好的网络秩序，鼓励大家积极利用国内资源，享受健康、积极的网络生活。本文也仅旨在与其他</description>
+        
+      
+      
+      
+      
+      <category domain="https://loveapple.icu/categories/%E5%AF%84%E6%9C%AF/">寄术</category>
+      
+      
+      <category domain="https://loveapple.icu/tags/clash/">clash</category>
+      
+      <category domain="https://loveapple.icu/tags/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8/">云服务器</category>
+      
+      
+      <comments>https://loveapple.icu/clash-for-linux/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>局域网下的家庭影音服务实践对比</title>
@@ -18,10 +45,7 @@
       <guid>https://loveapple.icu/home-video-services/</guid>
       <pubDate>Fri, 06 Feb 2026 13:58:50 GMT</pubDate>
       
-        
-        
-      <description>&lt;p&gt;今天下午放假回家，想在电视上放点东西看看，以前一直是把电脑端出来，然后把电视的HDMI插到电脑上投屏看的，但是我的笔记本的HDMI走的是独显输出，而独显直连耗电量又比较大，要搬就得把适配器一起搬出来，而且墙上的插座插了电视+路由器+机顶盒之后已经插不下电脑了，还得找插排，这</description>
-        
+      <description>本文记录了作者在家庭局域网内尝试三种影音共享方案的实践对比。由于电视系统限制，JellyFin客户端无法安装；SAMBA文件共享协议在播放时出现卡顿；最终通过DLNA流媒体协议成功实现流畅播放，并分析了协议差异对体验的影响。</description>
       
       
       

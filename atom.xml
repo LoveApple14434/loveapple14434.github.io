@@ -6,7 +6,7 @@
   <link href="https://loveapple.icu/atom.xml" rel="self"/>
   
   <link href="https://loveapple.icu/"/>
-  <updated>2026-02-06T15:10:12.124Z</updated>
+  <updated>2026-02-09T05:08:39.914Z</updated>
   <id>https://loveapple.icu/</id>
   
   <author>
@@ -17,17 +17,39 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>为云服务器配置clash-for-linux</title>
+    <link href="https://loveapple.icu/clash-for-linux/"/>
+    <id>https://loveapple.icu/clash-for-linux/</id>
+    <published>2026-02-09T04:43:44.000Z</published>
+    <updated>2026-02-09T05:08:39.914Z</updated>
+    
+    
+      
+      
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;本文仅针对开源软件配置进行技术交流，与“翻墙”（未经批准擅自使用非法工具或服务绕过国家防火墙，访问境外互联网的行为）无关。我们应当自觉遵守网络管理法规，共同维护良好的网络秩序，鼓励大家积极利用国内资源，享受健康、积极的网络生活。本文也仅旨在与其他</summary>
+      
+    
+    
+    
+    <category term="寄术" scheme="https://loveapple.icu/categories/%E5%AF%84%E6%9C%AF/"/>
+    
+    
+    <category term="clash" scheme="https://loveapple.icu/tags/clash/"/>
+    
+    <category term="云服务器" scheme="https://loveapple.icu/tags/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
+    
+  </entry>
+  
+  <entry>
     <title>局域网下的家庭影音服务实践对比</title>
     <link href="https://loveapple.icu/home-video-services/"/>
     <id>https://loveapple.icu/home-video-services/</id>
     <published>2026-02-06T13:58:50.000Z</published>
-    <updated>2026-02-06T15:10:12.124Z</updated>
+    <updated>2026-02-06T15:22:36.424Z</updated>
     
     
-      
-      
-    <summary type="html">&lt;p&gt;今天下午放假回家，想在电视上放点东西看看，以前一直是把电脑端出来，然后把电视的HDMI插到电脑上投屏看的，但是我的笔记本的HDMI走的是独显输出，而独显直连耗电量又比较大，要搬就得把适配器一起搬出来，而且墙上的插座插了电视+路由器+机顶盒之后已经插不下电脑了，还得找插排，这</summary>
-      
+    <summary type="html">本文记录了作者在家庭局域网内尝试三种影音共享方案的实践对比。由于电视系统限制，JellyFin客户端无法安装；SAMBA文件共享协议在播放时出现卡顿；最终通过DLNA流媒体协议成功实现流畅播放，并分析了协议差异对体验的影响。</summary>
     
     
     

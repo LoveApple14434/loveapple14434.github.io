@@ -1,0 +1,429 @@
+<!DOCTYPE html><html lang="zh" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>为云服务器配置clash-for-linux | LoveApple14434的主页</title><meta name="author" content="LoveApple14434"><meta name="copyright" content="LoveApple14434"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="ffffff"><meta name="description" content="本文仅针对开源软件配置进行技术交流，与“翻墙”（未经批准擅自使用非法工具或服务绕过国家防火墙，访问境外互联网的行为）无关。我们应当自觉遵守网络管理法规，共同维护良好的网络秩序，鼓励大家积极利用国内资源，享受健康、积极的网络生活。本文也仅旨在与其他网友进行技术交流，满足其他网友的交流学习需要。  配置clash时的一大难题就是：你需要先有一个能访问外网的渠道才能配置clash，但是你需要先配">
+<meta property="og:type" content="article">
+<meta property="og:title" content="为云服务器配置clash-for-linux">
+<meta property="og:url" content="https://loveapple.icu/clash-for-linux/">
+<meta property="og:site_name" content="LoveApple14434的主页">
+<meta property="og:description" content="本文仅针对开源软件配置进行技术交流，与“翻墙”（未经批准擅自使用非法工具或服务绕过国家防火墙，访问境外互联网的行为）无关。我们应当自觉遵守网络管理法规，共同维护良好的网络秩序，鼓励大家积极利用国内资源，享受健康、积极的网络生活。本文也仅旨在与其他网友进行技术交流，满足其他网友的交流学习需要。  配置clash时的一大难题就是：你需要先有一个能访问外网的渠道才能配置clash，但是你需要先配">
+<meta property="og:locale">
+<meta property="og:image" content="https://random.mikus.ink/pc?2159">
+<meta property="article:published_time" content="2026-02-09T04:43:44.000Z">
+<meta property="article:modified_time" content="2026-02-09T05:08:39.914Z">
+<meta property="article:author" content="LoveApple14434">
+<meta property="article:tag" content="clash">
+<meta property="article:tag" content="云服务器">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://random.mikus.ink/pc?2159"><script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "为云服务器配置clash-for-linux",
+  "url": "https://loveapple.icu/clash-for-linux/",
+  "image": "https://random.mikus.ink/pc?2159",
+  "datePublished": "2026-02-09T04:43:44.000Z",
+  "dateModified": "2026-02-09T05:08:39.914Z",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "LoveApple14434",
+      "url": "https://loveapple.icu"
+    }
+  ]
+}</script><link rel="shortcut icon" href="/img/machinist.jpg"><link rel="canonical" href="https://loveapple.icu/clash-for-linux/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//www.google-analytics.com" crossorigin=""/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><script>
+    (() => {
+      
+    const saveToLocal = {
+      set: (key, value, ttl) => {
+        if (!ttl) return
+        const expiry = Date.now() + ttl * 86400000
+        localStorage.setItem(key, JSON.stringify({ value, expiry }))
+      },
+      get: key => {
+        const itemStr = localStorage.getItem(key)
+        if (!itemStr) return undefined
+        const { value, expiry } = JSON.parse(itemStr)
+        if (Date.now() > expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return value
+      }
+    }
+
+    window.btf = {
+      saveToLocal,
+      getScript: (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        Object.entries(attr).forEach(([key, val]) => script.setAttribute(key, val))
+        script.onload = script.onreadystatechange = () => {
+          if (!script.readyState || /loaded|complete/.test(script.readyState)) resolve()
+        }
+        script.onerror = reject
+        document.head.appendChild(script)
+      }),
+      getCSS: (url, id) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onload = link.onreadystatechange = () => {
+          if (!link.readyState || /loaded|complete/.test(link.readyState)) resolve()
+        }
+        link.onerror = reject
+        document.head.appendChild(link)
+      }),
+      addGlobalFn: (key, fn, name = false, parent = window) => {
+        if (!false && key.startsWith('pjax')) return
+        const globalFn = parent.globalFn || {}
+        globalFn[key] = globalFn[key] || {}
+        globalFn[key][name || Object.keys(globalFn[key]).length] = fn
+        parent.globalFn = globalFn
+      }
+    }
+  
+      
+      const activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      const activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', 'ffffff')
+        }
+      }
+
+      btf.activateDarkMode = activateDarkMode
+      btf.activateLightMode = activateLightMode
+
+      const theme = saveToLocal.get('theme')
+    
+          theme === 'dark' ? activateDarkMode() : theme === 'light' ? activateLightMode() : null
+        
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        document.documentElement.classList.toggle('hide-aside', asideStatus === 'hide')
+      }
+    
+      
+    const detectApple = () => {
+      if (/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)) {
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+  
+    })()
+  </script><script async="async" src="https://www.googletagmanager.com/gtag/js?id=G-S7TKJ52XWZ"></script><script>window.dataLayer = window.dataLayer || []
+function gtag(){dataLayer.push(arguments)}
+gtag('js', new Date())
+gtag('config', 'G-S7TKJ52XWZ')
+btf.addGlobalFn('pjaxComplete', () => {
+  gtag('config', 'G-S7TKJ52XWZ', {'page_path': window.location.pathname})
+}, 'google_analytics')
+</script><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false,"highlightFullpage":false,"highlightMacStyle":false},
+  copy: {
+    success: 'Copy Successful',
+    error: 'Copy Failed',
+    noSupport: 'Browser Not Supported'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: 'days',
+  dateSuffix: {
+    just: 'Just now',
+    min: 'minutes ago',
+    hour: 'hours ago',
+    day: 'days ago',
+    month: 'months ago'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid/dist/infinitegrid.min.js',
+    buttonText: 'Load More'
+  },
+  isPhotoFigcaption: false,
+  islazyloadPlugin: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '为云服务器配置clash-for-linux',
+  isHighlightShrink: false,
+  isToc: true,
+  pageType: 'post'
+}</script><meta name="baidu-site-verification" content="codeva-goeWHw7QfM" /><link rel="stylesheet" href=" /css/fonts.css"><link rel="stylesheet" href=" /css/iconfont.css"<!-- hexo injector head_end start -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hexo-math@4.0.0/dist/style.css">
+<!-- hexo injector head_end end --><meta name="generator" content="Hexo 7.3.0"><style>mjx-container[jax="SVG"] {
+  direction: ltr;
+}
+
+mjx-container[jax="SVG"] > svg {
+  overflow: visible;
+}
+
+mjx-container[jax="SVG"][display="true"] {
+  display: block;
+  text-align: center;
+  margin: 1em 0;
+}
+
+mjx-container[jax="SVG"][justify="left"] {
+  text-align: left;
+}
+
+mjx-container[jax="SVG"][justify="right"] {
+  text-align: right;
+}
+
+g[data-mml-node="merror"] > g {
+  fill: red;
+  stroke: red;
+}
+
+g[data-mml-node="merror"] > rect[data-background] {
+  fill: yellow;
+  stroke: none;
+}
+
+g[data-mml-node="mtable"] > line[data-line] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node="mtable"] > rect[data-frame] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node="mtable"] > .mjx-dashed {
+  stroke-dasharray: 140;
+}
+
+g[data-mml-node="mtable"] > .mjx-dotted {
+  stroke-linecap: round;
+  stroke-dasharray: 0,140;
+}
+
+g[data-mml-node="mtable"] > svg {
+  overflow: visible;
+}
+
+[jax="SVG"] mjx-tool {
+  display: inline-block;
+  position: relative;
+  width: 0;
+  height: 0;
+}
+
+[jax="SVG"] mjx-tool > mjx-tip {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+mjx-tool > mjx-tip {
+  display: inline-block;
+  padding: .2em;
+  border: 1px solid #888;
+  font-size: 70%;
+  background-color: #F8F8F8;
+  color: black;
+  box-shadow: 2px 2px 5px #AAAAAA;
+}
+
+g[data-mml-node="maction"][data-toggle] {
+  cursor: pointer;
+}
+
+mjx-status {
+  display: block;
+  position: fixed;
+  left: 1em;
+  bottom: 1em;
+  min-width: 25%;
+  padding: .2em .4em;
+  border: 1px solid #888;
+  font-size: 90%;
+  background-color: #F8F8F8;
+  color: black;
+}
+
+foreignObject[data-mjx-xml] {
+  font-family: initial;
+  line-height: normal;
+  overflow: visible;
+}
+
+.MathJax path {
+  stroke-width: 3;
+}
+
+mjx-container[display="true"] {
+  overflow: auto hidden;
+}
+
+mjx-container[display="true"] + br {
+  display: none;
+}
+</style><link rel="alternate" href="/atom.xml" title="LoveApple14434的主页" type="application/atom+xml">
+<link rel="alternate" href="/rss.xml" title="LoveApple14434的主页" type="application/rss+xml">
+</head><body><div id="web_bg" style="background: pink;"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img text-center"><img src="/img/machinist.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data text-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">38</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">50</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">4</div></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/QSL-LOG/"><i class="fa-fw fa fa-tower-broadcast"></i><span> QSL</span></a></div><div class="menus_item"><a class="site-page" href="/img-api/"><i class="fa-fw fa fa-image"></i><span> Image</span></a></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fas fa-gamepad"></i><span> Features</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/Draw/"><i class="fa-fw fa fa-paint-brush"></i><span> DrawBoard</span></a></li><li><a class="site-page child" href="/mine-sweeper/"><i class="fa-fw fas fa-bomb"></i><span> Mine-Sweeper Records</span></a></li></ul></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fas fa-list"></i><span> Links</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/link/"><i class="fa-fw fa fa-link"></i><span> Link List</span></a></li><li><a class="site-page child" href="https://loveapple.icu/Friend-Link-House/"><i class="fa-fw fa fa-newspaper"></i><span> Link-House</span></a></li></ul></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url(https://random.mikus.ink/pc?2159);"><nav id="nav"><span id="blog-info"><a class="nav-site-title" href="/"><span class="site-name">LoveApple14434的主页</span></a><a class="nav-page-title" href="/"><span class="site-name">为云服务器配置clash-for-linux</span><span class="site-name"><i class="fa-solid fa-circle-arrow-left"></i><span>  Back to Home</span></span></a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/QSL-LOG/"><i class="fa-fw fa fa-tower-broadcast"></i><span> QSL</span></a></div><div class="menus_item"><a class="site-page" href="/img-api/"><i class="fa-fw fa fa-image"></i><span> Image</span></a></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fas fa-gamepad"></i><span> Features</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/Draw/"><i class="fa-fw fa fa-paint-brush"></i><span> DrawBoard</span></a></li><li><a class="site-page child" href="/mine-sweeper/"><i class="fa-fw fas fa-bomb"></i><span> Mine-Sweeper Records</span></a></li></ul></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fas fa-list"></i><span> Links</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/link/"><i class="fa-fw fa fa-link"></i><span> Link List</span></a></li><li><a class="site-page child" href="https://loveapple.icu/Friend-Link-House/"><i class="fa-fw fa fa-newspaper"></i><span> Link-House</span></a></li></ul></div></div><div id="toggle-menu"><span class="site-page"><i class="fas fa-bars fa-fw"></i></span></div></div></nav><div id="post-info"><h1 class="post-title">为云服务器配置clash-for-linux</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">Created</span><time class="post-meta-date-created" datetime="2026-02-09T04:43:44.000Z" title="Created 2026-02-09 12:43:44">2026-02-09</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">Updated</span><time class="post-meta-date-updated" datetime="2026-02-09T05:08:39.914Z" title="Updated 2026-02-09 13:08:39">2026-02-09</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E5%AF%84%E6%9C%AF/">寄术</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">Word Count:</span><span class="word-count">693</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">Reading Time:</span><span>2mins</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title=""><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">Post Views:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="container post-content" id="article-container"><blockquote>
+<p>本文仅针对开源软件配置进行技术交流，与“翻墙”（未经批准擅自使用非法工具或服务绕过国家防火墙，访问境外互联网的行为）无关。我们应当自觉遵守网络管理法规，共同维护良好的网络秩序，鼓励大家积极利用国内资源，享受健康、积极的网络生活。本文也仅旨在与其他网友进行技术交流，满足其他网友的交流学习需要。</p>
+</blockquote>
+<p>配置clash时的一大难题就是：你需要先有一个能访问外网的渠道才能配置clash，但是你需要先配置clash才有访问外网的渠道。</p>
+<p>本文将针对<strong>“本地主机能访问外网，但是云服务器不能”</strong>的情况作出一些经验分享。</p>
+<h2 id="下载">下载</h2>
+<p>首先为了保证软件源头的纯洁性，我们当然是使用从GitHub上clone下来的clash-for-linux，但是云服务器目前还是访问不到GitHub的，所以我们选择在WSL中clone一个，然后通过<code>scp</code>传输到服务器上。将Windows上的clash-verge开到TUN模式（从更底层截获请求，确保WSL中也能享受到代理），然后WSL随便开一个Linux系统，执行</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">clone</span> https://github.com/wnlen/clash-for-linux.git</span><br></pre></td></tr></table></figure>
+<p>接下来用 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">scp -r ./clash-for-linux &lt;user name&gt;@&lt;server ip&gt;:/path/to/clash</span><br></pre></td></tr></table></figure> 进行传输。注意加<code>-r</code>确保递归。</p>
+<h2 id="安装">安装</h2>
+<p>传输完成之后我们<code>cd</code>到对应的路径，由于是<code>scp</code>过来的而非直接<code>git clone</code>下载，所以有些文件属性可能会不对，也许需要<code>chmod +x install.sh</code>为安装脚本添加执行权限，接着<code>sudo bash install.sh</code>进行安装，安装过程中会提示你输入订阅的URL。</p>
+<h2 id="终端命令">终端命令</h2>
+<p>安装完成之后会将一个<code>clash-for-linux.sh</code>放到<code>/etc/profile.d/</code>下，所以我们直接重新打开bash会话就可以使用其中的命令——其实也就三条：</p>
+<ul>
+<li><code>proxy_on</code> 启动代理</li>
+<li><code>proxy_off</code> 关闭代理</li>
+<li><code>proxy_status</code> 查看代理状态</li>
+</ul>
+<h2 id="控制面板">控制面板</h2>
+<p>更加详细的控制在控制面板中，默认是运行在9090端口上。</p>
+<p>首先我们需要找到访问终端所需的秘钥（<del>在这一步卡了我好久，被可恶的deepseek误导了喵</del>）。打开路径<code>/opt/clash-for-linux/opt/</code>查看里面的<code>yaml</code>配置文件中的<code>secret</code>字段并记录下来。</p>
+<p>接下来我们在本地终端启动一个ssh隧道将这个端口代理出来： <figure class="highlight pwsh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh <span class="literal">-N</span> <span class="literal">-L</span> <span class="number">9090</span>:<span class="number">127.0</span>.<span class="number">0.1</span>:<span class="number">9090</span> &lt;user name&gt;<span class="selector-tag">@</span>&lt;server ip&gt; &amp;</span><br></pre></td></tr></table></figure>
+然后浏览器访问<code>127.0.0.1:9090/ui</code>，按提示输入后端地址和密钥就可以访问控制面板啦。</p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta"><i class="fas fa-circle-user fa-fw"></i>Author: </span><span class="post-copyright-info"><a href="https://loveapple.icu">LoveApple14434</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta"><i class="fas fa-square-arrow-up-right fa-fw"></i>Link: </span><span class="post-copyright-info"><a href="https://loveapple.icu/clash-for-linux/">https://loveapple.icu/clash-for-linux/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta"><i class="fas fa-circle-exclamation fa-fw"></i>Copyright Notice: </span><span class="post-copyright-info">All articles on this blog are licensed under <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> unless otherwise stated.</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/clash/">clash</a><a class="post-meta__tags" href="/tags/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8/">云服务器</a></div><div class="post-share"><div class="social-share" data-image="https://random.mikus.ink/pc?2159" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><a class="pagination-related full-width" href="/home-video-services/" title="局域网下的家庭影音服务实践对比"><img class="cover" src="https://loveapple.icu/img-api/random-image?9872" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="info text-right"><div class="info-1"><div class="info-item-1">Next</div><div class="info-item-2">局域网下的家庭影音服务实践对比</div></div><div class="info-2"><div class="info-item-1">本文记录了作者在家庭局域网内尝试三种影音共享方案的实践对比。由于电视系统限制，JellyFin客户端无法安装；SAMBA文件共享协议在播放时出现卡顿；最终通过DLNA流媒体协议成功实现流畅播放，并分析了协议差异对体验的影响。</div></div></div></a></nav><hr class="custom-hr"/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> Comments</span></div></div><div class="comment-wrap"><div><div id="giscus-wrap"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info text-center"><div class="avatar-img"><img src="/img/machinist.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info-name">LoveApple14434</div><div class="author-info-description">技术实践 | 心得分享 | 开源生态<br>射频与微波 | 业余无线电<br>以及水煮鱼的生活记录！</div><div class="site-data"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">38</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">50</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">4</div></a></div><a id="card-info-btn" href="Tencent://message/?uin=1985671808&amp;Site=loveapple.icu&amp;Menu=yes"><i class="fa-brands fa-qq"></i><span>Add me via QQ</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>Announcement</span></div><div class="announcement_content">封面图片来自<a target="_blank" rel="noopener" href="https://www.pexels.com">Pexels.com<img src="https://images.pexels.com/lib/api/pexels.png" width="100px"/><img src="https://images.pexels.com/lib/api/pexels-white.png" width="100px"/></a><br>以及<a target="_blank" rel="noopener" href="https://mikus.ink">@mikus</a>的随机图片API</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>Contents</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%8B%E8%BD%BD"><span class="toc-number">1.</span> <span class="toc-text">下载</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%89%E8%A3%85"><span class="toc-number">2.</span> <span class="toc-text">安装</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%BB%88%E7%AB%AF%E5%91%BD%E4%BB%A4"><span class="toc-number">3.</span> <span class="toc-text">终端命令</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%8E%A7%E5%88%B6%E9%9D%A2%E6%9D%BF"><span class="toc-number">4.</span> <span class="toc-text">控制面板</span></a></li></ol></div></div></div></div></main><footer id="footer" style="background: pink;"><div class="footer-other"><div class="footer-copyright"><span class="copyright">&copy;&nbsp;2025 - 2026 By LoveApple14434</span><span class="framework-info"><span>Framework </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo 7.3.0</a><span class="footer-separator">|</span><span>Theme </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly 5.4.3</a></span></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="Reading Mode"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="Toggle Between Light and Dark Mode"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="Toggle Between Single-column and Double-column"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="Settings"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="Table of Contents"><i class="fas fa-list-ul"></i></button><a id="to_comment" href="#post-comment" title="Scroll to Comments"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="Back to Top"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.umd.min.js"></script><div class="js-pjax"><script>(() => {
+  const loadMathjax = () => {
+    if (!window.MathJax) {
+      window.MathJax = {
+        tex: {
+          inlineMath: [['$', '$'], ['\\(', '\\)']],
+          tags: 'none',
+        },
+        chtml: {
+          scale: 1.1
+        },
+        options: {
+          enableMenu: true,
+          renderActions: {
+            findScript: [10, doc => {
+              for (const node of document.querySelectorAll('script[type^="math/tex"]')) {
+                const display = !!node.type.match(/; *mode=display/)
+                const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display)
+                const text = document.createTextNode('')
+                node.parentNode.replaceChild(text, node)
+                math.start = {node: text, delim: '', n: 0}
+                math.end = {node: text, delim: '', n: 0}
+                doc.math.push(math)
+              }
+            }, '']
+          }
+        }
+      }
+
+      const script = document.createElement('script')
+      script.src = 'https://cdn.jsdelivr.net/npm/mathjax/es5/tex-mml-chtml.min.js'
+      script.id = 'MathJax-script'
+      script.async = true
+      document.head.appendChild(script)
+    } else {
+      MathJax.startup.document.state(0)
+      MathJax.texReset()
+      MathJax.typesetPromise()
+    }
+  }
+
+  btf.addGlobalFn('encrypt', loadMathjax, 'mathjax')
+  window.pjax ? loadMathjax() : window.addEventListener('load', loadMathjax)
+})()</script><script>(() => {
+  const isShuoshuo = GLOBAL_CONFIG_SITE.pageType === 'shuoshuo'
+  const option = {"data-input-position":"top"}
+
+  const getGiscusTheme = theme => theme === 'dark' ? 'dark' : 'light'
+
+  const createScriptElement = config => {
+    const ele = document.createElement('script')
+    Object.entries(config).forEach(([key, value]) => {
+      ele.setAttribute(key, value)
+    })
+    return ele
+  }
+
+  const loadGiscus = (el = document, key) => {
+    const mappingConfig = isShuoshuo
+      ? { 'data-mapping': 'specific', 'data-term': key }
+      : { 'data-mapping': (option && option['data-mapping']) || 'pathname' }
+
+    const giscusConfig = {
+      src: 'https://giscus.app/client.js',
+      'data-repo': 'loveapple14434/loveapple14434.github.io',
+      'data-repo-id': 'R_kgDOLVLb7Q',
+      'data-category-id': 'DIC_kwDOLVLb7c4CzLc8',
+      'data-theme': getGiscusTheme(document.documentElement.getAttribute('data-theme')),
+      'data-reactions-enabled': '1',
+      crossorigin: 'anonymous',
+      async: true,
+      ...option,
+      ...mappingConfig
+    }
+
+    const scriptElement = createScriptElement(giscusConfig)
+
+    el.querySelector('#giscus-wrap').appendChild(scriptElement)
+
+    if (isShuoshuo) {
+      window.shuoshuoComment.destroyGiscus = () => {
+        if (el.children.length) {
+          el.innerHTML = ''
+          el.classList.add('no-comment')
+        }
+      }
+    }
+  }
+
+  const changeGiscusTheme = theme => {
+    const iframe = document.querySelector('#giscus-wrap iframe')
+    if (iframe) {
+      const message = {
+        giscus: {
+          setConfig: {
+            theme: getGiscusTheme(theme)
+          }
+        }
+      }
+      iframe.contentWindow.postMessage(message, 'https://giscus.app')
+    }
+  }
+
+  btf.addGlobalFn('themeChange', changeGiscusTheme, 'giscus')
+
+  if (isShuoshuo) {
+    'Giscus' === 'Giscus'
+      ? window.shuoshuoComment = { loadComment: loadGiscus }
+      : window.loadOtherComment = loadGiscus
+    return
+  }
+
+  if ('Giscus' === 'Giscus' || !false) {
+    if (false) btf.loadComment(document.getElementById('giscus-wrap'), loadGiscus)
+    else loadGiscus()
+  } else {
+    window.loadOtherComment = loadGiscus
+  }
+})()</script></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
