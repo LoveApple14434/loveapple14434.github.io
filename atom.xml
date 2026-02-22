@@ -486,9 +486,9 @@
     <category term="鱼论" scheme="https://loveapple.icu/categories/%E9%B1%BC%E8%AE%BA/"/>
     
     
-    <category term="随笔" scheme="https://loveapple.icu/tags/%E9%9A%8F%E7%AC%94/"/>
-    
     <category term="NJU" scheme="https://loveapple.icu/tags/NJU/"/>
+    
+    <category term="随笔" scheme="https://loveapple.icu/tags/%E9%9A%8F%E7%AC%94/"/>
     
   </entry>
   
@@ -664,9 +664,9 @@
     <category term="寄术" scheme="https://loveapple.icu/categories/%E5%AF%84%E6%9C%AF/"/>
     
     
-    <category term="EE" scheme="https://loveapple.icu/tags/EE/"/>
-    
     <category term="开源项目" scheme="https://loveapple.icu/tags/%E5%BC%80%E6%BA%90%E9%A1%B9%E7%9B%AE/"/>
+    
+    <category term="EE" scheme="https://loveapple.icu/tags/EE/"/>
     
     <category term="嵌入式开发" scheme="https://loveapple.icu/tags/%E5%B5%8C%E5%85%A5%E5%BC%8F%E5%BC%80%E5%8F%91/"/>
     
