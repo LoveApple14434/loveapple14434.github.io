@@ -9,8 +9,29 @@
     <atom:link href="https://loveapple.icu/rss.xml" rel="self" type="application/rss+xml"/>
     
     <description>开源技术实践者 &amp; 射频电子新人 | LoveApple14434 的个人领地 | 一条爱苹果的水煮鱼。深度分享射频/微波、业余无线电硬核技术笔记，开源项目技术实践以及博客网站建设经验，IT侠笔记本维修随录，兼谈NJU校园趣闻与水煮鱼的生活思考。探索技术前沿，记录成长点滴。</description>
-    <pubDate>Mon, 09 Feb 2026 05:08:39 GMT</pubDate>
+    <pubDate>Sun, 22 Feb 2026 05:23:18 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>家族琐记</title>
+      <link>https://loveapple.icu/family-blood/</link>
+      <guid>https://loveapple.icu/family-blood/</guid>
+      <pubDate>Sat, 21 Feb 2026 13:19:01 GMT</pubDate>
+      
+      <description>这篇博客是作者关于自己福建莆田家族的一次私人梳理与记录。作为生在南京、很少回乡的“外人”，作者在过年期间厘清了从太爷爷到孙辈共四代人的庞大家族脉络，记录了本家与旁系亲属的职业、性格与轶事，也触及了长房之争等微妙关系。这不仅是一份家庭关系的整理，更是一场对自己根系的探寻与书写。</description>
+      
+      
+      
+      
+      <category domain="https://loveapple.icu/categories/%E7%89%B2%E6%B4%BB/">牲活</category>
+      
+      
+      <category domain="https://loveapple.icu/tags/%E9%9A%8F%E7%AC%94/">随笔</category>
+      
+      
+      <comments>https://loveapple.icu/family-blood/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>为云服务器配置clash-for-linux</title>
@@ -502,9 +523,9 @@
       <category domain="https://loveapple.icu/categories/%E9%B1%BC%E8%AE%BA/">鱼论</category>
       
       
-      <category domain="https://loveapple.icu/tags/NJU/">NJU</category>
-      
       <category domain="https://loveapple.icu/tags/%E9%9A%8F%E7%AC%94/">随笔</category>
+      
+      <category domain="https://loveapple.icu/tags/NJU/">NJU</category>
       
       
       <comments>https://loveapple.icu/nju-king-crab/#disqus_thread</comments>
@@ -696,9 +717,9 @@
       <category domain="https://loveapple.icu/categories/%E5%AF%84%E6%9C%AF/">寄术</category>
       
       
-      <category domain="https://loveapple.icu/tags/%E5%BC%80%E6%BA%90%E9%A1%B9%E7%9B%AE/">开源项目</category>
-      
       <category domain="https://loveapple.icu/tags/EE/">EE</category>
+      
+      <category domain="https://loveapple.icu/tags/%E5%BC%80%E6%BA%90%E9%A1%B9%E7%9B%AE/">开源项目</category>
       
       <category domain="https://loveapple.icu/tags/%E5%B5%8C%E5%85%A5%E5%BC%8F%E5%BC%80%E5%8F%91/">嵌入式开发</category>
       

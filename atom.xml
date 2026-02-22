@@ -6,7 +6,7 @@
   <link href="https://loveapple.icu/atom.xml" rel="self"/>
   
   <link href="https://loveapple.icu/"/>
-  <updated>2026-02-09T05:08:39.914Z</updated>
+  <updated>2026-02-22T05:23:18.664Z</updated>
   <id>https://loveapple.icu/</id>
   
   <author>
@@ -15,6 +15,25 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>家族琐记</title>
+    <link href="https://loveapple.icu/family-blood/"/>
+    <id>https://loveapple.icu/family-blood/</id>
+    <published>2026-02-21T13:19:01.000Z</published>
+    <updated>2026-02-22T05:23:18.664Z</updated>
+    
+    
+    <summary type="html">这篇博客是作者关于自己福建莆田家族的一次私人梳理与记录。作为生在南京、很少回乡的“外人”，作者在过年期间厘清了从太爷爷到孙辈共四代人的庞大家族脉络，记录了本家与旁系亲属的职业、性格与轶事，也触及了长房之争等微妙关系。这不仅是一份家庭关系的整理，更是一场对自己根系的探寻与书写。</summary>
+    
+    
+    
+    <category term="牲活" scheme="https://loveapple.icu/categories/%E7%89%B2%E6%B4%BB/"/>
+    
+    
+    <category term="随笔" scheme="https://loveapple.icu/tags/%E9%9A%8F%E7%AC%94/"/>
+    
+  </entry>
   
   <entry>
     <title>为云服务器配置clash-for-linux</title>
@@ -467,9 +486,9 @@
     <category term="鱼论" scheme="https://loveapple.icu/categories/%E9%B1%BC%E8%AE%BA/"/>
     
     
-    <category term="NJU" scheme="https://loveapple.icu/tags/NJU/"/>
-    
     <category term="随笔" scheme="https://loveapple.icu/tags/%E9%9A%8F%E7%AC%94/"/>
+    
+    <category term="NJU" scheme="https://loveapple.icu/tags/NJU/"/>
     
   </entry>
   
@@ -645,9 +664,9 @@
     <category term="寄术" scheme="https://loveapple.icu/categories/%E5%AF%84%E6%9C%AF/"/>
     
     
-    <category term="开源项目" scheme="https://loveapple.icu/tags/%E5%BC%80%E6%BA%90%E9%A1%B9%E7%9B%AE/"/>
-    
     <category term="EE" scheme="https://loveapple.icu/tags/EE/"/>
+    
+    <category term="开源项目" scheme="https://loveapple.icu/tags/%E5%BC%80%E6%BA%90%E9%A1%B9%E7%9B%AE/"/>
     
     <category term="嵌入式开发" scheme="https://loveapple.icu/tags/%E5%B5%8C%E5%85%A5%E5%BC%8F%E5%BC%80%E5%8F%91/"/>
     
