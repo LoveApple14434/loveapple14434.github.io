@@ -6,7 +6,7 @@
   <link href="https://loveapple.icu/atom.xml" rel="self"/>
   
   <link href="https://loveapple.icu/"/>
-  <updated>2026-02-22T05:23:18.664Z</updated>
+  <updated>2026-03-04T08:12:23.092Z</updated>
   <id>https://loveapple.icu/</id>
   
   <author>
@@ -15,6 +15,37 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>linuxqq在KDE Plasma下无法输入的问题。</title>
+    <link href="https://loveapple.icu/linuxqq-fcitx5/"/>
+    <id>https://loveapple.icu/linuxqq-fcitx5/</id>
+    <published>2026-03-03T23:57:38.000Z</published>
+    <updated>2026-03-04T08:12:23.092Z</updated>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;linuxqq在Wayland+KDE
+Plasma下会发生无法输入的问题，无论是否激活输入法，甚至连粘贴文字都不行。&lt;/p&gt;
+&lt;p&gt;archlinux中文论坛上有一个解决办法是修改linuxqq.desktop脚本，增加两个参数。这里收录如下：&lt;/p&gt;
+&lt;block</summary>
+      
+    
+    
+    
+    <category term="寄术" scheme="https://loveapple.icu/categories/%E5%AF%84%E6%9C%AF/"/>
+    
+    
+    <category term="Arch Linux" scheme="https://loveapple.icu/tags/Arch-Linux/"/>
+    
+    <category term="Linux" scheme="https://loveapple.icu/tags/Linux/"/>
+    
+    <category term="linuxqq" scheme="https://loveapple.icu/tags/linuxqq/"/>
+    
+    <category term="输入法" scheme="https://loveapple.icu/tags/%E8%BE%93%E5%85%A5%E6%B3%95/"/>
+    
+  </entry>
   
   <entry>
     <title>家族琐记</title>

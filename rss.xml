@@ -9,8 +9,41 @@
     <atom:link href="https://loveapple.icu/rss.xml" rel="self" type="application/rss+xml"/>
     
     <description>开源技术实践者 &amp; 射频电子新人 | LoveApple14434 的个人领地 | 一条爱苹果的水煮鱼。深度分享射频/微波、业余无线电硬核技术笔记，开源项目技术实践以及博客网站建设经验，IT侠笔记本维修随录，兼谈NJU校园趣闻与水煮鱼的生活思考。探索技术前沿，记录成长点滴。</description>
-    <pubDate>Sun, 22 Feb 2026 05:23:18 GMT</pubDate>
+    <pubDate>Wed, 04 Mar 2026 08:12:23 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>linuxqq在KDE Plasma下无法输入的问题。</title>
+      <link>https://loveapple.icu/linuxqq-fcitx5/</link>
+      <guid>https://loveapple.icu/linuxqq-fcitx5/</guid>
+      <pubDate>Tue, 03 Mar 2026 23:57:38 GMT</pubDate>
+      
+        
+        
+      <description>&lt;p&gt;linuxqq在Wayland+KDE
+Plasma下会发生无法输入的问题，无论是否激活输入法，甚至连粘贴文字都不行。&lt;/p&gt;
+&lt;p&gt;archlinux中文论坛上有一个解决办法是修改linuxqq.desktop脚本，增加两个参数。这里收录如下：&lt;/p&gt;
+&lt;block</description>
+        
+      
+      
+      
+      
+      <category domain="https://loveapple.icu/categories/%E5%AF%84%E6%9C%AF/">寄术</category>
+      
+      
+      <category domain="https://loveapple.icu/tags/Arch-Linux/">Arch Linux</category>
+      
+      <category domain="https://loveapple.icu/tags/Linux/">Linux</category>
+      
+      <category domain="https://loveapple.icu/tags/linuxqq/">linuxqq</category>
+      
+      <category domain="https://loveapple.icu/tags/%E8%BE%93%E5%85%A5%E6%B3%95/">输入法</category>
+      
+      
+      <comments>https://loveapple.icu/linuxqq-fcitx5/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>家族琐记</title>
