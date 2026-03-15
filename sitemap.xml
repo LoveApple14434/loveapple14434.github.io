@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://loveapple.icu/clash-for-linux/</loc>
+    
+    <lastmod>2026-03-15</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://loveapple.icu/linuxqq-fcitx5/</loc>
     
     <lastmod>2026-03-04</lastmod>
@@ -39,15 +48,6 @@
   
   <url>
     <loc>https://loveapple.icu/clash-configuration/</loc>
-    
-    <lastmod>2026-02-09</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://loveapple.icu/clash-for-linux/</loc>
     
     <lastmod>2026-02-09</lastmod>
     

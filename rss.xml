@@ -66,11 +66,7 @@
       <guid>https://loveapple.icu/clash-for-linux/</guid>
       <pubDate>Mon, 09 Feb 2026 04:43:44 GMT</pubDate>
       
-        
-        
-      <description>&lt;blockquote&gt;
-&lt;p&gt;本文仅针对开源软件配置进行技术交流，与“翻墙”（未经批准擅自使用非法工具或服务绕过国家防火墙，访问境外互联网的行为）无关。我们应当自觉遵守网络管理法规，共同维护良好的网络秩序，鼓励大家积极利用国内资源，享受健康、积极的网络生活。本文也仅旨在与其他</description>
-        
+      <description>本文针对云服务器无法直接访问外网的困境，提供了一种配置clash-for-linux的解决方案。通过从本地WSL下载源码并传输至服务器，解决了“先有鸡还是先有蛋”的问题。详细介绍了安装步骤、终端代理命令及通过SSH隧道访问控制面板的方法，为类似场景下的技术实践提供参考。</description>
       
       
       
