@@ -6,7 +6,7 @@
   <link href="https://loveapple.icu/atom.xml" rel="self"/>
   
   <link href="https://loveapple.icu/"/>
-  <updated>2026-03-04T08:19:46.151Z</updated>
+  <updated>2026-03-19T04:45:36.294Z</updated>
   <id>https://loveapple.icu/</id>
   
   <author>
@@ -15,6 +15,25 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>view-2</title>
+    <link href="https://loveapple.icu/view-2/"/>
+    <id>https://loveapple.icu/view-2/</id>
+    <published>2026-03-19T04:45:36.000Z</published>
+    <updated>2026-03-19T04:45:36.294Z</updated>
+    
+    
+      
+      
+    <summary type="html">
+</summary>
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>linuxqq在KDE Plasma下无法输入的问题。</title>
@@ -283,11 +302,11 @@
   </entry>
   
   <entry>
-    <title>无题</title>
+    <title>鱼论：论王座风潮</title>
     <link href="https://loveapple.icu/view-1/"/>
     <id>https://loveapple.icu/view-1/</id>
     <published>2026-01-02T10:24:41.000Z</published>
-    <updated>2026-01-06T02:16:04.044Z</updated>
+    <updated>2026-03-19T05:17:24.771Z</updated>
     
     
     <summary type="html">近日观互联网有感</summary>
@@ -583,7 +602,7 @@
     <link href="https://loveapple.icu/PLL-intro/"/>
     <id>https://loveapple.icu/PLL-intro/</id>
     <published>2025-10-03T03:46:12.000Z</published>
-    <updated>2025-12-10T10:40:10.802Z</updated>
+    <updated>2026-03-22T13:32:42.984Z</updated>
     
     
     <summary type="html">一篇关于锁相环的入门简介。文章从信号同步的实际问题出发，通俗地解释了锁相环的基本工作原理，并介绍了其核心组件——鉴相器与压控振荡器，以及如何通过加入分频器来实现倍频功能。</summary>
