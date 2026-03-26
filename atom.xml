@@ -6,7 +6,7 @@
   <link href="https://loveapple.icu/atom.xml" rel="self"/>
   
   <link href="https://loveapple.icu/"/>
-  <updated>2026-03-04T08:19:46.151Z</updated>
+  <updated>2026-03-26T07:35:24.519Z</updated>
   <id>https://loveapple.icu/</id>
   
   <author>
@@ -15,6 +15,23 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>鱼论：穿越知识的坠落与诅咒寻找锚点</title>
+    <link href="https://loveapple.icu/view-2/"/>
+    <id>https://loveapple.icu/view-2/</id>
+    <published>2026-03-26T07:28:47.000Z</published>
+    <updated>2026-03-26T07:35:24.519Z</updated>
+    
+    
+    <summary type="html">在优绩主义焦虑蔓延的当下，如何寻找自我的锚点？</summary>
+    
+    
+    
+    <category term="鱼论" scheme="https://loveapple.icu/categories/%E9%B1%BC%E8%AE%BA/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>linuxqq在KDE Plasma下无法输入的问题。</title>
