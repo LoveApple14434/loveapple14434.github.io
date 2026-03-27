@@ -9,8 +9,35 @@
     <atom:link href="https://loveapple.icu/rss.xml" rel="self" type="application/rss+xml"/>
     
     <description>开源技术实践者 &amp; 射频电子新人 | LoveApple14434 的个人领地 | 一条爱苹果的水煮鱼。深度分享射频/微波、业余无线电硬核技术笔记，开源项目技术实践以及博客网站建设经验，IT侠笔记本维修随录，兼谈NJU校园趣闻与水煮鱼的生活思考。探索技术前沿，记录成长点滴。</description>
-    <pubDate>Thu, 26 Mar 2026 09:48:59 GMT</pubDate>
+    <pubDate>Fri, 27 Mar 2026 08:36:37 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>正点原子串口例程中开发板无法收信问题</title>
+      <link>https://loveapple.icu/STM32-USART-Alientek/</link>
+      <guid>https://loveapple.icu/STM32-USART-Alientek/</guid>
+      <pubDate>Fri, 27 Mar 2026 08:35:38 GMT</pubDate>
+      
+      <description>本文记录了使用正点原子STM32F103开发板例程时，开发板无法接收串口消息的问题。通过分析代码发现，例程判断接收完成需要检测到回车符（0x0D），而串口调试助手默认不发送该字符。解决方案是在发送信息末尾添加换行符，即可正常通信。</description>
+      
+      
+      
+      
+      <category domain="https://loveapple.icu/categories/%E5%AF%84%E6%9C%AF/">寄术</category>
+      
+      
+      <category domain="https://loveapple.icu/tags/MCU/">MCU</category>
+      
+      <category domain="https://loveapple.icu/tags/%E5%BC%80%E5%8F%91%E6%9D%BF/">开发板</category>
+      
+      <category domain="https://loveapple.icu/tags/STM32/">STM32</category>
+      
+      <category domain="https://loveapple.icu/tags/USART/">USART</category>
+      
+      
+      <comments>https://loveapple.icu/STM32-USART-Alientek/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>鱼论：穿越知识的坠落与诅咒，寻找锚点与未来</title>
