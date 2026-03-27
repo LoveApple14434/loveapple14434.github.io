@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://loveapple.icu/cloudflare-purge-cache/</loc>
+    
+    <lastmod>2026-03-27</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://loveapple.icu/STM32-USART-Alientek/</loc>
     
     <lastmod>2026-03-27</lastmod>
@@ -851,6 +860,13 @@
   
   <url>
     <loc>https://loveapple.icu/tags/USART/</loc>
+    <lastmod>2026-03-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://loveapple.icu/tags/Cloudflare/</loc>
     <lastmod>2026-03-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>

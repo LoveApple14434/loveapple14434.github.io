@@ -6,7 +6,7 @@
   <link href="https://loveapple.icu/atom.xml" rel="self"/>
   
   <link href="https://loveapple.icu/"/>
-  <updated>2026-03-27T08:36:37.496Z</updated>
+  <updated>2026-03-27T09:19:09.298Z</updated>
   <id>https://loveapple.icu/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>hexo脚本：部署后自动刷新Cloudflare缓存</title>
+    <link href="https://loveapple.icu/cloudflare-purge-cache/"/>
+    <id>https://loveapple.icu/cloudflare-purge-cache/</id>
+    <published>2026-03-27T09:06:24.000Z</published>
+    <updated>2026-03-27T09:19:09.298Z</updated>
+    
+    
+    <summary type="html">这篇博客介绍了如何通过编写Hexo脚本，在部署后自动调用Cloudflare API清除CDN缓存，从而解决因缓存导致新文章无法实时显示的问题，实现了自动化部署与缓存刷新的一体化流程。</summary>
+    
+    
+    
+    <category term="寄术" scheme="https://loveapple.icu/categories/%E5%AF%84%E6%9C%AF/"/>
+    
+    
+    <category term="网站建设" scheme="https://loveapple.icu/tags/%E7%BD%91%E7%AB%99%E5%BB%BA%E8%AE%BE/"/>
+    
+    <category term="Cloudflare" scheme="https://loveapple.icu/tags/Cloudflare/"/>
+    
+  </entry>
   
   <entry>
     <title>正点原子串口例程中开发板无法收信问题</title>
