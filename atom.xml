@@ -75,9 +75,9 @@
     
     <category term="MCU" scheme="https://loveapple.icu/tags/MCU/"/>
     
-    <category term="开发板" scheme="https://loveapple.icu/tags/%E5%BC%80%E5%8F%91%E6%9D%BF/"/>
-    
     <category term="STM32" scheme="https://loveapple.icu/tags/STM32/"/>
+    
+    <category term="开发板" scheme="https://loveapple.icu/tags/%E5%BC%80%E5%8F%91%E6%9D%BF/"/>
     
     <category term="USART" scheme="https://loveapple.icu/tags/USART/"/>
     
@@ -612,9 +612,9 @@
     <category term="寄术" scheme="https://loveapple.icu/categories/%E5%AF%84%E6%9C%AF/"/>
     
     
-    <category term="Linux" scheme="https://loveapple.icu/tags/Linux/"/>
-    
     <category term="开发板" scheme="https://loveapple.icu/tags/%E5%BC%80%E5%8F%91%E6%9D%BF/"/>
+    
+    <category term="Linux" scheme="https://loveapple.icu/tags/Linux/"/>
     
     <category term="loongarch" scheme="https://loveapple.icu/tags/loongarch/"/>
     

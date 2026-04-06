@@ -74,9 +74,9 @@
       
       <category domain="https://loveapple.icu/tags/MCU/">MCU</category>
       
-      <category domain="https://loveapple.icu/tags/%E5%BC%80%E5%8F%91%E6%9D%BF/">开发板</category>
-      
       <category domain="https://loveapple.icu/tags/STM32/">STM32</category>
+      
+      <category domain="https://loveapple.icu/tags/%E5%BC%80%E5%8F%91%E6%9D%BF/">开发板</category>
       
       <category domain="https://loveapple.icu/tags/USART/">USART</category>
       
@@ -661,9 +661,9 @@
       <category domain="https://loveapple.icu/categories/%E5%AF%84%E6%9C%AF/">寄术</category>
       
       
-      <category domain="https://loveapple.icu/tags/Linux/">Linux</category>
-      
       <category domain="https://loveapple.icu/tags/%E5%BC%80%E5%8F%91%E6%9D%BF/">开发板</category>
+      
+      <category domain="https://loveapple.icu/tags/Linux/">Linux</category>
       
       <category domain="https://loveapple.icu/tags/loongarch/">loongarch</category>
       
