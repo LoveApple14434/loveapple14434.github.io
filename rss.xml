@@ -9,8 +9,31 @@
     <atom:link href="https://loveapple.icu/rss.xml" rel="self" type="application/rss+xml"/>
     
     <description>开源技术实践者 &amp; 射频电子新人 | LoveApple14434 的个人领地 | 一条爱苹果的水煮鱼。深度分享射频/微波、业余无线电硬核技术笔记，开源项目技术实践以及博客网站建设经验，IT侠笔记本维修随录，兼谈NJU校园趣闻与水煮鱼的生活思考。探索技术前沿，记录成长点滴。</description>
-    <pubDate>Fri, 27 Mar 2026 09:19:09 GMT</pubDate>
+    <pubDate>Mon, 06 Apr 2026 08:38:34 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>电脑里的中文：字符集、键盘与输入法</title>
+      <link>https://loveapple.icu/zhcn-charset-kbd-inputmthd/</link>
+      <guid>https://loveapple.icu/zhcn-charset-kbd-inputmthd/</guid>
+      <pubDate>Mon, 06 Apr 2026 08:36:26 GMT</pubDate>
+      
+      <description>这篇博客系统梳理了中文在计算机世界中的技术演进历程。从字符集（ASCII、国标码、Unicode及“锟斤拷”等乱码梗）到中文键盘的发展，再到输入法（音码、形码、双拼、音形码）的对比，最后介绍了移动端的九宫格、全键盘与14键等布局。</description>
+      
+      
+      
+      
+      <category domain="https://loveapple.icu/categories/%E5%AF%84%E6%9C%AF/">寄术</category>
+      
+      
+      <category domain="https://loveapple.icu/tags/%E8%BE%93%E5%85%A5%E6%B3%95/">输入法</category>
+      
+      <category domain="https://loveapple.icu/tags/%E6%8A%80%E6%9C%AF%E5%8F%B2/">技术史</category>
+      
+      
+      <comments>https://loveapple.icu/zhcn-charset-kbd-inputmthd/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>hexo脚本：部署后自动刷新Cloudflare缓存</title>

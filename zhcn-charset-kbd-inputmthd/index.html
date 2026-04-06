@@ -1,0 +1,352 @@
+<!DOCTYPE html><html lang="zh" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>电脑里的中文：字符集、键盘与输入法 | LoveApple14434的主页</title><meta name="author" content="LoveApple14434"><meta name="copyright" content="LoveApple14434"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="ffffff"><meta name="description" content="这篇博客系统梳理了中文在计算机世界中的技术演进历程。从字符集（ASCII、国标码、Unicode及“锟斤拷”等乱码梗）到中文键盘的发展，再到输入法（音码、形码、双拼、音形码）的对比，最后介绍了移动端的九宫格、全键盘与14键等布局。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="电脑里的中文：字符集、键盘与输入法">
+<meta property="og:url" content="https://loveapple.icu/zhcn-charset-kbd-inputmthd/">
+<meta property="og:site_name" content="LoveApple14434的主页">
+<meta property="og:description" content="这篇博客系统梳理了中文在计算机世界中的技术演进历程。从字符集（ASCII、国标码、Unicode及“锟斤拷”等乱码梗）到中文键盘的发展，再到输入法（音码、形码、双拼、音形码）的对比，最后介绍了移动端的九宫格、全键盘与14键等布局。">
+<meta property="og:locale">
+<meta property="og:image" content="https://loveapple.icu/img-api/random-image?1022">
+<meta property="article:published_time" content="2026-04-06T08:36:26.000Z">
+<meta property="article:modified_time" content="2026-04-06T08:38:34.909Z">
+<meta property="article:author" content="LoveApple14434">
+<meta property="article:tag" content="输入法">
+<meta property="article:tag" content="技术史">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://loveapple.icu/img-api/random-image?1022"><script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "电脑里的中文：字符集、键盘与输入法",
+  "url": "https://loveapple.icu/zhcn-charset-kbd-inputmthd/",
+  "image": "https://loveapple.icu/img-api/random-image?1022",
+  "datePublished": "2026-04-06T08:36:26.000Z",
+  "dateModified": "2026-04-06T08:38:34.909Z",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "LoveApple14434",
+      "url": "https://loveapple.icu"
+    }
+  ]
+}</script><link rel="shortcut icon" href="/img/machinist.jpg"><link rel="canonical" href="https://loveapple.icu/zhcn-charset-kbd-inputmthd/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//www.google-analytics.com" crossorigin=""/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><script>
+    (() => {
+      
+    const saveToLocal = {
+      set: (key, value, ttl) => {
+        if (!ttl) return
+        const expiry = Date.now() + ttl * 86400000
+        localStorage.setItem(key, JSON.stringify({ value, expiry }))
+      },
+      get: key => {
+        const itemStr = localStorage.getItem(key)
+        if (!itemStr) return undefined
+        const { value, expiry } = JSON.parse(itemStr)
+        if (Date.now() > expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return value
+      }
+    }
+
+    window.btf = {
+      saveToLocal,
+      getScript: (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        Object.entries(attr).forEach(([key, val]) => script.setAttribute(key, val))
+        script.onload = script.onreadystatechange = () => {
+          if (!script.readyState || /loaded|complete/.test(script.readyState)) resolve()
+        }
+        script.onerror = reject
+        document.head.appendChild(script)
+      }),
+      getCSS: (url, id) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onload = link.onreadystatechange = () => {
+          if (!link.readyState || /loaded|complete/.test(link.readyState)) resolve()
+        }
+        link.onerror = reject
+        document.head.appendChild(link)
+      }),
+      addGlobalFn: (key, fn, name = false, parent = window) => {
+        if (!false && key.startsWith('pjax')) return
+        const globalFn = parent.globalFn || {}
+        globalFn[key] = globalFn[key] || {}
+        globalFn[key][name || Object.keys(globalFn[key]).length] = fn
+        parent.globalFn = globalFn
+      }
+    }
+  
+      
+      const activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      const activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', 'ffffff')
+        }
+      }
+
+      btf.activateDarkMode = activateDarkMode
+      btf.activateLightMode = activateLightMode
+
+      const theme = saveToLocal.get('theme')
+    
+          theme === 'dark' ? activateDarkMode() : theme === 'light' ? activateLightMode() : null
+        
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        document.documentElement.classList.toggle('hide-aside', asideStatus === 'hide')
+      }
+    
+      
+    const detectApple = () => {
+      if (/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)) {
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+  
+    })()
+  </script><script async="async" src="https://www.googletagmanager.com/gtag/js?id=G-S7TKJ52XWZ"></script><script>window.dataLayer = window.dataLayer || []
+function gtag(){dataLayer.push(arguments)}
+gtag('js', new Date())
+gtag('config', 'G-S7TKJ52XWZ')
+btf.addGlobalFn('pjaxComplete', () => {
+  gtag('config', 'G-S7TKJ52XWZ', {'page_path': window.location.pathname})
+}, 'google_analytics')
+</script><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false,"highlightFullpage":false,"highlightMacStyle":false},
+  copy: {
+    success: 'Copy Successful',
+    error: 'Copy Failed',
+    noSupport: 'Browser Not Supported'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: 'days',
+  dateSuffix: {
+    just: 'Just now',
+    min: 'minutes ago',
+    hour: 'hours ago',
+    day: 'days ago',
+    month: 'months ago'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid/dist/infinitegrid.min.js',
+    buttonText: 'Load More'
+  },
+  isPhotoFigcaption: false,
+  islazyloadPlugin: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '电脑里的中文：字符集、键盘与输入法',
+  isHighlightShrink: false,
+  isToc: true,
+  pageType: 'post'
+}</script><meta name="baidu-site-verification" content="codeva-goeWHw7QfM" /><link rel="stylesheet" href=" /css/fonts.css" /><link rel="stylesheet" href=" /css/iconfont.css" /><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" /><!-- hexo injector head_end start -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hexo-math@4.0.0/dist/style.css">
+<!-- hexo injector head_end end --><meta name="generator" content="Hexo 7.3.0"><link rel="alternate" href="/atom.xml" title="LoveApple14434的主页" type="application/atom+xml">
+<link rel="alternate" href="/rss.xml" title="LoveApple14434的主页" type="application/rss+xml">
+</head><body><div id="web_bg" style="background: pink;"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img text-center"><img src="/img/machinist.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data text-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">44</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">56</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">4</div></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fa-solid fa-layer-group"></i><span> Category</span></a></div><div class="menus_item"><a class="site-page" href="/QSL-LOG/"><i class="fa-fw fa fa-tower-broadcast"></i><span> QSL</span></a></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fas fa-gamepad"></i><span> Features</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/Draw/"><i class="fa-fw fa fa-paint-brush"></i><span> DrawBoard</span></a></li><li><a class="site-page child" href="/mine-sweeper/"><i class="fa-fw fas fa-bomb"></i><span> Mine-Sweeper Records</span></a></li><li><a class="site-page child" href="/img-api/"><i class="fa-fw fa fa-image"></i><span> Image-API</span></a></li></ul></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fas fa-list"></i><span> Friend-Links</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/link/"><i class="fa-fw fa fa-link"></i><span> Link List</span></a></li><li><a class="site-page child" href="https://loveapple.icu/Friend-Link-House/"><i class="fa-fw fa fa-newspaper"></i><span> Link-House</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/about"><i class="fa-fw fa-solid fa-circle-info"></i><span> About</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url(https://loveapple.icu/img-api/random-image?1022);"><nav id="nav"><span id="blog-info"><a class="nav-site-title" href="/"><span class="site-name">LoveApple14434的主页</span></a><a class="nav-page-title" href="/"><span class="site-name">电脑里的中文：字符集、键盘与输入法</span><span class="site-name"><i class="fa-solid fa-circle-arrow-left"></i><span>  Back to Home</span></span></a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fa-solid fa-layer-group"></i><span> Category</span></a></div><div class="menus_item"><a class="site-page" href="/QSL-LOG/"><i class="fa-fw fa fa-tower-broadcast"></i><span> QSL</span></a></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fas fa-gamepad"></i><span> Features</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/Draw/"><i class="fa-fw fa fa-paint-brush"></i><span> DrawBoard</span></a></li><li><a class="site-page child" href="/mine-sweeper/"><i class="fa-fw fas fa-bomb"></i><span> Mine-Sweeper Records</span></a></li><li><a class="site-page child" href="/img-api/"><i class="fa-fw fa fa-image"></i><span> Image-API</span></a></li></ul></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fas fa-list"></i><span> Friend-Links</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/link/"><i class="fa-fw fa fa-link"></i><span> Link List</span></a></li><li><a class="site-page child" href="https://loveapple.icu/Friend-Link-House/"><i class="fa-fw fa fa-newspaper"></i><span> Link-House</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/about"><i class="fa-fw fa-solid fa-circle-info"></i><span> About</span></a></div></div><div id="toggle-menu"><span class="site-page"><i class="fas fa-bars fa-fw"></i></span></div></div></nav><div id="post-info"><h1 class="post-title">电脑里的中文：字符集、键盘与输入法</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">Created</span><time class="post-meta-date-created" datetime="2026-04-06T08:36:26.000Z" title="Created 2026-04-06 16:36:26">2026-04-06</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">Updated</span><time class="post-meta-date-updated" datetime="2026-04-06T08:38:34.909Z" title="Updated 2026-04-06 16:38:34">2026-04-06</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E5%AF%84%E6%9C%AF/">寄术</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">Word Count:</span><span class="word-count">3.7k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">Reading Time:</span><span>10mins</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title=""><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">Post Views:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="container post-content" id="article-container"><h2 id="前言">⓪ 前言</h2>
+<p>为何会想到要写这篇博客呢？其实是因为最近在折腾一些输入法相关的事情，包括给我的Windows和Arch装了Rime，给手机装了Trime；以及在学习/练习小鹤双拼。</p>
+<h2 id="字符集-charset">① 字符集 Charset</h2>
+<p>一个众所周知的事实是：计算机里只有0和1。但是许多人不知道的是：这些0和1如何形成了我们如今看到的计算机上的各种软件？</p>
+<p>字符集就是其中的一个重要手段，它把这些0和1的组合与我们见到的字母、符号、文字，乃至emoji和某些控制命令一一对应。</p>
+<p>在至今仍被广泛提起的字符集中，ASCII绝对是当之无愧的元老。它于上世纪60年代被“发明”（或者应该说“规定”？）出来，将英文的26个字母的大、小写，常见的一些标点符号，10个数字以及一些特殊的控制字符映射到了0x00~0x7F上。事实上现在很少有软件仅支持ASCII了，但是后续的GBx/BIG5/UTF-8/ShiftJIS/Windows-1252等字符集都跟随了权威，对ASCII支持兼容。</p>
+<p>计算机技术在遥远的东方推开的过程中，很快遇到了一个问题：ASCII字符集只有英文字母数字标点，没有中文汉字（当然，同时也没有韩文日文藏文希腊字母西里尔字母等等等等）。因此，编写一个支持中文的字符集成为了当务之急。</p>
+<p>1980年，中国发布了第一个汉字编码标准，即大名鼎鼎的GB2312标准（来自GB/T
+2312-1980的缩写）。这个标准支持6763个常用汉字，可以覆盖大部分日常使用场景。</p>
+<p>然而，GB2312同时也缺少了很多不那么常用的字，在使用中时不时还是会遇到。因此之后又开发了GBK（国标-扩）和GB18030（来自GB
+18030-2022的缩写）两个编码库，分别支持两万多和七万多汉字和字符，还支持一些日韩语中的汉字以及少数民族的名字和文字。这些编码是向前兼容的：如果一个文档最初以GB2312编写和保存，你用GBK以及GB18030去读取是完全正常的。而如果一个文档最初以GB18030编写和保存，用GB2312去读取，则会在GB2312覆盖的范围内正常显示，对GB2312没覆盖到的字符显示为问号字符<code>?</code>或<code>�</code>，或者直接报错。</p>
+<p>然而国标码虽然在国内满足了需求，但是当信息跨国通讯时，不同字符集对同一个字码会有不同的解释，这就带来了许多困扰。为了解决信息跨国、跨大洲流动时的译码问题，就需要定义一个全世界范围内通用的字符集标准。于是，在1994年，Unicode统一码/万国码的首个版本正式发布了。</p>
+<p>Unicode包含很多种实现方式，其中最为知名最为广泛使用的就是大名鼎鼎的UTF-8（因为它是Unicode中唯一兼容ASCII的……）。Unicode包含的字符极为广泛，从世界各种文字，到各种符号乃至emoji，还有许多控制字符，可以把已有的Unicode字符组合起来产生新的。基本上可以说，UTF-8就是现在世界范围内绝对主流的字符集。</p>
+<p>Unicode虽好，但是却与国标码不兼容。不管是以UTF-8方式读取国标码文档，还是以国标码方式读取UTF-8文档，都会导致乱码。而且有时在读取过程中编辑器会帮你自动做一些处理，如果你在错误的方式下让编辑器重新保存了文档，有时还会导致原来的正确编码打开依然还是乱码。这也就是著名的“锟斤拷”“烫烫烫”等名梗的来源：</p>
+<ul>
+<li>“锟斤拷”：当你用UTF-8打开一个本是GBK编码的文本，解码器遇到无法识别的字节序列时，会用一个特殊字符<code>�</code>（<code>U+FFFD</code>，即<code>Replacement Character</code>）来代替。这个<code>�</code>字符在UTF-8中的编码是三个字节<code>0xEF 0xBF 0xBD</code>。如果连续出现多个<code>�</code>，比如两个<code>�</code>挨着，它们的原始字节序列就是<code>EF BF BD EF BF BD</code>。此时，如果你又错误地用GBK去解释这串字节，那么<code>EF BF</code>会被解码为“锟”，<code>BD EF</code>解码为“斤”，<code>BF BD</code>解码为“拷”，于是你就看到了经典的“锟斤拷”。</li>
+<li>“烫烫烫”：这个梗主要出现在Windows的Visual
+C++编译器中。在Debug模式下，编译器会把未初始化的栈内存全部填充为<code>0xCC</code>，未初始化的堆内存填充为<code>0xCD</code>。而在GBK字符集中，连续两个<code>0xCC</code>恰好对应“烫”字，<code>0xCD 0xCD</code>对应“屯”或“?”（不同版本略有差异）。所以当你打印出未初始化的局部变量数组时，屏幕上就可能刷出一长串“烫烫烫烫”，像是内存“发烧”了一样。</li>
+</ul>
+<figure>
+<img src="/zhcn-charset-kbd-inputmthd/charset-errors.jpg" alt="一些字符集问题">
+<figcaption aria-hidden="true">一些字符集问题</figcaption>
+</figure>
+<p>然而，Windows中文发行版的终端默认使用的还是国标系列字符集。这就导致如果你用UTF-8撰写了代码，那么在编译和运行时其中的汉字会出现乱码问题。同时这也是为什么我们建议Windows的用户名和路径名不要使用非ASCII字符，因为你永远不知道会在什么时候被背刺一下。当然，Windows的终端也提供了更换字符集的命令<code>chcp</code>。把<code>chcp 65001</code>写进终端的profile在每次启动时执行一下，就可以使用UTF-8的终端了。</p>
+<h2 id="键盘-keyboard">② 键盘 Keyboard</h2>
+<p>中文键盘的问题的历史可不比字符集的问题短。英文字母由于个数有限，可以比较简单地做出机械结构的打字机，而中文仅常用字就成千上万，打字机比较不好做。纯机械结构的尝试包括周厚坤的索引打字机、舒震东的舒式打字机等。在电子技术发展了之后，又出现了林语堂的明快打字机，采用72键输入，输入两个字根后会显示8个候选字，再用数字键选择。</p>
+<p>进入计算机时代，中文打字的问题反而得到了简化，不再需要准备那么多的铅字待选中，只要把要打的字跟字符集里的代码对应起来就行了。这时的中文键盘大致可以分为三种：</p>
+<ul>
+<li>整字大键盘：每个键都是一个字，按下键直接输入字，好处是所见即所得，坏处则是键盘过于庞大，造价高昂，并且找字比较麻烦，而其键盘上没有的字就永远输入不了了。</li>
+<li>拆字键盘：把汉字拆成字根，利用主键和辅键组合选字。优点是需要的按键数量比整字大键盘大大减少，缺点则是学习成本比较高。</li>
+<li>复用英文键盘：直接把英文键盘搬来复用，通过特定的编码来输入汉字。优点是只要开发软件即可，不用开发键盘硬件。复用法最终成为了主流方案。</li>
+</ul>
+<h2 id="输入法-input-method">③ 输入法 Input Method</h2>
+<p>既然决定了采用复用英文键盘的路径，那就要找到合适的方案，把输入的按键排列映射成汉字。</p>
+<p>一个显然的思路就是用音码，既然已经有汉语拼音/威妥玛拼音/注音等标记汉字读音的方式，那就把拼音字母/注音字母映射到键盘上就好了。拼音字母由于本身就是英文字母（除了ü以外），那么只要一一映射就可以了（把ü安排到v的位置上）。注音稍微麻烦一点，因为注音字母一是数量比英文字母多，二是符号也是完全独立的一套体系，所以不仅要使用键盘上的英文字母区，还要借用一些符号区和数字区的按键。</p>
+<p>另一个思路是按照字形来输入。把汉字拆成笔画与部件，把每个部件/笔画都映射到按键上，按一定顺序输入即可出字。典型的形码包括1976年朱邦复的仓颉输入法，以及1983年王永民的五笔输入法。</p>
+<p>从输入效率的角度来说，形码的上限比音码要高不少，因为汉语中有大量的同音字，拼音/注音的映射会有大量的重码，在输完音码之后还要花时间选择，而形码的重码率相当低。然而随着输入法的不断智能化（如微软与哈工大合作的微软拼音输入法，北大朱守涛的智能ABC输入法，以及再之后搜狗输入法的崛起），整词输入取代了单字输入，智能联想功能大幅缓解了音码的重码问题，而形码则因为学习曲线比较陡峭而渐渐没落。</p>
+<p>然而全拼的音码输入法依然有一个很大的缺陷，就是击键次数过多。与之相对地，另一种音码输入法–双拼输入法，则大幅减少了击键次数。双拼输入法的基本思路很简单：大部分汉字的发音都是“声母+韵母”的组合，其中声母字母种类较多但是长度短，韵母用到的字母种类较少但是长度长，全拼的击键次数过多很大程度上是因为韵母太长了，那么为什么不把这些长长的韵母一个一个重新映射到键位上呢？双拼输入法做的就是：让声母只按一个键，韵母也只按一个键；如果是单韵母发音的汉字，则也按某种规则映射成两个键，形成一种“两键一字”的固定格式。双拼输入法与全拼相比大幅减少了击键次数，一定程度上提高了输入效率，同时学习难度也不像形码那样高。</p>
+<p>不过双拼输入法依然是基于音的输入法，这就注定了它不能解决重码的问题。为此，又有人把形码重新拉了回来，做成了音与型结合的音形码：先用音码确定读音，再用字的开头和结尾对应的形码去筛选字形，尽量做到降低击键数的同时减少重码。</p>
+<h2 id="移动端">④ 移动端</h2>
+<p>进入智能手机时代，中文输入法又面临了一次新的挑战：屏幕太小，无法完整放置26个字母键。于是，两种主流的虚拟键盘布局应运而生：</p>
+<ul>
+<li><p>九宫格（T9）：将字母分到3×3的9个按键上，每个按键对应3~4个字母。优点是按键面积大，盲打效率高，缺点是重码率极高。例如按“226”可以对应“ban”“cam”“bao”等多种拼音组合。好在手机输入法可以借助词库和上下文联想来大幅降低选词成本，使得九宫格在拼音用户中依然非常流行。</p></li>
+<li><p>全键盘（QWERTY）：在手机上完整保留26个字母键，每个按键非常狭小，但支持点划、滑动等操作。对于双拼和形码用户来说，全键盘几乎是唯一选择，因为他们需要精确区分每个字母。</p></li>
+</ul>
+<p>除了九宫格和全键盘，移动端还存在一些折中方案，试图在按键面积和重码率之间找到平衡：</p>
+<ul>
+<li><p>14键布局（如T+2、双拼键盘）：将26个字母分配到14个按键上，常见于第三方输入法的“双拼专用键盘”或“笔画+拼音混合键盘”。例如，百度输入法和搜狗输入法都提供过14键拼音模式，把声母和韵母按使用频率分组，每个键位对应1~2个字母，比九宫格重码少，又比全键盘按键大。对于双拼用户来说，14键更加自然——因为双拼本身就是“声母一键+韵母一键”，14个键刚好可以覆盖所有声母和韵母的映射（如小鹤双拼中，v代表zh，u代表sh，i代表ch，其余字母基本保留）。许多双拼用户会在手机上切换到14键布局，享受比全键盘更大的点按区域。</p></li>
+<li><p>12键布局（NEO、Morse等）：更少见的实验性布局，例如将字母按笔画形状或摩斯码规律分组。这类布局通常需要用户专门学习，几乎没有主流输入法默认提供，但在某些极客社区（如Rime方案分享）中偶有讨论。</p></li>
+<li><p>自适应布局：根据当前输入的上下文动态调整按键大小或排列。例如，当你输入“w”后，系统预测下一个字母可能是“o”或“e”，于是自动放大这两个按键的区域。这种布局尚未成为主流，但代表了输入法向个性化、智能化发展的一个方向。</p></li>
+</ul>
+<p>在众多移动端布局中，14键是目前双拼用户最青睐的选择之一。它既不像九宫格那样让双拼的“每个声母/韵母独占一键”的优势无法发挥（九宫格中一个键对应多个字母，双拼的确定性会被破坏），也不像全键盘那样容易误触。如果你在电脑上习惯了小鹤双拼，在手机上开启14键双拼模式，几乎可以无缝迁移肌肉记忆。</p>
+<p>移动端还催生了两种独特的输入方式：</p>
+<ul>
+<li><p>滑行输入（Swype / Glide
+Typing）：手指在字母间连续滑动，经过组成单词/拼音的所有字母，算法根据轨迹自动识别出可能的输入。对于英文非常高效，对于中文拼音也有一定的支持（如百度输入法的“滑动输入”）。</p></li>
+<li><p>语音输入：随着语音识别技术的成熟，语音输入在移动端的使用体验远好于桌面端。尤其对于长文本输入或手头不方便打字时，“说”比“打”快得多。但语音输入在安静环境或方言口音下仍有局限。</p></li>
+</ul>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta"><i class="fas fa-circle-user fa-fw"></i>Author: </span><span class="post-copyright-info"><a href="https://loveapple.icu">LoveApple14434</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta"><i class="fas fa-square-arrow-up-right fa-fw"></i>Link: </span><span class="post-copyright-info"><a href="https://loveapple.icu/zhcn-charset-kbd-inputmthd/">https://loveapple.icu/zhcn-charset-kbd-inputmthd/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta"><i class="fas fa-circle-exclamation fa-fw"></i>Copyright Notice: </span><span class="post-copyright-info">All articles on this blog are licensed under <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> unless otherwise stated.</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E8%BE%93%E5%85%A5%E6%B3%95/">输入法</a><a class="post-meta__tags" href="/tags/%E6%8A%80%E6%9C%AF%E5%8F%B2/">技术史</a></div><div class="post-share"><div class="social-share" data-image="https://loveapple.icu/img-api/random-image?1022" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><a class="pagination-related full-width" href="/cloudflare-purge-cache/" title="hexo脚本：部署后自动刷新Cloudflare缓存"><img class="cover" src="https://loveapple.icu/img-api/random-image?9783" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="info text-right"><div class="info-1"><div class="info-item-1">Next</div><div class="info-item-2">hexo脚本：部署后自动刷新Cloudflare缓存</div></div><div class="info-2"><div class="info-item-1">这篇博客介绍了如何通过编写Hexo脚本，在部署后自动调用Cloudflare API清除CDN缓存，从而解决因缓存导致新文章无法实时显示的问题，实现了自动化部署与缓存刷新的一体化流程。</div></div></div></a></nav><hr class="custom-hr"/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> Comments</span></div></div><div class="comment-wrap"><div><div id="giscus-wrap"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info text-center"><div class="avatar-img"><img src="/img/machinist.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info-name">LoveApple14434</div><div class="author-info-description">技术实践 | 心得分享 | 开源生态<br>射频与微波 | 业余无线电<br>以及水煮鱼的生活记录！</div><div class="site-data"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">44</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">56</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">4</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/LoveApple14434"><i class="fa-brands fa-github"></i><span>My GitHub profile</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>Announcement</span></div><div class="announcement_content">封面图片已全面迁移至个人摄影图集。</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>Contents</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%89%8D%E8%A8%80"><span class="toc-number">1.</span> <span class="toc-text">⓪ 前言</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AD%97%E7%AC%A6%E9%9B%86-charset"><span class="toc-number">2.</span> <span class="toc-text">① 字符集 Charset</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%94%AE%E7%9B%98-keyboard"><span class="toc-number">3.</span> <span class="toc-text">② 键盘 Keyboard</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%BE%93%E5%85%A5%E6%B3%95-input-method"><span class="toc-number">4.</span> <span class="toc-text">③ 输入法 Input Method</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%A7%BB%E5%8A%A8%E7%AB%AF"><span class="toc-number">5.</span> <span class="toc-text">④ 移动端</span></a></li></ol></div></div></div></div></main><footer id="footer" style="background: pink;"><div class="footer-other"><div class="footer-copyright"><span class="copyright">&copy;&nbsp;2025 - 2026 By LoveApple14434</span><span class="framework-info"><span>Framework </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo 7.3.0</a><span class="footer-separator">|</span><span>Theme </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly 5.4.3</a></span></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="Reading Mode"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="Toggle Between Light and Dark Mode"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="Toggle Between Single-column and Double-column"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="Settings"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="Table of Contents"><i class="fas fa-list-ul"></i></button><a id="to_comment" href="#post-comment" title="Scroll to Comments"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="Back to Top"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.umd.min.js"></script><div class="js-pjax"><script>(() => {
+  const loadMathjax = () => {
+    if (!window.MathJax) {
+      window.MathJax = {
+        tex: {
+          inlineMath: [['$', '$'], ['\\(', '\\)']],
+          tags: 'none',
+        },
+        chtml: {
+          scale: 1.1
+        },
+        options: {
+          enableMenu: true,
+          renderActions: {
+            findScript: [10, doc => {
+              for (const node of document.querySelectorAll('script[type^="math/tex"]')) {
+                const display = !!node.type.match(/; *mode=display/)
+                const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display)
+                const text = document.createTextNode('')
+                node.parentNode.replaceChild(text, node)
+                math.start = {node: text, delim: '', n: 0}
+                math.end = {node: text, delim: '', n: 0}
+                doc.math.push(math)
+              }
+            }, '']
+          }
+        }
+      }
+
+      const script = document.createElement('script')
+      script.src = 'https://cdn.jsdelivr.net/npm/mathjax/es5/tex-mml-chtml.min.js'
+      script.id = 'MathJax-script'
+      script.async = true
+      document.head.appendChild(script)
+    } else {
+      MathJax.startup.document.state(0)
+      MathJax.texReset()
+      MathJax.typesetPromise()
+    }
+  }
+
+  btf.addGlobalFn('encrypt', loadMathjax, 'mathjax')
+  window.pjax ? loadMathjax() : window.addEventListener('load', loadMathjax)
+})()</script><script>(() => {
+  const isShuoshuo = GLOBAL_CONFIG_SITE.pageType === 'shuoshuo'
+  const option = {"data-input-position":"top"}
+
+  const getGiscusTheme = theme => theme === 'dark' ? 'dark' : 'light'
+
+  const createScriptElement = config => {
+    const ele = document.createElement('script')
+    Object.entries(config).forEach(([key, value]) => {
+      ele.setAttribute(key, value)
+    })
+    return ele
+  }
+
+  const loadGiscus = (el = document, key) => {
+    const mappingConfig = isShuoshuo
+      ? { 'data-mapping': 'specific', 'data-term': key }
+      : { 'data-mapping': (option && option['data-mapping']) || 'pathname' }
+
+    const giscusConfig = {
+      src: 'https://giscus.app/client.js',
+      'data-repo': 'loveapple14434/loveapple14434.github.io',
+      'data-repo-id': 'R_kgDOLVLb7Q',
+      'data-category-id': 'DIC_kwDOLVLb7c4CzLc8',
+      'data-theme': getGiscusTheme(document.documentElement.getAttribute('data-theme')),
+      'data-reactions-enabled': '1',
+      crossorigin: 'anonymous',
+      async: true,
+      ...option,
+      ...mappingConfig
+    }
+
+    const scriptElement = createScriptElement(giscusConfig)
+
+    el.querySelector('#giscus-wrap').appendChild(scriptElement)
+
+    if (isShuoshuo) {
+      window.shuoshuoComment.destroyGiscus = () => {
+        if (el.children.length) {
+          el.innerHTML = ''
+          el.classList.add('no-comment')
+        }
+      }
+    }
+  }
+
+  const changeGiscusTheme = theme => {
+    const iframe = document.querySelector('#giscus-wrap iframe')
+    if (iframe) {
+      const message = {
+        giscus: {
+          setConfig: {
+            theme: getGiscusTheme(theme)
+          }
+        }
+      }
+      iframe.contentWindow.postMessage(message, 'https://giscus.app')
+    }
+  }
+
+  btf.addGlobalFn('themeChange', changeGiscusTheme, 'giscus')
+
+  if (isShuoshuo) {
+    'Giscus' === 'Giscus'
+      ? window.shuoshuoComment = { loadComment: loadGiscus }
+      : window.loadOtherComment = loadGiscus
+    return
+  }
+
+  if ('Giscus' === 'Giscus' || !false) {
+    if (false) btf.loadComment(document.getElementById('giscus-wrap'), loadGiscus)
+    else loadGiscus()
+  } else {
+    window.loadOtherComment = loadGiscus
+  }
+})()</script></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
