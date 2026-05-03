@@ -6,7 +6,7 @@
   <link href="https://loveapple.icu/atom.xml" rel="self"/>
   
   <link href="https://loveapple.icu/"/>
-  <updated>2026-04-16T07:43:52.355Z</updated>
+  <updated>2026-05-03T10:36:58.776Z</updated>
   <id>https://loveapple.icu/</id>
   
   <author>
@@ -15,6 +15,25 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>kbd-remap-linux</title>
+    <link href="https://loveapple.icu/kbd-remap-linux/"/>
+    <id>https://loveapple.icu/kbd-remap-linux/</id>
+    <published>2026-05-03T10:26:34.000Z</published>
+    <updated>2026-05-03T10:36:58.776Z</updated>
+    
+    
+    <summary type="html">这篇博客介绍了作者为解决高斯键盘在Arch Linux下功能键异常问题而开发的键位重映射方案。通过evsieve工具捕获按键事件，结合systemd服务实现自启动，并开发了图形化配置前端。项目已发布至GitHub和AUR，为类似键盘驱动问题提供了灵活且定制化的解决思路。</summary>
+    
+    
+    
+    <category term="寄术" scheme="https://loveapple.icu/categories/%E5%AF%84%E6%9C%AF/"/>
+    
+    
+    <category term="Linux" scheme="https://loveapple.icu/tags/Linux/"/>
+    
+  </entry>
   
   <entry>
     <title>我在南大做普通人：悦纳自我</title>
@@ -132,9 +151,9 @@
     <category term="寄术" scheme="https://loveapple.icu/categories/%E5%AF%84%E6%9C%AF/"/>
     
     
-    <category term="Arch Linux" scheme="https://loveapple.icu/tags/Arch-Linux/"/>
-    
     <category term="Linux" scheme="https://loveapple.icu/tags/Linux/"/>
+    
+    <category term="Arch Linux" scheme="https://loveapple.icu/tags/Arch-Linux/"/>
     
     <category term="linuxqq" scheme="https://loveapple.icu/tags/linuxqq/"/>
     
@@ -715,9 +734,9 @@
     <category term="寄术" scheme="https://loveapple.icu/categories/%E5%AF%84%E6%9C%AF/"/>
     
     
-    <category term="Arch Linux" scheme="https://loveapple.icu/tags/Arch-Linux/"/>
-    
     <category term="Linux" scheme="https://loveapple.icu/tags/Linux/"/>
+    
+    <category term="Arch Linux" scheme="https://loveapple.icu/tags/Arch-Linux/"/>
     
     <category term="镜像源" scheme="https://loveapple.icu/tags/%E9%95%9C%E5%83%8F%E6%BA%90/"/>
     
@@ -740,11 +759,11 @@
     <category term="寄术" scheme="https://loveapple.icu/categories/%E5%AF%84%E6%9C%AF/"/>
     
     
+    <category term="Linux" scheme="https://loveapple.icu/tags/Linux/"/>
+    
     <category term="安装系统" scheme="https://loveapple.icu/tags/%E5%AE%89%E8%A3%85%E7%B3%BB%E7%BB%9F/"/>
     
     <category term="Arch Linux" scheme="https://loveapple.icu/tags/Arch-Linux/"/>
-    
-    <category term="Linux" scheme="https://loveapple.icu/tags/Linux/"/>
     
   </entry>
   

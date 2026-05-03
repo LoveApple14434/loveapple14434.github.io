@@ -9,8 +9,29 @@
     <atom:link href="https://loveapple.icu/rss.xml" rel="self" type="application/rss+xml"/>
     
     <description>开源技术实践者 &amp; 射频电子新人 | LoveApple14434 的个人领地 | 一条爱苹果的水煮鱼。深度分享射频/微波、业余无线电硬核技术笔记，开源项目技术实践以及博客网站建设经验，IT侠笔记本维修随录，兼谈NJU校园趣闻与水煮鱼的生活思考。探索技术前沿，记录成长点滴。</description>
-    <pubDate>Thu, 16 Apr 2026 07:43:52 GMT</pubDate>
+    <pubDate>Sun, 03 May 2026 10:36:58 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>kbd-remap-linux</title>
+      <link>https://loveapple.icu/kbd-remap-linux/</link>
+      <guid>https://loveapple.icu/kbd-remap-linux/</guid>
+      <pubDate>Sun, 03 May 2026 10:26:34 GMT</pubDate>
+      
+      <description>这篇博客介绍了作者为解决高斯键盘在Arch Linux下功能键异常问题而开发的键位重映射方案。通过evsieve工具捕获按键事件，结合systemd服务实现自启动，并开发了图形化配置前端。项目已发布至GitHub和AUR，为类似键盘驱动问题提供了灵活且定制化的解决思路。</description>
+      
+      
+      
+      
+      <category domain="https://loveapple.icu/categories/%E5%AF%84%E6%9C%AF/">寄术</category>
+      
+      
+      <category domain="https://loveapple.icu/tags/Linux/">Linux</category>
+      
+      
+      <comments>https://loveapple.icu/kbd-remap-linux/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>我在南大做普通人：悦纳自我</title>
@@ -137,9 +158,9 @@
       <category domain="https://loveapple.icu/categories/%E5%AF%84%E6%9C%AF/">寄术</category>
       
       
-      <category domain="https://loveapple.icu/tags/Arch-Linux/">Arch Linux</category>
-      
       <category domain="https://loveapple.icu/tags/Linux/">Linux</category>
+      
+      <category domain="https://loveapple.icu/tags/Arch-Linux/">Arch Linux</category>
       
       <category domain="https://loveapple.icu/tags/linuxqq/">linuxqq</category>
       
@@ -774,9 +795,9 @@
       <category domain="https://loveapple.icu/categories/%E5%AF%84%E6%9C%AF/">寄术</category>
       
       
-      <category domain="https://loveapple.icu/tags/Arch-Linux/">Arch Linux</category>
-      
       <category domain="https://loveapple.icu/tags/Linux/">Linux</category>
+      
+      <category domain="https://loveapple.icu/tags/Arch-Linux/">Arch Linux</category>
       
       <category domain="https://loveapple.icu/tags/%E9%95%9C%E5%83%8F%E6%BA%90/">镜像源</category>
       
@@ -801,11 +822,11 @@
       <category domain="https://loveapple.icu/categories/%E5%AF%84%E6%9C%AF/">寄术</category>
       
       
+      <category domain="https://loveapple.icu/tags/Linux/">Linux</category>
+      
       <category domain="https://loveapple.icu/tags/%E5%AE%89%E8%A3%85%E7%B3%BB%E7%BB%9F/">安装系统</category>
       
       <category domain="https://loveapple.icu/tags/Arch-Linux/">Arch Linux</category>
-      
-      <category domain="https://loveapple.icu/tags/Linux/">Linux</category>
       
       
       <comments>https://loveapple.icu/install-arch/#disqus_thread</comments>
