@@ -6,7 +6,7 @@
   <link href="https://loveapple.icu/atom.xml" rel="self"/>
   
   <link href="https://loveapple.icu/"/>
-  <updated>2026-05-20T12:57:57.624Z</updated>
+  <updated>2026-05-20T12:58:26.796Z</updated>
   <id>https://loveapple.icu/</id>
   
   <author>
@@ -21,14 +21,10 @@
     <link href="https://loveapple.icu/stm-cubemx-c8t6-ld-error/"/>
     <id>https://loveapple.icu/stm-cubemx-c8t6-ld-error/</id>
     <published>2026-05-20T12:46:30.000Z</published>
-    <updated>2026-05-20T12:57:57.624Z</updated>
+    <updated>2026-05-20T12:58:26.796Z</updated>
     
     
-      
-      
-    <summary type="html">&lt;p&gt;使用STM32CubeMX为STM32F103C8T6生成的Cmake工程与Makefile工程均存在ld脚本有误问题。&lt;/p&gt;
-&lt;p&gt;可参考&lt;a href=&quot;https://community.st.com/t5/stm32cubemx-mcus/flash-ld-sy</summary>
-      
+    <summary type="html">这篇博客记录了使用STM32CubeMX v6.12.1为STM32F103C8T6生成工程时，链接脚本（ld）存在语法错误的问题。通过修改四处关键配置（RAM栈顶定义、段加载地址等）即可修复，并附上了可直接使用的修正脚本。该问题仅影响Makefile/Cmake工程，Keil项目不受影响。</summary>
     
     
     
