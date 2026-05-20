@@ -9,11 +9,40 @@
     <atom:link href="https://loveapple.icu/rss.xml" rel="self" type="application/rss+xml"/>
     
     <description>开源技术实践者 &amp; 射频电子新人 | LoveApple14434 的个人领地 | 一条爱苹果的水煮鱼。深度分享射频/微波、业余无线电硬核技术笔记，开源项目技术实践以及博客网站建设经验，IT侠笔记本维修随录，兼谈NJU校园趣闻与水煮鱼的生活思考。探索技术前沿，记录成长点滴。</description>
-    <pubDate>Sun, 03 May 2026 10:36:58 GMT</pubDate>
+    <pubDate>Wed, 20 May 2026 12:57:57 GMT</pubDate>
     <generator>http://hexo.io/</generator>
     
     <item>
-      <title>kbd-remap-linux</title>
+      <title>使用STM32CubeMX生成C8T6工程ld脚本错误</title>
+      <link>https://loveapple.icu/stm-cubemx-c8t6-ld-error/</link>
+      <guid>https://loveapple.icu/stm-cubemx-c8t6-ld-error/</guid>
+      <pubDate>Wed, 20 May 2026 12:46:30 GMT</pubDate>
+      
+        
+        
+      <description>&lt;p&gt;使用STM32CubeMX为STM32F103C8T6生成的Cmake工程与Makefile工程均存在ld脚本有误问题。&lt;/p&gt;
+&lt;p&gt;可参考&lt;a href=&quot;https://community.st.com/t5/stm32cubemx-mcus/flash-ld-sy</description>
+        
+      
+      
+      
+      
+      <category domain="https://loveapple.icu/categories/%E5%AF%84%E6%9C%AF/">寄术</category>
+      
+      
+      <category domain="https://loveapple.icu/tags/MCU/">MCU</category>
+      
+      <category domain="https://loveapple.icu/tags/%E5%B5%8C%E5%85%A5%E5%BC%8F%E5%BC%80%E5%8F%91/">嵌入式开发</category>
+      
+      <category domain="https://loveapple.icu/tags/STM32/">STM32</category>
+      
+      
+      <comments>https://loveapple.icu/stm-cubemx-c8t6-ld-error/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>Arch Linux 开发键盘自定义重映射工具</title>
       <link>https://loveapple.icu/kbd-remap-linux/</link>
       <guid>https://loveapple.icu/kbd-remap-linux/</guid>
       <pubDate>Sun, 03 May 2026 10:26:34 GMT</pubDate>
@@ -678,9 +707,9 @@
       <category domain="https://loveapple.icu/categories/%E9%B1%BC%E8%AE%BA/">鱼论</category>
       
       
-      <category domain="https://loveapple.icu/tags/NJU/">NJU</category>
-      
       <category domain="https://loveapple.icu/tags/%E9%9A%8F%E7%AC%94/">随笔</category>
+      
+      <category domain="https://loveapple.icu/tags/NJU/">NJU</category>
       
       
       <comments>https://loveapple.icu/nju-king-crab/#disqus_thread</comments>
@@ -824,9 +853,9 @@
       
       <category domain="https://loveapple.icu/tags/Linux/">Linux</category>
       
-      <category domain="https://loveapple.icu/tags/%E5%AE%89%E8%A3%85%E7%B3%BB%E7%BB%9F/">安装系统</category>
-      
       <category domain="https://loveapple.icu/tags/Arch-Linux/">Arch Linux</category>
+      
+      <category domain="https://loveapple.icu/tags/%E5%AE%89%E8%A3%85%E7%B3%BB%E7%BB%9F/">安装系统</category>
       
       
       <comments>https://loveapple.icu/install-arch/#disqus_thread</comments>
@@ -1062,9 +1091,9 @@
       <category domain="https://loveapple.icu/categories/%E5%AF%84%E6%9C%AF/">寄术</category>
       
       
-      <category domain="https://loveapple.icu/tags/NUEDC/">NUEDC</category>
-      
       <category domain="https://loveapple.icu/tags/EE/">EE</category>
+      
+      <category domain="https://loveapple.icu/tags/NUEDC/">NUEDC</category>
       
       <category domain="https://loveapple.icu/tags/DDS/">DDS</category>
       
@@ -1087,9 +1116,9 @@
       <category domain="https://loveapple.icu/categories/%E5%AF%84%E6%9C%AF/">寄术</category>
       
       
-      <category domain="https://loveapple.icu/tags/NUEDC/">NUEDC</category>
-      
       <category domain="https://loveapple.icu/tags/EE/">EE</category>
+      
+      <category domain="https://loveapple.icu/tags/NUEDC/">NUEDC</category>
       
       
       <comments>https://loveapple.icu/NUEDC-2022-F/#disqus_thread</comments>

@@ -6,7 +6,7 @@
   <link href="https://loveapple.icu/atom.xml" rel="self"/>
   
   <link href="https://loveapple.icu/"/>
-  <updated>2026-05-03T10:36:58.776Z</updated>
+  <updated>2026-05-20T12:57:57.624Z</updated>
   <id>https://loveapple.icu/</id>
   
   <author>
@@ -17,11 +17,38 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>kbd-remap-linux</title>
+    <title>使用STM32CubeMX生成C8T6工程ld脚本错误</title>
+    <link href="https://loveapple.icu/stm-cubemx-c8t6-ld-error/"/>
+    <id>https://loveapple.icu/stm-cubemx-c8t6-ld-error/</id>
+    <published>2026-05-20T12:46:30.000Z</published>
+    <updated>2026-05-20T12:57:57.624Z</updated>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;使用STM32CubeMX为STM32F103C8T6生成的Cmake工程与Makefile工程均存在ld脚本有误问题。&lt;/p&gt;
+&lt;p&gt;可参考&lt;a href=&quot;https://community.st.com/t5/stm32cubemx-mcus/flash-ld-sy</summary>
+      
+    
+    
+    
+    <category term="寄术" scheme="https://loveapple.icu/categories/%E5%AF%84%E6%9C%AF/"/>
+    
+    
+    <category term="MCU" scheme="https://loveapple.icu/tags/MCU/"/>
+    
+    <category term="嵌入式开发" scheme="https://loveapple.icu/tags/%E5%B5%8C%E5%85%A5%E5%BC%8F%E5%BC%80%E5%8F%91/"/>
+    
+    <category term="STM32" scheme="https://loveapple.icu/tags/STM32/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Arch Linux 开发键盘自定义重映射工具</title>
     <link href="https://loveapple.icu/kbd-remap-linux/"/>
     <id>https://loveapple.icu/kbd-remap-linux/</id>
     <published>2026-05-03T10:26:34.000Z</published>
-    <updated>2026-05-03T10:36:58.776Z</updated>
+    <updated>2026-05-20T12:46:14.785Z</updated>
     
     
     <summary type="html">这篇博客介绍了作者为解决高斯键盘在Arch Linux下功能键异常问题而开发的键位重映射方案。通过evsieve工具捕获按键事件，结合systemd服务实现自启动，并开发了图形化配置前端。项目已发布至GitHub和AUR，为类似键盘驱动问题提供了灵活且定制化的解决思路。</summary>
@@ -627,9 +654,9 @@
     <category term="鱼论" scheme="https://loveapple.icu/categories/%E9%B1%BC%E8%AE%BA/"/>
     
     
-    <category term="NJU" scheme="https://loveapple.icu/tags/NJU/"/>
-    
     <category term="随笔" scheme="https://loveapple.icu/tags/%E9%9A%8F%E7%AC%94/"/>
+    
+    <category term="NJU" scheme="https://loveapple.icu/tags/NJU/"/>
     
   </entry>
   
@@ -761,9 +788,9 @@
     
     <category term="Linux" scheme="https://loveapple.icu/tags/Linux/"/>
     
-    <category term="安装系统" scheme="https://loveapple.icu/tags/%E5%AE%89%E8%A3%85%E7%B3%BB%E7%BB%9F/"/>
-    
     <category term="Arch Linux" scheme="https://loveapple.icu/tags/Arch-Linux/"/>
+    
+    <category term="安装系统" scheme="https://loveapple.icu/tags/%E5%AE%89%E8%A3%85%E7%B3%BB%E7%BB%9F/"/>
     
   </entry>
   
@@ -979,9 +1006,9 @@
     <category term="寄术" scheme="https://loveapple.icu/categories/%E5%AF%84%E6%9C%AF/"/>
     
     
-    <category term="NUEDC" scheme="https://loveapple.icu/tags/NUEDC/"/>
-    
     <category term="EE" scheme="https://loveapple.icu/tags/EE/"/>
+    
+    <category term="NUEDC" scheme="https://loveapple.icu/tags/NUEDC/"/>
     
     <category term="DDS" scheme="https://loveapple.icu/tags/DDS/"/>
     
@@ -1002,9 +1029,9 @@
     <category term="寄术" scheme="https://loveapple.icu/categories/%E5%AF%84%E6%9C%AF/"/>
     
     
-    <category term="NUEDC" scheme="https://loveapple.icu/tags/NUEDC/"/>
-    
     <category term="EE" scheme="https://loveapple.icu/tags/EE/"/>
+    
+    <category term="NUEDC" scheme="https://loveapple.icu/tags/NUEDC/"/>
     
   </entry>
   
