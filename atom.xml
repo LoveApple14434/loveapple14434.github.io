@@ -6,7 +6,7 @@
   <link href="https://loveapple.icu/atom.xml" rel="self"/>
   
   <link href="https://loveapple.icu/"/>
-  <updated>2026-05-20T12:58:26.796Z</updated>
+  <updated>2026-05-21T06:39:56.973Z</updated>
   <id>https://loveapple.icu/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>系统维护预告</title>
+    <link href="https://loveapple.icu/service-stop-forecast/"/>
+    <id>https://loveapple.icu/service-stop-forecast/</id>
+    <published>2026-05-21T06:33:15.000Z</published>
+    <updated>2026-05-21T06:39:56.973Z</updated>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;由于系统维护迁移升级，本网站提供的服务将在北京时间2026/05/23 00:00 -
+2026/05/24 23:59以内的部分时间段停机。博客相关服务可能映射到github
+page，但不保证任何可用性。&lt;/p&gt;
+&lt;p&gt;Because of server syst</summary>
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>使用STM32CubeMX生成C8T6工程ld脚本错误</title>

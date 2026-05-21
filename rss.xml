@@ -9,8 +9,31 @@
     <atom:link href="https://loveapple.icu/rss.xml" rel="self" type="application/rss+xml"/>
     
     <description>开源技术实践者 &amp; 射频电子新人 | LoveApple14434 的个人领地 | 一条爱苹果的水煮鱼。深度分享射频/微波、业余无线电硬核技术笔记，开源项目技术实践以及博客网站建设经验，IT侠笔记本维修随录，兼谈NJU校园趣闻与水煮鱼的生活思考。探索技术前沿，记录成长点滴。</description>
-    <pubDate>Wed, 20 May 2026 12:58:26 GMT</pubDate>
+    <pubDate>Thu, 21 May 2026 06:39:56 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>系统维护预告</title>
+      <link>https://loveapple.icu/service-stop-forecast/</link>
+      <guid>https://loveapple.icu/service-stop-forecast/</guid>
+      <pubDate>Thu, 21 May 2026 06:33:15 GMT</pubDate>
+      
+        
+        
+      <description>&lt;p&gt;由于系统维护迁移升级，本网站提供的服务将在北京时间2026/05/23 00:00 -
+2026/05/24 23:59以内的部分时间段停机。博客相关服务可能映射到github
+page，但不保证任何可用性。&lt;/p&gt;
+&lt;p&gt;Because of server syst</description>
+        
+      
+      
+      
+      
+      
+      
+      <comments>https://loveapple.icu/service-stop-forecast/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>使用STM32CubeMX生成C8T6工程ld脚本错误</title>
