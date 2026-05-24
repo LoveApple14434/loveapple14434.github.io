@@ -6,7 +6,7 @@
   <link href="https://loveapple.icu/atom.xml" rel="self"/>
   
   <link href="https://loveapple.icu/"/>
-  <updated>2026-05-21T06:39:56.973Z</updated>
+  <updated>2026-05-24T09:32:26.769Z</updated>
   <id>https://loveapple.icu/</id>
   
   <author>
@@ -21,16 +21,10 @@
     <link href="https://loveapple.icu/service-stop-forecast/"/>
     <id>https://loveapple.icu/service-stop-forecast/</id>
     <published>2026-05-21T06:33:15.000Z</published>
-    <updated>2026-05-21T06:39:56.973Z</updated>
+    <updated>2026-05-24T09:32:26.769Z</updated>
     
     
-      
-      
-    <summary type="html">&lt;p&gt;由于系统维护迁移升级，本网站提供的服务将在北京时间2026/05/23 00:00 -
-2026/05/24 23:59以内的部分时间段停机。博客相关服务可能映射到github
-page，但不保证任何可用性。&lt;/p&gt;
-&lt;p&gt;Because of server syst</summary>
-      
+    <summary type="html">因系统维护而暂停服务。</summary>
     
     
     
@@ -671,9 +665,9 @@ page，但不保证任何可用性。&lt;/p&gt;
     <category term="鱼论" scheme="https://loveapple.icu/categories/%E9%B1%BC%E8%AE%BA/"/>
     
     
-    <category term="随笔" scheme="https://loveapple.icu/tags/%E9%9A%8F%E7%AC%94/"/>
-    
     <category term="NJU" scheme="https://loveapple.icu/tags/NJU/"/>
+    
+    <category term="随笔" scheme="https://loveapple.icu/tags/%E9%9A%8F%E7%AC%94/"/>
     
   </entry>
   
@@ -849,9 +843,9 @@ page，但不保证任何可用性。&lt;/p&gt;
     <category term="寄术" scheme="https://loveapple.icu/categories/%E5%AF%84%E6%9C%AF/"/>
     
     
-    <category term="开源项目" scheme="https://loveapple.icu/tags/%E5%BC%80%E6%BA%90%E9%A1%B9%E7%9B%AE/"/>
-    
     <category term="EE" scheme="https://loveapple.icu/tags/EE/"/>
+    
+    <category term="开源项目" scheme="https://loveapple.icu/tags/%E5%BC%80%E6%BA%90%E9%A1%B9%E7%9B%AE/"/>
     
     <category term="嵌入式开发" scheme="https://loveapple.icu/tags/%E5%B5%8C%E5%85%A5%E5%BC%8F%E5%BC%80%E5%8F%91/"/>
     
@@ -1023,9 +1017,9 @@ page，但不保证任何可用性。&lt;/p&gt;
     <category term="寄术" scheme="https://loveapple.icu/categories/%E5%AF%84%E6%9C%AF/"/>
     
     
-    <category term="EE" scheme="https://loveapple.icu/tags/EE/"/>
-    
     <category term="NUEDC" scheme="https://loveapple.icu/tags/NUEDC/"/>
+    
+    <category term="EE" scheme="https://loveapple.icu/tags/EE/"/>
     
     <category term="DDS" scheme="https://loveapple.icu/tags/DDS/"/>
     
@@ -1046,9 +1040,9 @@ page，但不保证任何可用性。&lt;/p&gt;
     <category term="寄术" scheme="https://loveapple.icu/categories/%E5%AF%84%E6%9C%AF/"/>
     
     
-    <category term="EE" scheme="https://loveapple.icu/tags/EE/"/>
-    
     <category term="NUEDC" scheme="https://loveapple.icu/tags/NUEDC/"/>
+    
+    <category term="EE" scheme="https://loveapple.icu/tags/EE/"/>
     
   </entry>
   
