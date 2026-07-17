@@ -2,6 +2,7 @@ User-agent: *
 
 Allow: /
 
+Disallow: /Draw/
 Disallow: /js/
 Disallow: /css/
 Disallow: /tags/
@@ -9,3 +10,4 @@ Disallow: /categories/
 Disallow: /archives/
 
 Sitemap: https://loveapple.icu/sitemap.xml
+Sitemap: https://loveapple.icu/baidusitemap.xml
