@@ -9,8 +9,39 @@
     <atom:link href="https://loveapple.space/rss.xml" rel="self" type="application/rss+xml"/>
     
     <description>开源技术实践者 &amp; 射频电子新人 | LoveApple14434 的个人领地 | 一条爱苹果的水煮鱼。深度分享射频/微波、业余无线电硬核技术笔记，开源项目技术实践以及博客网站建设经验，IT侠笔记本维修随录，兼谈NJU校园趣闻与水煮鱼的生活思考。探索技术前沿，记录成长点滴。</description>
-    <pubDate>Mon, 03 Aug 2026 17:01:54 GMT</pubDate>
+    <pubDate>Tue, 04 Aug 2026 13:38:42 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>linuxqq输入法问题第二弹</title>
+      <link>https://loveapple.space/linuxqq-fcitx5-2/</link>
+      <guid>https://loveapple.space/linuxqq-fcitx5-2/</guid>
+      <pubDate>Tue, 04 Aug 2026 06:45:04 GMT</pubDate>
+      
+        
+        
+      <description>&lt;p&gt;之前写过一个&lt;a href=&quot;/linuxqq-fcitx5&quot;&gt;关于linuxqq在Wayland+KDE
+Plasma下会发生无法输入的问题&lt;/a&gt;的帖子。最近又出现了新问题：虽然能唤起输入法，但是打字按按键比较快的时候，会有一些按键无法被输入法捕获。为了解决这个问题，</description>
+        
+      
+      
+      
+      
+      <category domain="https://loveapple.space/categories/%E5%AF%84%E6%9C%AF/">寄术</category>
+      
+      
+      <category domain="https://loveapple.space/tags/Arch-Linux/">Arch Linux</category>
+      
+      <category domain="https://loveapple.space/tags/Linux/">Linux</category>
+      
+      <category domain="https://loveapple.space/tags/linuxqq/">linuxqq</category>
+      
+      <category domain="https://loveapple.space/tags/%E8%BE%93%E5%85%A5%E6%B3%95/">输入法</category>
+      
+      
+      <comments>https://loveapple.space/linuxqq-fcitx5-2/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>我与IT侠：一些回忆</title>

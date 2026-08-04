@@ -6,7 +6,7 @@
   <link href="https://loveapple.space/atom.xml" rel="self"/>
   
   <link href="https://loveapple.space/"/>
-  <updated>2026-08-03T17:01:54.909Z</updated>
+  <updated>2026-08-04T13:38:42.795Z</updated>
   <id>https://loveapple.space/</id>
   
   <author>
@@ -15,6 +15,35 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>linuxqq输入法问题第二弹</title>
+    <link href="https://loveapple.space/linuxqq-fcitx5-2/"/>
+    <id>https://loveapple.space/linuxqq-fcitx5-2/</id>
+    <published>2026-08-04T06:45:04.000Z</published>
+    <updated>2026-08-04T13:38:42.795Z</updated>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;之前写过一个&lt;a href=&quot;/linuxqq-fcitx5&quot;&gt;关于linuxqq在Wayland+KDE
+Plasma下会发生无法输入的问题&lt;/a&gt;的帖子。最近又出现了新问题：虽然能唤起输入法，但是打字按按键比较快的时候，会有一些按键无法被输入法捕获。为了解决这个问题，</summary>
+      
+    
+    
+    
+    <category term="寄术" scheme="https://loveapple.space/categories/%E5%AF%84%E6%9C%AF/"/>
+    
+    
+    <category term="Arch Linux" scheme="https://loveapple.space/tags/Arch-Linux/"/>
+    
+    <category term="Linux" scheme="https://loveapple.space/tags/Linux/"/>
+    
+    <category term="linuxqq" scheme="https://loveapple.space/tags/linuxqq/"/>
+    
+    <category term="输入法" scheme="https://loveapple.space/tags/%E8%BE%93%E5%85%A5%E6%B3%95/"/>
+    
+  </entry>
   
   <entry>
     <title>我与IT侠：一些回忆</title>
