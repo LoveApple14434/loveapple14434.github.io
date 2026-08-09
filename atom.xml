@@ -3,11 +3,11 @@
   <title>LoveApple14434的主页</title>
   
   
-  <link href="https://loveapple.space/atom.xml" rel="self"/>
+  <link href="https://loveapple.space/blog/atom.xml" rel="self"/>
   
-  <link href="https://loveapple.space/"/>
+  <link href="https://loveapple.space/blog/"/>
   <updated>2026-08-04T13:38:42.795Z</updated>
-  <id>https://loveapple.space/</id>
+  <id>https://loveapple.space/blog/</id>
   
   <author>
     <name>LoveApple14434</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>linuxqq输入法问题第二弹</title>
-    <link href="https://loveapple.space/linuxqq-fcitx5-2/"/>
-    <id>https://loveapple.space/linuxqq-fcitx5-2/</id>
+    <link href="https://loveapple.space/blog/linuxqq-fcitx5-2/"/>
+    <id>https://loveapple.space/blog/linuxqq-fcitx5-2/</id>
     <published>2026-08-04T06:45:04.000Z</published>
     <updated>2026-08-04T13:38:42.795Z</updated>
     
@@ -32,23 +32,23 @@ Plasma下会发生无法输入的问题&lt;/a&gt;的帖子。最近又出现了�
     
     
     
-    <category term="寄术" scheme="https://loveapple.space/categories/%E5%AF%84%E6%9C%AF/"/>
+    <category term="寄术" scheme="https://loveapple.space/blog/categories/%E5%AF%84%E6%9C%AF/"/>
     
     
-    <category term="Arch Linux" scheme="https://loveapple.space/tags/Arch-Linux/"/>
+    <category term="Arch Linux" scheme="https://loveapple.space/blog/tags/Arch-Linux/"/>
     
-    <category term="Linux" scheme="https://loveapple.space/tags/Linux/"/>
+    <category term="Linux" scheme="https://loveapple.space/blog/tags/Linux/"/>
     
-    <category term="linuxqq" scheme="https://loveapple.space/tags/linuxqq/"/>
+    <category term="linuxqq" scheme="https://loveapple.space/blog/tags/linuxqq/"/>
     
-    <category term="输入法" scheme="https://loveapple.space/tags/%E8%BE%93%E5%85%A5%E6%B3%95/"/>
+    <category term="输入法" scheme="https://loveapple.space/blog/tags/%E8%BE%93%E5%85%A5%E6%B3%95/"/>
     
   </entry>
   
   <entry>
     <title>我与IT侠：一些回忆</title>
-    <link href="https://loveapple.space/itxia-and-me/"/>
-    <id>https://loveapple.space/itxia-and-me/</id>
+    <link href="https://loveapple.space/blog/itxia-and-me/"/>
+    <id>https://loveapple.space/blog/itxia-and-me/</id>
     <published>2026-08-03T16:58:40.000Z</published>
     <updated>2026-08-03T17:01:54.909Z</updated>
     
@@ -57,17 +57,17 @@ Plasma下会发生无法输入的问题&lt;/a&gt;的帖子。最近又出现了�
     
     
     
-    <category term="牲活" scheme="https://loveapple.space/categories/%E7%89%B2%E6%B4%BB/"/>
+    <category term="牲活" scheme="https://loveapple.space/blog/categories/%E7%89%B2%E6%B4%BB/"/>
     
     
-    <category term="IT侠" scheme="https://loveapple.space/tags/IT%E4%BE%A0/"/>
+    <category term="IT侠" scheme="https://loveapple.space/blog/tags/IT%E4%BE%A0/"/>
     
   </entry>
   
   <entry>
     <title>坚持不懈，成为传奇</title>
-    <link href="https://loveapple.space/congratulations-niko/"/>
-    <id>https://loveapple.space/congratulations-niko/</id>
+    <link href="https://loveapple.space/blog/congratulations-niko/"/>
+    <id>https://loveapple.space/blog/congratulations-niko/</id>
     <published>2026-06-22T08:12:58.000Z</published>
     <updated>2026-06-22T08:16:07.163Z</updated>
     
@@ -76,15 +76,15 @@ Plasma下会发生无法输入的问题&lt;/a&gt;的帖子。最近又出现了�
     
     
     
-    <category term="牲活" scheme="https://loveapple.space/categories/%E7%89%B2%E6%B4%BB/"/>
+    <category term="牲活" scheme="https://loveapple.space/blog/categories/%E7%89%B2%E6%B4%BB/"/>
     
     
   </entry>
   
   <entry>
     <title>系统维护预告</title>
-    <link href="https://loveapple.space/service-stop-forecast/"/>
-    <id>https://loveapple.space/service-stop-forecast/</id>
+    <link href="https://loveapple.space/blog/service-stop-forecast/"/>
+    <id>https://loveapple.space/blog/service-stop-forecast/</id>
     <published>2026-05-21T06:33:15.000Z</published>
     <updated>2026-05-24T09:37:34.563Z</updated>
     
@@ -98,8 +98,8 @@ Plasma下会发生无法输入的问题&lt;/a&gt;的帖子。最近又出现了�
   
   <entry>
     <title>使用STM32CubeMX生成C8T6工程ld脚本错误</title>
-    <link href="https://loveapple.space/stm-cubemx-c8t6-ld-error/"/>
-    <id>https://loveapple.space/stm-cubemx-c8t6-ld-error/</id>
+    <link href="https://loveapple.space/blog/stm-cubemx-c8t6-ld-error/"/>
+    <id>https://loveapple.space/blog/stm-cubemx-c8t6-ld-error/</id>
     <published>2026-05-20T12:46:30.000Z</published>
     <updated>2026-05-20T12:58:26.796Z</updated>
     
@@ -108,21 +108,21 @@ Plasma下会发生无法输入的问题&lt;/a&gt;的帖子。最近又出现了�
     
     
     
-    <category term="寄术" scheme="https://loveapple.space/categories/%E5%AF%84%E6%9C%AF/"/>
+    <category term="寄术" scheme="https://loveapple.space/blog/categories/%E5%AF%84%E6%9C%AF/"/>
     
     
-    <category term="MCU" scheme="https://loveapple.space/tags/MCU/"/>
+    <category term="MCU" scheme="https://loveapple.space/blog/tags/MCU/"/>
     
-    <category term="嵌入式开发" scheme="https://loveapple.space/tags/%E5%B5%8C%E5%85%A5%E5%BC%8F%E5%BC%80%E5%8F%91/"/>
+    <category term="嵌入式开发" scheme="https://loveapple.space/blog/tags/%E5%B5%8C%E5%85%A5%E5%BC%8F%E5%BC%80%E5%8F%91/"/>
     
-    <category term="STM32" scheme="https://loveapple.space/tags/STM32/"/>
+    <category term="STM32" scheme="https://loveapple.space/blog/tags/STM32/"/>
     
   </entry>
   
   <entry>
     <title>Arch Linux 开发键盘自定义重映射工具</title>
-    <link href="https://loveapple.space/kbd-remap-linux/"/>
-    <id>https://loveapple.space/kbd-remap-linux/</id>
+    <link href="https://loveapple.space/blog/kbd-remap-linux/"/>
+    <id>https://loveapple.space/blog/kbd-remap-linux/</id>
     <published>2026-05-03T10:26:34.000Z</published>
     <updated>2026-05-20T12:46:14.785Z</updated>
     
@@ -131,17 +131,17 @@ Plasma下会发生无法输入的问题&lt;/a&gt;的帖子。最近又出现了�
     
     
     
-    <category term="寄术" scheme="https://loveapple.space/categories/%E5%AF%84%E6%9C%AF/"/>
+    <category term="寄术" scheme="https://loveapple.space/blog/categories/%E5%AF%84%E6%9C%AF/"/>
     
     
-    <category term="Linux" scheme="https://loveapple.space/tags/Linux/"/>
+    <category term="Linux" scheme="https://loveapple.space/blog/tags/Linux/"/>
     
   </entry>
   
   <entry>
     <title>我在南大做普通人：悦纳自我</title>
-    <link href="https://loveapple.space/view-3/"/>
-    <id>https://loveapple.space/view-3/</id>
+    <link href="https://loveapple.space/blog/view-3/"/>
+    <id>https://loveapple.space/blog/view-3/</id>
     <published>2026-04-16T07:21:58.000Z</published>
     <updated>2026-04-16T07:43:52.355Z</updated>
     
@@ -150,15 +150,15 @@ Plasma下会发生无法输入的问题&lt;/a&gt;的帖子。最近又出现了�
     
     
     
-    <category term="鱼论" scheme="https://loveapple.space/categories/%E9%B1%BC%E8%AE%BA/"/>
+    <category term="鱼论" scheme="https://loveapple.space/blog/categories/%E9%B1%BC%E8%AE%BA/"/>
     
     
   </entry>
   
   <entry>
     <title>电脑里的中文：字符集、键盘与输入法</title>
-    <link href="https://loveapple.space/zhcn-charset-kbd-inputmthd/"/>
-    <id>https://loveapple.space/zhcn-charset-kbd-inputmthd/</id>
+    <link href="https://loveapple.space/blog/zhcn-charset-kbd-inputmthd/"/>
+    <id>https://loveapple.space/blog/zhcn-charset-kbd-inputmthd/</id>
     <published>2026-04-06T08:36:26.000Z</published>
     <updated>2026-04-06T08:38:34.909Z</updated>
     
@@ -167,19 +167,19 @@ Plasma下会发生无法输入的问题&lt;/a&gt;的帖子。最近又出现了�
     
     
     
-    <category term="寄术" scheme="https://loveapple.space/categories/%E5%AF%84%E6%9C%AF/"/>
+    <category term="寄术" scheme="https://loveapple.space/blog/categories/%E5%AF%84%E6%9C%AF/"/>
     
     
-    <category term="输入法" scheme="https://loveapple.space/tags/%E8%BE%93%E5%85%A5%E6%B3%95/"/>
+    <category term="输入法" scheme="https://loveapple.space/blog/tags/%E8%BE%93%E5%85%A5%E6%B3%95/"/>
     
-    <category term="技术史" scheme="https://loveapple.space/tags/%E6%8A%80%E6%9C%AF%E5%8F%B2/"/>
+    <category term="技术史" scheme="https://loveapple.space/blog/tags/%E6%8A%80%E6%9C%AF%E5%8F%B2/"/>
     
   </entry>
   
   <entry>
     <title>hexo脚本：部署后自动刷新Cloudflare缓存</title>
-    <link href="https://loveapple.space/cloudflare-purge-cache/"/>
-    <id>https://loveapple.space/cloudflare-purge-cache/</id>
+    <link href="https://loveapple.space/blog/cloudflare-purge-cache/"/>
+    <id>https://loveapple.space/blog/cloudflare-purge-cache/</id>
     <published>2026-03-27T09:06:24.000Z</published>
     <updated>2026-03-27T09:19:09.298Z</updated>
     
@@ -188,19 +188,19 @@ Plasma下会发生无法输入的问题&lt;/a&gt;的帖子。最近又出现了�
     
     
     
-    <category term="寄术" scheme="https://loveapple.space/categories/%E5%AF%84%E6%9C%AF/"/>
+    <category term="寄术" scheme="https://loveapple.space/blog/categories/%E5%AF%84%E6%9C%AF/"/>
     
     
-    <category term="网站建设" scheme="https://loveapple.space/tags/%E7%BD%91%E7%AB%99%E5%BB%BA%E8%AE%BE/"/>
+    <category term="网站建设" scheme="https://loveapple.space/blog/tags/%E7%BD%91%E7%AB%99%E5%BB%BA%E8%AE%BE/"/>
     
-    <category term="Cloudflare" scheme="https://loveapple.space/tags/Cloudflare/"/>
+    <category term="Cloudflare" scheme="https://loveapple.space/blog/tags/Cloudflare/"/>
     
   </entry>
   
   <entry>
     <title>正点原子串口例程中开发板无法收信问题</title>
-    <link href="https://loveapple.space/STM32-USART-Alientek/"/>
-    <id>https://loveapple.space/STM32-USART-Alientek/</id>
+    <link href="https://loveapple.space/blog/STM32-USART-Alientek/"/>
+    <id>https://loveapple.space/blog/STM32-USART-Alientek/</id>
     <published>2026-03-27T08:35:38.000Z</published>
     <updated>2026-03-27T08:36:37.496Z</updated>
     
@@ -209,23 +209,23 @@ Plasma下会发生无法输入的问题&lt;/a&gt;的帖子。最近又出现了�
     
     
     
-    <category term="寄术" scheme="https://loveapple.space/categories/%E5%AF%84%E6%9C%AF/"/>
+    <category term="寄术" scheme="https://loveapple.space/blog/categories/%E5%AF%84%E6%9C%AF/"/>
     
     
-    <category term="MCU" scheme="https://loveapple.space/tags/MCU/"/>
+    <category term="MCU" scheme="https://loveapple.space/blog/tags/MCU/"/>
     
-    <category term="STM32" scheme="https://loveapple.space/tags/STM32/"/>
+    <category term="STM32" scheme="https://loveapple.space/blog/tags/STM32/"/>
     
-    <category term="开发板" scheme="https://loveapple.space/tags/%E5%BC%80%E5%8F%91%E6%9D%BF/"/>
+    <category term="开发板" scheme="https://loveapple.space/blog/tags/%E5%BC%80%E5%8F%91%E6%9D%BF/"/>
     
-    <category term="USART" scheme="https://loveapple.space/tags/USART/"/>
+    <category term="USART" scheme="https://loveapple.space/blog/tags/USART/"/>
     
   </entry>
   
   <entry>
     <title>鱼论：穿越知识的坠落与诅咒，寻找锚点与未来</title>
-    <link href="https://loveapple.space/view-2/"/>
-    <id>https://loveapple.space/view-2/</id>
+    <link href="https://loveapple.space/blog/view-2/"/>
+    <id>https://loveapple.space/blog/view-2/</id>
     <published>2026-03-26T07:28:47.000Z</published>
     <updated>2026-03-26T09:48:59.091Z</updated>
     
@@ -234,15 +234,15 @@ Plasma下会发生无法输入的问题&lt;/a&gt;的帖子。最近又出现了�
     
     
     
-    <category term="鱼论" scheme="https://loveapple.space/categories/%E9%B1%BC%E8%AE%BA/"/>
+    <category term="鱼论" scheme="https://loveapple.space/blog/categories/%E9%B1%BC%E8%AE%BA/"/>
     
     
   </entry>
   
   <entry>
     <title>linuxqq在KDE Plasma下无法输入的问题。</title>
-    <link href="https://loveapple.space/linuxqq-fcitx5/"/>
-    <id>https://loveapple.space/linuxqq-fcitx5/</id>
+    <link href="https://loveapple.space/blog/linuxqq-fcitx5/"/>
+    <id>https://loveapple.space/blog/linuxqq-fcitx5/</id>
     <published>2026-03-03T23:57:38.000Z</published>
     <updated>2026-03-04T08:19:46.151Z</updated>
     
@@ -251,23 +251,23 @@ Plasma下会发生无法输入的问题&lt;/a&gt;的帖子。最近又出现了�
     
     
     
-    <category term="寄术" scheme="https://loveapple.space/categories/%E5%AF%84%E6%9C%AF/"/>
+    <category term="寄术" scheme="https://loveapple.space/blog/categories/%E5%AF%84%E6%9C%AF/"/>
     
     
-    <category term="Arch Linux" scheme="https://loveapple.space/tags/Arch-Linux/"/>
+    <category term="Arch Linux" scheme="https://loveapple.space/blog/tags/Arch-Linux/"/>
     
-    <category term="Linux" scheme="https://loveapple.space/tags/Linux/"/>
+    <category term="Linux" scheme="https://loveapple.space/blog/tags/Linux/"/>
     
-    <category term="linuxqq" scheme="https://loveapple.space/tags/linuxqq/"/>
+    <category term="linuxqq" scheme="https://loveapple.space/blog/tags/linuxqq/"/>
     
-    <category term="输入法" scheme="https://loveapple.space/tags/%E8%BE%93%E5%85%A5%E6%B3%95/"/>
+    <category term="输入法" scheme="https://loveapple.space/blog/tags/%E8%BE%93%E5%85%A5%E6%B3%95/"/>
     
   </entry>
   
   <entry>
     <title>家族琐记</title>
-    <link href="https://loveapple.space/family-blood/"/>
-    <id>https://loveapple.space/family-blood/</id>
+    <link href="https://loveapple.space/blog/family-blood/"/>
+    <id>https://loveapple.space/blog/family-blood/</id>
     <published>2026-02-21T13:19:01.000Z</published>
     <updated>2026-02-22T05:23:18.664Z</updated>
     
@@ -276,17 +276,17 @@ Plasma下会发生无法输入的问题&lt;/a&gt;的帖子。最近又出现了�
     
     
     
-    <category term="牲活" scheme="https://loveapple.space/categories/%E7%89%B2%E6%B4%BB/"/>
+    <category term="牲活" scheme="https://loveapple.space/blog/categories/%E7%89%B2%E6%B4%BB/"/>
     
     
-    <category term="随笔" scheme="https://loveapple.space/tags/%E9%9A%8F%E7%AC%94/"/>
+    <category term="随笔" scheme="https://loveapple.space/blog/tags/%E9%9A%8F%E7%AC%94/"/>
     
   </entry>
   
   <entry>
     <title>为云服务器配置clash-for-linux</title>
-    <link href="https://loveapple.space/clash-for-linux/"/>
-    <id>https://loveapple.space/clash-for-linux/</id>
+    <link href="https://loveapple.space/blog/clash-for-linux/"/>
+    <id>https://loveapple.space/blog/clash-for-linux/</id>
     <published>2026-02-09T04:43:44.000Z</published>
     <updated>2026-03-15T08:01:55.783Z</updated>
     
@@ -295,19 +295,19 @@ Plasma下会发生无法输入的问题&lt;/a&gt;的帖子。最近又出现了�
     
     
     
-    <category term="寄术" scheme="https://loveapple.space/categories/%E5%AF%84%E6%9C%AF/"/>
+    <category term="寄术" scheme="https://loveapple.space/blog/categories/%E5%AF%84%E6%9C%AF/"/>
     
     
-    <category term="clash" scheme="https://loveapple.space/tags/clash/"/>
+    <category term="clash" scheme="https://loveapple.space/blog/tags/clash/"/>
     
-    <category term="云服务器" scheme="https://loveapple.space/tags/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
+    <category term="云服务器" scheme="https://loveapple.space/blog/tags/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
     
   </entry>
   
   <entry>
     <title>局域网下的家庭影音服务实践对比</title>
-    <link href="https://loveapple.space/home-video-services/"/>
-    <id>https://loveapple.space/home-video-services/</id>
+    <link href="https://loveapple.space/blog/home-video-services/"/>
+    <id>https://loveapple.space/blog/home-video-services/</id>
     <published>2026-02-06T13:58:50.000Z</published>
     <updated>2026-02-06T15:22:36.424Z</updated>
     
@@ -316,19 +316,19 @@ Plasma下会发生无法输入的问题&lt;/a&gt;的帖子。最近又出现了�
     
     
     
-    <category term="寄术" scheme="https://loveapple.space/categories/%E5%AF%84%E6%9C%AF/"/>
+    <category term="寄术" scheme="https://loveapple.space/blog/categories/%E5%AF%84%E6%9C%AF/"/>
     
     
-    <category term="SAMBA" scheme="https://loveapple.space/tags/SAMBA/"/>
+    <category term="SAMBA" scheme="https://loveapple.space/blog/tags/SAMBA/"/>
     
-    <category term="DLNA" scheme="https://loveapple.space/tags/DLNA/"/>
+    <category term="DLNA" scheme="https://loveapple.space/blog/tags/DLNA/"/>
     
   </entry>
   
   <entry>
     <title>N5105NAS：配置WebDav服务</title>
-    <link href="https://loveapple.space/N5105-4/"/>
-    <id>https://loveapple.space/N5105-4/</id>
+    <link href="https://loveapple.space/blog/N5105-4/"/>
+    <id>https://loveapple.space/blog/N5105-4/</id>
     <published>2026-02-05T16:11:41.000Z</published>
     <updated>2026-02-06T07:38:38.609Z</updated>
     
@@ -337,23 +337,23 @@ Plasma下会发生无法输入的问题&lt;/a&gt;的帖子。最近又出现了�
     
     
     
-    <category term="寄术" scheme="https://loveapple.space/categories/%E5%AF%84%E6%9C%AF/"/>
+    <category term="寄术" scheme="https://loveapple.space/blog/categories/%E5%AF%84%E6%9C%AF/"/>
     
     
-    <category term="NAS" scheme="https://loveapple.space/tags/NAS/"/>
+    <category term="NAS" scheme="https://loveapple.space/blog/tags/NAS/"/>
     
-    <category term="WebDav" scheme="https://loveapple.space/tags/WebDav/"/>
+    <category term="WebDav" scheme="https://loveapple.space/blog/tags/WebDav/"/>
     
-    <category term="Windows WebClient" scheme="https://loveapple.space/tags/Windows-WebClient/"/>
+    <category term="Windows WebClient" scheme="https://loveapple.space/blog/tags/Windows-WebClient/"/>
     
-    <category term="Windows注册表" scheme="https://loveapple.space/tags/Windows%E6%B3%A8%E5%86%8C%E8%A1%A8/"/>
+    <category term="Windows注册表" scheme="https://loveapple.space/blog/tags/Windows%E6%B3%A8%E5%86%8C%E8%A1%A8/"/>
     
   </entry>
   
   <entry>
     <title>N5105服务器：如何从公网访问？</title>
-    <link href="https://loveapple.space/N5105-3/"/>
-    <id>https://loveapple.space/N5105-3/</id>
+    <link href="https://loveapple.space/blog/N5105-3/"/>
+    <id>https://loveapple.space/blog/N5105-3/</id>
     <published>2026-01-26T15:56:18.000Z</published>
     <updated>2026-02-05T17:10:47.403Z</updated>
     
@@ -362,25 +362,25 @@ Plasma下会发生无法输入的问题&lt;/a&gt;的帖子。最近又出现了�
     
     
     
-    <category term="寄术" scheme="https://loveapple.space/categories/%E5%AF%84%E6%9C%AF/"/>
+    <category term="寄术" scheme="https://loveapple.space/blog/categories/%E5%AF%84%E6%9C%AF/"/>
     
     
-    <category term="小主机" scheme="https://loveapple.space/tags/%E5%B0%8F%E4%B8%BB%E6%9C%BA/"/>
+    <category term="小主机" scheme="https://loveapple.space/blog/tags/%E5%B0%8F%E4%B8%BB%E6%9C%BA/"/>
     
-    <category term="NAS" scheme="https://loveapple.space/tags/NAS/"/>
+    <category term="NAS" scheme="https://loveapple.space/blog/tags/NAS/"/>
     
-    <category term="CloudFlare Tunnel Zero Trust" scheme="https://loveapple.space/tags/CloudFlare-Tunnel-Zero-Trust/"/>
+    <category term="CloudFlare Tunnel Zero Trust" scheme="https://loveapple.space/blog/tags/CloudFlare-Tunnel-Zero-Trust/"/>
     
-    <category term="Zerotier" scheme="https://loveapple.space/tags/Zerotier/"/>
+    <category term="Zerotier" scheme="https://loveapple.space/blog/tags/Zerotier/"/>
     
-    <category term="穿透" scheme="https://loveapple.space/tags/%E7%A9%BF%E9%80%8F/"/>
+    <category term="穿透" scheme="https://loveapple.space/blog/tags/%E7%A9%BF%E9%80%8F/"/>
     
   </entry>
   
   <entry>
     <title>N5105软路由：WiFi配置</title>
-    <link href="https://loveapple.space/N5105-2/"/>
-    <id>https://loveapple.space/N5105-2/</id>
+    <link href="https://loveapple.space/blog/N5105-2/"/>
+    <id>https://loveapple.space/blog/N5105-2/</id>
     <published>2026-01-18T05:11:32.000Z</published>
     <updated>2026-02-05T16:56:59.807Z</updated>
     
@@ -389,21 +389,21 @@ Plasma下会发生无法输入的问题&lt;/a&gt;的帖子。最近又出现了�
     
     
     
-    <category term="寄术" scheme="https://loveapple.space/categories/%E5%AF%84%E6%9C%AF/"/>
+    <category term="寄术" scheme="https://loveapple.space/blog/categories/%E5%AF%84%E6%9C%AF/"/>
     
     
-    <category term="小主机" scheme="https://loveapple.space/tags/%E5%B0%8F%E4%B8%BB%E6%9C%BA/"/>
+    <category term="小主机" scheme="https://loveapple.space/blog/tags/%E5%B0%8F%E4%B8%BB%E6%9C%BA/"/>
     
-    <category term="OpenWRT软路由" scheme="https://loveapple.space/tags/OpenWRT%E8%BD%AF%E8%B7%AF%E7%94%B1/"/>
+    <category term="OpenWRT软路由" scheme="https://loveapple.space/blog/tags/OpenWRT%E8%BD%AF%E8%B7%AF%E7%94%B1/"/>
     
-    <category term="WiFi" scheme="https://loveapple.space/tags/WiFi/"/>
+    <category term="WiFi" scheme="https://loveapple.space/blog/tags/WiFi/"/>
     
   </entry>
   
   <entry>
     <title>水煮鱼的济州岛旅行日记：Day4</title>
-    <link href="https://loveapple.space/Jeju-day-4/"/>
-    <id>https://loveapple.space/Jeju-day-4/</id>
+    <link href="https://loveapple.space/blog/Jeju-day-4/"/>
+    <id>https://loveapple.space/blog/Jeju-day-4/</id>
     <published>2026-01-17T11:00:24.000Z</published>
     <updated>2026-01-17T14:04:03.639Z</updated>
     
@@ -412,19 +412,19 @@ Plasma下会发生无法输入的问题&lt;/a&gt;的帖子。最近又出现了�
     
     
     
-    <category term="牲活" scheme="https://loveapple.space/categories/%E7%89%B2%E6%B4%BB/"/>
+    <category term="牲活" scheme="https://loveapple.space/blog/categories/%E7%89%B2%E6%B4%BB/"/>
     
     
-    <category term="旅行" scheme="https://loveapple.space/tags/%E6%97%85%E8%A1%8C/"/>
+    <category term="旅行" scheme="https://loveapple.space/blog/tags/%E6%97%85%E8%A1%8C/"/>
     
-    <category term="济州岛" scheme="https://loveapple.space/tags/%E6%B5%8E%E5%B7%9E%E5%B2%9B/"/>
+    <category term="济州岛" scheme="https://loveapple.space/blog/tags/%E6%B5%8E%E5%B7%9E%E5%B2%9B/"/>
     
   </entry>
   
   <entry>
     <title>水煮鱼的济州岛旅行日记：Day3</title>
-    <link href="https://loveapple.space/Jeju-day-3/"/>
-    <id>https://loveapple.space/Jeju-day-3/</id>
+    <link href="https://loveapple.space/blog/Jeju-day-3/"/>
+    <id>https://loveapple.space/blog/Jeju-day-3/</id>
     <published>2026-01-17T11:00:16.000Z</published>
     <updated>2026-01-17T14:01:33.159Z</updated>
     
@@ -433,19 +433,19 @@ Plasma下会发生无法输入的问题&lt;/a&gt;的帖子。最近又出现了�
     
     
     
-    <category term="牲活" scheme="https://loveapple.space/categories/%E7%89%B2%E6%B4%BB/"/>
+    <category term="牲活" scheme="https://loveapple.space/blog/categories/%E7%89%B2%E6%B4%BB/"/>
     
     
-    <category term="旅行" scheme="https://loveapple.space/tags/%E6%97%85%E8%A1%8C/"/>
+    <category term="旅行" scheme="https://loveapple.space/blog/tags/%E6%97%85%E8%A1%8C/"/>
     
-    <category term="济州岛" scheme="https://loveapple.space/tags/%E6%B5%8E%E5%B7%9E%E5%B2%9B/"/>
+    <category term="济州岛" scheme="https://loveapple.space/blog/tags/%E6%B5%8E%E5%B7%9E%E5%B2%9B/"/>
     
   </entry>
   
   <entry>
     <title>水煮鱼的济州岛旅行日记：Day2</title>
-    <link href="https://loveapple.space/Jeju-day-2/"/>
-    <id>https://loveapple.space/Jeju-day-2/</id>
+    <link href="https://loveapple.space/blog/Jeju-day-2/"/>
+    <id>https://loveapple.space/blog/Jeju-day-2/</id>
     <published>2026-01-13T13:39:14.000Z</published>
     <updated>2026-01-17T12:47:36.005Z</updated>
     
@@ -454,19 +454,19 @@ Plasma下会发生无法输入的问题&lt;/a&gt;的帖子。最近又出现了�
     
     
     
-    <category term="牲活" scheme="https://loveapple.space/categories/%E7%89%B2%E6%B4%BB/"/>
+    <category term="牲活" scheme="https://loveapple.space/blog/categories/%E7%89%B2%E6%B4%BB/"/>
     
     
-    <category term="旅行" scheme="https://loveapple.space/tags/%E6%97%85%E8%A1%8C/"/>
+    <category term="旅行" scheme="https://loveapple.space/blog/tags/%E6%97%85%E8%A1%8C/"/>
     
-    <category term="济州岛" scheme="https://loveapple.space/tags/%E6%B5%8E%E5%B7%9E%E5%B2%9B/"/>
+    <category term="济州岛" scheme="https://loveapple.space/blog/tags/%E6%B5%8E%E5%B7%9E%E5%B2%9B/"/>
     
   </entry>
   
   <entry>
     <title>水煮鱼的济州岛旅行日记：Day1</title>
-    <link href="https://loveapple.space/Jeju-day-1/"/>
-    <id>https://loveapple.space/Jeju-day-1/</id>
+    <link href="https://loveapple.space/blog/Jeju-day-1/"/>
+    <id>https://loveapple.space/blog/Jeju-day-1/</id>
     <published>2026-01-12T12:13:36.000Z</published>
     <updated>2026-01-17T12:46:56.917Z</updated>
     
@@ -475,19 +475,19 @@ Plasma下会发生无法输入的问题&lt;/a&gt;的帖子。最近又出现了�
     
     
     
-    <category term="牲活" scheme="https://loveapple.space/categories/%E7%89%B2%E6%B4%BB/"/>
+    <category term="牲活" scheme="https://loveapple.space/blog/categories/%E7%89%B2%E6%B4%BB/"/>
     
     
-    <category term="旅行" scheme="https://loveapple.space/tags/%E6%97%85%E8%A1%8C/"/>
+    <category term="旅行" scheme="https://loveapple.space/blog/tags/%E6%97%85%E8%A1%8C/"/>
     
-    <category term="济州岛" scheme="https://loveapple.space/tags/%E6%B5%8E%E5%B7%9E%E5%B2%9B/"/>
+    <category term="济州岛" scheme="https://loveapple.space/blog/tags/%E6%B5%8E%E5%B7%9E%E5%B2%9B/"/>
     
   </entry>
   
   <entry>
     <title>N5105小主机初配置</title>
-    <link href="https://loveapple.space/N5105-1/"/>
-    <id>https://loveapple.space/N5105-1/</id>
+    <link href="https://loveapple.space/blog/N5105-1/"/>
+    <id>https://loveapple.space/blog/N5105-1/</id>
     <published>2026-01-10T11:59:57.000Z</published>
     <updated>2026-01-18T05:10:50.147Z</updated>
     
@@ -496,19 +496,19 @@ Plasma下会发生无法输入的问题&lt;/a&gt;的帖子。最近又出现了�
     
     
     
-    <category term="寄术" scheme="https://loveapple.space/categories/%E5%AF%84%E6%9C%AF/"/>
+    <category term="寄术" scheme="https://loveapple.space/blog/categories/%E5%AF%84%E6%9C%AF/"/>
     
     
-    <category term="小主机" scheme="https://loveapple.space/tags/%E5%B0%8F%E4%B8%BB%E6%9C%BA/"/>
+    <category term="小主机" scheme="https://loveapple.space/blog/tags/%E5%B0%8F%E4%B8%BB%E6%9C%BA/"/>
     
-    <category term="OpenWRT软路由" scheme="https://loveapple.space/tags/OpenWRT%E8%BD%AF%E8%B7%AF%E7%94%B1/"/>
+    <category term="OpenWRT软路由" scheme="https://loveapple.space/blog/tags/OpenWRT%E8%BD%AF%E8%B7%AF%E7%94%B1/"/>
     
   </entry>
   
   <entry>
     <title>鱼论：论王座风潮</title>
-    <link href="https://loveapple.space/view-1/"/>
-    <id>https://loveapple.space/view-1/</id>
+    <link href="https://loveapple.space/blog/view-1/"/>
+    <id>https://loveapple.space/blog/view-1/</id>
     <published>2026-01-02T10:24:41.000Z</published>
     <updated>2026-03-19T05:17:24.771Z</updated>
     
@@ -517,15 +517,15 @@ Plasma下会发生无法输入的问题&lt;/a&gt;的帖子。最近又出现了�
     
     
     
-    <category term="鱼论" scheme="https://loveapple.space/categories/%E9%B1%BC%E8%AE%BA/"/>
+    <category term="鱼论" scheme="https://loveapple.space/blog/categories/%E9%B1%BC%E8%AE%BA/"/>
     
     
   </entry>
   
   <entry>
     <title>在网页中插入icons</title>
-    <link href="https://loveapple.space/iconfont-inject/"/>
-    <id>https://loveapple.space/iconfont-inject/</id>
+    <link href="https://loveapple.space/blog/iconfont-inject/"/>
+    <id>https://loveapple.space/blog/iconfont-inject/</id>
     <published>2025-12-18T03:18:56.000Z</published>
     <updated>2025-12-18T03:47:18.055Z</updated>
     
@@ -534,17 +534,17 @@ Plasma下会发生无法输入的问题&lt;/a&gt;的帖子。最近又出现了�
     
     
     
-    <category term="寄术" scheme="https://loveapple.space/categories/%E5%AF%84%E6%9C%AF/"/>
+    <category term="寄术" scheme="https://loveapple.space/blog/categories/%E5%AF%84%E6%9C%AF/"/>
     
     
-    <category term="网站建设" scheme="https://loveapple.space/tags/%E7%BD%91%E7%AB%99%E5%BB%BA%E8%AE%BE/"/>
+    <category term="网站建设" scheme="https://loveapple.space/blog/tags/%E7%BD%91%E7%AB%99%E5%BB%BA%E8%AE%BE/"/>
     
   </entry>
   
   <entry>
     <title>F**k Bing Webmaster!</title>
-    <link href="https://loveapple.space/fk-bing-webmaster/"/>
-    <id>https://loveapple.space/fk-bing-webmaster/</id>
+    <link href="https://loveapple.space/blog/fk-bing-webmaster/"/>
+    <id>https://loveapple.space/blog/fk-bing-webmaster/</id>
     <published>2025-12-13T14:16:21.000Z</published>
     <updated>2025-12-13T14:26:32.515Z</updated>
     
@@ -553,17 +553,17 @@ Plasma下会发生无法输入的问题&lt;/a&gt;的帖子。最近又出现了�
     
     
     
-    <category term="寄术" scheme="https://loveapple.space/categories/%E5%AF%84%E6%9C%AF/"/>
+    <category term="寄术" scheme="https://loveapple.space/blog/categories/%E5%AF%84%E6%9C%AF/"/>
     
     
-    <category term="网站建设" scheme="https://loveapple.space/tags/%E7%BD%91%E7%AB%99%E5%BB%BA%E8%AE%BE/"/>
+    <category term="网站建设" scheme="https://loveapple.space/blog/tags/%E7%BD%91%E7%AB%99%E5%BB%BA%E8%AE%BE/"/>
     
   </entry>
   
   <entry>
     <title>Random Image API上线</title>
-    <link href="https://loveapple.space/my-image-building/"/>
-    <id>https://loveapple.space/my-image-building/</id>
+    <link href="https://loveapple.space/blog/my-image-building/"/>
+    <id>https://loveapple.space/blog/my-image-building/</id>
     <published>2025-12-13T11:16:35.000Z</published>
     <updated>2025-12-13T11:52:00.457Z</updated>
     
@@ -572,23 +572,23 @@ Plasma下会发生无法输入的问题&lt;/a&gt;的帖子。最近又出现了�
     
     
     
-    <category term="寄术" scheme="https://loveapple.space/categories/%E5%AF%84%E6%9C%AF/"/>
+    <category term="寄术" scheme="https://loveapple.space/blog/categories/%E5%AF%84%E6%9C%AF/"/>
     
     
-    <category term="服务器" scheme="https://loveapple.space/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
+    <category term="服务器" scheme="https://loveapple.space/blog/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
     
-    <category term="网站建设" scheme="https://loveapple.space/tags/%E7%BD%91%E7%AB%99%E5%BB%BA%E8%AE%BE/"/>
+    <category term="网站建设" scheme="https://loveapple.space/blog/tags/%E7%BD%91%E7%AB%99%E5%BB%BA%E8%AE%BE/"/>
     
-    <category term="Vibe Coding" scheme="https://loveapple.space/tags/Vibe-Coding/"/>
+    <category term="Vibe Coding" scheme="https://loveapple.space/blog/tags/Vibe-Coding/"/>
     
-    <category term="API" scheme="https://loveapple.space/tags/API/"/>
+    <category term="API" scheme="https://loveapple.space/blog/tags/API/"/>
     
   </entry>
   
   <entry>
     <title>龙歌三店横评：来自2025年12月的南京</title>
-    <link href="https://loveapple.space/loonger-hotpot-Dec25/"/>
-    <id>https://loveapple.space/loonger-hotpot-Dec25/</id>
+    <link href="https://loveapple.space/blog/loonger-hotpot-Dec25/"/>
+    <id>https://loveapple.space/blog/loonger-hotpot-Dec25/</id>
     <published>2025-12-11T02:44:00.000Z</published>
     <updated>2025-12-11T03:26:00.250Z</updated>
     
@@ -597,19 +597,19 @@ Plasma下会发生无法输入的问题&lt;/a&gt;的帖子。最近又出现了�
     
     
     
-    <category term="牲活" scheme="https://loveapple.space/categories/%E7%89%B2%E6%B4%BB/"/>
+    <category term="牲活" scheme="https://loveapple.space/blog/categories/%E7%89%B2%E6%B4%BB/"/>
     
     
-    <category term="旋转小火锅" scheme="https://loveapple.space/tags/%E6%97%8B%E8%BD%AC%E5%B0%8F%E7%81%AB%E9%94%85/"/>
+    <category term="旋转小火锅" scheme="https://loveapple.space/blog/tags/%E6%97%8B%E8%BD%AC%E5%B0%8F%E7%81%AB%E9%94%85/"/>
     
-    <category term="吃吃吃" scheme="https://loveapple.space/tags/%E5%90%83%E5%90%83%E5%90%83/"/>
+    <category term="吃吃吃" scheme="https://loveapple.space/blog/tags/%E5%90%83%E5%90%83%E5%90%83/"/>
     
   </entry>
   
   <entry>
     <title>Hexo+Butterfly深入化自定义：以友链页面卡片宽度调整为例</title>
-    <link href="https://loveapple.space/link-card-width/"/>
-    <id>https://loveapple.space/link-card-width/</id>
+    <link href="https://loveapple.space/blog/link-card-width/"/>
+    <id>https://loveapple.space/blog/link-card-width/</id>
     <published>2025-12-09T03:52:08.000Z</published>
     <updated>2025-12-11T03:26:29.828Z</updated>
     
@@ -618,19 +618,19 @@ Plasma下会发生无法输入的问题&lt;/a&gt;的帖子。最近又出现了�
     
     
     
-    <category term="寄术" scheme="https://loveapple.space/categories/%E5%AF%84%E6%9C%AF/"/>
+    <category term="寄术" scheme="https://loveapple.space/blog/categories/%E5%AF%84%E6%9C%AF/"/>
     
     
-    <category term="网站建设" scheme="https://loveapple.space/tags/%E7%BD%91%E7%AB%99%E5%BB%BA%E8%AE%BE/"/>
+    <category term="网站建设" scheme="https://loveapple.space/blog/tags/%E7%BD%91%E7%AB%99%E5%BB%BA%E8%AE%BE/"/>
     
-    <category term="随笔" scheme="https://loveapple.space/tags/%E9%9A%8F%E7%AC%94/"/>
+    <category term="随笔" scheme="https://loveapple.space/blog/tags/%E9%9A%8F%E7%AC%94/"/>
     
   </entry>
   
   <entry>
     <title>Hexo+Butterfly的dark mode开发</title>
-    <link href="https://loveapple.space/dark-mode/"/>
-    <id>https://loveapple.space/dark-mode/</id>
+    <link href="https://loveapple.space/blog/dark-mode/"/>
+    <id>https://loveapple.space/blog/dark-mode/</id>
     <published>2025-12-08T04:54:26.000Z</published>
     <updated>2025-12-10T10:37:37.247Z</updated>
     
@@ -639,19 +639,19 @@ Plasma下会发生无法输入的问题&lt;/a&gt;的帖子。最近又出现了�
     
     
     
-    <category term="寄术" scheme="https://loveapple.space/categories/%E5%AF%84%E6%9C%AF/"/>
+    <category term="寄术" scheme="https://loveapple.space/blog/categories/%E5%AF%84%E6%9C%AF/"/>
     
     
-    <category term="网站建设" scheme="https://loveapple.space/tags/%E7%BD%91%E7%AB%99%E5%BB%BA%E8%AE%BE/"/>
+    <category term="网站建设" scheme="https://loveapple.space/blog/tags/%E7%BD%91%E7%AB%99%E5%BB%BA%E8%AE%BE/"/>
     
-    <category term="Vibe Coding" scheme="https://loveapple.space/tags/Vibe-Coding/"/>
+    <category term="Vibe Coding" scheme="https://loveapple.space/blog/tags/Vibe-Coding/"/>
     
   </entry>
   
   <entry>
     <title>为Hexo博客+Butterfly主题启用Giscus评论系统：一些Bing上搜不到的技巧</title>
-    <link href="https://loveapple.space/giscis-intro/"/>
-    <id>https://loveapple.space/giscis-intro/</id>
+    <link href="https://loveapple.space/blog/giscis-intro/"/>
+    <id>https://loveapple.space/blog/giscis-intro/</id>
     <published>2025-11-29T08:02:51.000Z</published>
     <updated>2025-12-11T02:45:39.412Z</updated>
     
@@ -660,21 +660,21 @@ Plasma下会发生无法输入的问题&lt;/a&gt;的帖子。最近又出现了�
     
     
     
-    <category term="寄术" scheme="https://loveapple.space/categories/%E5%AF%84%E6%9C%AF/"/>
+    <category term="寄术" scheme="https://loveapple.space/blog/categories/%E5%AF%84%E6%9C%AF/"/>
     
     
-    <category term="网站建设" scheme="https://loveapple.space/tags/%E7%BD%91%E7%AB%99%E5%BB%BA%E8%AE%BE/"/>
+    <category term="网站建设" scheme="https://loveapple.space/blog/tags/%E7%BD%91%E7%AB%99%E5%BB%BA%E8%AE%BE/"/>
     
-    <category term="Vibe Coding" scheme="https://loveapple.space/tags/Vibe-Coding/"/>
+    <category term="Vibe Coding" scheme="https://loveapple.space/blog/tags/Vibe-Coding/"/>
     
-    <category term="评论系统" scheme="https://loveapple.space/tags/%E8%AF%84%E8%AE%BA%E7%B3%BB%E7%BB%9F/"/>
+    <category term="评论系统" scheme="https://loveapple.space/blog/tags/%E8%AF%84%E8%AE%BA%E7%B3%BB%E7%BB%9F/"/>
     
   </entry>
   
   <entry>
     <title>暴论：AI（几乎）不能帮你完成你并不会的任务</title>
-    <link href="https://loveapple.space/clash-configuration/"/>
-    <id>https://loveapple.space/clash-configuration/</id>
+    <link href="https://loveapple.space/blog/clash-configuration/"/>
+    <id>https://loveapple.space/blog/clash-configuration/</id>
     <published>2025-11-27T09:26:50.000Z</published>
     <updated>2026-02-09T05:09:28.077Z</updated>
     
@@ -683,21 +683,21 @@ Plasma下会发生无法输入的问题&lt;/a&gt;的帖子。最近又出现了�
     
     
     
-    <category term="寄术" scheme="https://loveapple.space/categories/%E5%AF%84%E6%9C%AF/"/>
+    <category term="寄术" scheme="https://loveapple.space/blog/categories/%E5%AF%84%E6%9C%AF/"/>
     
     
-    <category term="服务器" scheme="https://loveapple.space/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
+    <category term="服务器" scheme="https://loveapple.space/blog/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
     
-    <category term="Vibe Coding" scheme="https://loveapple.space/tags/Vibe-Coding/"/>
+    <category term="Vibe Coding" scheme="https://loveapple.space/blog/tags/Vibe-Coding/"/>
     
-    <category term="随笔" scheme="https://loveapple.space/tags/%E9%9A%8F%E7%AC%94/"/>
+    <category term="随笔" scheme="https://loveapple.space/blog/tags/%E9%9A%8F%E7%AC%94/"/>
     
   </entry>
   
   <entry>
     <title>业余无线电个人入门经历</title>
-    <link href="https://loveapple.space/amateur-radio-1/"/>
-    <id>https://loveapple.space/amateur-radio-1/</id>
+    <link href="https://loveapple.space/blog/amateur-radio-1/"/>
+    <id>https://loveapple.space/blog/amateur-radio-1/</id>
     <published>2025-11-10T15:49:02.000Z</published>
     <updated>2025-12-10T10:37:15.088Z</updated>
     
@@ -706,19 +706,19 @@ Plasma下会发生无法输入的问题&lt;/a&gt;的帖子。最近又出现了�
     
     
     
-    <category term="寄术" scheme="https://loveapple.space/categories/%E5%AF%84%E6%9C%AF/"/>
+    <category term="寄术" scheme="https://loveapple.space/blog/categories/%E5%AF%84%E6%9C%AF/"/>
     
     
-    <category term="EE" scheme="https://loveapple.space/tags/EE/"/>
+    <category term="EE" scheme="https://loveapple.space/blog/tags/EE/"/>
     
-    <category term="HAM" scheme="https://loveapple.space/tags/HAM/"/>
+    <category term="HAM" scheme="https://loveapple.space/blog/tags/HAM/"/>
     
   </entry>
   
   <entry>
     <title>NJU九食堂惊现帝王蟹：丰俭由人乃常态，温室育花实可悲</title>
-    <link href="https://loveapple.space/nju-king-crab/"/>
-    <id>https://loveapple.space/nju-king-crab/</id>
+    <link href="https://loveapple.space/blog/nju-king-crab/"/>
+    <id>https://loveapple.space/blog/nju-king-crab/</id>
     <published>2025-11-04T03:40:30.000Z</published>
     <updated>2026-01-02T10:37:06.544Z</updated>
     
@@ -727,19 +727,19 @@ Plasma下会发生无法输入的问题&lt;/a&gt;的帖子。最近又出现了�
     
     
     
-    <category term="鱼论" scheme="https://loveapple.space/categories/%E9%B1%BC%E8%AE%BA/"/>
+    <category term="鱼论" scheme="https://loveapple.space/blog/categories/%E9%B1%BC%E8%AE%BA/"/>
     
     
-    <category term="NJU" scheme="https://loveapple.space/tags/NJU/"/>
+    <category term="NJU" scheme="https://loveapple.space/blog/tags/NJU/"/>
     
-    <category term="随笔" scheme="https://loveapple.space/tags/%E9%9A%8F%E7%AC%94/"/>
+    <category term="随笔" scheme="https://loveapple.space/blog/tags/%E9%9A%8F%E7%AC%94/"/>
     
   </entry>
   
   <entry>
     <title>数字系统II第一次实验报告</title>
-    <link href="https://loveapple.space/loongarch-linux-1/"/>
-    <id>https://loveapple.space/loongarch-linux-1/</id>
+    <link href="https://loveapple.space/blog/loongarch-linux-1/"/>
+    <id>https://loveapple.space/blog/loongarch-linux-1/</id>
     <published>2025-10-23T02:32:17.000Z</published>
     <updated>2025-12-10T10:39:22.881Z</updated>
     
@@ -748,21 +748,21 @@ Plasma下会发生无法输入的问题&lt;/a&gt;的帖子。最近又出现了�
     
     
     
-    <category term="寄术" scheme="https://loveapple.space/categories/%E5%AF%84%E6%9C%AF/"/>
+    <category term="寄术" scheme="https://loveapple.space/blog/categories/%E5%AF%84%E6%9C%AF/"/>
     
     
-    <category term="开发板" scheme="https://loveapple.space/tags/%E5%BC%80%E5%8F%91%E6%9D%BF/"/>
+    <category term="开发板" scheme="https://loveapple.space/blog/tags/%E5%BC%80%E5%8F%91%E6%9D%BF/"/>
     
-    <category term="Linux" scheme="https://loveapple.space/tags/Linux/"/>
+    <category term="Linux" scheme="https://loveapple.space/blog/tags/Linux/"/>
     
-    <category term="loongarch" scheme="https://loveapple.space/tags/loongarch/"/>
+    <category term="loongarch" scheme="https://loveapple.space/blog/tags/loongarch/"/>
     
   </entry>
   
   <entry>
     <title>举高高旋转小火锅评测</title>
-    <link href="https://loveapple.space/jgg-hotpot/"/>
-    <id>https://loveapple.space/jgg-hotpot/</id>
+    <link href="https://loveapple.space/blog/jgg-hotpot/"/>
+    <id>https://loveapple.space/blog/jgg-hotpot/</id>
     <published>2025-10-15T07:54:15.000Z</published>
     <updated>2025-12-10T10:38:52.974Z</updated>
     
@@ -771,19 +771,19 @@ Plasma下会发生无法输入的问题&lt;/a&gt;的帖子。最近又出现了�
     
     
     
-    <category term="牲活" scheme="https://loveapple.space/categories/%E7%89%B2%E6%B4%BB/"/>
+    <category term="牲活" scheme="https://loveapple.space/blog/categories/%E7%89%B2%E6%B4%BB/"/>
     
     
-    <category term="旋转小火锅" scheme="https://loveapple.space/tags/%E6%97%8B%E8%BD%AC%E5%B0%8F%E7%81%AB%E9%94%85/"/>
+    <category term="旋转小火锅" scheme="https://loveapple.space/blog/tags/%E6%97%8B%E8%BD%AC%E5%B0%8F%E7%81%AB%E9%94%85/"/>
     
-    <category term="吃吃吃" scheme="https://loveapple.space/tags/%E5%90%83%E5%90%83%E5%90%83/"/>
+    <category term="吃吃吃" scheme="https://loveapple.space/blog/tags/%E5%90%83%E5%90%83%E5%90%83/"/>
     
   </entry>
   
   <entry>
     <title>如何打好螺丝？</title>
-    <link href="https://loveapple.space/how2b-screwer/"/>
-    <id>https://loveapple.space/how2b-screwer/</id>
+    <link href="https://loveapple.space/blog/how2b-screwer/"/>
+    <id>https://loveapple.space/blog/how2b-screwer/</id>
     <published>2025-10-09T06:57:21.000Z</published>
     <updated>2025-12-10T10:38:39.908Z</updated>
     
@@ -792,19 +792,19 @@ Plasma下会发生无法输入的问题&lt;/a&gt;的帖子。最近又出现了�
     
     
     
-    <category term="寄术" scheme="https://loveapple.space/categories/%E5%AF%84%E6%9C%AF/"/>
+    <category term="寄术" scheme="https://loveapple.space/blog/categories/%E5%AF%84%E6%9C%AF/"/>
     
     
-    <category term="IT侠" scheme="https://loveapple.space/tags/IT%E4%BE%A0/"/>
+    <category term="IT侠" scheme="https://loveapple.space/blog/tags/IT%E4%BE%A0/"/>
     
-    <category term="维修随想" scheme="https://loveapple.space/tags/%E7%BB%B4%E4%BF%AE%E9%9A%8F%E6%83%B3/"/>
+    <category term="维修随想" scheme="https://loveapple.space/blog/tags/%E7%BB%B4%E4%BF%AE%E9%9A%8F%E6%83%B3/"/>
     
   </entry>
   
   <entry>
     <title>锁相环技术入门简介</title>
-    <link href="https://loveapple.space/PLL-intro/"/>
-    <id>https://loveapple.space/PLL-intro/</id>
+    <link href="https://loveapple.space/blog/PLL-intro/"/>
+    <id>https://loveapple.space/blog/PLL-intro/</id>
     <published>2025-10-03T03:46:12.000Z</published>
     <updated>2026-03-22T13:32:42.984Z</updated>
     
@@ -813,19 +813,19 @@ Plasma下会发生无法输入的问题&lt;/a&gt;的帖子。最近又出现了�
     
     
     
-    <category term="寄术" scheme="https://loveapple.space/categories/%E5%AF%84%E6%9C%AF/"/>
+    <category term="寄术" scheme="https://loveapple.space/blog/categories/%E5%AF%84%E6%9C%AF/"/>
     
     
-    <category term="EE" scheme="https://loveapple.space/tags/EE/"/>
+    <category term="EE" scheme="https://loveapple.space/blog/tags/EE/"/>
     
-    <category term="PLL" scheme="https://loveapple.space/tags/PLL/"/>
+    <category term="PLL" scheme="https://loveapple.space/blog/tags/PLL/"/>
     
   </entry>
   
   <entry>
     <title>Arch Linux本土化配置：为pacman指定镜像源</title>
-    <link href="https://loveapple.space/pacman-mirror/"/>
-    <id>https://loveapple.space/pacman-mirror/</id>
+    <link href="https://loveapple.space/blog/pacman-mirror/"/>
+    <id>https://loveapple.space/blog/pacman-mirror/</id>
     <published>2025-09-26T04:14:07.000Z</published>
     <updated>2025-12-12T14:10:24.894Z</updated>
     
@@ -834,23 +834,23 @@ Plasma下会发生无法输入的问题&lt;/a&gt;的帖子。最近又出现了�
     
     
     
-    <category term="寄术" scheme="https://loveapple.space/categories/%E5%AF%84%E6%9C%AF/"/>
+    <category term="寄术" scheme="https://loveapple.space/blog/categories/%E5%AF%84%E6%9C%AF/"/>
     
     
-    <category term="Arch Linux" scheme="https://loveapple.space/tags/Arch-Linux/"/>
+    <category term="Arch Linux" scheme="https://loveapple.space/blog/tags/Arch-Linux/"/>
     
-    <category term="Linux" scheme="https://loveapple.space/tags/Linux/"/>
+    <category term="Linux" scheme="https://loveapple.space/blog/tags/Linux/"/>
     
-    <category term="镜像源" scheme="https://loveapple.space/tags/%E9%95%9C%E5%83%8F%E6%BA%90/"/>
+    <category term="镜像源" scheme="https://loveapple.space/blog/tags/%E9%95%9C%E5%83%8F%E6%BA%90/"/>
     
-    <category term="Arch reflector" scheme="https://loveapple.space/tags/Arch-reflector/"/>
+    <category term="Arch reflector" scheme="https://loveapple.space/blog/tags/Arch-reflector/"/>
     
   </entry>
   
   <entry>
     <title>安装 Arch Linux</title>
-    <link href="https://loveapple.space/install-arch/"/>
-    <id>https://loveapple.space/install-arch/</id>
+    <link href="https://loveapple.space/blog/install-arch/"/>
+    <id>https://loveapple.space/blog/install-arch/</id>
     <published>2025-09-24T10:49:59.000Z</published>
     <updated>2025-12-10T10:38:13.666Z</updated>
     
@@ -859,21 +859,21 @@ Plasma下会发生无法输入的问题&lt;/a&gt;的帖子。最近又出现了�
     
     
     
-    <category term="寄术" scheme="https://loveapple.space/categories/%E5%AF%84%E6%9C%AF/"/>
+    <category term="寄术" scheme="https://loveapple.space/blog/categories/%E5%AF%84%E6%9C%AF/"/>
     
     
-    <category term="安装系统" scheme="https://loveapple.space/tags/%E5%AE%89%E8%A3%85%E7%B3%BB%E7%BB%9F/"/>
+    <category term="安装系统" scheme="https://loveapple.space/blog/tags/%E5%AE%89%E8%A3%85%E7%B3%BB%E7%BB%9F/"/>
     
-    <category term="Arch Linux" scheme="https://loveapple.space/tags/Arch-Linux/"/>
+    <category term="Arch Linux" scheme="https://loveapple.space/blog/tags/Arch-Linux/"/>
     
-    <category term="Linux" scheme="https://loveapple.space/tags/Linux/"/>
+    <category term="Linux" scheme="https://loveapple.space/blog/tags/Linux/"/>
     
   </entry>
   
   <entry>
     <title>换AB面，但是屏幕翻车</title>
-    <link href="https://loveapple.space/BreakScreen/"/>
-    <id>https://loveapple.space/BreakScreen/</id>
+    <link href="https://loveapple.space/blog/BreakScreen/"/>
+    <id>https://loveapple.space/blog/BreakScreen/</id>
     <published>2025-09-22T06:59:22.000Z</published>
     <updated>2025-12-10T10:38:26.595Z</updated>
     
@@ -882,21 +882,21 @@ Plasma下会发生无法输入的问题&lt;/a&gt;的帖子。最近又出现了�
     
     
     
-    <category term="寄术" scheme="https://loveapple.space/categories/%E5%AF%84%E6%9C%AF/"/>
+    <category term="寄术" scheme="https://loveapple.space/blog/categories/%E5%AF%84%E6%9C%AF/"/>
     
     
-    <category term="IT侠" scheme="https://loveapple.space/tags/IT%E4%BE%A0/"/>
+    <category term="IT侠" scheme="https://loveapple.space/blog/tags/IT%E4%BE%A0/"/>
     
-    <category term="经验记录归档" scheme="https://loveapple.space/tags/%E7%BB%8F%E9%AA%8C%E8%AE%B0%E5%BD%95%E5%BD%92%E6%A1%A3/"/>
+    <category term="经验记录归档" scheme="https://loveapple.space/blog/tags/%E7%BB%8F%E9%AA%8C%E8%AE%B0%E5%BD%95%E5%BD%92%E6%A1%A3/"/>
     
-    <category term="维修翻车记录" scheme="https://loveapple.space/tags/%E7%BB%B4%E4%BF%AE%E7%BF%BB%E8%BD%A6%E8%AE%B0%E5%BD%95/"/>
+    <category term="维修翻车记录" scheme="https://loveapple.space/blog/tags/%E7%BB%B4%E4%BF%AE%E7%BF%BB%E8%BD%A6%E8%AE%B0%E5%BD%95/"/>
     
   </entry>
   
   <entry>
     <title>一个自制的Keil2Cmake转换器小工具</title>
-    <link href="https://loveapple.space/Keil2Cmake/"/>
-    <id>https://loveapple.space/Keil2Cmake/</id>
+    <link href="https://loveapple.space/blog/Keil2Cmake/"/>
+    <id>https://loveapple.space/blog/Keil2Cmake/</id>
     <published>2025-09-21T09:42:57.000Z</published>
     <updated>2025-12-10T10:39:03.510Z</updated>
     
@@ -905,21 +905,21 @@ Plasma下会发生无法输入的问题&lt;/a&gt;的帖子。最近又出现了�
     
     
     
-    <category term="寄术" scheme="https://loveapple.space/categories/%E5%AF%84%E6%9C%AF/"/>
+    <category term="寄术" scheme="https://loveapple.space/blog/categories/%E5%AF%84%E6%9C%AF/"/>
     
     
-    <category term="开源项目" scheme="https://loveapple.space/tags/%E5%BC%80%E6%BA%90%E9%A1%B9%E7%9B%AE/"/>
+    <category term="开源项目" scheme="https://loveapple.space/blog/tags/%E5%BC%80%E6%BA%90%E9%A1%B9%E7%9B%AE/"/>
     
-    <category term="EE" scheme="https://loveapple.space/tags/EE/"/>
+    <category term="EE" scheme="https://loveapple.space/blog/tags/EE/"/>
     
-    <category term="嵌入式开发" scheme="https://loveapple.space/tags/%E5%B5%8C%E5%85%A5%E5%BC%8F%E5%BC%80%E5%8F%91/"/>
+    <category term="嵌入式开发" scheme="https://loveapple.space/blog/tags/%E5%B5%8C%E5%85%A5%E5%BC%8F%E5%BC%80%E5%8F%91/"/>
     
   </entry>
   
   <entry>
     <title>本地开发，远程部署：如何把你的服务器变成Git仓库？</title>
-    <link href="https://loveapple.space/GitAway/"/>
-    <id>https://loveapple.space/GitAway/</id>
+    <link href="https://loveapple.space/blog/GitAway/"/>
+    <id>https://loveapple.space/blog/GitAway/</id>
     <published>2025-09-10T10:48:13.000Z</published>
     <updated>2025-12-10T10:37:57.272Z</updated>
     
@@ -928,19 +928,19 @@ Plasma下会发生无法输入的问题&lt;/a&gt;的帖子。最近又出现了�
     
     
     
-    <category term="寄术" scheme="https://loveapple.space/categories/%E5%AF%84%E6%9C%AF/"/>
+    <category term="寄术" scheme="https://loveapple.space/blog/categories/%E5%AF%84%E6%9C%AF/"/>
     
     
-    <category term="服务器" scheme="https://loveapple.space/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
+    <category term="服务器" scheme="https://loveapple.space/blog/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
     
-    <category term="远程部署" scheme="https://loveapple.space/tags/%E8%BF%9C%E7%A8%8B%E9%83%A8%E7%BD%B2/"/>
+    <category term="远程部署" scheme="https://loveapple.space/blog/tags/%E8%BF%9C%E7%A8%8B%E9%83%A8%E7%BD%B2/"/>
     
   </entry>
   
   <entry>
     <title>部署Friend-Link-House项目:开源社区初探</title>
-    <link href="https://loveapple.space/Blogroll/"/>
-    <id>https://loveapple.space/Blogroll/</id>
+    <link href="https://loveapple.space/blog/Blogroll/"/>
+    <id>https://loveapple.space/blog/Blogroll/</id>
     <published>2025-09-09T03:09:41.000Z</published>
     <updated>2025-12-10T10:36:19.123Z</updated>
     
@@ -949,23 +949,23 @@ Plasma下会发生无法输入的问题&lt;/a&gt;的帖子。最近又出现了�
     
     
     
-    <category term="寄术" scheme="https://loveapple.space/categories/%E5%AF%84%E6%9C%AF/"/>
+    <category term="寄术" scheme="https://loveapple.space/blog/categories/%E5%AF%84%E6%9C%AF/"/>
     
     
-    <category term="开源项目" scheme="https://loveapple.space/tags/%E5%BC%80%E6%BA%90%E9%A1%B9%E7%9B%AE/"/>
+    <category term="服务器" scheme="https://loveapple.space/blog/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
     
-    <category term="服务器" scheme="https://loveapple.space/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
+    <category term="开源项目" scheme="https://loveapple.space/blog/tags/%E5%BC%80%E6%BA%90%E9%A1%B9%E7%9B%AE/"/>
     
-    <category term="网站建设" scheme="https://loveapple.space/tags/%E7%BD%91%E7%AB%99%E5%BB%BA%E8%AE%BE/"/>
+    <category term="网站建设" scheme="https://loveapple.space/blog/tags/%E7%BD%91%E7%AB%99%E5%BB%BA%E8%AE%BE/"/>
     
-    <category term="RSS订阅" scheme="https://loveapple.space/tags/RSS%E8%AE%A2%E9%98%85/"/>
+    <category term="RSS订阅" scheme="https://loveapple.space/blog/tags/RSS%E8%AE%A2%E9%98%85/"/>
     
   </entry>
   
   <entry>
     <title>NJU-Undergraduates-Courses</title>
-    <link href="https://loveapple.space/NJU-Undergraduates-Courses/"/>
-    <id>https://loveapple.space/NJU-Undergraduates-Courses/</id>
+    <link href="https://loveapple.space/blog/NJU-Undergraduates-Courses/"/>
+    <id>https://loveapple.space/blog/NJU-Undergraduates-Courses/</id>
     <published>2025-08-16T13:19:29.000Z</published>
     <updated>2025-12-10T10:39:48.410Z</updated>
     
@@ -974,17 +974,17 @@ Plasma下会发生无法输入的问题&lt;/a&gt;的帖子。最近又出现了�
     
     
     
-    <category term="杂项" scheme="https://loveapple.space/categories/%E6%9D%82%E9%A1%B9/"/>
+    <category term="杂项" scheme="https://loveapple.space/blog/categories/%E6%9D%82%E9%A1%B9/"/>
     
     
-    <category term="NJU" scheme="https://loveapple.space/tags/NJU/"/>
+    <category term="NJU" scheme="https://loveapple.space/blog/tags/NJU/"/>
     
   </entry>
   
   <entry>
     <title>DrawBoard食用指北</title>
-    <link href="https://loveapple.space/Draw-Board-README/"/>
-    <id>https://loveapple.space/Draw-Board-README/</id>
+    <link href="https://loveapple.space/blog/Draw-Board-README/"/>
+    <id>https://loveapple.space/blog/Draw-Board-README/</id>
     <published>2025-08-14T13:31:24.000Z</published>
     <updated>2025-12-10T10:37:48.944Z</updated>
     
@@ -993,15 +993,15 @@ Plasma下会发生无法输入的问题&lt;/a&gt;的帖子。最近又出现了�
     
     
     
-    <category term="寄术" scheme="https://loveapple.space/categories/%E5%AF%84%E6%9C%AF/"/>
+    <category term="寄术" scheme="https://loveapple.space/blog/categories/%E5%AF%84%E6%9C%AF/"/>
     
     
   </entry>
   
   <entry>
     <title>奶茶电脑之数据拯救</title>
-    <link href="https://loveapple.space/MilkTeaComputer/"/>
-    <id>https://loveapple.space/MilkTeaComputer/</id>
+    <link href="https://loveapple.space/blog/MilkTeaComputer/"/>
+    <id>https://loveapple.space/blog/MilkTeaComputer/</id>
     <published>2025-08-12T03:21:44.000Z</published>
     <updated>2025-12-10T10:39:30.965Z</updated>
     
@@ -1010,21 +1010,21 @@ Plasma下会发生无法输入的问题&lt;/a&gt;的帖子。最近又出现了�
     
     
     
-    <category term="寄术" scheme="https://loveapple.space/categories/%E5%AF%84%E6%9C%AF/"/>
+    <category term="寄术" scheme="https://loveapple.space/blog/categories/%E5%AF%84%E6%9C%AF/"/>
     
     
-    <category term="IT侠" scheme="https://loveapple.space/tags/IT%E4%BE%A0/"/>
+    <category term="IT侠" scheme="https://loveapple.space/blog/tags/IT%E4%BE%A0/"/>
     
-    <category term="经验记录归档" scheme="https://loveapple.space/tags/%E7%BB%8F%E9%AA%8C%E8%AE%B0%E5%BD%95%E5%BD%92%E6%A1%A3/"/>
+    <category term="经验记录归档" scheme="https://loveapple.space/blog/tags/%E7%BB%8F%E9%AA%8C%E8%AE%B0%E5%BD%95%E5%BD%92%E6%A1%A3/"/>
     
-    <category term="进水机" scheme="https://loveapple.space/tags/%E8%BF%9B%E6%B0%B4%E6%9C%BA/"/>
+    <category term="进水机" scheme="https://loveapple.space/blog/tags/%E8%BF%9B%E6%B0%B4%E6%9C%BA/"/>
     
   </entry>
   
   <entry>
     <title>联想供电疑似通病</title>
-    <link href="https://loveapple.space/LenovoPower/"/>
-    <id>https://loveapple.space/LenovoPower/</id>
+    <link href="https://loveapple.space/blog/LenovoPower/"/>
+    <id>https://loveapple.space/blog/LenovoPower/</id>
     <published>2025-08-12T03:18:43.000Z</published>
     <updated>2025-12-10T10:39:13.721Z</updated>
     
@@ -1033,23 +1033,23 @@ Plasma下会发生无法输入的问题&lt;/a&gt;的帖子。最近又出现了�
     
     
     
-    <category term="寄术" scheme="https://loveapple.space/categories/%E5%AF%84%E6%9C%AF/"/>
+    <category term="寄术" scheme="https://loveapple.space/blog/categories/%E5%AF%84%E6%9C%AF/"/>
     
     
-    <category term="IT侠" scheme="https://loveapple.space/tags/IT%E4%BE%A0/"/>
+    <category term="IT侠" scheme="https://loveapple.space/blog/tags/IT%E4%BE%A0/"/>
     
-    <category term="经验记录归档" scheme="https://loveapple.space/tags/%E7%BB%8F%E9%AA%8C%E8%AE%B0%E5%BD%95%E5%BD%92%E6%A1%A3/"/>
+    <category term="经验记录归档" scheme="https://loveapple.space/blog/tags/%E7%BB%8F%E9%AA%8C%E8%AE%B0%E5%BD%95%E5%BD%92%E6%A1%A3/"/>
     
-    <category term="Lenovo" scheme="https://loveapple.space/tags/Lenovo/"/>
+    <category term="Lenovo" scheme="https://loveapple.space/blog/tags/Lenovo/"/>
     
-    <category term="供电" scheme="https://loveapple.space/tags/%E4%BE%9B%E7%94%B5/"/>
+    <category term="供电" scheme="https://loveapple.space/blog/tags/%E4%BE%9B%E7%94%B5/"/>
     
   </entry>
   
   <entry>
     <title>初识ESP32</title>
-    <link href="https://loveapple.space/HelloESP32/"/>
-    <id>https://loveapple.space/HelloESP32/</id>
+    <link href="https://loveapple.space/blog/HelloESP32/"/>
+    <id>https://loveapple.space/blog/HelloESP32/</id>
     <published>2025-08-07T10:05:41.000Z</published>
     <updated>2025-12-10T10:38:02.891Z</updated>
     
@@ -1058,19 +1058,19 @@ Plasma下会发生无法输入的问题&lt;/a&gt;的帖子。最近又出现了�
     
     
     
-    <category term="寄术" scheme="https://loveapple.space/categories/%E5%AF%84%E6%9C%AF/"/>
+    <category term="寄术" scheme="https://loveapple.space/blog/categories/%E5%AF%84%E6%9C%AF/"/>
     
     
-    <category term="MCU" scheme="https://loveapple.space/tags/MCU/"/>
+    <category term="MCU" scheme="https://loveapple.space/blog/tags/MCU/"/>
     
-    <category term="ESP32" scheme="https://loveapple.space/tags/ESP32/"/>
+    <category term="ESP32" scheme="https://loveapple.space/blog/tags/ESP32/"/>
     
   </entry>
   
   <entry>
     <title>DDS实现高频信号同步</title>
-    <link href="https://loveapple.space/DDS_RFSync/"/>
-    <id>https://loveapple.space/DDS_RFSync/</id>
+    <link href="https://loveapple.space/blog/DDS_RFSync/"/>
+    <id>https://loveapple.space/blog/DDS_RFSync/</id>
     <published>2025-07-19T05:09:00.000Z</published>
     <updated>2025-12-10T10:37:43.654Z</updated>
     
@@ -1079,21 +1079,21 @@ Plasma下会发生无法输入的问题&lt;/a&gt;的帖子。最近又出现了�
     
     
     
-    <category term="寄术" scheme="https://loveapple.space/categories/%E5%AF%84%E6%9C%AF/"/>
+    <category term="寄术" scheme="https://loveapple.space/blog/categories/%E5%AF%84%E6%9C%AF/"/>
     
     
-    <category term="NUEDC" scheme="https://loveapple.space/tags/NUEDC/"/>
+    <category term="NUEDC" scheme="https://loveapple.space/blog/tags/NUEDC/"/>
     
-    <category term="EE" scheme="https://loveapple.space/tags/EE/"/>
+    <category term="EE" scheme="https://loveapple.space/blog/tags/EE/"/>
     
-    <category term="DDS" scheme="https://loveapple.space/tags/DDS/"/>
+    <category term="DDS" scheme="https://loveapple.space/blog/tags/DDS/"/>
     
   </entry>
   
   <entry>
     <title>NUEDC-2022-F</title>
-    <link href="https://loveapple.space/NUEDC-2022-F/"/>
-    <id>https://loveapple.space/NUEDC-2022-F/</id>
+    <link href="https://loveapple.space/blog/NUEDC-2022-F/"/>
+    <id>https://loveapple.space/blog/NUEDC-2022-F/</id>
     <published>2025-07-05T03:41:00.000Z</published>
     <updated>2025-12-10T10:40:01.939Z</updated>
     
@@ -1102,12 +1102,12 @@ Plasma下会发生无法输入的问题&lt;/a&gt;的帖子。最近又出现了�
     
     
     
-    <category term="寄术" scheme="https://loveapple.space/categories/%E5%AF%84%E6%9C%AF/"/>
+    <category term="寄术" scheme="https://loveapple.space/blog/categories/%E5%AF%84%E6%9C%AF/"/>
     
     
-    <category term="NUEDC" scheme="https://loveapple.space/tags/NUEDC/"/>
+    <category term="NUEDC" scheme="https://loveapple.space/blog/tags/NUEDC/"/>
     
-    <category term="EE" scheme="https://loveapple.space/tags/EE/"/>
+    <category term="EE" scheme="https://loveapple.space/blog/tags/EE/"/>
     
   </entry>
   
