@@ -6,7 +6,7 @@
   <link href="https://loveapple.space/blog/atom.xml" rel="self"/>
   
   <link href="https://loveapple.space/blog/"/>
-  <updated>2026-08-04T13:38:42.795Z</updated>
+  <updated>2026-08-09T07:40:26.278Z</updated>
   <id>https://loveapple.space/blog/</id>
   
   <author>
@@ -21,14 +21,10 @@
     <link href="https://loveapple.space/blog/linuxqq-fcitx5-2/"/>
     <id>https://loveapple.space/blog/linuxqq-fcitx5-2/</id>
     <published>2026-08-04T06:45:04.000Z</published>
-    <updated>2026-08-04T13:38:42.795Z</updated>
+    <updated>2026-08-09T07:40:26.278Z</updated>
     
     
-      
-      
-    <summary type="html">&lt;p&gt;之前写过一个&lt;a href=&quot;/linuxqq-fcitx5&quot;&gt;关于linuxqq在Wayland+KDE
-Plasma下会发生无法输入的问题&lt;/a&gt;的帖子。最近又出现了新问题：虽然能唤起输入法，但是打字按按键比较快的时候，会有一些按键无法被输入法捕获。为了解决这个问题，</summary>
-      
+    <summary type="html">这篇博客是对linuxqq输入法问题的后续补充。除了之前无法唤起输入法的问题外，快速打字时按键丢失的问题可通过增加启动参数--ozone-platform=wayland解决。为避免QQ更新覆盖修改，推荐将参数写入~/.config/qq-flags.conf配置文件。</summary>
     
     
     
