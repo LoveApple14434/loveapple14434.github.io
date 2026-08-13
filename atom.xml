@@ -6,7 +6,7 @@
   <link href="https://loveapple.space/blog/atom.xml" rel="self"/>
   
   <link href="https://loveapple.space/blog/"/>
-  <updated>2026-08-09T07:40:26.278Z</updated>
+  <updated>2026-08-13T15:51:55.331Z</updated>
   <id>https://loveapple.space/blog/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>水煮鱼的济州岛旅行后日记：杂谈</title>
+    <link href="https://loveapple.space/blog/Jeju-general/"/>
+    <id>https://loveapple.space/blog/Jeju-general/</id>
+    <published>2026-08-13T15:51:06.000Z</published>
+    <updated>2026-08-13T15:51:55.331Z</updated>
+    
+    
+    <summary type="html">这篇博客是作者济州岛旅行日记的补充杂谈，从交通卡、便利店密度、支付方式、公交系统、建筑风貌、物价、语言环境等多个生活细节出发，分享了对济州岛的观察与感受。文章结构松散随性，更像是对旅行中琐碎印象的整理与回味，为四篇正式日记之外增添了更多烟火气的补充。</summary>
+    
+    
+    
+    <category term="牲活" scheme="https://loveapple.space/blog/categories/%E7%89%B2%E6%B4%BB/"/>
+    
+    
+    <category term="旅行" scheme="https://loveapple.space/blog/tags/%E6%97%85%E8%A1%8C/"/>
+    
+    <category term="济州岛" scheme="https://loveapple.space/blog/tags/%E6%B5%8E%E5%B7%9E%E5%B2%9B/"/>
+    
+  </entry>
   
   <entry>
     <title>linuxqq输入法问题第二弹</title>

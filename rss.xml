@@ -9,8 +9,31 @@
     <atom:link href="https://loveapple.space/blog/rss.xml" rel="self" type="application/rss+xml"/>
     
     <description>开源技术实践者 &amp; 射频电子新人 | LoveApple14434 的个人领地 | 一条爱苹果的水煮鱼。深度分享射频/微波、业余无线电硬核技术笔记，开源项目技术实践以及博客网站建设经验，IT侠笔记本维修随录，兼谈NJU校园趣闻与水煮鱼的生活思考。探索技术前沿，记录成长点滴。</description>
-    <pubDate>Sun, 09 Aug 2026 07:40:26 GMT</pubDate>
+    <pubDate>Thu, 13 Aug 2026 15:51:55 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>水煮鱼的济州岛旅行后日记：杂谈</title>
+      <link>https://loveapple.space/blog/Jeju-general/</link>
+      <guid>https://loveapple.space/blog/Jeju-general/</guid>
+      <pubDate>Thu, 13 Aug 2026 15:51:06 GMT</pubDate>
+      
+      <description>这篇博客是作者济州岛旅行日记的补充杂谈，从交通卡、便利店密度、支付方式、公交系统、建筑风貌、物价、语言环境等多个生活细节出发，分享了对济州岛的观察与感受。文章结构松散随性，更像是对旅行中琐碎印象的整理与回味，为四篇正式日记之外增添了更多烟火气的补充。</description>
+      
+      
+      
+      
+      <category domain="https://loveapple.space/blog/categories/%E7%89%B2%E6%B4%BB/">牲活</category>
+      
+      
+      <category domain="https://loveapple.space/blog/tags/%E6%97%85%E8%A1%8C/">旅行</category>
+      
+      <category domain="https://loveapple.space/blog/tags/%E6%B5%8E%E5%B7%9E%E5%B2%9B/">济州岛</category>
+      
+      
+      <comments>https://loveapple.space/blog/Jeju-general/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>linuxqq输入法问题第二弹</title>
