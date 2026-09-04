@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://loveapple.space/QSL-LOG/log.json</loc>
+    
+    <lastmod>2026-09-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://loveapple.space/trime-melt-eng/</loc>
     
     <lastmod>2026-09-04</lastmod>
@@ -68,15 +77,6 @@
     <loc>https://loveapple.space/itxia-and-me/</loc>
     
     <lastmod>2026-08-03</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://loveapple.space/QSL-LOG/log.json</loc>
-    
-    <lastmod>2026-07-17</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
