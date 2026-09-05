@@ -6,7 +6,7 @@
   <link href="https://loveapple.space/atom.xml" rel="self"/>
   
   <link href="https://loveapple.space/"/>
-  <updated>2026-09-04T10:06:59.326Z</updated>
+  <updated>2026-09-05T11:51:52.930Z</updated>
   <id>https://loveapple.space/</id>
   
   <author>
@@ -21,13 +21,10 @@
     <link href="https://loveapple.space/trime-melt-eng/"/>
     <id>https://loveapple.space/trime-melt-eng/</id>
     <published>2026-09-04T09:52:18.000Z</published>
-    <updated>2026-09-04T10:06:59.326Z</updated>
+    <updated>2026-09-05T11:51:52.930Z</updated>
     
     
-      
-      
-    <summary type="html">&lt;p&gt;我在电脑上使用&lt;code&gt;Rime&lt;/code&gt;+&lt;code&gt;Double_Pinyin_Flypy&lt;/code&gt;的时候，小鹤双拼的方案本来就给我设置好了很多便利设置，原生就支持了打字的时候混拼融合英语与emoji。但是在我安卓手机上的Trime输入法中，由于手机的键位和电</summary>
-      
+    <summary type="html">这篇博客记录了作者在安卓版Rime（Trime）输入法中配置中英混拼的过程。通过参考电脑端小鹤双拼方案，在自定义配置文件中挂载英文翻译器（melt_eng）并导入相关词库，解决了原有方案无法混输英文的问题，实现了流畅的中英文混合输入体验。</summary>
     
     
     
