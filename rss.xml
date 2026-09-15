@@ -198,9 +198,9 @@
       
       <category domain="https://loveapple.space/blog/tags/MCU/">MCU</category>
       
-      <category domain="https://loveapple.space/blog/tags/%E5%B5%8C%E5%85%A5%E5%BC%8F%E5%BC%80%E5%8F%91/">嵌入式开发</category>
-      
       <category domain="https://loveapple.space/blog/tags/STM32/">STM32</category>
+      
+      <category domain="https://loveapple.space/blog/tags/%E5%B5%8C%E5%85%A5%E5%BC%8F%E5%BC%80%E5%8F%91/">嵌入式开发</category>
       
       
       <comments>https://loveapple.space/blog/stm-cubemx-c8t6-ld-error/#disqus_thread</comments>

@@ -187,9 +187,9 @@
     
     <category term="MCU" scheme="https://loveapple.space/blog/tags/MCU/"/>
     
-    <category term="嵌入式开发" scheme="https://loveapple.space/blog/tags/%E5%B5%8C%E5%85%A5%E5%BC%8F%E5%BC%80%E5%8F%91/"/>
-    
     <category term="STM32" scheme="https://loveapple.space/blog/tags/STM32/"/>
+    
+    <category term="嵌入式开发" scheme="https://loveapple.space/blog/tags/%E5%B5%8C%E5%85%A5%E5%BC%8F%E5%BC%80%E5%8F%91/"/>
     
   </entry>
   
