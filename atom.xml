@@ -109,9 +109,9 @@
     <category term="寄术" scheme="https://loveapple.space/blog/categories/%E5%AF%84%E6%9C%AF/"/>
     
     
-    <category term="Arch Linux" scheme="https://loveapple.space/blog/tags/Arch-Linux/"/>
-    
     <category term="Linux" scheme="https://loveapple.space/blog/tags/Linux/"/>
+    
+    <category term="Arch Linux" scheme="https://loveapple.space/blog/tags/Arch-Linux/"/>
     
     <category term="linuxqq" scheme="https://loveapple.space/blog/tags/linuxqq/"/>
     
@@ -187,9 +187,9 @@
     
     <category term="MCU" scheme="https://loveapple.space/blog/tags/MCU/"/>
     
-    <category term="STM32" scheme="https://loveapple.space/blog/tags/STM32/"/>
-    
     <category term="嵌入式开发" scheme="https://loveapple.space/blog/tags/%E5%B5%8C%E5%85%A5%E5%BC%8F%E5%BC%80%E5%8F%91/"/>
+    
+    <category term="STM32" scheme="https://loveapple.space/blog/tags/STM32/"/>
     
   </entry>
   
@@ -328,9 +328,9 @@
     <category term="寄术" scheme="https://loveapple.space/blog/categories/%E5%AF%84%E6%9C%AF/"/>
     
     
-    <category term="Arch Linux" scheme="https://loveapple.space/blog/tags/Arch-Linux/"/>
-    
     <category term="Linux" scheme="https://loveapple.space/blog/tags/Linux/"/>
+    
+    <category term="Arch Linux" scheme="https://loveapple.space/blog/tags/Arch-Linux/"/>
     
     <category term="linuxqq" scheme="https://loveapple.space/blog/tags/linuxqq/"/>
     
@@ -911,9 +911,9 @@
     <category term="寄术" scheme="https://loveapple.space/blog/categories/%E5%AF%84%E6%9C%AF/"/>
     
     
-    <category term="Arch Linux" scheme="https://loveapple.space/blog/tags/Arch-Linux/"/>
-    
     <category term="Linux" scheme="https://loveapple.space/blog/tags/Linux/"/>
+    
+    <category term="Arch Linux" scheme="https://loveapple.space/blog/tags/Arch-Linux/"/>
     
     <category term="镜像源" scheme="https://loveapple.space/blog/tags/%E9%95%9C%E5%83%8F%E6%BA%90/"/>
     
@@ -936,11 +936,11 @@
     <category term="寄术" scheme="https://loveapple.space/blog/categories/%E5%AF%84%E6%9C%AF/"/>
     
     
+    <category term="Linux" scheme="https://loveapple.space/blog/tags/Linux/"/>
+    
     <category term="安装系统" scheme="https://loveapple.space/blog/tags/%E5%AE%89%E8%A3%85%E7%B3%BB%E7%BB%9F/"/>
     
     <category term="Arch Linux" scheme="https://loveapple.space/blog/tags/Arch-Linux/"/>
-    
-    <category term="Linux" scheme="https://loveapple.space/blog/tags/Linux/"/>
     
   </entry>
   
