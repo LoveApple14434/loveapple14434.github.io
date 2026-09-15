@@ -6,7 +6,7 @@
   <link href="https://loveapple.space/blog/atom.xml" rel="self"/>
   
   <link href="https://loveapple.space/blog/"/>
-  <updated>2026-09-15T07:13:27.903Z</updated>
+  <updated>2026-09-15T08:46:55.847Z</updated>
   <id>https://loveapple.space/blog/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://loveapple.space/blog/trime-melt-eng/"/>
     <id>https://loveapple.space/blog/trime-melt-eng/</id>
     <published>2026-09-04T09:52:18.000Z</published>
-    <updated>2026-09-15T07:13:27.903Z</updated>
+    <updated>2026-09-15T08:46:55.847Z</updated>
     
     
     <summary type="html">这篇博客记录了作者在安卓版Rime（Trime）输入法中配置中英混拼的过程。通过参考电脑端小鹤双拼方案，在自定义配置文件中挂载英文翻译器（melt_eng）并导入相关词库，解决了原有方案无法混输英文的问题，实现了流畅的中英文混合输入体验。</summary>
@@ -109,9 +109,9 @@
     <category term="寄术" scheme="https://loveapple.space/blog/categories/%E5%AF%84%E6%9C%AF/"/>
     
     
-    <category term="Linux" scheme="https://loveapple.space/blog/tags/Linux/"/>
-    
     <category term="Arch Linux" scheme="https://loveapple.space/blog/tags/Arch-Linux/"/>
+    
+    <category term="Linux" scheme="https://loveapple.space/blog/tags/Linux/"/>
     
     <category term="linuxqq" scheme="https://loveapple.space/blog/tags/linuxqq/"/>
     
@@ -143,7 +143,7 @@
     <link href="https://loveapple.space/blog/congratulations-niko/"/>
     <id>https://loveapple.space/blog/congratulations-niko/</id>
     <published>2026-06-22T08:12:58.000Z</published>
-    <updated>2026-06-22T08:16:07.163Z</updated>
+    <updated>2026-09-15T08:49:09.098Z</updated>
     
     
     <summary type="html">恭喜Nikola &quot;Niko&quot; Kovač夺得属于他的第一个Major冠军！</summary>
@@ -234,7 +234,7 @@
     <link href="https://loveapple.space/blog/zhcn-charset-kbd-inputmthd/"/>
     <id>https://loveapple.space/blog/zhcn-charset-kbd-inputmthd/</id>
     <published>2026-04-06T08:36:26.000Z</published>
-    <updated>2026-04-06T08:38:34.909Z</updated>
+    <updated>2026-09-15T08:57:09.455Z</updated>
     
     
     <summary type="html">这篇博客系统梳理了中文在计算机世界中的技术演进历程。从字符集（ASCII、国标码、Unicode及“锟斤拷”等乱码梗）到中文键盘的发展，再到输入法（音码、形码、双拼、音形码）的对比，最后介绍了移动端的九宫格、全键盘与14键等布局。</summary>
@@ -328,9 +328,9 @@
     <category term="寄术" scheme="https://loveapple.space/blog/categories/%E5%AF%84%E6%9C%AF/"/>
     
     
-    <category term="Linux" scheme="https://loveapple.space/blog/tags/Linux/"/>
-    
     <category term="Arch Linux" scheme="https://loveapple.space/blog/tags/Arch-Linux/"/>
+    
+    <category term="Linux" scheme="https://loveapple.space/blog/tags/Linux/"/>
     
     <category term="linuxqq" scheme="https://loveapple.space/blog/tags/linuxqq/"/>
     
@@ -479,7 +479,7 @@
     <link href="https://loveapple.space/blog/Jeju-day-4/"/>
     <id>https://loveapple.space/blog/Jeju-day-4/</id>
     <published>2026-01-17T11:00:24.000Z</published>
-    <updated>2026-01-17T14:04:03.639Z</updated>
+    <updated>2026-09-15T08:55:46.711Z</updated>
     
     
     <summary type="html">这篇博客是济州岛旅行的第四天日记。上午作者挑战攀登韩国最高峰汉拿山，虽因大风预警未能登顶，但分享了首次登山的装备体验与沿途雪景。下午独自在济州市区进行了一次充满发现的“City Walk”，探访了算命馆、理发店，品尝了本地拌面，并参观了LG品牌店，最终以微信运动四万步结束了充实的旅程。</summary>
@@ -500,7 +500,7 @@
     <link href="https://loveapple.space/blog/Jeju-day-3/"/>
     <id>https://loveapple.space/blog/Jeju-day-3/</id>
     <published>2026-01-17T11:00:16.000Z</published>
-    <updated>2026-01-17T14:01:33.159Z</updated>
+    <updated>2026-09-15T08:55:49.193Z</updated>
     
     
     <summary type="html">这篇博客记录了济州岛旅行的第三天行程。作者游览了以花卉和精致造景为主的山茶花之丘，欣赏了西海岸挟才海水浴场的白色沙滩与清澈海水，并在涯月邑的沿海咖啡街观赏日落、享受悠闲时光。最后以一顿辛辣鲜美的明太鱼汤饭结束一天，日记中充满了对自然景色与慢节奏旅行的惬意感受。</summary>
@@ -521,7 +521,7 @@
     <link href="https://loveapple.space/blog/Jeju-day-2/"/>
     <id>https://loveapple.space/blog/Jeju-day-2/</id>
     <published>2026-01-13T13:39:14.000Z</published>
-    <updated>2026-01-17T12:47:36.005Z</updated>
+    <updated>2026-09-15T08:53:43.251Z</updated>
     
     
     <summary type="html">这篇博客记录了济州岛旅行的第二天行程。作者游览了西归浦市的柱状节理带地质奇观，徒步了风景优美的偶来小路路线7（包括海边栈道、Sammaebong峰及城市公园），并深入当地的每日偶来市场，品尝了炸菜卷、铁板鱿鱼和备受好评的黑猪肉泡菜卷等多种小吃，体验了自然风光与市井美食相结合的一天。</summary>
@@ -542,7 +542,7 @@
     <link href="https://loveapple.space/blog/Jeju-day-1/"/>
     <id>https://loveapple.space/blog/Jeju-day-1/</id>
     <published>2026-01-12T12:13:36.000Z</published>
-    <updated>2026-01-17T12:46:56.917Z</updated>
+    <updated>2026-09-15T08:52:59.742Z</updated>
     
     
     <summary type="html">这篇博客是作者济州岛旅行的首日游记，记录了紧凑的“特种兵”行程。一天内游玩了牛岛（骑电助力自行车环岛）、城山日出峰（徒步登顶）和涉地可支（海岸栈道）三个主要景点，并以一顿极具性价比的本地烤肉自助餐收尾。日记充满了对自然风光、人文体验和美食的生动描述，展现了充实而疲惫的第一天。</summary>
@@ -706,7 +706,7 @@
     <link href="https://loveapple.space/blog/dark-mode/"/>
     <id>https://loveapple.space/blog/dark-mode/</id>
     <published>2025-12-08T04:54:26.000Z</published>
-    <updated>2025-12-10T10:37:37.247Z</updated>
+    <updated>2026-09-15T08:49:36.153Z</updated>
     
     
     <summary type="html">一篇关于为Hexo博客Butterfly主题自定义页面开发黑暗模式适配的实战记录。文章以修复QSL页面在暗黑主题下显示异常为例，展示了如何通过添加CSS选择器快速实现样式切换，并简要剖析了Butterfly主题暗黑模式的实现原理，体现了典型的“Vibe Coding”解决问题风格。</summary>
@@ -750,7 +750,7 @@
     <link href="https://loveapple.space/blog/clash-configuration/"/>
     <id>https://loveapple.space/blog/clash-configuration/</id>
     <published>2025-11-27T09:26:50.000Z</published>
-    <updated>2026-02-09T05:09:28.077Z</updated>
+    <updated>2026-09-15T08:48:16.760Z</updated>
     
     
     <summary type="html">一篇对AI编程助手能力的个人反思。作者通过亲身经历——尝试用Deepseek协助完成一个不熟悉的Clash配置文件定制任务，最终却陷入与AI的反复“搏斗”——论证了“AI几乎不能帮你完成你并不会的任务”这一暴论，并分享了过程中的挫折与感悟。</summary>
@@ -859,7 +859,7 @@
     <link href="https://loveapple.space/blog/how2b-screwer/"/>
     <id>https://loveapple.space/blog/how2b-screwer/</id>
     <published>2025-10-09T06:57:21.000Z</published>
-    <updated>2025-12-10T10:38:39.908Z</updated>
+    <updated>2026-09-15T08:51:50.001Z</updated>
     
     
     <summary type="html">一篇来自电脑维修志愿者的经验分享，详细总结了笔记本电脑维修中会遇到的各种螺丝类型、其特性及安装注意事项，并提供了当遇到难拧或已拧花的螺丝时的实用处理技巧。</summary>
@@ -911,9 +911,9 @@
     <category term="寄术" scheme="https://loveapple.space/blog/categories/%E5%AF%84%E6%9C%AF/"/>
     
     
-    <category term="Linux" scheme="https://loveapple.space/blog/tags/Linux/"/>
-    
     <category term="Arch Linux" scheme="https://loveapple.space/blog/tags/Arch-Linux/"/>
+    
+    <category term="Linux" scheme="https://loveapple.space/blog/tags/Linux/"/>
     
     <category term="镜像源" scheme="https://loveapple.space/blog/tags/%E9%95%9C%E5%83%8F%E6%BA%90/"/>
     
@@ -926,7 +926,7 @@
     <link href="https://loveapple.space/blog/install-arch/"/>
     <id>https://loveapple.space/blog/install-arch/</id>
     <published>2025-09-24T10:49:59.000Z</published>
-    <updated>2025-12-10T10:38:13.666Z</updated>
+    <updated>2026-09-15T08:55:48.331Z</updated>
     
     
     <summary type="html">一篇记录个人安装 Arch Linux 经历的博客，重点分享了在校园网环境下解决联网问题以及配置引导程序时的曲折过程，并最终成功从零搭建起一个完整的 Arch 系统。</summary>
@@ -936,11 +936,11 @@
     <category term="寄术" scheme="https://loveapple.space/blog/categories/%E5%AF%84%E6%9C%AF/"/>
     
     
-    <category term="Linux" scheme="https://loveapple.space/blog/tags/Linux/"/>
-    
     <category term="安装系统" scheme="https://loveapple.space/blog/tags/%E5%AE%89%E8%A3%85%E7%B3%BB%E7%BB%9F/"/>
     
     <category term="Arch Linux" scheme="https://loveapple.space/blog/tags/Arch-Linux/"/>
+    
+    <category term="Linux" scheme="https://loveapple.space/blog/tags/Linux/"/>
     
   </entry>
   
@@ -982,11 +982,11 @@
     <category term="寄术" scheme="https://loveapple.space/blog/categories/%E5%AF%84%E6%9C%AF/"/>
     
     
-    <category term="开源项目" scheme="https://loveapple.space/blog/tags/%E5%BC%80%E6%BA%90%E9%A1%B9%E7%9B%AE/"/>
-    
     <category term="EE" scheme="https://loveapple.space/blog/tags/EE/"/>
     
     <category term="嵌入式开发" scheme="https://loveapple.space/blog/tags/%E5%B5%8C%E5%85%A5%E5%BC%8F%E5%BC%80%E5%8F%91/"/>
+    
+    <category term="开源项目" scheme="https://loveapple.space/blog/tags/%E5%BC%80%E6%BA%90%E9%A1%B9%E7%9B%AE/"/>
     
   </entry>
   
@@ -995,7 +995,7 @@
     <link href="https://loveapple.space/blog/GitAway/"/>
     <id>https://loveapple.space/blog/GitAway/</id>
     <published>2025-09-10T10:48:13.000Z</published>
-    <updated>2025-12-10T10:37:57.272Z</updated>
+    <updated>2026-09-15T08:50:42.973Z</updated>
     
     
     <summary type="html">在本地机上写代码，远程部署到服务器：你的下一个git服务器何必是GitHub？</summary>
@@ -1026,9 +1026,9 @@
     <category term="寄术" scheme="https://loveapple.space/blog/categories/%E5%AF%84%E6%9C%AF/"/>
     
     
-    <category term="开源项目" scheme="https://loveapple.space/blog/tags/%E5%BC%80%E6%BA%90%E9%A1%B9%E7%9B%AE/"/>
-    
     <category term="服务器" scheme="https://loveapple.space/blog/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
+    
+    <category term="开源项目" scheme="https://loveapple.space/blog/tags/%E5%BC%80%E6%BA%90%E9%A1%B9%E7%9B%AE/"/>
     
     <category term="网站建设" scheme="https://loveapple.space/blog/tags/%E7%BD%91%E7%AB%99%E5%BB%BA%E8%AE%BE/"/>
     
@@ -1060,7 +1060,7 @@
     <link href="https://loveapple.space/blog/Draw-Board-README/"/>
     <id>https://loveapple.space/blog/Draw-Board-README/</id>
     <published>2025-08-14T13:31:24.000Z</published>
-    <updated>2025-12-10T10:37:48.944Z</updated>
+    <updated>2026-09-15T08:50:09.490Z</updated>
     
     
     <summary type="html">一个画板小工具的README文档。</summary>
@@ -1125,7 +1125,7 @@
     <link href="https://loveapple.space/blog/HelloESP32/"/>
     <id>https://loveapple.space/blog/HelloESP32/</id>
     <published>2025-08-07T10:05:41.000Z</published>
-    <updated>2025-12-10T10:38:02.891Z</updated>
+    <updated>2026-09-15T08:51:19.731Z</updated>
     
     
     <summary type="html">初次使用ESP32：神奇小玩具</summary>
@@ -1146,7 +1146,7 @@
     <link href="https://loveapple.space/blog/DDS_RFSync/"/>
     <id>https://loveapple.space/blog/DDS_RFSync/</id>
     <published>2025-07-19T05:09:00.000Z</published>
-    <updated>2025-12-10T10:37:43.654Z</updated>
+    <updated>2026-09-15T08:49:52.037Z</updated>
     
     
     <summary type="html">利用DDS模块，实现高频信号同步，相位可调。</summary>
