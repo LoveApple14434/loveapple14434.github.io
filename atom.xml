@@ -429,7 +429,7 @@
     <link href="https://loveapple.space/blog/N5105-3/"/>
     <id>https://loveapple.space/blog/N5105-3/</id>
     <published>2026-01-26T15:56:18.000Z</published>
-    <updated>2026-02-05T17:10:47.403Z</updated>
+    <updated>2026-09-15T13:33:49.568Z</updated>
     
     
     <summary type="html">这篇博客详细对比了三种实现内网服务器公网访问的方案：Zerotier直连、Zerotier配合云服务器中转以及Cloudflare Tunnel。作者基于iStoreOS系统搭建了多项服务，并从配置难度、带宽表现和适用场景等方面分析了每种方法的优缺点，并通过实测数据为读者提供了直观的参考，帮助你根据自身网络条件选择合适的内网穿透方案。</summary>
@@ -982,11 +982,11 @@
     <category term="寄术" scheme="https://loveapple.space/blog/categories/%E5%AF%84%E6%9C%AF/"/>
     
     
+    <category term="开源项目" scheme="https://loveapple.space/blog/tags/%E5%BC%80%E6%BA%90%E9%A1%B9%E7%9B%AE/"/>
+    
     <category term="EE" scheme="https://loveapple.space/blog/tags/EE/"/>
     
     <category term="嵌入式开发" scheme="https://loveapple.space/blog/tags/%E5%B5%8C%E5%85%A5%E5%BC%8F%E5%BC%80%E5%8F%91/"/>
-    
-    <category term="开源项目" scheme="https://loveapple.space/blog/tags/%E5%BC%80%E6%BA%90%E9%A1%B9%E7%9B%AE/"/>
     
   </entry>
   
@@ -1026,9 +1026,9 @@
     <category term="寄术" scheme="https://loveapple.space/blog/categories/%E5%AF%84%E6%9C%AF/"/>
     
     
-    <category term="服务器" scheme="https://loveapple.space/blog/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
-    
     <category term="开源项目" scheme="https://loveapple.space/blog/tags/%E5%BC%80%E6%BA%90%E9%A1%B9%E7%9B%AE/"/>
+    
+    <category term="服务器" scheme="https://loveapple.space/blog/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
     
     <category term="网站建设" scheme="https://loveapple.space/blog/tags/%E7%BD%91%E7%AB%99%E5%BB%BA%E8%AE%BE/"/>
     
