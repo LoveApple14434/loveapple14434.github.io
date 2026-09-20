@@ -9,8 +9,31 @@
     <atom:link href="https://loveapple.space/blog/rss.xml" rel="self" type="application/rss+xml"/>
     
     <description>开源技术实践者 &amp; 射频电子新人 | LoveApple14434 的个人领地 | 一条爱苹果的水煮鱼。深度分享射频/微波、业余无线电硬核技术笔记，开源项目技术实践以及博客网站建设经验，IT侠笔记本维修随录，兼谈NJU校园趣闻与水煮鱼的生活思考。探索技术前沿，记录成长点滴。</description>
-    <pubDate>Tue, 15 Sep 2026 08:46:55 GMT</pubDate>
+    <pubDate>Sun, 20 Sep 2026 15:38:37 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>水煮鱼的保研回忆录</title>
+      <link>https://loveapple.space/blog/postgraduate-recommendation/</link>
+      <guid>https://loveapple.space/blog/postgraduate-recommendation/</guid>
+      <pubDate>Sun, 20 Sep 2026 15:37:52 GMT</pubDate>
+      
+      <description>这篇博客是作者保研经历的完整回忆录。以流水账形式记录了从选择导师，到参加浙大、南苏集电、成电、东南、复旦及南大等夏令营与预推免的全过程，最终放弃成电等offer，选择留在南京大学电子学院。文章真实细腻，展现了保研路上的选择、焦虑与成长。</description>
+      
+      
+      
+      
+      <category domain="https://loveapple.space/blog/categories/%E7%89%B2%E6%B4%BB/">牲活</category>
+      
+      
+      <category domain="https://loveapple.space/blog/tags/%E4%BF%9D%E7%A0%94/">保研</category>
+      
+      <category domain="https://loveapple.space/blog/tags/%E5%9B%9E%E5%BF%86%E5%BD%95/">回忆录</category>
+      
+      
+      <comments>https://loveapple.space/blog/postgraduate-recommendation/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>在Rime输入法上启用中英混拼：以Trime为例</title>

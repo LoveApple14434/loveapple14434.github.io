@@ -6,7 +6,7 @@
   <link href="https://loveapple.space/blog/atom.xml" rel="self"/>
   
   <link href="https://loveapple.space/blog/"/>
-  <updated>2026-09-15T08:46:55.847Z</updated>
+  <updated>2026-09-20T15:38:37.403Z</updated>
   <id>https://loveapple.space/blog/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>水煮鱼的保研回忆录</title>
+    <link href="https://loveapple.space/blog/postgraduate-recommendation/"/>
+    <id>https://loveapple.space/blog/postgraduate-recommendation/</id>
+    <published>2026-09-20T15:37:52.000Z</published>
+    <updated>2026-09-20T15:38:37.403Z</updated>
+    
+    
+    <summary type="html">这篇博客是作者保研经历的完整回忆录。以流水账形式记录了从选择导师，到参加浙大、南苏集电、成电、东南、复旦及南大等夏令营与预推免的全过程，最终放弃成电等offer，选择留在南京大学电子学院。文章真实细腻，展现了保研路上的选择、焦虑与成长。</summary>
+    
+    
+    
+    <category term="牲活" scheme="https://loveapple.space/blog/categories/%E7%89%B2%E6%B4%BB/"/>
+    
+    
+    <category term="保研" scheme="https://loveapple.space/blog/tags/%E4%BF%9D%E7%A0%94/"/>
+    
+    <category term="回忆录" scheme="https://loveapple.space/blog/tags/%E5%9B%9E%E5%BF%86%E5%BD%95/"/>
+    
+  </entry>
   
   <entry>
     <title>在Rime输入法上启用中英混拼：以Trime为例</title>
