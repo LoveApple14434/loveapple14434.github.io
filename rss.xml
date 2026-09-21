@@ -9,8 +9,31 @@
     <atom:link href="https://loveapple.space/blog/rss.xml" rel="self" type="application/rss+xml"/>
     
     <description>开源技术实践者 &amp; 射频电子新人 | LoveApple14434 的个人领地 | 一条爱苹果的水煮鱼。深度分享射频/微波、业余无线电硬核技术笔记，开源项目技术实践以及博客网站建设经验，IT侠笔记本维修随录，兼谈NJU校园趣闻与水煮鱼的生活思考。探索技术前沿，记录成长点滴。</description>
-    <pubDate>Sun, 20 Sep 2026 15:38:37 GMT</pubDate>
+    <pubDate>Mon, 21 Sep 2026 08:43:41 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>南京大学邮箱第三方接入注意事项</title>
+      <link>https://loveapple.space/blog/nju-mail-imap/</link>
+      <guid>https://loveapple.space/blog/nju-mail-imap/</guid>
+      <pubDate>Mon, 21 Sep 2026 08:35:51 GMT</pubDate>
+      
+      <description>这篇博客提醒在第三方邮箱客户端配置南大邮箱时需要注意修改默认检测域名的问题。</description>
+      
+      
+      
+      
+      <category domain="https://loveapple.space/blog/categories/%E5%AF%84%E6%9C%AF/">寄术</category>
+      
+      
+      <category domain="https://loveapple.space/blog/tags/%E7%94%B5%E5%AD%90%E9%82%AE%E4%BB%B6/">电子邮件</category>
+      
+      <category domain="https://loveapple.space/blog/tags/IMAP/">IMAP</category>
+      
+      
+      <comments>https://loveapple.space/blog/nju-mail-imap/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>水煮鱼的保研回忆录</title>

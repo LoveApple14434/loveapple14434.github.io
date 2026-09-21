@@ -6,7 +6,7 @@
   <link href="https://loveapple.space/blog/atom.xml" rel="self"/>
   
   <link href="https://loveapple.space/blog/"/>
-  <updated>2026-09-20T15:38:37.403Z</updated>
+  <updated>2026-09-21T08:43:41.017Z</updated>
   <id>https://loveapple.space/blog/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>南京大学邮箱第三方接入注意事项</title>
+    <link href="https://loveapple.space/blog/nju-mail-imap/"/>
+    <id>https://loveapple.space/blog/nju-mail-imap/</id>
+    <published>2026-09-21T08:35:51.000Z</published>
+    <updated>2026-09-21T08:43:41.017Z</updated>
+    
+    
+    <summary type="html">这篇博客提醒在第三方邮箱客户端配置南大邮箱时需要注意修改默认检测域名的问题。</summary>
+    
+    
+    
+    <category term="寄术" scheme="https://loveapple.space/blog/categories/%E5%AF%84%E6%9C%AF/"/>
+    
+    
+    <category term="电子邮件" scheme="https://loveapple.space/blog/tags/%E7%94%B5%E5%AD%90%E9%82%AE%E4%BB%B6/"/>
+    
+    <category term="IMAP" scheme="https://loveapple.space/blog/tags/IMAP/"/>
+    
+  </entry>
   
   <entry>
     <title>水煮鱼的保研回忆录</title>
