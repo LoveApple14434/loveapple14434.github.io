@@ -6,7 +6,7 @@
   <link href="https://loveapple.space/blog/atom.xml" rel="self"/>
   
   <link href="https://loveapple.space/blog/"/>
-  <updated>2026-09-21T08:43:41.017Z</updated>
+  <updated>2026-09-28T16:20:47.828Z</updated>
   <id>https://loveapple.space/blog/</id>
   
   <author>
@@ -15,6 +15,48 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>FMCW雷达入门笔记（一）</title>
+    <link href="https://loveapple.space/blog/fmcw-radar-1/"/>
+    <id>https://loveapple.space/blog/fmcw-radar-1/</id>
+    <published>2026-09-28T16:19:07.000Z</published>
+    <updated>2026-09-28T16:20:47.828Z</updated>
+    
+    
+    <summary type="html">系统介绍了调频连续波雷达的基本原理与关键参数。从线性调频波与回波延迟出发，引出去斜技术将延迟检测转化为频率差检测，并推导了距离分辨率、最大距离等公式与限制条件，最后简述了测速方法与多普勒效应的影响。</summary>
+    
+    
+    
+    <category term="寄术" scheme="https://loveapple.space/blog/categories/%E5%AF%84%E6%9C%AF/"/>
+    
+    
+    <category term="EE" scheme="https://loveapple.space/blog/tags/EE/"/>
+    
+    <category term="FMCW雷达" scheme="https://loveapple.space/blog/tags/FMCW%E9%9B%B7%E8%BE%BE/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>保研博弈论：套磁、提前进组、OQ与“鸽”</title>
+    <link href="https://loveapple.space/blog/postgraduate-game/"/>
+    <id>https://loveapple.space/blog/postgraduate-game/</id>
+    <published>2026-09-28T00:09:03.000Z</published>
+    <updated>2026-09-28T00:12:55.024Z</updated>
+    
+    
+    <summary type="html">转载一位同学的文章。</summary>
+    
+    
+    
+    <category term="牲活" scheme="https://loveapple.space/blog/categories/%E7%89%B2%E6%B4%BB/"/>
+    
+    
+    <category term="保研" scheme="https://loveapple.space/blog/tags/%E4%BF%9D%E7%A0%94/"/>
+    
+    <category term="回忆录" scheme="https://loveapple.space/blog/tags/%E5%9B%9E%E5%BF%86%E5%BD%95/"/>
+    
+  </entry>
   
   <entry>
     <title>南京大学邮箱第三方接入注意事项</title>
