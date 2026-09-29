@@ -6,7 +6,7 @@
   <link href="https://loveapple.space/blog/atom.xml" rel="self"/>
   
   <link href="https://loveapple.space/blog/"/>
-  <updated>2026-09-28T16:20:47.828Z</updated>
+  <updated>2026-09-29T05:02:56.626Z</updated>
   <id>https://loveapple.space/blog/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://loveapple.space/blog/fmcw-radar-1/"/>
     <id>https://loveapple.space/blog/fmcw-radar-1/</id>
     <published>2026-09-28T16:19:07.000Z</published>
-    <updated>2026-09-28T16:20:47.828Z</updated>
+    <updated>2026-09-29T05:02:56.626Z</updated>
     
     
     <summary type="html">系统介绍了调频连续波雷达的基本原理与关键参数。从线性调频波与回波延迟出发，引出去斜技术将延迟检测转化为频率差检测，并推导了距离分辨率、最大距离等公式与限制条件，最后简述了测速方法与多普勒效应的影响。</summary>
