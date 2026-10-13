@@ -6,7 +6,7 @@
   <link href="https://loveapple.space/blog/atom.xml" rel="self"/>
   
   <link href="https://loveapple.space/blog/"/>
-  <updated>2026-09-29T05:02:56.626Z</updated>
+  <updated>2026-10-13T14:49:35.375Z</updated>
   <id>https://loveapple.space/blog/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>偶极子天线设计仿真实验</title>
+    <link href="https://loveapple.space/blog/dipole-ante-experiment/"/>
+    <id>https://loveapple.space/blog/dipole-ante-experiment/</id>
+    <published>2026-10-13T14:41:48.000Z</published>
+    <updated>2026-10-13T14:49:35.375Z</updated>
+    
+    
+    <summary type="html">想写点但不知道写啥了，把实验报告贴上来水一篇。</summary>
+    
+    
+    
+    <category term="寄术" scheme="https://loveapple.space/blog/categories/%E5%AF%84%E6%9C%AF/"/>
+    
+    
+    <category term="EE" scheme="https://loveapple.space/blog/tags/EE/"/>
+    
+    <category term="天线" scheme="https://loveapple.space/blog/tags/%E5%A4%A9%E7%BA%BF/"/>
+    
+  </entry>
   
   <entry>
     <title>FMCW雷达入门笔记（一）</title>
@@ -42,7 +63,7 @@
     <link href="https://loveapple.space/blog/postgraduate-game/"/>
     <id>https://loveapple.space/blog/postgraduate-game/</id>
     <published>2026-09-28T00:09:03.000Z</published>
-    <updated>2026-09-28T00:12:55.024Z</updated>
+    <updated>2026-09-28T00:14:37.430Z</updated>
     
     
     <summary type="html">转载一位同学的文章。</summary>
@@ -1066,9 +1087,9 @@
     <category term="寄术" scheme="https://loveapple.space/blog/categories/%E5%AF%84%E6%9C%AF/"/>
     
     
-    <category term="开源项目" scheme="https://loveapple.space/blog/tags/%E5%BC%80%E6%BA%90%E9%A1%B9%E7%9B%AE/"/>
-    
     <category term="EE" scheme="https://loveapple.space/blog/tags/EE/"/>
+    
+    <category term="开源项目" scheme="https://loveapple.space/blog/tags/%E5%BC%80%E6%BA%90%E9%A1%B9%E7%9B%AE/"/>
     
     <category term="嵌入式开发" scheme="https://loveapple.space/blog/tags/%E5%B5%8C%E5%85%A5%E5%BC%8F%E5%BC%80%E5%8F%91/"/>
     
@@ -1110,9 +1131,9 @@
     <category term="寄术" scheme="https://loveapple.space/blog/categories/%E5%AF%84%E6%9C%AF/"/>
     
     
-    <category term="开源项目" scheme="https://loveapple.space/blog/tags/%E5%BC%80%E6%BA%90%E9%A1%B9%E7%9B%AE/"/>
-    
     <category term="服务器" scheme="https://loveapple.space/blog/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
+    
+    <category term="开源项目" scheme="https://loveapple.space/blog/tags/%E5%BC%80%E6%BA%90%E9%A1%B9%E7%9B%AE/"/>
     
     <category term="网站建设" scheme="https://loveapple.space/blog/tags/%E7%BD%91%E7%AB%99%E5%BB%BA%E8%AE%BE/"/>
     
