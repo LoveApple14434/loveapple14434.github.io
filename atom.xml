@@ -6,7 +6,7 @@
   <link href="https://loveapple.space/blog/atom.xml" rel="self"/>
   
   <link href="https://loveapple.space/blog/"/>
-  <updated>2026-10-13T14:49:35.375Z</updated>
+  <updated>2026-10-19T13:39:18.353Z</updated>
   <id>https://loveapple.space/blog/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>论文笔记（一）：幅相编程超表面</title>
+    <link href="https://loveapple.space/blog/article-note-1/"/>
+    <id>https://loveapple.space/blog/article-note-1/</id>
+    <published>2026-10-19T13:06:01.000Z</published>
+    <updated>2026-10-19T13:39:18.353Z</updated>
+    
+    
+    <summary type="html">这篇读书笔记介绍了东南大学崔铁军院士组关于幅相编程超表面的研究工作。文章梳理了超表面的三层PCB结构设计——顶层天线接收、中层VGA调幅、底层PIN管调相，重点分析了通过对称路径实现幅相解耦的机制，以及利用FPGA时间编码在+1阶谐波上实现3-bit相位控制的原理，并概述了波束方向控制的三种实验示例。</summary>
+    
+    
+    
+    <category term="寄术" scheme="https://loveapple.space/blog/categories/%E5%AF%84%E6%9C%AF/"/>
+    
+    
+    <category term="EE" scheme="https://loveapple.space/blog/tags/EE/"/>
+    
+    <category term="论文笔记" scheme="https://loveapple.space/blog/tags/%E8%AE%BA%E6%96%87%E7%AC%94%E8%AE%B0/"/>
+    
+  </entry>
   
   <entry>
     <title>偶极子天线设计仿真实验</title>
