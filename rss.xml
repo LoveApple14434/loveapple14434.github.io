@@ -9,8 +9,31 @@
     <atom:link href="https://loveapple.space/blog/rss.xml" rel="self" type="application/rss+xml"/>
     
     <description>开源技术实践者 &amp; 射频电子新人 | LoveApple14434 的个人领地 | 一条爱苹果的水煮鱼。深度分享射频/微波、业余无线电硬核技术笔记，开源项目技术实践以及博客网站建设经验，IT侠笔记本维修随录，兼谈NJU校园趣闻与水煮鱼的生活思考。探索技术前沿，记录成长点滴。</description>
-    <pubDate>Mon, 19 Oct 2026 13:46:05 GMT</pubDate>
+    <pubDate>Wed, 21 Oct 2026 09:44:53 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>SDR-Z103 在 Arch Linux 下的安装与调试总结</title>
+      <link>https://loveapple.space/blog/SDR-Z103-GNURadio/</link>
+      <guid>https://loveapple.space/blog/SDR-Z103-GNURadio/</guid>
+      <pubDate>Wed, 21 Oct 2026 09:44:04 GMT</pubDate>
+      
+      <description>这篇博客记录了在Arch Linux下安装与调试SDR-Z103（兼容PlutoSDR）软件无线电开发板的过程。从Avahi服务、IIO上下文到USB网络接口逐一排查，最终绕过网络层，通过USB后端直连成功，并整理了GNU Radio环境下的关键配置参数，为同类兼容模块的调试提供了实用参考。</description>
+      
+      
+      
+      
+      <category domain="https://loveapple.space/blog/categories/%E5%AF%84%E6%9C%AF/">寄术</category>
+      
+      
+      <category domain="https://loveapple.space/blog/tags/EE/">EE</category>
+      
+      <category domain="https://loveapple.space/blog/tags/SDR/">SDR</category>
+      
+      
+      <comments>https://loveapple.space/blog/SDR-Z103-GNURadio/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>论文笔记（一）：幅相编程超表面</title>

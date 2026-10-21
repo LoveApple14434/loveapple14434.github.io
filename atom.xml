@@ -6,7 +6,7 @@
   <link href="https://loveapple.space/blog/atom.xml" rel="self"/>
   
   <link href="https://loveapple.space/blog/"/>
-  <updated>2026-10-19T13:46:05.782Z</updated>
+  <updated>2026-10-21T09:44:53.600Z</updated>
   <id>https://loveapple.space/blog/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>SDR-Z103 在 Arch Linux 下的安装与调试总结</title>
+    <link href="https://loveapple.space/blog/SDR-Z103-GNURadio/"/>
+    <id>https://loveapple.space/blog/SDR-Z103-GNURadio/</id>
+    <published>2026-10-21T09:44:04.000Z</published>
+    <updated>2026-10-21T09:44:53.600Z</updated>
+    
+    
+    <summary type="html">这篇博客记录了在Arch Linux下安装与调试SDR-Z103（兼容PlutoSDR）软件无线电开发板的过程。从Avahi服务、IIO上下文到USB网络接口逐一排查，最终绕过网络层，通过USB后端直连成功，并整理了GNU Radio环境下的关键配置参数，为同类兼容模块的调试提供了实用参考。</summary>
+    
+    
+    
+    <category term="寄术" scheme="https://loveapple.space/blog/categories/%E5%AF%84%E6%9C%AF/"/>
+    
+    
+    <category term="EE" scheme="https://loveapple.space/blog/tags/EE/"/>
+    
+    <category term="SDR" scheme="https://loveapple.space/blog/tags/SDR/"/>
+    
+  </entry>
   
   <entry>
     <title>论文笔记（一）：幅相编程超表面</title>
