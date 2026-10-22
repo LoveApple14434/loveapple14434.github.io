@@ -1,12 +1,10 @@
+Sitemap: https://loveapple.space/sitemap.xml
+Sitemap: https://loveapple.space/baidusitemap.xml
+
 User-agent: *
-
 Allow: /
-
 Disallow: /js/
 Disallow: /css/
 Disallow: /tags/
 Disallow: /categories/
 Disallow: /archives/
-
-Sitemap: https://loveapple.space/sitemap.xml
-Sitemap: https://loveapple.space/baidusitemap.xml

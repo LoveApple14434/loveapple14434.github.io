@@ -1,1335 +1,891 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>LoveApple14434的主页</title>
-  
-  
-  <link href="https://loveapple.space/blog/atom.xml" rel="self"/>
-  
-  <link href="https://loveapple.space/blog/"/>
-  <updated>2026-10-21T09:44:53.600Z</updated>
-  <id>https://loveapple.space/blog/</id>
-  
   <author>
     <name>LoveApple14434</name>
-    
   </author>
-  
   <generator uri="https://hexo.io/">Hexo</generator>
-  
+  <id>https://loveapple.space/blog/</id>
+  <link href="https://loveapple.space/blog/" rel="alternate"/>
+  <link href="https://loveapple.space/blog/atom.xml" rel="self"/>
+  <rights>All rights reserved 2026, LoveApple14434</rights>
+  <subtitle>
+    <![CDATA[开源技术实践者 & 射频电子新人 | LoveApple14434 的个人领地 | 一条爱苹果的水煮鱼。深度分享射频/微波、业余无线电硬核技术笔记，开源项目技术实践以及博客网站建设经验，IT侠笔记本维修随录，兼谈NJU校园趣闻与水煮鱼的生活思考。探索技术前沿，记录成长点滴。]]>
+  </subtitle>
+  <title>LoveApple14434的主页</title>
+  <updated>2026-10-21T09:44:53.600Z</updated>
   <entry>
-    <title>SDR-Z103 在 Arch Linux 下的安装与调试总结</title>
-    <link href="https://loveapple.space/blog/SDR-Z103-GNURadio/"/>
-    <id>https://loveapple.space/blog/SDR-Z103-GNURadio/</id>
-    <published>2026-10-21T09:44:04.000Z</published>
-    <updated>2026-10-21T09:44:53.600Z</updated>
-    
-    
-    <summary type="html">这篇博客记录了在Arch Linux下安装与调试SDR-Z103（兼容PlutoSDR）软件无线电开发板的过程。从Avahi服务、IIO上下文到USB网络接口逐一排查，最终绕过网络层，通过USB后端直连成功，并整理了GNU Radio环境下的关键配置参数，为同类兼容模块的调试提供了实用参考。</summary>
-    
-    
-    
+    <author>
+      <name>LoveApple14434</name>
+    </author>
     <category term="寄术" scheme="https://loveapple.space/blog/categories/%E5%AF%84%E6%9C%AF/"/>
-    
-    
     <category term="EE" scheme="https://loveapple.space/blog/tags/EE/"/>
-    
     <category term="SDR" scheme="https://loveapple.space/blog/tags/SDR/"/>
-    
+    <id>https://loveapple.space/blog/SDR-Z103-GNURadio/</id>
+    <link href="https://loveapple.space/blog/SDR-Z103-GNURadio/"/>
+    <published>2026-10-21T09:44:04.000Z</published>
+    <summary>这篇博客记录了在Arch Linux下安装与调试SDR-Z103（兼容PlutoSDR）软件无线电开发板的过程。从Avahi服务、IIO上下文到USB网络接口逐一排查，最终绕过网络层，通过USB后端直连成功，并整理了GNU Radio环境下的关键配置参数，为同类兼容模块的调试提供了实用参考。</summary>
+    <title>SDR-Z103 在 Arch Linux 下的安装与调试总结</title>
+    <updated>2026-10-21T09:44:53.600Z</updated>
   </entry>
-  
   <entry>
-    <title>论文笔记（一）：幅相编程超表面</title>
-    <link href="https://loveapple.space/blog/article-note-1/"/>
-    <id>https://loveapple.space/blog/article-note-1/</id>
-    <published>2026-10-19T13:06:01.000Z</published>
-    <updated>2026-10-19T13:46:05.782Z</updated>
-    
-    
-    <summary type="html">这篇读书笔记介绍了东南大学崔铁军院士组关于幅相编程超表面的研究工作。文章梳理了超表面的三层PCB结构设计——顶层天线接收、中层VGA调幅、底层PIN管调相，重点分析了通过对称路径实现幅相解耦的机制，以及利用FPGA时间编码在+1阶谐波上实现3-bit相位控制的原理，并概述了波束方向控制的三种实验示例。</summary>
-    
-    
-    
+    <author>
+      <name>LoveApple14434</name>
+    </author>
     <category term="寄术" scheme="https://loveapple.space/blog/categories/%E5%AF%84%E6%9C%AF/"/>
-    
-    
     <category term="EE" scheme="https://loveapple.space/blog/tags/EE/"/>
-    
     <category term="论文笔记" scheme="https://loveapple.space/blog/tags/%E8%AE%BA%E6%96%87%E7%AC%94%E8%AE%B0/"/>
-    
+    <id>https://loveapple.space/blog/article-note-1/</id>
+    <link href="https://loveapple.space/blog/article-note-1/"/>
+    <published>2026-10-19T13:06:01.000Z</published>
+    <summary>这篇读书笔记介绍了东南大学崔铁军院士组关于幅相编程超表面的研究工作。文章梳理了超表面的三层PCB结构设计——顶层天线接收、中层VGA调幅、底层PIN管调相，重点分析了通过对称路径实现幅相解耦的机制，以及利用FPGA时间编码在+1阶谐波上实现3-bit相位控制的原理，并概述了波束方向控制的三种实验示例。</summary>
+    <title>论文笔记（一）：幅相编程超表面</title>
+    <updated>2026-10-19T13:46:05.782Z</updated>
   </entry>
-  
   <entry>
-    <title>偶极子天线设计仿真实验</title>
-    <link href="https://loveapple.space/blog/dipole-ante-experiment/"/>
-    <id>https://loveapple.space/blog/dipole-ante-experiment/</id>
-    <published>2026-10-13T14:41:48.000Z</published>
-    <updated>2026-10-13T14:49:35.375Z</updated>
-    
-    
-    <summary type="html">想写点但不知道写啥了，把实验报告贴上来水一篇。</summary>
-    
-    
-    
+    <author>
+      <name>LoveApple14434</name>
+    </author>
     <category term="寄术" scheme="https://loveapple.space/blog/categories/%E5%AF%84%E6%9C%AF/"/>
-    
-    
     <category term="EE" scheme="https://loveapple.space/blog/tags/EE/"/>
-    
     <category term="天线" scheme="https://loveapple.space/blog/tags/%E5%A4%A9%E7%BA%BF/"/>
-    
+    <id>https://loveapple.space/blog/dipole-ante-experiment/</id>
+    <link href="https://loveapple.space/blog/dipole-ante-experiment/"/>
+    <published>2026-10-13T14:41:48.000Z</published>
+    <summary>想写点但不知道写啥了，把实验报告贴上来水一篇。</summary>
+    <title>偶极子天线设计仿真实验</title>
+    <updated>2026-10-13T14:49:35.375Z</updated>
   </entry>
-  
   <entry>
-    <title>FMCW雷达入门笔记（一）</title>
-    <link href="https://loveapple.space/blog/fmcw-radar-1/"/>
-    <id>https://loveapple.space/blog/fmcw-radar-1/</id>
-    <published>2026-09-28T16:19:07.000Z</published>
-    <updated>2026-09-29T05:02:56.626Z</updated>
-    
-    
-    <summary type="html">系统介绍了调频连续波雷达的基本原理与关键参数。从线性调频波与回波延迟出发，引出去斜技术将延迟检测转化为频率差检测，并推导了距离分辨率、最大距离等公式与限制条件，最后简述了测速方法与多普勒效应的影响。</summary>
-    
-    
-    
+    <author>
+      <name>LoveApple14434</name>
+    </author>
     <category term="寄术" scheme="https://loveapple.space/blog/categories/%E5%AF%84%E6%9C%AF/"/>
-    
-    
     <category term="EE" scheme="https://loveapple.space/blog/tags/EE/"/>
-    
     <category term="FMCW雷达" scheme="https://loveapple.space/blog/tags/FMCW%E9%9B%B7%E8%BE%BE/"/>
-    
+    <id>https://loveapple.space/blog/fmcw-radar-1/</id>
+    <link href="https://loveapple.space/blog/fmcw-radar-1/"/>
+    <published>2026-09-28T16:19:07.000Z</published>
+    <summary>系统介绍了调频连续波雷达的基本原理与关键参数。从线性调频波与回波延迟出发，引出去斜技术将延迟检测转化为频率差检测，并推导了距离分辨率、最大距离等公式与限制条件，最后简述了测速方法与多普勒效应的影响。</summary>
+    <title>FMCW雷达入门笔记（一）</title>
+    <updated>2026-09-29T05:02:56.626Z</updated>
   </entry>
-  
   <entry>
-    <title>保研博弈论：套磁、提前进组、OQ与“鸽”</title>
-    <link href="https://loveapple.space/blog/postgraduate-game/"/>
+    <author>
+      <name>LoveApple14434</name>
+    </author>
+    <category term="牲活" scheme="https://loveapple.space/blog/categories/%E7%89%B2%E6%B4%BB/"/>
+    <category term="保研" scheme="https://loveapple.space/blog/tags/%E4%BF%9D%E7%A0%94/"/>
+    <category term="回忆录" scheme="https://loveapple.space/blog/tags/%E5%9B%9E%E5%BF%86%E5%BD%95/"/>
     <id>https://loveapple.space/blog/postgraduate-game/</id>
+    <link href="https://loveapple.space/blog/postgraduate-game/"/>
     <published>2026-09-28T00:09:03.000Z</published>
+    <summary>转载一位同学的文章。</summary>
+    <title>保研博弈论：套磁、提前进组、OQ与“鸽”</title>
     <updated>2026-09-28T00:14:37.430Z</updated>
-    
-    
-    <summary type="html">转载一位同学的文章。</summary>
-    
-    
-    
-    <category term="牲活" scheme="https://loveapple.space/blog/categories/%E7%89%B2%E6%B4%BB/"/>
-    
-    
-    <category term="保研" scheme="https://loveapple.space/blog/tags/%E4%BF%9D%E7%A0%94/"/>
-    
-    <category term="回忆录" scheme="https://loveapple.space/blog/tags/%E5%9B%9E%E5%BF%86%E5%BD%95/"/>
-    
   </entry>
-  
   <entry>
-    <title>南京大学邮箱第三方接入注意事项</title>
-    <link href="https://loveapple.space/blog/nju-mail-imap/"/>
-    <id>https://loveapple.space/blog/nju-mail-imap/</id>
-    <published>2026-09-21T08:35:51.000Z</published>
-    <updated>2026-09-21T08:43:41.017Z</updated>
-    
-    
-    <summary type="html">这篇博客提醒在第三方邮箱客户端配置南大邮箱时需要注意修改默认检测域名的问题。</summary>
-    
-    
-    
+    <author>
+      <name>LoveApple14434</name>
+    </author>
     <category term="寄术" scheme="https://loveapple.space/blog/categories/%E5%AF%84%E6%9C%AF/"/>
-    
-    
     <category term="电子邮件" scheme="https://loveapple.space/blog/tags/%E7%94%B5%E5%AD%90%E9%82%AE%E4%BB%B6/"/>
-    
     <category term="IMAP" scheme="https://loveapple.space/blog/tags/IMAP/"/>
-    
+    <id>https://loveapple.space/blog/nju-mail-imap/</id>
+    <link href="https://loveapple.space/blog/nju-mail-imap/"/>
+    <published>2026-09-21T08:35:51.000Z</published>
+    <summary>这篇博客提醒在第三方邮箱客户端配置南大邮箱时需要注意修改默认检测域名的问题。</summary>
+    <title>南京大学邮箱第三方接入注意事项</title>
+    <updated>2026-09-21T08:43:41.017Z</updated>
   </entry>
-  
   <entry>
-    <title>水煮鱼的保研回忆录</title>
-    <link href="https://loveapple.space/blog/postgraduate-recommendation/"/>
-    <id>https://loveapple.space/blog/postgraduate-recommendation/</id>
-    <published>2026-09-20T15:37:52.000Z</published>
-    <updated>2026-09-20T15:38:37.403Z</updated>
-    
-    
-    <summary type="html">这篇博客是作者保研经历的完整回忆录。以流水账形式记录了从选择导师，到参加浙大、南苏集电、成电、东南、复旦及南大等夏令营与预推免的全过程，最终放弃成电等offer，选择留在南京大学电子学院。文章真实细腻，展现了保研路上的选择、焦虑与成长。</summary>
-    
-    
-    
+    <author>
+      <name>LoveApple14434</name>
+    </author>
     <category term="牲活" scheme="https://loveapple.space/blog/categories/%E7%89%B2%E6%B4%BB/"/>
-    
-    
     <category term="保研" scheme="https://loveapple.space/blog/tags/%E4%BF%9D%E7%A0%94/"/>
-    
     <category term="回忆录" scheme="https://loveapple.space/blog/tags/%E5%9B%9E%E5%BF%86%E5%BD%95/"/>
-    
+    <id>https://loveapple.space/blog/postgraduate-recommendation/</id>
+    <link href="https://loveapple.space/blog/postgraduate-recommendation/"/>
+    <published>2026-09-20T15:37:52.000Z</published>
+    <summary>这篇博客是作者保研经历的完整回忆录。以流水账形式记录了从选择导师，到参加浙大、南苏集电、成电、东南、复旦及南大等夏令营与预推免的全过程，最终放弃成电等offer，选择留在南京大学电子学院。文章真实细腻，展现了保研路上的选择、焦虑与成长。</summary>
+    <title>水煮鱼的保研回忆录</title>
+    <updated>2026-09-20T15:38:37.403Z</updated>
   </entry>
-  
   <entry>
-    <title>在Rime输入法上启用中英混拼：以Trime为例</title>
-    <link href="https://loveapple.space/blog/trime-melt-eng/"/>
+    <author>
+      <name>LoveApple14434</name>
+    </author>
+    <category term="寄术" scheme="https://loveapple.space/blog/categories/%E5%AF%84%E6%9C%AF/"/>
+    <category term="输入法" scheme="https://loveapple.space/blog/tags/%E8%BE%93%E5%85%A5%E6%B3%95/"/>
     <id>https://loveapple.space/blog/trime-melt-eng/</id>
+    <link href="https://loveapple.space/blog/trime-melt-eng/"/>
     <published>2026-09-04T09:52:18.000Z</published>
+    <summary>这篇博客记录了作者在安卓版Rime（Trime）输入法中配置中英混拼的过程。通过参考电脑端小鹤双拼方案，在自定义配置文件中挂载英文翻译器（melt_eng）并导入相关词库，解决了原有方案无法混输英文的问题，实现了流畅的中英文混合输入体验。</summary>
+    <title>在Rime输入法上启用中英混拼：以Trime为例</title>
     <updated>2026-09-15T08:46:55.847Z</updated>
-    
-    
-    <summary type="html">这篇博客记录了作者在安卓版Rime（Trime）输入法中配置中英混拼的过程。通过参考电脑端小鹤双拼方案，在自定义配置文件中挂载英文翻译器（melt_eng）并导入相关词库，解决了原有方案无法混输英文的问题，实现了流畅的中英文混合输入体验。</summary>
-    
-    
-    
-    <category term="寄术" scheme="https://loveapple.space/blog/categories/%E5%AF%84%E6%9C%AF/"/>
-    
-    
-    <category term="输入法" scheme="https://loveapple.space/blog/tags/%E8%BE%93%E5%85%A5%E6%B3%95/"/>
-    
   </entry>
-  
   <entry>
-    <title>水煮鱼的电赛回顾</title>
-    <link href="https://loveapple.space/blog/nuedc-conclusion/"/>
+    <author>
+      <name>LoveApple14434</name>
+    </author>
+    <category term="牲活" scheme="https://loveapple.space/blog/categories/%E7%89%B2%E6%B4%BB/"/>
+    <category term="NUEDC" scheme="https://loveapple.space/blog/tags/NUEDC/"/>
     <id>https://loveapple.space/blog/nuedc-conclusion/</id>
+    <link href="https://loveapple.space/blog/nuedc-conclusion/"/>
     <published>2026-09-02T16:25:56.000Z</published>
+    <summary>关于我的电赛生涯：憧憬、不甘、遗憾、释然。</summary>
+    <title>水煮鱼的电赛回顾</title>
     <updated>2026-09-04T08:57:41.757Z</updated>
-    
-    
-    <summary type="html">关于我的电赛生涯：憧憬、不甘、遗憾、释然。</summary>
-    
-    
-    
-    <category term="牲活" scheme="https://loveapple.space/blog/categories/%E7%89%B2%E6%B4%BB/"/>
-    
-    
-    <category term="NUEDC" scheme="https://loveapple.space/blog/tags/NUEDC/"/>
-    
   </entry>
-  
   <entry>
-    <title>TI杯模拟邀请赛回顾</title>
-    <link href="https://loveapple.space/blog/ti-cup-nuedc/"/>
+    <author>
+      <name>LoveApple14434</name>
+    </author>
+    <category term="寄术" scheme="https://loveapple.space/blog/categories/%E5%AF%84%E6%9C%AF/"/>
+    <category term="NUEDC" scheme="https://loveapple.space/blog/tags/NUEDC/"/>
     <id>https://loveapple.space/blog/ti-cup-nuedc/</id>
+    <link href="https://loveapple.space/blog/ti-cup-nuedc/"/>
     <published>2026-08-28T16:49:31.000Z</published>
+    <summary>可是水煮鱼🥺……真的是区啊😅</summary>
+    <title>TI杯模拟邀请赛回顾</title>
     <updated>2026-09-04T09:31:18.995Z</updated>
-    
-    
-    <summary type="html">可是水煮鱼🥺……真的是区啊😅</summary>
-    
-    
-    
-    <category term="寄术" scheme="https://loveapple.space/blog/categories/%E5%AF%84%E6%9C%AF/"/>
-    
-    
-    <category term="NUEDC" scheme="https://loveapple.space/blog/tags/NUEDC/"/>
-    
   </entry>
-  
   <entry>
-    <title>水煮鱼的济州岛旅行后日记：杂谈</title>
-    <link href="https://loveapple.space/blog/Jeju-general/"/>
+    <author>
+      <name>LoveApple14434</name>
+    </author>
+    <category term="牲活" scheme="https://loveapple.space/blog/categories/%E7%89%B2%E6%B4%BB/"/>
+    <category term="旅行" scheme="https://loveapple.space/blog/tags/%E6%97%85%E8%A1%8C/"/>
+    <category term="济州岛" scheme="https://loveapple.space/blog/tags/%E6%B5%8E%E5%B7%9E%E5%B2%9B/"/>
     <id>https://loveapple.space/blog/Jeju-general/</id>
+    <link href="https://loveapple.space/blog/Jeju-general/"/>
     <published>2026-08-13T15:51:06.000Z</published>
+    <summary>这篇博客是作者济州岛旅行日记的补充杂谈，从交通卡、便利店密度、支付方式、公交系统、建筑风貌、物价、语言环境等多个生活细节出发，分享了对济州岛的观察与感受。文章结构松散随性，更像是对旅行中琐碎印象的整理与回味，为四篇正式日记之外增添了更多烟火气的补充。</summary>
+    <title>水煮鱼的济州岛旅行后日记：杂谈</title>
     <updated>2026-08-13T15:51:55.331Z</updated>
-    
-    
-    <summary type="html">这篇博客是作者济州岛旅行日记的补充杂谈，从交通卡、便利店密度、支付方式、公交系统、建筑风貌、物价、语言环境等多个生活细节出发，分享了对济州岛的观察与感受。文章结构松散随性，更像是对旅行中琐碎印象的整理与回味，为四篇正式日记之外增添了更多烟火气的补充。</summary>
-    
-    
-    
-    <category term="牲活" scheme="https://loveapple.space/blog/categories/%E7%89%B2%E6%B4%BB/"/>
-    
-    
-    <category term="旅行" scheme="https://loveapple.space/blog/tags/%E6%97%85%E8%A1%8C/"/>
-    
-    <category term="济州岛" scheme="https://loveapple.space/blog/tags/%E6%B5%8E%E5%B7%9E%E5%B2%9B/"/>
-    
   </entry>
-  
   <entry>
-    <title>linuxqq输入法问题第二弹</title>
-    <link href="https://loveapple.space/blog/linuxqq-fcitx5-2/"/>
+    <author>
+      <name>LoveApple14434</name>
+    </author>
+    <category term="寄术" scheme="https://loveapple.space/blog/categories/%E5%AF%84%E6%9C%AF/"/>
+    <category term="Arch Linux" scheme="https://loveapple.space/blog/tags/Arch-Linux/"/>
+    <category term="Linux" scheme="https://loveapple.space/blog/tags/Linux/"/>
+    <category term="linuxqq" scheme="https://loveapple.space/blog/tags/linuxqq/"/>
+    <category term="输入法" scheme="https://loveapple.space/blog/tags/%E8%BE%93%E5%85%A5%E6%B3%95/"/>
     <id>https://loveapple.space/blog/linuxqq-fcitx5-2/</id>
+    <link href="https://loveapple.space/blog/linuxqq-fcitx5-2/"/>
     <published>2026-08-04T06:45:04.000Z</published>
+    <summary>这篇博客是对linuxqq输入法问题的后续补充。除了之前无法唤起输入法的问题外，快速打字时按键丢失的问题可通过增加启动参数--ozone-platform=wayland解决。为避免QQ更新覆盖修改，推荐将参数写入~/.config/qq-flags.conf配置文件。</summary>
+    <title>linuxqq输入法问题第二弹</title>
     <updated>2026-08-09T07:40:26.278Z</updated>
-    
-    
-    <summary type="html">这篇博客是对linuxqq输入法问题的后续补充。除了之前无法唤起输入法的问题外，快速打字时按键丢失的问题可通过增加启动参数--ozone-platform=wayland解决。为避免QQ更新覆盖修改，推荐将参数写入~/.config/qq-flags.conf配置文件。</summary>
-    
-    
-    
-    <category term="寄术" scheme="https://loveapple.space/blog/categories/%E5%AF%84%E6%9C%AF/"/>
-    
-    
-    <category term="Arch Linux" scheme="https://loveapple.space/blog/tags/Arch-Linux/"/>
-    
-    <category term="Linux" scheme="https://loveapple.space/blog/tags/Linux/"/>
-    
-    <category term="linuxqq" scheme="https://loveapple.space/blog/tags/linuxqq/"/>
-    
-    <category term="输入法" scheme="https://loveapple.space/blog/tags/%E8%BE%93%E5%85%A5%E6%B3%95/"/>
-    
   </entry>
-  
   <entry>
-    <title>我与IT侠：一些回忆</title>
-    <link href="https://loveapple.space/blog/itxia-and-me/"/>
+    <author>
+      <name>LoveApple14434</name>
+    </author>
+    <category term="牲活" scheme="https://loveapple.space/blog/categories/%E7%89%B2%E6%B4%BB/"/>
+    <category term="IT侠" scheme="https://loveapple.space/blog/tags/IT%E4%BE%A0/"/>
     <id>https://loveapple.space/blog/itxia-and-me/</id>
+    <link href="https://loveapple.space/blog/itxia-and-me/"/>
     <published>2026-08-03T16:58:40.000Z</published>
+    <summary>一些回忆，一些往事，一些碎碎念。</summary>
+    <title>我与IT侠：一些回忆</title>
     <updated>2026-08-03T17:01:54.909Z</updated>
-    
-    
-    <summary type="html">一些回忆，一些往事，一些碎碎念。</summary>
-    
-    
-    
-    <category term="牲活" scheme="https://loveapple.space/blog/categories/%E7%89%B2%E6%B4%BB/"/>
-    
-    
-    <category term="IT侠" scheme="https://loveapple.space/blog/tags/IT%E4%BE%A0/"/>
-    
   </entry>
-  
   <entry>
-    <title>坚持不懈，成为传奇</title>
-    <link href="https://loveapple.space/blog/congratulations-niko/"/>
+    <author>
+      <name>LoveApple14434</name>
+    </author>
+    <category term="牲活" scheme="https://loveapple.space/blog/categories/%E7%89%B2%E6%B4%BB/"/>
     <id>https://loveapple.space/blog/congratulations-niko/</id>
+    <link href="https://loveapple.space/blog/congratulations-niko/"/>
     <published>2026-06-22T08:12:58.000Z</published>
+    <summary>恭喜Nikola &quot;Niko&quot; Kovač夺得属于他的第一个Major冠军！</summary>
+    <title>坚持不懈，成为传奇</title>
     <updated>2026-09-15T08:49:09.098Z</updated>
-    
-    
-    <summary type="html">恭喜Nikola &quot;Niko&quot; Kovač夺得属于他的第一个Major冠军！</summary>
-    
-    
-    
-    <category term="牲活" scheme="https://loveapple.space/blog/categories/%E7%89%B2%E6%B4%BB/"/>
-    
-    
   </entry>
-  
   <entry>
-    <title>系统维护预告</title>
-    <link href="https://loveapple.space/blog/service-stop-forecast/"/>
+    <author>
+      <name>LoveApple14434</name>
+    </author>
     <id>https://loveapple.space/blog/service-stop-forecast/</id>
+    <link href="https://loveapple.space/blog/service-stop-forecast/"/>
     <published>2026-05-21T06:33:15.000Z</published>
+    <summary>因系统维护而暂停服务</summary>
+    <title>系统维护预告</title>
     <updated>2026-05-24T09:37:34.563Z</updated>
-    
-    
-    <summary type="html">因系统维护而暂停服务</summary>
-    
-    
-    
-    
   </entry>
-  
   <entry>
-    <title>使用STM32CubeMX生成C8T6工程ld脚本错误</title>
-    <link href="https://loveapple.space/blog/stm-cubemx-c8t6-ld-error/"/>
+    <author>
+      <name>LoveApple14434</name>
+    </author>
+    <category term="寄术" scheme="https://loveapple.space/blog/categories/%E5%AF%84%E6%9C%AF/"/>
+    <category term="MCU" scheme="https://loveapple.space/blog/tags/MCU/"/>
+    <category term="嵌入式开发" scheme="https://loveapple.space/blog/tags/%E5%B5%8C%E5%85%A5%E5%BC%8F%E5%BC%80%E5%8F%91/"/>
+    <category term="STM32" scheme="https://loveapple.space/blog/tags/STM32/"/>
     <id>https://loveapple.space/blog/stm-cubemx-c8t6-ld-error/</id>
+    <link href="https://loveapple.space/blog/stm-cubemx-c8t6-ld-error/"/>
     <published>2026-05-20T12:46:30.000Z</published>
+    <summary>这篇博客记录了使用STM32CubeMX v6.12.1为STM32F103C8T6生成工程时，链接脚本（ld）存在语法错误的问题。通过修改四处关键配置（RAM栈顶定义、段加载地址等）即可修复，并附上了可直接使用的修正脚本。该问题仅影响Makefile/Cmake工程，Keil项目不受影响。</summary>
+    <title>使用STM32CubeMX生成C8T6工程ld脚本错误</title>
     <updated>2026-05-20T12:58:26.796Z</updated>
-    
-    
-    <summary type="html">这篇博客记录了使用STM32CubeMX v6.12.1为STM32F103C8T6生成工程时，链接脚本（ld）存在语法错误的问题。通过修改四处关键配置（RAM栈顶定义、段加载地址等）即可修复，并附上了可直接使用的修正脚本。该问题仅影响Makefile/Cmake工程，Keil项目不受影响。</summary>
-    
-    
-    
-    <category term="寄术" scheme="https://loveapple.space/blog/categories/%E5%AF%84%E6%9C%AF/"/>
-    
-    
-    <category term="MCU" scheme="https://loveapple.space/blog/tags/MCU/"/>
-    
-    <category term="嵌入式开发" scheme="https://loveapple.space/blog/tags/%E5%B5%8C%E5%85%A5%E5%BC%8F%E5%BC%80%E5%8F%91/"/>
-    
-    <category term="STM32" scheme="https://loveapple.space/blog/tags/STM32/"/>
-    
   </entry>
-  
   <entry>
-    <title>Arch Linux 开发键盘自定义重映射工具</title>
-    <link href="https://loveapple.space/blog/kbd-remap-linux/"/>
+    <author>
+      <name>LoveApple14434</name>
+    </author>
+    <category term="寄术" scheme="https://loveapple.space/blog/categories/%E5%AF%84%E6%9C%AF/"/>
+    <category term="Linux" scheme="https://loveapple.space/blog/tags/Linux/"/>
     <id>https://loveapple.space/blog/kbd-remap-linux/</id>
+    <link href="https://loveapple.space/blog/kbd-remap-linux/"/>
     <published>2026-05-03T10:26:34.000Z</published>
+    <summary>这篇博客介绍了作者为解决高斯键盘在Arch Linux下功能键异常问题而开发的键位重映射方案。通过evsieve工具捕获按键事件，结合systemd服务实现自启动，并开发了图形化配置前端。项目已发布至GitHub和AUR，为类似键盘驱动问题提供了灵活且定制化的解决思路。</summary>
+    <title>Arch Linux 开发键盘自定义重映射工具</title>
     <updated>2026-05-20T12:46:14.785Z</updated>
-    
-    
-    <summary type="html">这篇博客介绍了作者为解决高斯键盘在Arch Linux下功能键异常问题而开发的键位重映射方案。通过evsieve工具捕获按键事件，结合systemd服务实现自启动，并开发了图形化配置前端。项目已发布至GitHub和AUR，为类似键盘驱动问题提供了灵活且定制化的解决思路。</summary>
-    
-    
-    
-    <category term="寄术" scheme="https://loveapple.space/blog/categories/%E5%AF%84%E6%9C%AF/"/>
-    
-    
-    <category term="Linux" scheme="https://loveapple.space/blog/tags/Linux/"/>
-    
   </entry>
-  
   <entry>
-    <title>我在南大做普通人：悦纳自我</title>
-    <link href="https://loveapple.space/blog/view-3/"/>
+    <author>
+      <name>LoveApple14434</name>
+    </author>
+    <category term="鱼论" scheme="https://loveapple.space/blog/categories/%E9%B1%BC%E8%AE%BA/"/>
     <id>https://loveapple.space/blog/view-3/</id>
+    <link href="https://loveapple.space/blog/view-3/"/>
     <published>2026-04-16T07:21:58.000Z</published>
+    <summary>这篇博客记录了作者作为南京大学电子学院普通学生的心路历程。从曾经的“尖子生”到融入“普通人”的银河，他反思了单一评价体系的局限，呼吁珍惜大学这个试错成本最低的阶段，去寻找那些不为了绩点或简历、却能让自己全神贯注的热爱之事，最终学会悦纳自我，开出属于自己的花。</summary>
+    <title>我在南大做普通人：悦纳自我</title>
     <updated>2026-04-16T07:43:52.355Z</updated>
-    
-    
-    <summary type="html">这篇博客记录了作者作为南京大学电子学院普通学生的心路历程。从曾经的“尖子生”到融入“普通人”的银河，他反思了单一评价体系的局限，呼吁珍惜大学这个试错成本最低的阶段，去寻找那些不为了绩点或简历、却能让自己全神贯注的热爱之事，最终学会悦纳自我，开出属于自己的花。</summary>
-    
-    
-    
-    <category term="鱼论" scheme="https://loveapple.space/blog/categories/%E9%B1%BC%E8%AE%BA/"/>
-    
-    
   </entry>
-  
   <entry>
-    <title>电脑里的中文：字符集、键盘与输入法</title>
-    <link href="https://loveapple.space/blog/zhcn-charset-kbd-inputmthd/"/>
-    <id>https://loveapple.space/blog/zhcn-charset-kbd-inputmthd/</id>
-    <published>2026-04-06T08:36:26.000Z</published>
-    <updated>2026-09-15T08:57:09.455Z</updated>
-    
-    
-    <summary type="html">这篇博客系统梳理了中文在计算机世界中的技术演进历程。从字符集（ASCII、国标码、Unicode及“锟斤拷”等乱码梗）到中文键盘的发展，再到输入法（音码、形码、双拼、音形码）的对比，最后介绍了移动端的九宫格、全键盘与14键等布局。</summary>
-    
-    
-    
+    <author>
+      <name>LoveApple14434</name>
+    </author>
     <category term="寄术" scheme="https://loveapple.space/blog/categories/%E5%AF%84%E6%9C%AF/"/>
-    
-    
     <category term="输入法" scheme="https://loveapple.space/blog/tags/%E8%BE%93%E5%85%A5%E6%B3%95/"/>
-    
     <category term="技术史" scheme="https://loveapple.space/blog/tags/%E6%8A%80%E6%9C%AF%E5%8F%B2/"/>
-    
+    <id>https://loveapple.space/blog/zhcn-charset-kbd-inputmthd/</id>
+    <link href="https://loveapple.space/blog/zhcn-charset-kbd-inputmthd/"/>
+    <published>2026-04-06T08:36:26.000Z</published>
+    <summary>这篇博客系统梳理了中文在计算机世界中的技术演进历程。从字符集（ASCII、国标码、Unicode及“锟斤拷”等乱码梗）到中文键盘的发展，再到输入法（音码、形码、双拼、音形码）的对比，最后介绍了移动端的九宫格、全键盘与14键等布局。</summary>
+    <title>电脑里的中文：字符集、键盘与输入法</title>
+    <updated>2026-09-15T08:57:09.455Z</updated>
   </entry>
-  
   <entry>
-    <title>hexo脚本：部署后自动刷新Cloudflare缓存</title>
-    <link href="https://loveapple.space/blog/cloudflare-purge-cache/"/>
-    <id>https://loveapple.space/blog/cloudflare-purge-cache/</id>
-    <published>2026-03-27T09:06:24.000Z</published>
-    <updated>2026-03-27T09:19:09.298Z</updated>
-    
-    
-    <summary type="html">这篇博客介绍了如何通过编写Hexo脚本，在部署后自动调用Cloudflare API清除CDN缓存，从而解决因缓存导致新文章无法实时显示的问题，实现了自动化部署与缓存刷新的一体化流程。</summary>
-    
-    
-    
+    <author>
+      <name>LoveApple14434</name>
+    </author>
     <category term="寄术" scheme="https://loveapple.space/blog/categories/%E5%AF%84%E6%9C%AF/"/>
-    
-    
     <category term="网站建设" scheme="https://loveapple.space/blog/tags/%E7%BD%91%E7%AB%99%E5%BB%BA%E8%AE%BE/"/>
-    
     <category term="Cloudflare" scheme="https://loveapple.space/blog/tags/Cloudflare/"/>
-    
+    <id>https://loveapple.space/blog/cloudflare-purge-cache/</id>
+    <link href="https://loveapple.space/blog/cloudflare-purge-cache/"/>
+    <published>2026-03-27T09:06:24.000Z</published>
+    <summary>这篇博客介绍了如何通过编写Hexo脚本，在部署后自动调用Cloudflare API清除CDN缓存，从而解决因缓存导致新文章无法实时显示的问题，实现了自动化部署与缓存刷新的一体化流程。</summary>
+    <title>hexo脚本：部署后自动刷新Cloudflare缓存</title>
+    <updated>2026-03-27T09:19:09.298Z</updated>
   </entry>
-  
   <entry>
-    <title>正点原子串口例程中开发板无法收信问题</title>
-    <link href="https://loveapple.space/blog/STM32-USART-Alientek/"/>
-    <id>https://loveapple.space/blog/STM32-USART-Alientek/</id>
-    <published>2026-03-27T08:35:38.000Z</published>
-    <updated>2026-03-27T08:36:37.496Z</updated>
-    
-    
-    <summary type="html">本文记录了使用正点原子STM32F103开发板例程时，开发板无法接收串口消息的问题。通过分析代码发现，例程判断接收完成需要检测到回车符（0x0D），而串口调试助手默认不发送该字符。解决方案是在发送信息末尾添加换行符，即可正常通信。</summary>
-    
-    
-    
+    <author>
+      <name>LoveApple14434</name>
+    </author>
     <category term="寄术" scheme="https://loveapple.space/blog/categories/%E5%AF%84%E6%9C%AF/"/>
-    
-    
     <category term="MCU" scheme="https://loveapple.space/blog/tags/MCU/"/>
-    
     <category term="STM32" scheme="https://loveapple.space/blog/tags/STM32/"/>
-    
     <category term="开发板" scheme="https://loveapple.space/blog/tags/%E5%BC%80%E5%8F%91%E6%9D%BF/"/>
-    
     <category term="USART" scheme="https://loveapple.space/blog/tags/USART/"/>
-    
+    <id>https://loveapple.space/blog/STM32-USART-Alientek/</id>
+    <link href="https://loveapple.space/blog/STM32-USART-Alientek/"/>
+    <published>2026-03-27T08:35:38.000Z</published>
+    <summary>本文记录了使用正点原子STM32F103开发板例程时，开发板无法接收串口消息的问题。通过分析代码发现，例程判断接收完成需要检测到回车符（0x0D），而串口调试助手默认不发送该字符。解决方案是在发送信息末尾添加换行符，即可正常通信。</summary>
+    <title>正点原子串口例程中开发板无法收信问题</title>
+    <updated>2026-03-27T08:36:37.496Z</updated>
   </entry>
-  
   <entry>
-    <title>鱼论：穿越知识的坠落与诅咒，寻找锚点与未来</title>
-    <link href="https://loveapple.space/blog/view-2/"/>
+    <author>
+      <name>LoveApple14434</name>
+    </author>
+    <category term="鱼论" scheme="https://loveapple.space/blog/categories/%E9%B1%BC%E8%AE%BA/"/>
     <id>https://loveapple.space/blog/view-2/</id>
+    <link href="https://loveapple.space/blog/view-2/"/>
     <published>2026-03-26T07:28:47.000Z</published>
+    <summary>观点：现在中国学生群体中的功利主义与优绩主义是通过对未来的虚假承诺引导学生无效/低效内卷的集体无意识陷阱，不利于长期主义学习能力的培养与人之为人的发展，</summary>
+    <title>鱼论：穿越知识的坠落与诅咒，寻找锚点与未来</title>
     <updated>2026-03-26T09:48:59.091Z</updated>
-    
-    
-    <summary type="html">观点：现在中国学生群体中的功利主义与优绩主义是通过对未来的虚假承诺引导学生无效/低效内卷的集体无意识陷阱，不利于长期主义学习能力的培养与人之为人的发展，</summary>
-    
-    
-    
-    <category term="鱼论" scheme="https://loveapple.space/blog/categories/%E9%B1%BC%E8%AE%BA/"/>
-    
-    
   </entry>
-  
   <entry>
-    <title>linuxqq在KDE Plasma下无法输入的问题。</title>
-    <link href="https://loveapple.space/blog/linuxqq-fcitx5/"/>
-    <id>https://loveapple.space/blog/linuxqq-fcitx5/</id>
-    <published>2026-03-03T23:57:38.000Z</published>
-    <updated>2026-03-04T08:19:46.151Z</updated>
-    
-    
-    <summary type="html">这篇博客记录了在Arch Linux的KDE Plasma（Wayland）环境下，LinuxQQ无法输入中文（甚至无法粘贴）的问题及解决方案。作者提供了两种方法：直接修改启动脚本添加环境变量与参数，或利用qq-flags.conf配置文件持久化启动参数，后者可避免QQ更新后被覆盖。</summary>
-    
-    
-    
+    <author>
+      <name>LoveApple14434</name>
+    </author>
     <category term="寄术" scheme="https://loveapple.space/blog/categories/%E5%AF%84%E6%9C%AF/"/>
-    
-    
     <category term="Arch Linux" scheme="https://loveapple.space/blog/tags/Arch-Linux/"/>
-    
     <category term="Linux" scheme="https://loveapple.space/blog/tags/Linux/"/>
-    
     <category term="linuxqq" scheme="https://loveapple.space/blog/tags/linuxqq/"/>
-    
     <category term="输入法" scheme="https://loveapple.space/blog/tags/%E8%BE%93%E5%85%A5%E6%B3%95/"/>
-    
+    <id>https://loveapple.space/blog/linuxqq-fcitx5/</id>
+    <link href="https://loveapple.space/blog/linuxqq-fcitx5/"/>
+    <published>2026-03-03T23:57:38.000Z</published>
+    <summary>这篇博客记录了在Arch Linux的KDE Plasma（Wayland）环境下，LinuxQQ无法输入中文（甚至无法粘贴）的问题及解决方案。作者提供了两种方法：直接修改启动脚本添加环境变量与参数，或利用qq-flags.conf配置文件持久化启动参数，后者可避免QQ更新后被覆盖。</summary>
+    <title>linuxqq在KDE Plasma下无法输入的问题。</title>
+    <updated>2026-03-04T08:19:46.151Z</updated>
   </entry>
-  
   <entry>
-    <title>家族琐记</title>
-    <link href="https://loveapple.space/blog/family-blood/"/>
+    <author>
+      <name>LoveApple14434</name>
+    </author>
+    <category term="牲活" scheme="https://loveapple.space/blog/categories/%E7%89%B2%E6%B4%BB/"/>
+    <category term="随笔" scheme="https://loveapple.space/blog/tags/%E9%9A%8F%E7%AC%94/"/>
     <id>https://loveapple.space/blog/family-blood/</id>
+    <link href="https://loveapple.space/blog/family-blood/"/>
     <published>2026-02-21T13:19:01.000Z</published>
+    <summary>这篇博客是作者关于自己福建莆田家族的一次私人梳理与记录。作为生在南京、很少回乡的“外人”，作者在过年期间厘清了从太爷爷到孙辈共四代人的庞大家族脉络，记录了本家与旁系亲属的职业、性格与轶事，也触及了长房之争等微妙关系。这不仅是一份家庭关系的整理，更是一场对自己根系的探寻与书写。</summary>
+    <title>家族琐记</title>
     <updated>2026-02-22T05:23:18.664Z</updated>
-    
-    
-    <summary type="html">这篇博客是作者关于自己福建莆田家族的一次私人梳理与记录。作为生在南京、很少回乡的“外人”，作者在过年期间厘清了从太爷爷到孙辈共四代人的庞大家族脉络，记录了本家与旁系亲属的职业、性格与轶事，也触及了长房之争等微妙关系。这不仅是一份家庭关系的整理，更是一场对自己根系的探寻与书写。</summary>
-    
-    
-    
-    <category term="牲活" scheme="https://loveapple.space/blog/categories/%E7%89%B2%E6%B4%BB/"/>
-    
-    
-    <category term="随笔" scheme="https://loveapple.space/blog/tags/%E9%9A%8F%E7%AC%94/"/>
-    
   </entry>
-  
   <entry>
-    <title>为云服务器配置clash-for-linux</title>
-    <link href="https://loveapple.space/blog/clash-for-linux/"/>
-    <id>https://loveapple.space/blog/clash-for-linux/</id>
-    <published>2026-02-09T04:43:44.000Z</published>
-    <updated>2026-03-15T08:01:55.783Z</updated>
-    
-    
-    <summary type="html">本文针对云服务器无法直接访问外网的困境，提供了一种配置clash-for-linux的解决方案。通过从本地WSL下载源码并传输至服务器，解决了“先有鸡还是先有蛋”的问题。详细介绍了安装步骤、终端代理命令及通过SSH隧道访问控制面板的方法，为类似场景下的技术实践提供参考。</summary>
-    
-    
-    
+    <author>
+      <name>LoveApple14434</name>
+    </author>
     <category term="寄术" scheme="https://loveapple.space/blog/categories/%E5%AF%84%E6%9C%AF/"/>
-    
-    
     <category term="clash" scheme="https://loveapple.space/blog/tags/clash/"/>
-    
     <category term="云服务器" scheme="https://loveapple.space/blog/tags/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
-    
+    <id>https://loveapple.space/blog/clash-for-linux/</id>
+    <link href="https://loveapple.space/blog/clash-for-linux/"/>
+    <published>2026-02-09T04:43:44.000Z</published>
+    <summary>本文针对云服务器无法直接访问外网的困境，提供了一种配置clash-for-linux的解决方案。通过从本地WSL下载源码并传输至服务器，解决了“先有鸡还是先有蛋”的问题。详细介绍了安装步骤、终端代理命令及通过SSH隧道访问控制面板的方法，为类似场景下的技术实践提供参考。</summary>
+    <title>为云服务器配置clash-for-linux</title>
+    <updated>2026-03-15T08:01:55.783Z</updated>
   </entry>
-  
   <entry>
-    <title>局域网下的家庭影音服务实践对比</title>
-    <link href="https://loveapple.space/blog/home-video-services/"/>
-    <id>https://loveapple.space/blog/home-video-services/</id>
-    <published>2026-02-06T13:58:50.000Z</published>
-    <updated>2026-02-06T15:22:36.424Z</updated>
-    
-    
-    <summary type="html">本文记录了作者在家庭局域网内尝试三种影音共享方案的实践对比。由于电视系统限制，JellyFin客户端无法安装；SAMBA文件共享协议在播放时出现卡顿；最终通过DLNA流媒体协议成功实现流畅播放，并分析了协议差异对体验的影响。</summary>
-    
-    
-    
+    <author>
+      <name>LoveApple14434</name>
+    </author>
     <category term="寄术" scheme="https://loveapple.space/blog/categories/%E5%AF%84%E6%9C%AF/"/>
-    
-    
     <category term="SAMBA" scheme="https://loveapple.space/blog/tags/SAMBA/"/>
-    
     <category term="DLNA" scheme="https://loveapple.space/blog/tags/DLNA/"/>
-    
+    <id>https://loveapple.space/blog/home-video-services/</id>
+    <link href="https://loveapple.space/blog/home-video-services/"/>
+    <published>2026-02-06T13:58:50.000Z</published>
+    <summary>本文记录了作者在家庭局域网内尝试三种影音共享方案的实践对比。由于电视系统限制，JellyFin客户端无法安装；SAMBA文件共享协议在播放时出现卡顿；最终通过DLNA流媒体协议成功实现流畅播放，并分析了协议差异对体验的影响。</summary>
+    <title>局域网下的家庭影音服务实践对比</title>
+    <updated>2026-02-06T15:22:36.424Z</updated>
   </entry>
-  
   <entry>
-    <title>N5105NAS：配置WebDav服务</title>
-    <link href="https://loveapple.space/blog/N5105-4/"/>
-    <id>https://loveapple.space/blog/N5105-4/</id>
-    <published>2026-02-05T16:11:41.000Z</published>
-    <updated>2026-02-06T07:38:38.609Z</updated>
-    
-    
-    <summary type="html">这篇博客简要介绍了如何在N5105家庭服务器上配置WebDav服务，实现简易的私人网盘功能。服务端通过iStoreOS应用商店便捷安装GoWebDav并进行基础设置；客户端则在Windows系统上通过修改注册表和支持HTTP连接，将服务端映射为网络驱动器。整个过程门槛较低，适合个人快速搭建内网文件共享服务。</summary>
-    
-    
-    
+    <author>
+      <name>LoveApple14434</name>
+    </author>
     <category term="寄术" scheme="https://loveapple.space/blog/categories/%E5%AF%84%E6%9C%AF/"/>
-    
-    
     <category term="NAS" scheme="https://loveapple.space/blog/tags/NAS/"/>
-    
     <category term="WebDav" scheme="https://loveapple.space/blog/tags/WebDav/"/>
-    
     <category term="Windows WebClient" scheme="https://loveapple.space/blog/tags/Windows-WebClient/"/>
-    
     <category term="Windows注册表" scheme="https://loveapple.space/blog/tags/Windows%E6%B3%A8%E5%86%8C%E8%A1%A8/"/>
-    
+    <id>https://loveapple.space/blog/N5105-4/</id>
+    <link href="https://loveapple.space/blog/N5105-4/"/>
+    <published>2026-02-05T16:11:41.000Z</published>
+    <summary>这篇博客简要介绍了如何在N5105家庭服务器上配置WebDav服务，实现简易的私人网盘功能。服务端通过iStoreOS应用商店便捷安装GoWebDav并进行基础设置；客户端则在Windows系统上通过修改注册表和支持HTTP连接，将服务端映射为网络驱动器。整个过程门槛较低，适合个人快速搭建内网文件共享服务。</summary>
+    <title>N5105NAS：配置WebDav服务</title>
+    <updated>2026-02-06T07:38:38.609Z</updated>
   </entry>
-  
   <entry>
-    <title>N5105服务器：如何从公网访问？</title>
-    <link href="https://loveapple.space/blog/N5105-3/"/>
-    <id>https://loveapple.space/blog/N5105-3/</id>
-    <published>2026-01-26T15:56:18.000Z</published>
-    <updated>2026-09-15T13:33:49.568Z</updated>
-    
-    
-    <summary type="html">这篇博客详细对比了三种实现内网服务器公网访问的方案：Zerotier直连、Zerotier配合云服务器中转以及Cloudflare Tunnel。作者基于iStoreOS系统搭建了多项服务，并从配置难度、带宽表现和适用场景等方面分析了每种方法的优缺点，并通过实测数据为读者提供了直观的参考，帮助你根据自身网络条件选择合适的内网穿透方案。</summary>
-    
-    
-    
+    <author>
+      <name>LoveApple14434</name>
+    </author>
     <category term="寄术" scheme="https://loveapple.space/blog/categories/%E5%AF%84%E6%9C%AF/"/>
-    
-    
     <category term="小主机" scheme="https://loveapple.space/blog/tags/%E5%B0%8F%E4%B8%BB%E6%9C%BA/"/>
-    
     <category term="NAS" scheme="https://loveapple.space/blog/tags/NAS/"/>
-    
     <category term="CloudFlare Tunnel Zero Trust" scheme="https://loveapple.space/blog/tags/CloudFlare-Tunnel-Zero-Trust/"/>
-    
     <category term="Zerotier" scheme="https://loveapple.space/blog/tags/Zerotier/"/>
-    
     <category term="穿透" scheme="https://loveapple.space/blog/tags/%E7%A9%BF%E9%80%8F/"/>
-    
+    <id>https://loveapple.space/blog/N5105-3/</id>
+    <link href="https://loveapple.space/blog/N5105-3/"/>
+    <published>2026-01-26T15:56:18.000Z</published>
+    <summary>这篇博客详细对比了三种实现内网服务器公网访问的方案：Zerotier直连、Zerotier配合云服务器中转以及Cloudflare Tunnel。作者基于iStoreOS系统搭建了多项服务，并从配置难度、带宽表现和适用场景等方面分析了每种方法的优缺点，并通过实测数据为读者提供了直观的参考，帮助你根据自身网络条件选择合适的内网穿透方案。</summary>
+    <title>N5105服务器：如何从公网访问？</title>
+    <updated>2026-09-15T13:33:49.568Z</updated>
   </entry>
-  
   <entry>
-    <title>N5105软路由：WiFi配置</title>
-    <link href="https://loveapple.space/blog/N5105-2/"/>
-    <id>https://loveapple.space/blog/N5105-2/</id>
-    <published>2026-01-18T05:11:32.000Z</published>
-    <updated>2026-02-05T16:56:59.807Z</updated>
-    
-    
-    <summary type="html">这篇博客详细介绍了在N5105软路由上配置WiFi的后续步骤。作者将ETH2接口桥接到LAN，连接小米AX3000E路由器并设置为AP模式。随后安装并配置openclash，解决了依赖冲突与文件传输问题，确保局域网内所有设备能便捷地科学上网。</summary>
-    
-    
-    
+    <author>
+      <name>LoveApple14434</name>
+    </author>
     <category term="寄术" scheme="https://loveapple.space/blog/categories/%E5%AF%84%E6%9C%AF/"/>
-    
-    
     <category term="小主机" scheme="https://loveapple.space/blog/tags/%E5%B0%8F%E4%B8%BB%E6%9C%BA/"/>
-    
     <category term="OpenWRT软路由" scheme="https://loveapple.space/blog/tags/OpenWRT%E8%BD%AF%E8%B7%AF%E7%94%B1/"/>
-    
     <category term="WiFi" scheme="https://loveapple.space/blog/tags/WiFi/"/>
-    
+    <id>https://loveapple.space/blog/N5105-2/</id>
+    <link href="https://loveapple.space/blog/N5105-2/"/>
+    <published>2026-01-18T05:11:32.000Z</published>
+    <summary>这篇博客详细介绍了在N5105软路由上配置WiFi的后续步骤。作者将ETH2接口桥接到LAN，连接小米AX3000E路由器并设置为AP模式。随后安装并配置openclash，解决了依赖冲突与文件传输问题，确保局域网内所有设备能便捷地科学上网。</summary>
+    <title>N5105软路由：WiFi配置</title>
+    <updated>2026-02-05T16:56:59.807Z</updated>
   </entry>
-  
   <entry>
-    <title>水煮鱼的济州岛旅行日记：Day4</title>
-    <link href="https://loveapple.space/blog/Jeju-day-4/"/>
+    <author>
+      <name>LoveApple14434</name>
+    </author>
+    <category term="牲活" scheme="https://loveapple.space/blog/categories/%E7%89%B2%E6%B4%BB/"/>
+    <category term="旅行" scheme="https://loveapple.space/blog/tags/%E6%97%85%E8%A1%8C/"/>
+    <category term="济州岛" scheme="https://loveapple.space/blog/tags/%E6%B5%8E%E5%B7%9E%E5%B2%9B/"/>
     <id>https://loveapple.space/blog/Jeju-day-4/</id>
+    <link href="https://loveapple.space/blog/Jeju-day-4/"/>
     <published>2026-01-17T11:00:24.000Z</published>
+    <summary>这篇博客是济州岛旅行的第四天日记。上午作者挑战攀登韩国最高峰汉拿山，虽因大风预警未能登顶，但分享了首次登山的装备体验与沿途雪景。下午独自在济州市区进行了一次充满发现的“City Walk”，探访了算命馆、理发店，品尝了本地拌面，并参观了LG品牌店，最终以微信运动四万步结束了充实的旅程。</summary>
+    <title>水煮鱼的济州岛旅行日记：Day4</title>
     <updated>2026-09-15T08:55:46.711Z</updated>
-    
-    
-    <summary type="html">这篇博客是济州岛旅行的第四天日记。上午作者挑战攀登韩国最高峰汉拿山，虽因大风预警未能登顶，但分享了首次登山的装备体验与沿途雪景。下午独自在济州市区进行了一次充满发现的“City Walk”，探访了算命馆、理发店，品尝了本地拌面，并参观了LG品牌店，最终以微信运动四万步结束了充实的旅程。</summary>
-    
-    
-    
-    <category term="牲活" scheme="https://loveapple.space/blog/categories/%E7%89%B2%E6%B4%BB/"/>
-    
-    
-    <category term="旅行" scheme="https://loveapple.space/blog/tags/%E6%97%85%E8%A1%8C/"/>
-    
-    <category term="济州岛" scheme="https://loveapple.space/blog/tags/%E6%B5%8E%E5%B7%9E%E5%B2%9B/"/>
-    
   </entry>
-  
   <entry>
-    <title>水煮鱼的济州岛旅行日记：Day3</title>
-    <link href="https://loveapple.space/blog/Jeju-day-3/"/>
+    <author>
+      <name>LoveApple14434</name>
+    </author>
+    <category term="牲活" scheme="https://loveapple.space/blog/categories/%E7%89%B2%E6%B4%BB/"/>
+    <category term="旅行" scheme="https://loveapple.space/blog/tags/%E6%97%85%E8%A1%8C/"/>
+    <category term="济州岛" scheme="https://loveapple.space/blog/tags/%E6%B5%8E%E5%B7%9E%E5%B2%9B/"/>
     <id>https://loveapple.space/blog/Jeju-day-3/</id>
+    <link href="https://loveapple.space/blog/Jeju-day-3/"/>
     <published>2026-01-17T11:00:16.000Z</published>
+    <summary>这篇博客记录了济州岛旅行的第三天行程。作者游览了以花卉和精致造景为主的山茶花之丘，欣赏了西海岸挟才海水浴场的白色沙滩与清澈海水，并在涯月邑的沿海咖啡街观赏日落、享受悠闲时光。最后以一顿辛辣鲜美的明太鱼汤饭结束一天，日记中充满了对自然景色与慢节奏旅行的惬意感受。</summary>
+    <title>水煮鱼的济州岛旅行日记：Day3</title>
     <updated>2026-09-15T08:55:49.193Z</updated>
-    
-    
-    <summary type="html">这篇博客记录了济州岛旅行的第三天行程。作者游览了以花卉和精致造景为主的山茶花之丘，欣赏了西海岸挟才海水浴场的白色沙滩与清澈海水，并在涯月邑的沿海咖啡街观赏日落、享受悠闲时光。最后以一顿辛辣鲜美的明太鱼汤饭结束一天，日记中充满了对自然景色与慢节奏旅行的惬意感受。</summary>
-    
-    
-    
-    <category term="牲活" scheme="https://loveapple.space/blog/categories/%E7%89%B2%E6%B4%BB/"/>
-    
-    
-    <category term="旅行" scheme="https://loveapple.space/blog/tags/%E6%97%85%E8%A1%8C/"/>
-    
-    <category term="济州岛" scheme="https://loveapple.space/blog/tags/%E6%B5%8E%E5%B7%9E%E5%B2%9B/"/>
-    
   </entry>
-  
   <entry>
-    <title>水煮鱼的济州岛旅行日记：Day2</title>
-    <link href="https://loveapple.space/blog/Jeju-day-2/"/>
+    <author>
+      <name>LoveApple14434</name>
+    </author>
+    <category term="牲活" scheme="https://loveapple.space/blog/categories/%E7%89%B2%E6%B4%BB/"/>
+    <category term="旅行" scheme="https://loveapple.space/blog/tags/%E6%97%85%E8%A1%8C/"/>
+    <category term="济州岛" scheme="https://loveapple.space/blog/tags/%E6%B5%8E%E5%B7%9E%E5%B2%9B/"/>
     <id>https://loveapple.space/blog/Jeju-day-2/</id>
+    <link href="https://loveapple.space/blog/Jeju-day-2/"/>
     <published>2026-01-13T13:39:14.000Z</published>
+    <summary>这篇博客记录了济州岛旅行的第二天行程。作者游览了西归浦市的柱状节理带地质奇观，徒步了风景优美的偶来小路路线7（包括海边栈道、Sammaebong峰及城市公园），并深入当地的每日偶来市场，品尝了炸菜卷、铁板鱿鱼和备受好评的黑猪肉泡菜卷等多种小吃，体验了自然风光与市井美食相结合的一天。</summary>
+    <title>水煮鱼的济州岛旅行日记：Day2</title>
     <updated>2026-09-15T08:53:43.251Z</updated>
-    
-    
-    <summary type="html">这篇博客记录了济州岛旅行的第二天行程。作者游览了西归浦市的柱状节理带地质奇观，徒步了风景优美的偶来小路路线7（包括海边栈道、Sammaebong峰及城市公园），并深入当地的每日偶来市场，品尝了炸菜卷、铁板鱿鱼和备受好评的黑猪肉泡菜卷等多种小吃，体验了自然风光与市井美食相结合的一天。</summary>
-    
-    
-    
-    <category term="牲活" scheme="https://loveapple.space/blog/categories/%E7%89%B2%E6%B4%BB/"/>
-    
-    
-    <category term="旅行" scheme="https://loveapple.space/blog/tags/%E6%97%85%E8%A1%8C/"/>
-    
-    <category term="济州岛" scheme="https://loveapple.space/blog/tags/%E6%B5%8E%E5%B7%9E%E5%B2%9B/"/>
-    
   </entry>
-  
   <entry>
-    <title>水煮鱼的济州岛旅行日记：Day1</title>
-    <link href="https://loveapple.space/blog/Jeju-day-1/"/>
+    <author>
+      <name>LoveApple14434</name>
+    </author>
+    <category term="牲活" scheme="https://loveapple.space/blog/categories/%E7%89%B2%E6%B4%BB/"/>
+    <category term="旅行" scheme="https://loveapple.space/blog/tags/%E6%97%85%E8%A1%8C/"/>
+    <category term="济州岛" scheme="https://loveapple.space/blog/tags/%E6%B5%8E%E5%B7%9E%E5%B2%9B/"/>
     <id>https://loveapple.space/blog/Jeju-day-1/</id>
+    <link href="https://loveapple.space/blog/Jeju-day-1/"/>
     <published>2026-01-12T12:13:36.000Z</published>
+    <summary>这篇博客是作者济州岛旅行的首日游记，记录了紧凑的“特种兵”行程。一天内游玩了牛岛（骑电助力自行车环岛）、城山日出峰（徒步登顶）和涉地可支（海岸栈道）三个主要景点，并以一顿极具性价比的本地烤肉自助餐收尾。日记充满了对自然风光、人文体验和美食的生动描述，展现了充实而疲惫的第一天。</summary>
+    <title>水煮鱼的济州岛旅行日记：Day1</title>
     <updated>2026-09-15T08:52:59.742Z</updated>
-    
-    
-    <summary type="html">这篇博客是作者济州岛旅行的首日游记，记录了紧凑的“特种兵”行程。一天内游玩了牛岛（骑电助力自行车环岛）、城山日出峰（徒步登顶）和涉地可支（海岸栈道）三个主要景点，并以一顿极具性价比的本地烤肉自助餐收尾。日记充满了对自然风光、人文体验和美食的生动描述，展现了充实而疲惫的第一天。</summary>
-    
-    
-    
-    <category term="牲活" scheme="https://loveapple.space/blog/categories/%E7%89%B2%E6%B4%BB/"/>
-    
-    
-    <category term="旅行" scheme="https://loveapple.space/blog/tags/%E6%97%85%E8%A1%8C/"/>
-    
-    <category term="济州岛" scheme="https://loveapple.space/blog/tags/%E6%B5%8E%E5%B7%9E%E5%B2%9B/"/>
-    
   </entry>
-  
   <entry>
-    <title>N5105小主机初配置</title>
-    <link href="https://loveapple.space/blog/N5105-1/"/>
-    <id>https://loveapple.space/blog/N5105-1/</id>
-    <published>2026-01-10T11:59:57.000Z</published>
-    <updated>2026-01-18T05:10:50.147Z</updated>
-    
-    
-    <summary type="html">这篇博客详细记录了在N5105小主机上安装并初步配置OpenWRT软路由的过程。作者从下载镜像、使用Ventoy启动盘写入系统开始，逐步完成了网络接口的划分（LAN/WAN）、DHCP设置，并通过校园网认证使设备成功联网。教程到此暂告段落，为后续接入AP等扩展功能做准备。</summary>
-    
-    
-    
+    <author>
+      <name>LoveApple14434</name>
+    </author>
     <category term="寄术" scheme="https://loveapple.space/blog/categories/%E5%AF%84%E6%9C%AF/"/>
-    
-    
     <category term="小主机" scheme="https://loveapple.space/blog/tags/%E5%B0%8F%E4%B8%BB%E6%9C%BA/"/>
-    
     <category term="OpenWRT软路由" scheme="https://loveapple.space/blog/tags/OpenWRT%E8%BD%AF%E8%B7%AF%E7%94%B1/"/>
-    
+    <id>https://loveapple.space/blog/N5105-1/</id>
+    <link href="https://loveapple.space/blog/N5105-1/"/>
+    <published>2026-01-10T11:59:57.000Z</published>
+    <summary>这篇博客详细记录了在N5105小主机上安装并初步配置OpenWRT软路由的过程。作者从下载镜像、使用Ventoy启动盘写入系统开始，逐步完成了网络接口的划分（LAN/WAN）、DHCP设置，并通过校园网认证使设备成功联网。教程到此暂告段落，为后续接入AP等扩展功能做准备。</summary>
+    <title>N5105小主机初配置</title>
+    <updated>2026-01-18T05:10:50.147Z</updated>
   </entry>
-  
   <entry>
-    <title>鱼论：论王座风潮</title>
-    <link href="https://loveapple.space/blog/view-1/"/>
+    <author>
+      <name>LoveApple14434</name>
+    </author>
+    <category term="鱼论" scheme="https://loveapple.space/blog/categories/%E9%B1%BC%E8%AE%BA/"/>
     <id>https://loveapple.space/blog/view-1/</id>
+    <link href="https://loveapple.space/blog/view-1/"/>
     <published>2026-01-02T10:24:41.000Z</published>
+    <summary>近日观互联网有感</summary>
+    <title>鱼论：论王座风潮</title>
     <updated>2026-03-19T05:17:24.771Z</updated>
-    
-    
-    <summary type="html">近日观互联网有感</summary>
-    
-    
-    
-    <category term="鱼论" scheme="https://loveapple.space/blog/categories/%E9%B1%BC%E8%AE%BA/"/>
-    
-    
   </entry>
-  
   <entry>
-    <title>在网页中插入icons</title>
-    <link href="https://loveapple.space/blog/iconfont-inject/"/>
+    <author>
+      <name>LoveApple14434</name>
+    </author>
+    <category term="寄术" scheme="https://loveapple.space/blog/categories/%E5%AF%84%E6%9C%AF/"/>
+    <category term="网站建设" scheme="https://loveapple.space/blog/tags/%E7%BD%91%E7%AB%99%E5%BB%BA%E8%AE%BE/"/>
     <id>https://loveapple.space/blog/iconfont-inject/</id>
+    <link href="https://loveapple.space/blog/iconfont-inject/"/>
     <published>2025-12-18T03:18:56.000Z</published>
+    <summary>这篇博客详细介绍了如何在Hexo博客的Butterfly主题中集成自定义图标库。作者以阿里巴巴矢量图标库（iconfont）为例，讲解了从下载图标文件、配置CSS路径到在页面中插入并美化图标的完整步骤，帮助用户扩展Butterfly主题默认图标集之外的个性化选择。</summary>
+    <title>在网页中插入icons</title>
     <updated>2025-12-18T03:47:18.055Z</updated>
-    
-    
-    <summary type="html">这篇博客详细介绍了如何在Hexo博客的Butterfly主题中集成自定义图标库。作者以阿里巴巴矢量图标库（iconfont）为例，讲解了从下载图标文件、配置CSS路径到在页面中插入并美化图标的完整步骤，帮助用户扩展Butterfly主题默认图标集之外的个性化选择。</summary>
-    
-    
-    
-    <category term="寄术" scheme="https://loveapple.space/blog/categories/%E5%AF%84%E6%9C%AF/"/>
-    
-    
-    <category term="网站建设" scheme="https://loveapple.space/blog/tags/%E7%BD%91%E7%AB%99%E5%BB%BA%E8%AE%BE/"/>
-    
   </entry>
-  
   <entry>
-    <title>F**k Bing Webmaster!</title>
-    <link href="https://loveapple.space/blog/fk-bing-webmaster/"/>
+    <author>
+      <name>LoveApple14434</name>
+    </author>
+    <category term="寄术" scheme="https://loveapple.space/blog/categories/%E5%AF%84%E6%9C%AF/"/>
+    <category term="网站建设" scheme="https://loveapple.space/blog/tags/%E7%BD%91%E7%AB%99%E5%BB%BA%E8%AE%BE/"/>
     <id>https://loveapple.space/blog/fk-bing-webmaster/</id>
+    <link href="https://loveapple.space/blog/fk-bing-webmaster/"/>
     <published>2025-12-13T14:16:21.000Z</published>
+    <summary>这篇博客是作者对Bing搜索引擎的一篇情绪化抱怨。文章详细列举了其四个月来为促使Bing收录网站首页所做的各种努力，包括提交URL、站点地图、配置IndexNow等，但均告失败，仅收到官方模板化的拒绝回复。作者对此感到极度沮丧和愤怒，认为Bing的反馈机制缺乏具体指导，让人投诉无门。</summary>
+    <title>F**k Bing Webmaster!</title>
     <updated>2025-12-13T14:26:32.515Z</updated>
-    
-    
-    <summary type="html">这篇博客是作者对Bing搜索引擎的一篇情绪化抱怨。文章详细列举了其四个月来为促使Bing收录网站首页所做的各种努力，包括提交URL、站点地图、配置IndexNow等，但均告失败，仅收到官方模板化的拒绝回复。作者对此感到极度沮丧和愤怒，认为Bing的反馈机制缺乏具体指导，让人投诉无门。</summary>
-    
-    
-    
-    <category term="寄术" scheme="https://loveapple.space/blog/categories/%E5%AF%84%E6%9C%AF/"/>
-    
-    
-    <category term="网站建设" scheme="https://loveapple.space/blog/tags/%E7%BD%91%E7%AB%99%E5%BB%BA%E8%AE%BE/"/>
-    
   </entry>
-  
   <entry>
-    <title>Random Image API上线</title>
-    <link href="https://loveapple.space/blog/my-image-building/"/>
-    <id>https://loveapple.space/blog/my-image-building/</id>
-    <published>2025-12-13T11:16:35.000Z</published>
-    <updated>2025-12-13T11:52:00.457Z</updated>
-    
-    
-    <summary type="html">这篇博客记录了作者因依赖的随机图片API失效，从而自主搭建替代服务的过程。通过Python脚本从Pexels图库采集图片，并使用Flask框架快速部署，最终提供了一个可返回随机或指定图片的简易API，旨在为自己的博客及其他项目提供稳定的图片服务。</summary>
-    
-    
-    
+    <author>
+      <name>LoveApple14434</name>
+    </author>
     <category term="寄术" scheme="https://loveapple.space/blog/categories/%E5%AF%84%E6%9C%AF/"/>
-    
-    
     <category term="服务器" scheme="https://loveapple.space/blog/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
-    
     <category term="网站建设" scheme="https://loveapple.space/blog/tags/%E7%BD%91%E7%AB%99%E5%BB%BA%E8%AE%BE/"/>
-    
     <category term="Vibe Coding" scheme="https://loveapple.space/blog/tags/Vibe-Coding/"/>
-    
     <category term="API" scheme="https://loveapple.space/blog/tags/API/"/>
-    
+    <id>https://loveapple.space/blog/my-image-building/</id>
+    <link href="https://loveapple.space/blog/my-image-building/"/>
+    <published>2025-12-13T11:16:35.000Z</published>
+    <summary>这篇博客记录了作者因依赖的随机图片API失效，从而自主搭建替代服务的过程。通过Python脚本从Pexels图库采集图片，并使用Flask框架快速部署，最终提供了一个可返回随机或指定图片的简易API，旨在为自己的博客及其他项目提供稳定的图片服务。</summary>
+    <title>Random Image API上线</title>
+    <updated>2025-12-13T11:52:00.457Z</updated>
   </entry>
-  
   <entry>
-    <title>龙歌三店横评：来自2025年12月的南京</title>
-    <link href="https://loveapple.space/blog/loonger-hotpot-Dec25/"/>
+    <author>
+      <name>LoveApple14434</name>
+    </author>
+    <category term="牲活" scheme="https://loveapple.space/blog/categories/%E7%89%B2%E6%B4%BB/"/>
+    <category term="旋转小火锅" scheme="https://loveapple.space/blog/tags/%E6%97%8B%E8%BD%AC%E5%B0%8F%E7%81%AB%E9%94%85/"/>
+    <category term="吃吃吃" scheme="https://loveapple.space/blog/tags/%E5%90%83%E5%90%83%E5%90%83/"/>
     <id>https://loveapple.space/blog/loonger-hotpot-Dec25/</id>
+    <link href="https://loveapple.space/blog/loonger-hotpot-Dec25/"/>
     <published>2025-12-11T02:44:00.000Z</published>
+    <summary>这篇2025年12月的博客横向对比了南京三家龙歌旋转小火锅分店（栖霞万达茂、马群招商花园城、新街口东方福莱德）。作者从饮料种类、招牌鸭血的供应稳定性以及近期新品（如麻薯鱼豆腐）的口感等方面，梳理了各家门店的异同与个人体验。</summary>
+    <title>龙歌三店横评：来自2025年12月的南京</title>
     <updated>2025-12-11T03:26:00.250Z</updated>
-    
-    
-    <summary type="html">这篇2025年12月的博客横向对比了南京三家龙歌旋转小火锅分店（栖霞万达茂、马群招商花园城、新街口东方福莱德）。作者从饮料种类、招牌鸭血的供应稳定性以及近期新品（如麻薯鱼豆腐）的口感等方面，梳理了各家门店的异同与个人体验。</summary>
-    
-    
-    
-    <category term="牲活" scheme="https://loveapple.space/blog/categories/%E7%89%B2%E6%B4%BB/"/>
-    
-    
-    <category term="旋转小火锅" scheme="https://loveapple.space/blog/tags/%E6%97%8B%E8%BD%AC%E5%B0%8F%E7%81%AB%E9%94%85/"/>
-    
-    <category term="吃吃吃" scheme="https://loveapple.space/blog/tags/%E5%90%83%E5%90%83%E5%90%83/"/>
-    
   </entry>
-  
   <entry>
-    <title>Hexo+Butterfly深入化自定义：以友链页面卡片宽度调整为例</title>
-    <link href="https://loveapple.space/blog/link-card-width/"/>
+    <author>
+      <name>LoveApple14434</name>
+    </author>
+    <category term="寄术" scheme="https://loveapple.space/blog/categories/%E5%AF%84%E6%9C%AF/"/>
+    <category term="网站建设" scheme="https://loveapple.space/blog/tags/%E7%BD%91%E7%AB%99%E5%BB%BA%E8%AE%BE/"/>
+    <category term="随笔" scheme="https://loveapple.space/blog/tags/%E9%9A%8F%E7%AC%94/"/>
     <id>https://loveapple.space/blog/link-card-width/</id>
+    <link href="https://loveapple.space/blog/link-card-width/"/>
     <published>2025-12-09T03:52:08.000Z</published>
+    <summary>这篇博客详细介绍了如何深度自定义Hexo的Butterfly主题，以解决友链页面卡片因宽度不足导致内容显示不全的问题。作者通过直接修改主题的styl文件，将每行显示三个卡片调整为两个，并取消了描述文字的单行限制，实现了更优雅的友链排版。</summary>
+    <title>Hexo+Butterfly深入化自定义：以友链页面卡片宽度调整为例</title>
     <updated>2025-12-11T03:26:29.828Z</updated>
-    
-    
-    <summary type="html">这篇博客详细介绍了如何深度自定义Hexo的Butterfly主题，以解决友链页面卡片因宽度不足导致内容显示不全的问题。作者通过直接修改主题的styl文件，将每行显示三个卡片调整为两个，并取消了描述文字的单行限制，实现了更优雅的友链排版。</summary>
-    
-    
-    
-    <category term="寄术" scheme="https://loveapple.space/blog/categories/%E5%AF%84%E6%9C%AF/"/>
-    
-    
-    <category term="网站建设" scheme="https://loveapple.space/blog/tags/%E7%BD%91%E7%AB%99%E5%BB%BA%E8%AE%BE/"/>
-    
-    <category term="随笔" scheme="https://loveapple.space/blog/tags/%E9%9A%8F%E7%AC%94/"/>
-    
   </entry>
-  
   <entry>
-    <title>Hexo+Butterfly的dark mode开发</title>
-    <link href="https://loveapple.space/blog/dark-mode/"/>
+    <author>
+      <name>LoveApple14434</name>
+    </author>
+    <category term="寄术" scheme="https://loveapple.space/blog/categories/%E5%AF%84%E6%9C%AF/"/>
+    <category term="网站建设" scheme="https://loveapple.space/blog/tags/%E7%BD%91%E7%AB%99%E5%BB%BA%E8%AE%BE/"/>
+    <category term="Vibe Coding" scheme="https://loveapple.space/blog/tags/Vibe-Coding/"/>
     <id>https://loveapple.space/blog/dark-mode/</id>
+    <link href="https://loveapple.space/blog/dark-mode/"/>
     <published>2025-12-08T04:54:26.000Z</published>
+    <summary>一篇关于为Hexo博客Butterfly主题自定义页面开发黑暗模式适配的实战记录。文章以修复QSL页面在暗黑主题下显示异常为例，展示了如何通过添加CSS选择器快速实现样式切换，并简要剖析了Butterfly主题暗黑模式的实现原理，体现了典型的“Vibe Coding”解决问题风格。</summary>
+    <title>Hexo+Butterfly的dark mode开发</title>
     <updated>2026-09-15T08:49:36.153Z</updated>
-    
-    
-    <summary type="html">一篇关于为Hexo博客Butterfly主题自定义页面开发黑暗模式适配的实战记录。文章以修复QSL页面在暗黑主题下显示异常为例，展示了如何通过添加CSS选择器快速实现样式切换，并简要剖析了Butterfly主题暗黑模式的实现原理，体现了典型的“Vibe Coding”解决问题风格。</summary>
-    
-    
-    
-    <category term="寄术" scheme="https://loveapple.space/blog/categories/%E5%AF%84%E6%9C%AF/"/>
-    
-    
-    <category term="网站建设" scheme="https://loveapple.space/blog/tags/%E7%BD%91%E7%AB%99%E5%BB%BA%E8%AE%BE/"/>
-    
-    <category term="Vibe Coding" scheme="https://loveapple.space/blog/tags/Vibe-Coding/"/>
-    
   </entry>
-  
   <entry>
-    <title>为Hexo博客+Butterfly主题启用Giscus评论系统：一些Bing上搜不到的技巧</title>
-    <link href="https://loveapple.space/blog/giscis-intro/"/>
-    <id>https://loveapple.space/blog/giscis-intro/</id>
-    <published>2025-11-29T08:02:51.000Z</published>
-    <updated>2025-12-11T02:45:39.412Z</updated>
-    
-    
-    <summary type="html">一篇关于在Hexo博客中使用Butterfly主题配置Giscus评论系统的实用指南。文章重点分享了如何解决一个官方文档未提及的进阶配置问题：通过正确使用option字段来实现评论框置顶等自定义功能。</summary>
-    
-    
-    
+    <author>
+      <name>LoveApple14434</name>
+    </author>
     <category term="寄术" scheme="https://loveapple.space/blog/categories/%E5%AF%84%E6%9C%AF/"/>
-    
-    
     <category term="网站建设" scheme="https://loveapple.space/blog/tags/%E7%BD%91%E7%AB%99%E5%BB%BA%E8%AE%BE/"/>
-    
     <category term="Vibe Coding" scheme="https://loveapple.space/blog/tags/Vibe-Coding/"/>
-    
     <category term="评论系统" scheme="https://loveapple.space/blog/tags/%E8%AF%84%E8%AE%BA%E7%B3%BB%E7%BB%9F/"/>
-    
+    <id>https://loveapple.space/blog/giscis-intro/</id>
+    <link href="https://loveapple.space/blog/giscis-intro/"/>
+    <published>2025-11-29T08:02:51.000Z</published>
+    <summary>一篇关于在Hexo博客中使用Butterfly主题配置Giscus评论系统的实用指南。文章重点分享了如何解决一个官方文档未提及的进阶配置问题：通过正确使用option字段来实现评论框置顶等自定义功能。</summary>
+    <title>为Hexo博客+Butterfly主题启用Giscus评论系统：一些Bing上搜不到的技巧</title>
+    <updated>2025-12-11T02:45:39.412Z</updated>
   </entry>
-  
   <entry>
-    <title>暴论：AI（几乎）不能帮你完成你并不会的任务</title>
-    <link href="https://loveapple.space/blog/clash-configuration/"/>
-    <id>https://loveapple.space/blog/clash-configuration/</id>
-    <published>2025-11-27T09:26:50.000Z</published>
-    <updated>2026-09-15T08:48:16.760Z</updated>
-    
-    
-    <summary type="html">一篇对AI编程助手能力的个人反思。作者通过亲身经历——尝试用Deepseek协助完成一个不熟悉的Clash配置文件定制任务，最终却陷入与AI的反复“搏斗”——论证了“AI几乎不能帮你完成你并不会的任务”这一暴论，并分享了过程中的挫折与感悟。</summary>
-    
-    
-    
+    <author>
+      <name>LoveApple14434</name>
+    </author>
     <category term="寄术" scheme="https://loveapple.space/blog/categories/%E5%AF%84%E6%9C%AF/"/>
-    
-    
     <category term="服务器" scheme="https://loveapple.space/blog/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
-    
     <category term="Vibe Coding" scheme="https://loveapple.space/blog/tags/Vibe-Coding/"/>
-    
     <category term="随笔" scheme="https://loveapple.space/blog/tags/%E9%9A%8F%E7%AC%94/"/>
-    
+    <id>https://loveapple.space/blog/clash-configuration/</id>
+    <link href="https://loveapple.space/blog/clash-configuration/"/>
+    <published>2025-11-27T09:26:50.000Z</published>
+    <summary>一篇对AI编程助手能力的个人反思。作者通过亲身经历——尝试用Deepseek协助完成一个不熟悉的Clash配置文件定制任务，最终却陷入与AI的反复“搏斗”——论证了“AI几乎不能帮你完成你并不会的任务”这一暴论，并分享了过程中的挫折与感悟。</summary>
+    <title>暴论：AI（几乎）不能帮你完成你并不会的任务</title>
+    <updated>2026-09-15T08:48:16.760Z</updated>
   </entry>
-  
   <entry>
-    <title>业余无线电个人入门经历</title>
-    <link href="https://loveapple.space/blog/amateur-radio-1/"/>
-    <id>https://loveapple.space/blog/amateur-radio-1/</id>
-    <published>2025-11-10T15:49:02.000Z</published>
-    <updated>2025-12-10T10:37:15.088Z</updated>
-    
-    
-    <summary type="html">一篇关于业余无线电入门的个人经历分享。文章记录了从考证、设台到完成首次通联的全过程，并分享了使用宝峰UV-5R在省中继上与友台成功联络的体验。</summary>
-    
-    
-    
+    <author>
+      <name>LoveApple14434</name>
+    </author>
     <category term="寄术" scheme="https://loveapple.space/blog/categories/%E5%AF%84%E6%9C%AF/"/>
-    
-    
     <category term="EE" scheme="https://loveapple.space/blog/tags/EE/"/>
-    
     <category term="HAM" scheme="https://loveapple.space/blog/tags/HAM/"/>
-    
+    <id>https://loveapple.space/blog/amateur-radio-1/</id>
+    <link href="https://loveapple.space/blog/amateur-radio-1/"/>
+    <published>2025-11-10T15:49:02.000Z</published>
+    <summary>一篇关于业余无线电入门的个人经历分享。文章记录了从考证、设台到完成首次通联的全过程，并分享了使用宝峰UV-5R在省中继上与友台成功联络的体验。</summary>
+    <title>业余无线电个人入门经历</title>
+    <updated>2025-12-10T10:37:15.088Z</updated>
   </entry>
-  
   <entry>
-    <title>NJU九食堂惊现帝王蟹：丰俭由人乃常态，温室育花实可悲</title>
-    <link href="https://loveapple.space/blog/nju-king-crab/"/>
-    <id>https://loveapple.space/blog/nju-king-crab/</id>
-    <published>2025-11-04T03:40:30.000Z</published>
-    <updated>2026-01-02T10:37:06.544Z</updated>
-    
-    
-    <summary type="html">同学：支持。食堂：支持。校领导：支持。网友：反对！</summary>
-    
-    
-    
+    <author>
+      <name>LoveApple14434</name>
+    </author>
     <category term="鱼论" scheme="https://loveapple.space/blog/categories/%E9%B1%BC%E8%AE%BA/"/>
-    
-    
     <category term="NJU" scheme="https://loveapple.space/blog/tags/NJU/"/>
-    
     <category term="随笔" scheme="https://loveapple.space/blog/tags/%E9%9A%8F%E7%AC%94/"/>
-    
+    <id>https://loveapple.space/blog/nju-king-crab/</id>
+    <link href="https://loveapple.space/blog/nju-king-crab/"/>
+    <published>2025-11-04T03:40:30.000Z</published>
+    <summary>同学：支持。食堂：支持。校领导：支持。网友：反对！</summary>
+    <title>NJU九食堂惊现帝王蟹：丰俭由人乃常态，温室育花实可悲</title>
+    <updated>2026-01-02T10:37:06.544Z</updated>
   </entry>
-  
   <entry>
-    <title>数字系统II第一次实验报告</title>
-    <link href="https://loveapple.space/blog/loongarch-linux-1/"/>
-    <id>https://loveapple.space/blog/loongarch-linux-1/</id>
-    <published>2025-10-23T02:32:17.000Z</published>
-    <updated>2025-12-10T10:39:22.881Z</updated>
-    
-    
-    <summary type="html">这是一篇关于在龙芯2K1000LA开发板上进行嵌入式Linux开发实践的详细实验报告。文章记录了从环境搭建、内核编译、文件系统制作到交叉编译工具链使用的完整流程，并分享了实验过程中遇到的问题与解决方案。</summary>
-    
-    
-    
+    <author>
+      <name>LoveApple14434</name>
+    </author>
     <category term="寄术" scheme="https://loveapple.space/blog/categories/%E5%AF%84%E6%9C%AF/"/>
-    
-    
     <category term="开发板" scheme="https://loveapple.space/blog/tags/%E5%BC%80%E5%8F%91%E6%9D%BF/"/>
-    
     <category term="Linux" scheme="https://loveapple.space/blog/tags/Linux/"/>
-    
     <category term="loongarch" scheme="https://loveapple.space/blog/tags/loongarch/"/>
-    
+    <id>https://loveapple.space/blog/loongarch-linux-1/</id>
+    <link href="https://loveapple.space/blog/loongarch-linux-1/"/>
+    <published>2025-10-23T02:32:17.000Z</published>
+    <summary>这是一篇关于在龙芯2K1000LA开发板上进行嵌入式Linux开发实践的详细实验报告。文章记录了从环境搭建、内核编译、文件系统制作到交叉编译工具链使用的完整流程，并分享了实验过程中遇到的问题与解决方案。</summary>
+    <title>数字系统II第一次实验报告</title>
+    <updated>2025-12-10T10:39:22.881Z</updated>
   </entry>
-  
   <entry>
-    <title>举高高旋转小火锅评测</title>
-    <link href="https://loveapple.space/blog/jgg-hotpot/"/>
-    <id>https://loveapple.space/blog/jgg-hotpot/</id>
-    <published>2025-10-15T07:54:15.000Z</published>
-    <updated>2025-12-10T10:38:52.974Z</updated>
-    
-    
-    <summary type="html">一篇来自旋转小火锅爱好者的探店评测。文章从价格、形式、锅底、小料台到菜品等多个维度，将新开的举高高与常见的龙歌等品牌进行了对比，并最终给出了个人评价与推荐理由。</summary>
-    
-    
-    
+    <author>
+      <name>LoveApple14434</name>
+    </author>
     <category term="牲活" scheme="https://loveapple.space/blog/categories/%E7%89%B2%E6%B4%BB/"/>
-    
-    
     <category term="旋转小火锅" scheme="https://loveapple.space/blog/tags/%E6%97%8B%E8%BD%AC%E5%B0%8F%E7%81%AB%E9%94%85/"/>
-    
     <category term="吃吃吃" scheme="https://loveapple.space/blog/tags/%E5%90%83%E5%90%83%E5%90%83/"/>
-    
+    <id>https://loveapple.space/blog/jgg-hotpot/</id>
+    <link href="https://loveapple.space/blog/jgg-hotpot/"/>
+    <published>2025-10-15T07:54:15.000Z</published>
+    <summary>一篇来自旋转小火锅爱好者的探店评测。文章从价格、形式、锅底、小料台到菜品等多个维度，将新开的举高高与常见的龙歌等品牌进行了对比，并最终给出了个人评价与推荐理由。</summary>
+    <title>举高高旋转小火锅评测</title>
+    <updated>2025-12-10T10:38:52.974Z</updated>
   </entry>
-  
   <entry>
-    <title>如何打好螺丝？</title>
-    <link href="https://loveapple.space/blog/how2b-screwer/"/>
-    <id>https://loveapple.space/blog/how2b-screwer/</id>
-    <published>2025-10-09T06:57:21.000Z</published>
-    <updated>2026-09-15T08:51:50.001Z</updated>
-    
-    
-    <summary type="html">一篇来自电脑维修志愿者的经验分享，详细总结了笔记本电脑维修中会遇到的各种螺丝类型、其特性及安装注意事项，并提供了当遇到难拧或已拧花的螺丝时的实用处理技巧。</summary>
-    
-    
-    
+    <author>
+      <name>LoveApple14434</name>
+    </author>
     <category term="寄术" scheme="https://loveapple.space/blog/categories/%E5%AF%84%E6%9C%AF/"/>
-    
-    
     <category term="IT侠" scheme="https://loveapple.space/blog/tags/IT%E4%BE%A0/"/>
-    
     <category term="维修随想" scheme="https://loveapple.space/blog/tags/%E7%BB%B4%E4%BF%AE%E9%9A%8F%E6%83%B3/"/>
-    
+    <id>https://loveapple.space/blog/how2b-screwer/</id>
+    <link href="https://loveapple.space/blog/how2b-screwer/"/>
+    <published>2025-10-09T06:57:21.000Z</published>
+    <summary>一篇来自电脑维修志愿者的经验分享，详细总结了笔记本电脑维修中会遇到的各种螺丝类型、其特性及安装注意事项，并提供了当遇到难拧或已拧花的螺丝时的实用处理技巧。</summary>
+    <title>如何打好螺丝？</title>
+    <updated>2026-09-15T08:51:50.001Z</updated>
   </entry>
-  
   <entry>
-    <title>锁相环技术入门简介</title>
-    <link href="https://loveapple.space/blog/PLL-intro/"/>
-    <id>https://loveapple.space/blog/PLL-intro/</id>
-    <published>2025-10-03T03:46:12.000Z</published>
-    <updated>2026-03-22T13:32:42.984Z</updated>
-    
-    
-    <summary type="html">一篇关于锁相环的入门简介。文章从信号同步的实际问题出发，通俗地解释了锁相环的基本工作原理，并介绍了其核心组件——鉴相器与压控振荡器，以及如何通过加入分频器来实现倍频功能。</summary>
-    
-    
-    
+    <author>
+      <name>LoveApple14434</name>
+    </author>
     <category term="寄术" scheme="https://loveapple.space/blog/categories/%E5%AF%84%E6%9C%AF/"/>
-    
-    
     <category term="EE" scheme="https://loveapple.space/blog/tags/EE/"/>
-    
     <category term="PLL" scheme="https://loveapple.space/blog/tags/PLL/"/>
-    
+    <id>https://loveapple.space/blog/PLL-intro/</id>
+    <link href="https://loveapple.space/blog/PLL-intro/"/>
+    <published>2025-10-03T03:46:12.000Z</published>
+    <summary>一篇关于锁相环的入门简介。文章从信号同步的实际问题出发，通俗地解释了锁相环的基本工作原理，并介绍了其核心组件——鉴相器与压控振荡器，以及如何通过加入分频器来实现倍频功能。</summary>
+    <title>锁相环技术入门简介</title>
+    <updated>2026-03-22T13:32:42.984Z</updated>
   </entry>
-  
   <entry>
-    <title>Arch Linux本土化配置：为pacman指定镜像源</title>
-    <link href="https://loveapple.space/blog/pacman-mirror/"/>
-    <id>https://loveapple.space/blog/pacman-mirror/</id>
-    <published>2025-09-26T04:14:07.000Z</published>
-    <updated>2025-12-12T14:10:24.894Z</updated>
-    
-    
-    <summary type="html">一篇介绍如何为 Arch Linux 的 pacman 包管理器配置国内镜像源以加速下载的指南。文章详细说明了如何使用 reflector 服务自动筛选镜像，并分享了一个自定义脚本技巧，将特定镜像源（如本校镜像）固定排在列表最前，实现自动化与个性化需求的结合。</summary>
-    
-    
-    
+    <author>
+      <name>LoveApple14434</name>
+    </author>
     <category term="寄术" scheme="https://loveapple.space/blog/categories/%E5%AF%84%E6%9C%AF/"/>
-    
-    
     <category term="Arch Linux" scheme="https://loveapple.space/blog/tags/Arch-Linux/"/>
-    
     <category term="Linux" scheme="https://loveapple.space/blog/tags/Linux/"/>
-    
     <category term="镜像源" scheme="https://loveapple.space/blog/tags/%E9%95%9C%E5%83%8F%E6%BA%90/"/>
-    
     <category term="Arch reflector" scheme="https://loveapple.space/blog/tags/Arch-reflector/"/>
-    
+    <id>https://loveapple.space/blog/pacman-mirror/</id>
+    <link href="https://loveapple.space/blog/pacman-mirror/"/>
+    <published>2025-09-26T04:14:07.000Z</published>
+    <summary>一篇介绍如何为 Arch Linux 的 pacman 包管理器配置国内镜像源以加速下载的指南。文章详细说明了如何使用 reflector 服务自动筛选镜像，并分享了一个自定义脚本技巧，将特定镜像源（如本校镜像）固定排在列表最前，实现自动化与个性化需求的结合。</summary>
+    <title>Arch Linux本土化配置：为pacman指定镜像源</title>
+    <updated>2025-12-12T14:10:24.894Z</updated>
   </entry>
-  
   <entry>
-    <title>安装 Arch Linux</title>
-    <link href="https://loveapple.space/blog/install-arch/"/>
-    <id>https://loveapple.space/blog/install-arch/</id>
-    <published>2025-09-24T10:49:59.000Z</published>
-    <updated>2026-09-15T08:55:48.331Z</updated>
-    
-    
-    <summary type="html">一篇记录个人安装 Arch Linux 经历的博客，重点分享了在校园网环境下解决联网问题以及配置引导程序时的曲折过程，并最终成功从零搭建起一个完整的 Arch 系统。</summary>
-    
-    
-    
+    <author>
+      <name>LoveApple14434</name>
+    </author>
     <category term="寄术" scheme="https://loveapple.space/blog/categories/%E5%AF%84%E6%9C%AF/"/>
-    
-    
     <category term="安装系统" scheme="https://loveapple.space/blog/tags/%E5%AE%89%E8%A3%85%E7%B3%BB%E7%BB%9F/"/>
-    
     <category term="Arch Linux" scheme="https://loveapple.space/blog/tags/Arch-Linux/"/>
-    
     <category term="Linux" scheme="https://loveapple.space/blog/tags/Linux/"/>
-    
+    <id>https://loveapple.space/blog/install-arch/</id>
+    <link href="https://loveapple.space/blog/install-arch/"/>
+    <published>2025-09-24T10:49:59.000Z</published>
+    <summary>一篇记录个人安装 Arch Linux 经历的博客，重点分享了在校园网环境下解决联网问题以及配置引导程序时的曲折过程，并最终成功从零搭建起一个完整的 Arch 系统。</summary>
+    <title>安装 Arch Linux</title>
+    <updated>2026-09-15T08:55:48.331Z</updated>
   </entry>
-  
   <entry>
-    <title>换AB面，但是屏幕翻车</title>
-    <link href="https://loveapple.space/blog/BreakScreen/"/>
-    <id>https://loveapple.space/blog/BreakScreen/</id>
-    <published>2025-09-22T06:59:22.000Z</published>
-    <updated>2025-12-10T10:38:26.595Z</updated>
-    
-    
-    <summary type="html">纪录一单thinkbook更换AB面结果屏幕损坏的维修翻车事故。</summary>
-    
-    
-    
+    <author>
+      <name>LoveApple14434</name>
+    </author>
     <category term="寄术" scheme="https://loveapple.space/blog/categories/%E5%AF%84%E6%9C%AF/"/>
-    
-    
     <category term="IT侠" scheme="https://loveapple.space/blog/tags/IT%E4%BE%A0/"/>
-    
     <category term="经验记录归档" scheme="https://loveapple.space/blog/tags/%E7%BB%8F%E9%AA%8C%E8%AE%B0%E5%BD%95%E5%BD%92%E6%A1%A3/"/>
-    
     <category term="维修翻车记录" scheme="https://loveapple.space/blog/tags/%E7%BB%B4%E4%BF%AE%E7%BF%BB%E8%BD%A6%E8%AE%B0%E5%BD%95/"/>
-    
+    <id>https://loveapple.space/blog/BreakScreen/</id>
+    <link href="https://loveapple.space/blog/BreakScreen/"/>
+    <published>2025-09-22T06:59:22.000Z</published>
+    <summary>纪录一单thinkbook更换AB面结果屏幕损坏的维修翻车事故。</summary>
+    <title>换AB面，但是屏幕翻车</title>
+    <updated>2025-12-10T10:38:26.595Z</updated>
   </entry>
-  
   <entry>
-    <title>一个自制的Keil2Cmake转换器小工具</title>
-    <link href="https://loveapple.space/blog/Keil2Cmake/"/>
-    <id>https://loveapple.space/blog/Keil2Cmake/</id>
-    <published>2025-09-21T09:42:57.000Z</published>
-    <updated>2025-12-10T10:39:03.510Z</updated>
-    
-    
-    <summary type="html">一个将根据uvprojx文件将keil工程转换到CMake工程的小工具，以便用VSCode取代Keil uVision。</summary>
-    
-    
-    
+    <author>
+      <name>LoveApple14434</name>
+    </author>
     <category term="寄术" scheme="https://loveapple.space/blog/categories/%E5%AF%84%E6%9C%AF/"/>
-    
-    
     <category term="开源项目" scheme="https://loveapple.space/blog/tags/%E5%BC%80%E6%BA%90%E9%A1%B9%E7%9B%AE/"/>
-    
     <category term="EE" scheme="https://loveapple.space/blog/tags/EE/"/>
-    
     <category term="嵌入式开发" scheme="https://loveapple.space/blog/tags/%E5%B5%8C%E5%85%A5%E5%BC%8F%E5%BC%80%E5%8F%91/"/>
-    
+    <id>https://loveapple.space/blog/Keil2Cmake/</id>
+    <link href="https://loveapple.space/blog/Keil2Cmake/"/>
+    <published>2025-09-21T09:42:57.000Z</published>
+    <summary>一个将根据uvprojx文件将keil工程转换到CMake工程的小工具，以便用VSCode取代Keil uVision。</summary>
+    <title>一个自制的Keil2Cmake转换器小工具</title>
+    <updated>2025-12-10T10:39:03.510Z</updated>
   </entry>
-  
   <entry>
-    <title>本地开发，远程部署：如何把你的服务器变成Git仓库？</title>
-    <link href="https://loveapple.space/blog/GitAway/"/>
-    <id>https://loveapple.space/blog/GitAway/</id>
-    <published>2025-09-10T10:48:13.000Z</published>
-    <updated>2026-09-15T08:50:42.973Z</updated>
-    
-    
-    <summary type="html">在本地机上写代码，远程部署到服务器：你的下一个git服务器何必是GitHub？</summary>
-    
-    
-    
+    <author>
+      <name>LoveApple14434</name>
+    </author>
     <category term="寄术" scheme="https://loveapple.space/blog/categories/%E5%AF%84%E6%9C%AF/"/>
-    
-    
     <category term="服务器" scheme="https://loveapple.space/blog/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
-    
     <category term="远程部署" scheme="https://loveapple.space/blog/tags/%E8%BF%9C%E7%A8%8B%E9%83%A8%E7%BD%B2/"/>
-    
+    <id>https://loveapple.space/blog/GitAway/</id>
+    <link href="https://loveapple.space/blog/GitAway/"/>
+    <published>2025-09-10T10:48:13.000Z</published>
+    <summary>在本地机上写代码，远程部署到服务器：你的下一个git服务器何必是GitHub？</summary>
+    <title>本地开发，远程部署：如何把你的服务器变成Git仓库？</title>
+    <updated>2026-09-15T08:50:42.973Z</updated>
   </entry>
-  
   <entry>
-    <title>部署Friend-Link-House项目:开源社区初探</title>
-    <link href="https://loveapple.space/blog/Blogroll/"/>
-    <id>https://loveapple.space/blog/Blogroll/</id>
-    <published>2025-09-09T03:09:41.000Z</published>
-    <updated>2025-12-10T10:36:19.123Z</updated>
-    
-    
-    <summary type="html">通过RSS自动订阅他人博客网站上的文章</summary>
-    
-    
-    
+    <author>
+      <name>LoveApple14434</name>
+    </author>
     <category term="寄术" scheme="https://loveapple.space/blog/categories/%E5%AF%84%E6%9C%AF/"/>
-    
-    
     <category term="开源项目" scheme="https://loveapple.space/blog/tags/%E5%BC%80%E6%BA%90%E9%A1%B9%E7%9B%AE/"/>
-    
     <category term="服务器" scheme="https://loveapple.space/blog/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
-    
     <category term="网站建设" scheme="https://loveapple.space/blog/tags/%E7%BD%91%E7%AB%99%E5%BB%BA%E8%AE%BE/"/>
-    
     <category term="RSS订阅" scheme="https://loveapple.space/blog/tags/RSS%E8%AE%A2%E9%98%85/"/>
-    
+    <id>https://loveapple.space/blog/Blogroll/</id>
+    <link href="https://loveapple.space/blog/Blogroll/"/>
+    <published>2025-09-09T03:09:41.000Z</published>
+    <summary>通过RSS自动订阅他人博客网站上的文章</summary>
+    <title>部署Friend-Link-House项目:开源社区初探</title>
+    <updated>2025-12-10T10:36:19.123Z</updated>
   </entry>
-  
   <entry>
-    <title>NJU-Undergraduates-Courses</title>
-    <link href="https://loveapple.space/blog/NJU-Undergraduates-Courses/"/>
-    <id>https://loveapple.space/blog/NJU-Undergraduates-Courses/</id>
-    <published>2025-08-16T13:19:29.000Z</published>
-    <updated>2025-12-10T10:39:48.410Z</updated>
-    
-    
-    <summary type="html">此处存放我与wuhaiyuan同学共同撰写的《南京大学本科生课程体系概论》的一份历史版本。</summary>
-    
-    
-    
+    <author>
+      <name>LoveApple14434</name>
+    </author>
     <category term="杂项" scheme="https://loveapple.space/blog/categories/%E6%9D%82%E9%A1%B9/"/>
-    
-    
     <category term="NJU" scheme="https://loveapple.space/blog/tags/NJU/"/>
-    
+    <id>https://loveapple.space/blog/NJU-Undergraduates-Courses/</id>
+    <link href="https://loveapple.space/blog/NJU-Undergraduates-Courses/"/>
+    <published>2025-08-16T13:19:29.000Z</published>
+    <summary>此处存放我与wuhaiyuan同学共同撰写的《南京大学本科生课程体系概论》的一份历史版本。</summary>
+    <title>NJU-Undergraduates-Courses</title>
+    <updated>2025-12-10T10:39:48.410Z</updated>
   </entry>
-  
   <entry>
-    <title>DrawBoard食用指北</title>
-    <link href="https://loveapple.space/blog/Draw-Board-README/"/>
+    <author>
+      <name>LoveApple14434</name>
+    </author>
+    <category term="寄术" scheme="https://loveapple.space/blog/categories/%E5%AF%84%E6%9C%AF/"/>
     <id>https://loveapple.space/blog/Draw-Board-README/</id>
+    <link href="https://loveapple.space/blog/Draw-Board-README/"/>
     <published>2025-08-14T13:31:24.000Z</published>
+    <summary>一个画板小工具的README文档。</summary>
+    <title>DrawBoard食用指北</title>
     <updated>2026-09-15T08:50:09.490Z</updated>
-    
-    
-    <summary type="html">一个画板小工具的README文档。</summary>
-    
-    
-    
-    <category term="寄术" scheme="https://loveapple.space/blog/categories/%E5%AF%84%E6%9C%AF/"/>
-    
-    
   </entry>
-  
   <entry>
-    <title>奶茶电脑之数据拯救</title>
-    <link href="https://loveapple.space/blog/MilkTeaComputer/"/>
-    <id>https://loveapple.space/blog/MilkTeaComputer/</id>
-    <published>2025-08-12T03:21:44.000Z</published>
-    <updated>2025-12-10T10:39:30.965Z</updated>
-    
-    
-    <summary type="html">奶茶电脑之数据拯救</summary>
-    
-    
-    
+    <author>
+      <name>LoveApple14434</name>
+    </author>
     <category term="寄术" scheme="https://loveapple.space/blog/categories/%E5%AF%84%E6%9C%AF/"/>
-    
-    
     <category term="IT侠" scheme="https://loveapple.space/blog/tags/IT%E4%BE%A0/"/>
-    
     <category term="经验记录归档" scheme="https://loveapple.space/blog/tags/%E7%BB%8F%E9%AA%8C%E8%AE%B0%E5%BD%95%E5%BD%92%E6%A1%A3/"/>
-    
     <category term="进水机" scheme="https://loveapple.space/blog/tags/%E8%BF%9B%E6%B0%B4%E6%9C%BA/"/>
-    
+    <id>https://loveapple.space/blog/MilkTeaComputer/</id>
+    <link href="https://loveapple.space/blog/MilkTeaComputer/"/>
+    <published>2025-08-12T03:21:44.000Z</published>
+    <summary>奶茶电脑之数据拯救</summary>
+    <title>奶茶电脑之数据拯救</title>
+    <updated>2025-12-10T10:39:30.965Z</updated>
   </entry>
-  
   <entry>
-    <title>联想供电疑似通病</title>
-    <link href="https://loveapple.space/blog/LenovoPower/"/>
-    <id>https://loveapple.space/blog/LenovoPower/</id>
-    <published>2025-08-12T03:18:43.000Z</published>
-    <updated>2025-12-10T10:39:13.721Z</updated>
-    
-    
-    <summary type="html">联想供电疑似通病，需要拆卸电池解决。</summary>
-    
-    
-    
+    <author>
+      <name>LoveApple14434</name>
+    </author>
     <category term="寄术" scheme="https://loveapple.space/blog/categories/%E5%AF%84%E6%9C%AF/"/>
-    
-    
     <category term="IT侠" scheme="https://loveapple.space/blog/tags/IT%E4%BE%A0/"/>
-    
     <category term="经验记录归档" scheme="https://loveapple.space/blog/tags/%E7%BB%8F%E9%AA%8C%E8%AE%B0%E5%BD%95%E5%BD%92%E6%A1%A3/"/>
-    
     <category term="Lenovo" scheme="https://loveapple.space/blog/tags/Lenovo/"/>
-    
     <category term="供电" scheme="https://loveapple.space/blog/tags/%E4%BE%9B%E7%94%B5/"/>
-    
+    <id>https://loveapple.space/blog/LenovoPower/</id>
+    <link href="https://loveapple.space/blog/LenovoPower/"/>
+    <published>2025-08-12T03:18:43.000Z</published>
+    <summary>联想供电疑似通病，需要拆卸电池解决。</summary>
+    <title>联想供电疑似通病</title>
+    <updated>2025-12-10T10:39:13.721Z</updated>
   </entry>
-  
   <entry>
-    <title>初识ESP32</title>
-    <link href="https://loveapple.space/blog/HelloESP32/"/>
-    <id>https://loveapple.space/blog/HelloESP32/</id>
-    <published>2025-08-07T10:05:41.000Z</published>
-    <updated>2026-09-15T08:51:19.731Z</updated>
-    
-    
-    <summary type="html">初次使用ESP32：神奇小玩具</summary>
-    
-    
-    
+    <author>
+      <name>LoveApple14434</name>
+    </author>
     <category term="寄术" scheme="https://loveapple.space/blog/categories/%E5%AF%84%E6%9C%AF/"/>
-    
-    
     <category term="MCU" scheme="https://loveapple.space/blog/tags/MCU/"/>
-    
     <category term="ESP32" scheme="https://loveapple.space/blog/tags/ESP32/"/>
-    
+    <id>https://loveapple.space/blog/HelloESP32/</id>
+    <link href="https://loveapple.space/blog/HelloESP32/"/>
+    <published>2025-08-07T10:05:41.000Z</published>
+    <summary>初次使用ESP32：神奇小玩具</summary>
+    <title>初识ESP32</title>
+    <updated>2026-09-15T08:51:19.731Z</updated>
   </entry>
-  
   <entry>
-    <title>DDS实现高频信号同步</title>
-    <link href="https://loveapple.space/blog/DDS_RFSync/"/>
-    <id>https://loveapple.space/blog/DDS_RFSync/</id>
-    <published>2025-07-19T05:09:00.000Z</published>
-    <updated>2026-09-15T08:49:52.037Z</updated>
-    
-    
-    <summary type="html">利用DDS模块，实现高频信号同步，相位可调。</summary>
-    
-    
-    
+    <author>
+      <name>LoveApple14434</name>
+    </author>
     <category term="寄术" scheme="https://loveapple.space/blog/categories/%E5%AF%84%E6%9C%AF/"/>
-    
-    
     <category term="NUEDC" scheme="https://loveapple.space/blog/tags/NUEDC/"/>
-    
     <category term="EE" scheme="https://loveapple.space/blog/tags/EE/"/>
-    
     <category term="DDS" scheme="https://loveapple.space/blog/tags/DDS/"/>
-    
+    <id>https://loveapple.space/blog/DDS_RFSync/</id>
+    <link href="https://loveapple.space/blog/DDS_RFSync/"/>
+    <published>2025-07-19T05:09:00.000Z</published>
+    <summary>利用DDS模块，实现高频信号同步，相位可调。</summary>
+    <title>DDS实现高频信号同步</title>
+    <updated>2026-09-15T08:49:52.037Z</updated>
   </entry>
-  
   <entry>
-    <title>NUEDC-2022-F</title>
-    <link href="https://loveapple.space/blog/NUEDC-2022-F/"/>
-    <id>https://loveapple.space/blog/NUEDC-2022-F/</id>
-    <published>2025-07-05T03:41:00.000Z</published>
-    <updated>2025-12-10T10:40:01.939Z</updated>
-    
-    
-    <summary type="html">做电赛往年题的经验：2022年电赛F题。</summary>
-    
-    
-    
+    <author>
+      <name>LoveApple14434</name>
+    </author>
     <category term="寄术" scheme="https://loveapple.space/blog/categories/%E5%AF%84%E6%9C%AF/"/>
-    
-    
     <category term="NUEDC" scheme="https://loveapple.space/blog/tags/NUEDC/"/>
-    
     <category term="EE" scheme="https://loveapple.space/blog/tags/EE/"/>
-    
+    <id>https://loveapple.space/blog/NUEDC-2022-F/</id>
+    <link href="https://loveapple.space/blog/NUEDC-2022-F/"/>
+    <published>2025-07-05T03:41:00.000Z</published>
+    <summary>做电赛往年题的经验：2022年电赛F题。</summary>
+    <title>NUEDC-2022-F</title>
+    <updated>2025-12-10T10:40:01.939Z</updated>
   </entry>
-  
 </feed>
