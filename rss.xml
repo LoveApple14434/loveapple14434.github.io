@@ -8,9 +8,19 @@
     </description>
     <language>zh</language>
     <copyright>All rights reserved 2026, LoveApple14434</copyright>
-    <lastBuildDate>Wed, 21 Oct 2026 09:44:53 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 24 Oct 2026 08:25:56 GMT</lastBuildDate>
     <generator>Hexo</generator>
     <atom:link href="https://loveapple.space/blog/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>论文笔记（二）：预相位幅相控制超表面</title>
+      <link>https://loveapple.space/blog/article-note-2/</link>
+      <description>
+        <![CDATA[<h2 id="文献基本信息"><a href="#文献基本信息" class="headerlink" title="文献基本信息"></a>文献基本信息</h2><ul>
+<li>题目：Prephase-Based Reconfigurable Joint Amplitude]]>
+      </description>
+      <author>LoveApple14434</author>
+      <pubDate>Sat, 24 Oct 2026 06:19:11 GMT</pubDate>
+    </item>
     <item>
       <title>SDR-Z103 在 Arch Linux 下的安装与调试总结</title>
       <link>https://loveapple.space/blog/SDR-Z103-GNURadio/</link>
