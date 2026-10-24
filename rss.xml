@@ -8,17 +8,17 @@
     </description>
     <language>zh</language>
     <copyright>All rights reserved 2026, LoveApple14434</copyright>
-    <lastBuildDate>Sat, 24 Oct 2026 08:25:56 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 24 Oct 2026 09:00:10 GMT</lastBuildDate>
     <generator>Hexo</generator>
     <atom:link href="https://loveapple.space/blog/rss.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>论文笔记（二）：预相位幅相控制超表面</title>
       <link>https://loveapple.space/blog/article-note-2/</link>
-      <description>
-        <![CDATA[<h2 id="文献基本信息"><a href="#文献基本信息" class="headerlink" title="文献基本信息"></a>文献基本信息</h2><ul>
-<li>题目：Prephase-Based Reconfigurable Joint Amplitude]]>
-      </description>
+      <description>这篇论文笔记介绍了南京大学EMLAB提出的一种基于预相位的可重构幅相联合控制超表面。每个单元仅用两只PIN二极管，通过单一偏置电压同时实现连续幅度调节与1-bit相位切换，并借助两种预相位单元将相位扩展为准2-bit，从而在5.9GHz实现单波束、多波束、强度调节及极化转换等多功能散射操控。</description>
       <author>LoveApple14434</author>
+      <category domain="https://loveapple.space/blog/categories/%E5%AF%84%E6%9C%AF/">寄术</category>
+      <category domain="https://loveapple.space/blog/tags/EE/">EE</category>
+      <category domain="https://loveapple.space/blog/tags/%E8%AE%BA%E6%96%87%E7%AC%94%E8%AE%B0/">论文笔记</category>
       <pubDate>Sat, 24 Oct 2026 06:19:11 GMT</pubDate>
     </item>
     <item>
