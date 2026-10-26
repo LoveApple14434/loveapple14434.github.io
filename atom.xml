@@ -12,7 +12,21 @@
     <![CDATA[开源技术实践者 & 射频电子新人 | LoveApple14434 的个人领地 | 一条爱苹果的水煮鱼。深度分享射频/微波、业余无线电硬核技术笔记，开源项目技术实践以及博客网站建设经验，IT侠笔记本维修随录，兼谈NJU校园趣闻与水煮鱼的生活思考。探索技术前沿，记录成长点滴。]]>
   </subtitle>
   <title>LoveApple14434的主页</title>
-  <updated>2026-10-24T09:00:10.910Z</updated>
+  <updated>2026-10-26T08:27:03.554Z</updated>
+  <entry>
+    <author>
+      <name>LoveApple14434</name>
+    </author>
+    <category term="寄术" scheme="https://loveapple.space/blog/categories/%E5%AF%84%E6%9C%AF/"/>
+    <category term="EE" scheme="https://loveapple.space/blog/tags/EE/"/>
+    <category term="论文笔记" scheme="https://loveapple.space/blog/tags/%E8%AE%BA%E6%96%87%E7%AC%94%E8%AE%B0/"/>
+    <id>https://loveapple.space/blog/article-note-3/</id>
+    <link href="https://loveapple.space/blog/article-note-3/"/>
+    <published>2026-10-26T07:05:14.000Z</published>
+    <summary>这篇论文笔记介绍了海军工程大学提出的一种可重构超表面幅相低耦合设计方法。通过将两只PIN管分别置于强感应电流区与弱感应电流区，使幅度调控与1-bit相位调控相互独立，并基于APGS算法在16×16阵列上完成能量聚焦实验验证。</summary>
+    <title>论文笔记（二）：幅相低耦合设计</title>
+    <updated>2026-10-26T08:27:03.554Z</updated>
+  </entry>
   <entry>
     <author>
       <name>LoveApple14434</name>
@@ -404,8 +418,8 @@
       <name>LoveApple14434</name>
     </author>
     <category term="寄术" scheme="https://loveapple.space/blog/categories/%E5%AF%84%E6%9C%AF/"/>
-    <category term="小主机" scheme="https://loveapple.space/blog/tags/%E5%B0%8F%E4%B8%BB%E6%9C%BA/"/>
     <category term="NAS" scheme="https://loveapple.space/blog/tags/NAS/"/>
+    <category term="小主机" scheme="https://loveapple.space/blog/tags/%E5%B0%8F%E4%B8%BB%E6%9C%BA/"/>
     <category term="CloudFlare Tunnel Zero Trust" scheme="https://loveapple.space/blog/tags/CloudFlare-Tunnel-Zero-Trust/"/>
     <category term="Zerotier" scheme="https://loveapple.space/blog/tags/Zerotier/"/>
     <category term="穿透" scheme="https://loveapple.space/blog/tags/%E7%A9%BF%E9%80%8F/"/>
@@ -763,8 +777,8 @@
       <name>LoveApple14434</name>
     </author>
     <category term="寄术" scheme="https://loveapple.space/blog/categories/%E5%AF%84%E6%9C%AF/"/>
-    <category term="开源项目" scheme="https://loveapple.space/blog/tags/%E5%BC%80%E6%BA%90%E9%A1%B9%E7%9B%AE/"/>
     <category term="EE" scheme="https://loveapple.space/blog/tags/EE/"/>
+    <category term="开源项目" scheme="https://loveapple.space/blog/tags/%E5%BC%80%E6%BA%90%E9%A1%B9%E7%9B%AE/"/>
     <category term="嵌入式开发" scheme="https://loveapple.space/blog/tags/%E5%B5%8C%E5%85%A5%E5%BC%8F%E5%BC%80%E5%8F%91/"/>
     <id>https://loveapple.space/blog/Keil2Cmake/</id>
     <link href="https://loveapple.space/blog/Keil2Cmake/"/>

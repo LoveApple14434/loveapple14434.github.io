@@ -8,9 +8,19 @@
     </description>
     <language>zh</language>
     <copyright>All rights reserved 2026, LoveApple14434</copyright>
-    <lastBuildDate>Sat, 24 Oct 2026 09:00:10 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 26 Oct 2026 08:27:03 GMT</lastBuildDate>
     <generator>Hexo</generator>
     <atom:link href="https://loveapple.space/blog/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>论文笔记（二）：幅相低耦合设计</title>
+      <link>https://loveapple.space/blog/article-note-3/</link>
+      <description>这篇论文笔记介绍了海军工程大学提出的一种可重构超表面幅相低耦合设计方法。通过将两只PIN管分别置于强感应电流区与弱感应电流区，使幅度调控与1-bit相位调控相互独立，并基于APGS算法在16×16阵列上完成能量聚焦实验验证。</description>
+      <author>LoveApple14434</author>
+      <category domain="https://loveapple.space/blog/categories/%E5%AF%84%E6%9C%AF/">寄术</category>
+      <category domain="https://loveapple.space/blog/tags/EE/">EE</category>
+      <category domain="https://loveapple.space/blog/tags/%E8%AE%BA%E6%96%87%E7%AC%94%E8%AE%B0/">论文笔记</category>
+      <pubDate>Mon, 26 Oct 2026 07:05:14 GMT</pubDate>
+    </item>
     <item>
       <title>论文笔记（二）：预相位幅相控制超表面</title>
       <link>https://loveapple.space/blog/article-note-2/</link>
@@ -291,8 +301,8 @@
       <description>这篇博客详细对比了三种实现内网服务器公网访问的方案：Zerotier直连、Zerotier配合云服务器中转以及Cloudflare Tunnel。作者基于iStoreOS系统搭建了多项服务，并从配置难度、带宽表现和适用场景等方面分析了每种方法的优缺点，并通过实测数据为读者提供了直观的参考，帮助你根据自身网络条件选择合适的内网穿透方案。</description>
       <author>LoveApple14434</author>
       <category domain="https://loveapple.space/blog/categories/%E5%AF%84%E6%9C%AF/">寄术</category>
-      <category domain="https://loveapple.space/blog/tags/%E5%B0%8F%E4%B8%BB%E6%9C%BA/">小主机</category>
       <category domain="https://loveapple.space/blog/tags/NAS/">NAS</category>
+      <category domain="https://loveapple.space/blog/tags/%E5%B0%8F%E4%B8%BB%E6%9C%BA/">小主机</category>
       <category domain="https://loveapple.space/blog/tags/CloudFlare-Tunnel-Zero-Trust/">CloudFlare Tunnel Zero Trust</category>
       <category domain="https://loveapple.space/blog/tags/Zerotier/">Zerotier</category>
       <category domain="https://loveapple.space/blog/tags/%E7%A9%BF%E9%80%8F/">穿透</category>
@@ -550,8 +560,8 @@
       <description>一个将根据uvprojx文件将keil工程转换到CMake工程的小工具，以便用VSCode取代Keil uVision。</description>
       <author>LoveApple14434</author>
       <category domain="https://loveapple.space/blog/categories/%E5%AF%84%E6%9C%AF/">寄术</category>
-      <category domain="https://loveapple.space/blog/tags/%E5%BC%80%E6%BA%90%E9%A1%B9%E7%9B%AE/">开源项目</category>
       <category domain="https://loveapple.space/blog/tags/EE/">EE</category>
+      <category domain="https://loveapple.space/blog/tags/%E5%BC%80%E6%BA%90%E9%A1%B9%E7%9B%AE/">开源项目</category>
       <category domain="https://loveapple.space/blog/tags/%E5%B5%8C%E5%85%A5%E5%BC%8F%E5%BC%80%E5%8F%91/">嵌入式开发</category>
       <pubDate>Sun, 21 Sep 2025 09:42:57 GMT</pubDate>
     </item>
