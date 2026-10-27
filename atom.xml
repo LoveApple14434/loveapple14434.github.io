@@ -12,7 +12,7 @@
     <![CDATA[开源技术实践者 & 射频电子新人 | LoveApple14434 的个人领地 | 一条爱苹果的水煮鱼。深度分享射频/微波、业余无线电硬核技术笔记，开源项目技术实践以及博客网站建设经验，IT侠笔记本维修随录，兼谈NJU校园趣闻与水煮鱼的生活思考。探索技术前沿，记录成长点滴。]]>
   </subtitle>
   <title>LoveApple14434的主页</title>
-  <updated>2026-10-26T08:27:03.554Z</updated>
+  <updated>2026-10-27T15:59:26.527Z</updated>
   <entry>
     <author>
       <name>LoveApple14434</name>
@@ -25,7 +25,7 @@
     <published>2026-10-26T07:05:14.000Z</published>
     <summary>这篇论文笔记介绍了海军工程大学提出的一种可重构超表面幅相低耦合设计方法。通过将两只PIN管分别置于强感应电流区与弱感应电流区，使幅度调控与1-bit相位调控相互独立，并基于APGS算法在16×16阵列上完成能量聚焦实验验证。</summary>
     <title>论文笔记（二）：幅相低耦合设计</title>
-    <updated>2026-10-26T08:27:03.554Z</updated>
+    <updated>2026-10-27T15:59:26.527Z</updated>
   </entry>
   <entry>
     <author>
@@ -39,7 +39,7 @@
     <published>2026-10-24T06:19:11.000Z</published>
     <summary>这篇论文笔记介绍了南京大学EMLAB提出的一种基于预相位的可重构幅相联合控制超表面。每个单元仅用两只PIN二极管，通过单一偏置电压同时实现连续幅度调节与1-bit相位切换，并借助两种预相位单元将相位扩展为准2-bit，从而在5.9GHz实现单波束、多波束、强度调节及极化转换等多功能散射操控。</summary>
     <title>论文笔记（二）：预相位幅相控制超表面</title>
-    <updated>2026-10-24T09:00:10.910Z</updated>
+    <updated>2026-10-27T15:59:26.526Z</updated>
   </entry>
   <entry>
     <author>
@@ -67,7 +67,7 @@
     <published>2026-10-19T13:06:01.000Z</published>
     <summary>这篇读书笔记介绍了东南大学崔铁军院士组关于幅相编程超表面的研究工作。文章梳理了超表面的三层PCB结构设计——顶层天线接收、中层VGA调幅、底层PIN管调相，重点分析了通过对称路径实现幅相解耦的机制，以及利用FPGA时间编码在+1阶谐波上实现3-bit相位控制的原理，并概述了波束方向控制的三种实验示例。</summary>
     <title>论文笔记（一）：幅相编程超表面</title>
-    <updated>2026-10-19T13:46:05.782Z</updated>
+    <updated>2026-10-27T15:50:15.624Z</updated>
   </entry>
   <entry>
     <author>
@@ -81,7 +81,7 @@
     <published>2026-10-13T14:41:48.000Z</published>
     <summary>想写点但不知道写啥了，把实验报告贴上来水一篇。</summary>
     <title>偶极子天线设计仿真实验</title>
-    <updated>2026-10-13T14:49:35.375Z</updated>
+    <updated>2026-10-27T15:50:19.191Z</updated>
   </entry>
   <entry>
     <author>
@@ -176,7 +176,7 @@
     <published>2026-08-28T16:49:31.000Z</published>
     <summary>可是水煮鱼🥺……真的是区啊😅</summary>
     <title>TI杯模拟邀请赛回顾</title>
-    <updated>2026-09-04T09:31:18.995Z</updated>
+    <updated>2026-10-27T15:59:26.527Z</updated>
   </entry>
   <entry>
     <author>
@@ -418,8 +418,8 @@
       <name>LoveApple14434</name>
     </author>
     <category term="寄术" scheme="https://loveapple.space/blog/categories/%E5%AF%84%E6%9C%AF/"/>
-    <category term="NAS" scheme="https://loveapple.space/blog/tags/NAS/"/>
     <category term="小主机" scheme="https://loveapple.space/blog/tags/%E5%B0%8F%E4%B8%BB%E6%9C%BA/"/>
+    <category term="NAS" scheme="https://loveapple.space/blog/tags/NAS/"/>
     <category term="CloudFlare Tunnel Zero Trust" scheme="https://loveapple.space/blog/tags/CloudFlare-Tunnel-Zero-Trust/"/>
     <category term="Zerotier" scheme="https://loveapple.space/blog/tags/Zerotier/"/>
     <category term="穿透" scheme="https://loveapple.space/blog/tags/%E7%A9%BF%E9%80%8F/"/>
@@ -806,8 +806,8 @@
       <name>LoveApple14434</name>
     </author>
     <category term="寄术" scheme="https://loveapple.space/blog/categories/%E5%AF%84%E6%9C%AF/"/>
-    <category term="开源项目" scheme="https://loveapple.space/blog/tags/%E5%BC%80%E6%BA%90%E9%A1%B9%E7%9B%AE/"/>
     <category term="服务器" scheme="https://loveapple.space/blog/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
+    <category term="开源项目" scheme="https://loveapple.space/blog/tags/%E5%BC%80%E6%BA%90%E9%A1%B9%E7%9B%AE/"/>
     <category term="网站建设" scheme="https://loveapple.space/blog/tags/%E7%BD%91%E7%AB%99%E5%BB%BA%E8%AE%BE/"/>
     <category term="RSS订阅" scheme="https://loveapple.space/blog/tags/RSS%E8%AE%A2%E9%98%85/"/>
     <id>https://loveapple.space/blog/Blogroll/</id>
@@ -855,7 +855,7 @@
     <published>2025-08-12T03:21:44.000Z</published>
     <summary>奶茶电脑之数据拯救</summary>
     <title>奶茶电脑之数据拯救</title>
-    <updated>2025-12-10T10:39:30.965Z</updated>
+    <updated>2026-10-27T15:51:52.011Z</updated>
   </entry>
   <entry>
     <author>
@@ -885,7 +885,7 @@
     <published>2025-08-07T10:05:41.000Z</published>
     <summary>初次使用ESP32：神奇小玩具</summary>
     <title>初识ESP32</title>
-    <updated>2026-09-15T08:51:19.731Z</updated>
+    <updated>2026-10-27T15:51:21.075Z</updated>
   </entry>
   <entry>
     <author>
@@ -900,7 +900,7 @@
     <published>2025-07-19T05:09:00.000Z</published>
     <summary>利用DDS模块，实现高频信号同步，相位可调。</summary>
     <title>DDS实现高频信号同步</title>
-    <updated>2026-09-15T08:49:52.037Z</updated>
+    <updated>2026-10-27T15:51:52.011Z</updated>
   </entry>
   <entry>
     <author>
@@ -914,6 +914,6 @@
     <published>2025-07-05T03:41:00.000Z</published>
     <summary>做电赛往年题的经验：2022年电赛F题。</summary>
     <title>NUEDC-2022-F</title>
-    <updated>2025-12-10T10:40:01.939Z</updated>
+    <updated>2026-10-27T15:51:52.012Z</updated>
   </entry>
 </feed>
