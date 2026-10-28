@@ -8,11 +8,11 @@
     </description>
     <language>zh</language>
     <copyright>All rights reserved 2026, LoveApple14434</copyright>
-    <lastBuildDate>Tue, 27 Oct 2026 15:59:26 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 28 Oct 2026 04:16:30 GMT</lastBuildDate>
     <generator>Hexo</generator>
     <atom:link href="https://loveapple.space/blog/rss.xml" rel="self" type="application/rss+xml"/>
     <item>
-      <title>论文笔记（二）：幅相低耦合设计</title>
+      <title>论文笔记（三）：幅相低耦合设计</title>
       <link>https://loveapple.space/blog/article-note-3/</link>
       <description>这篇论文笔记介绍了海军工程大学提出的一种可重构超表面幅相低耦合设计方法。通过将两只PIN管分别置于强感应电流区与弱感应电流区，使幅度调控与1-bit相位调控相互独立，并基于APGS算法在16×16阵列上完成能量聚焦实验验证。</description>
       <author>LoveApple14434</author>
