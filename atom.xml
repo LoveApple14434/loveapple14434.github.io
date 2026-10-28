@@ -12,7 +12,21 @@
     <![CDATA[开源技术实践者 & 射频电子新人 | LoveApple14434 的个人领地 | 一条爱苹果的水煮鱼。深度分享射频/微波、业余无线电硬核技术笔记，开源项目技术实践以及博客网站建设经验，IT侠笔记本维修随录，兼谈NJU校园趣闻与水煮鱼的生活思考。探索技术前沿，记录成长点滴。]]>
   </subtitle>
   <title>LoveApple14434的主页</title>
-  <updated>2026-10-28T04:16:30.111Z</updated>
+  <updated>2026-10-28T12:57:22.843Z</updated>
+  <entry>
+    <author>
+      <name>LoveApple14434</name>
+    </author>
+    <category term="寄术" scheme="https://loveapple.space/blog/categories/%E5%AF%84%E6%9C%AF/"/>
+    <category term="EE" scheme="https://loveapple.space/blog/tags/EE/"/>
+    <category term="论文笔记" scheme="https://loveapple.space/blog/tags/%E8%AE%BA%E6%96%87%E7%AC%94%E8%AE%B0/"/>
+    <id>https://loveapple.space/blog/article-note-4/</id>
+    <link href="https://loveapple.space/blog/article-note-4/"/>
+    <published>2026-10-28T12:16:09.000Z</published>
+    <summary>这篇论文笔记介绍了东南大学崔铁军组提出的一种滤波、放大、调相一体化的可重构智能超表面。文章梳理了其多层架构设计，重点分析了基于正交线极化与集成器件的滤波放大链路，以及通过开关移相器组合实现2-bit相位控制的工作原理，并概述了仿真与实测在相位、波束、幅度放大及滤波性能上的验证结果。</summary>
+    <title>论文笔记（四）：滤波/放大/调相一体超表面</title>
+    <updated>2026-10-28T12:57:22.843Z</updated>
+  </entry>
   <entry>
     <author>
       <name>LoveApple14434</name>

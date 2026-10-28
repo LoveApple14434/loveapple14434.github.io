@@ -8,9 +8,19 @@
     </description>
     <language>zh</language>
     <copyright>All rights reserved 2026, LoveApple14434</copyright>
-    <lastBuildDate>Wed, 28 Oct 2026 04:16:30 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 28 Oct 2026 12:57:22 GMT</lastBuildDate>
     <generator>Hexo</generator>
     <atom:link href="https://loveapple.space/blog/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>论文笔记（四）：滤波/放大/调相一体超表面</title>
+      <link>https://loveapple.space/blog/article-note-4/</link>
+      <description>这篇论文笔记介绍了东南大学崔铁军组提出的一种滤波、放大、调相一体化的可重构智能超表面。文章梳理了其多层架构设计，重点分析了基于正交线极化与集成器件的滤波放大链路，以及通过开关移相器组合实现2-bit相位控制的工作原理，并概述了仿真与实测在相位、波束、幅度放大及滤波性能上的验证结果。</description>
+      <author>LoveApple14434</author>
+      <category domain="https://loveapple.space/blog/categories/%E5%AF%84%E6%9C%AF/">寄术</category>
+      <category domain="https://loveapple.space/blog/tags/EE/">EE</category>
+      <category domain="https://loveapple.space/blog/tags/%E8%AE%BA%E6%96%87%E7%AC%94%E8%AE%B0/">论文笔记</category>
+      <pubDate>Wed, 28 Oct 2026 12:16:09 GMT</pubDate>
+    </item>
     <item>
       <title>论文笔记（三）：幅相低耦合设计</title>
       <link>https://loveapple.space/blog/article-note-3/</link>
