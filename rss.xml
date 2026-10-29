@@ -8,9 +8,21 @@
     </description>
     <language>zh</language>
     <copyright>All rights reserved 2026, LoveApple14434</copyright>
-    <lastBuildDate>Wed, 28 Oct 2026 12:57:22 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 29 Oct 2026 15:56:19 GMT</lastBuildDate>
     <generator>Hexo</generator>
     <atom:link href="https://loveapple.space/blog/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>给静态主页加一张 Wordle 成绩卡：从手动导入到自动同步</title>
+      <link>https://loveapple.space/blog/wordle-sync-homepage/</link>
+      <description>一次把 Wordle 成绩接进纯静态个人主页的实践：用油猴脚本拦截 Share 剪贴板，把颜色数据写到自建 VPS，再由前端只读展示，顺便记录数据格式、读写分离、安全边界和几个前端踩坑。</description>
+      <author>LoveApple14434</author>
+      <category domain="https://loveapple.space/blog/categories/%E5%AF%84%E6%9C%AF/">寄术</category>
+      <category domain="https://loveapple.space/blog/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/">服务器</category>
+      <category domain="https://loveapple.space/blog/tags/%E7%BD%91%E7%AB%99%E5%BB%BA%E8%AE%BE/">网站建设</category>
+      <category domain="https://loveapple.space/blog/tags/Vibe-Coding/">Vibe Coding</category>
+      <category domain="https://loveapple.space/blog/tags/%E6%B2%B9%E7%8C%B4/">油猴</category>
+      <pubDate>Thu, 29 Oct 2026 15:36:16 GMT</pubDate>
+    </item>
     <item>
       <title>论文笔记（四）：滤波/放大/调相一体超表面</title>
       <link>https://loveapple.space/blog/article-note-4/</link>
