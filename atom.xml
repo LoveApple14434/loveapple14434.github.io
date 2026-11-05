@@ -12,7 +12,21 @@
     <![CDATA[开源技术实践者 & 射频电子新人 | LoveApple14434 的个人领地 | 一条爱苹果的水煮鱼。深度分享射频/微波、业余无线电硬核技术笔记，开源项目技术实践以及博客网站建设经验，IT侠笔记本维修随录，兼谈NJU校园趣闻与水煮鱼的生活思考。探索技术前沿，记录成长点滴。]]>
   </subtitle>
   <title>LoveApple14434的主页</title>
-  <updated>2026-10-29T15:56:19.968Z</updated>
+  <updated>2026-11-05T01:59:39.156Z</updated>
+  <entry>
+    <author>
+      <name>LoveApple14434</name>
+    </author>
+    <category term="寄术" scheme="https://loveapple.space/blog/categories/%E5%AF%84%E6%9C%AF/"/>
+    <category term="IT侠" scheme="https://loveapple.space/blog/tags/IT%E4%BE%A0/"/>
+    <category term="经验记录归档" scheme="https://loveapple.space/blog/tags/%E7%BB%8F%E9%AA%8C%E8%AE%B0%E5%BD%95%E5%BD%92%E6%A1%A3/"/>
+    <id>https://loveapple.space/blog/R9000P-blackscreen/</id>
+    <link href="https://loveapple.space/blog/R9000P-blackscreen/"/>
+    <published>2026-11-05T01:57:45.000Z</published>
+    <summary>这篇维修记录讲述了IT侠处理一台R9000P高负载黑屏故障的过程。清灰后问题依旧，但外接屏幕稳定、切换刷新率可让原装屏恢复显示，最终怀疑是屏线过热或显卡体质问题，只能建议客户用小屏幕切换刷新率应急，充满维修现场的无奈与神奇。</summary>
+    <title>神秘拯救者的神秘显卡神秘屏幕</title>
+    <updated>2026-11-05T01:59:39.156Z</updated>
+  </entry>
   <entry>
     <author>
       <name>LoveApple14434</name>
