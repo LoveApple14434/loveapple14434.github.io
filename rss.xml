@@ -625,8 +625,8 @@
       <description>一个将根据uvprojx文件将keil工程转换到CMake工程的小工具，以便用VSCode取代Keil uVision。</description>
       <author>LoveApple14434</author>
       <category domain="https://loveapple.space/blog/categories/%E5%AF%84%E6%9C%AF/">寄术</category>
-      <category domain="https://loveapple.space/blog/tags/EE/">EE</category>
       <category domain="https://loveapple.space/blog/tags/%E5%BC%80%E6%BA%90%E9%A1%B9%E7%9B%AE/">开源项目</category>
+      <category domain="https://loveapple.space/blog/tags/EE/">EE</category>
       <category domain="https://loveapple.space/blog/tags/%E5%B5%8C%E5%85%A5%E5%BC%8F%E5%BC%80%E5%8F%91/">嵌入式开发</category>
       <pubDate>Sun, 21 Sep 2025 09:42:57 GMT</pubDate>
     </item>
@@ -646,8 +646,8 @@
       <description>通过RSS自动订阅他人博客网站上的文章</description>
       <author>LoveApple14434</author>
       <category domain="https://loveapple.space/blog/categories/%E5%AF%84%E6%9C%AF/">寄术</category>
-      <category domain="https://loveapple.space/blog/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/">服务器</category>
       <category domain="https://loveapple.space/blog/tags/%E5%BC%80%E6%BA%90%E9%A1%B9%E7%9B%AE/">开源项目</category>
+      <category domain="https://loveapple.space/blog/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/">服务器</category>
       <category domain="https://loveapple.space/blog/tags/%E7%BD%91%E7%AB%99%E5%BB%BA%E8%AE%BE/">网站建设</category>
       <category domain="https://loveapple.space/blog/tags/RSS%E8%AE%A2%E9%98%85/">RSS订阅</category>
       <pubDate>Tue, 09 Sep 2025 03:09:41 GMT</pubDate>
