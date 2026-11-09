@@ -1,0 +1,432 @@
+<!DOCTYPE html><html lang="zh" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>论文笔记（五）：反射式放大器应用于超表面 | LoveApple14434的主页</title><meta name="author" content="LoveApple14434"><meta name="copyright" content="LoveApple14434"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="ffffff"><meta name="description" content="文献基本信息 题目：An Active Reconfigurable Intelligent Surface Utilizing Phase-Reconfigurable Reflection Amplifiers 一种主动式可重构智能超表面，使用可调相的反射放大器   研究来自于香港科技大学 发表于《IEEE Transactions on Microwave Theory and Techno">
+<meta property="og:type" content="article">
+<meta property="og:title" content="论文笔记（五）：反射式放大器应用于超表面">
+<meta property="og:url" content="https://loveapple.space/blog/article-note-5/">
+<meta property="og:site_name" content="LoveApple14434的主页">
+<meta property="og:description" content="文献基本信息 题目：An Active Reconfigurable Intelligent Surface Utilizing Phase-Reconfigurable Reflection Amplifiers 一种主动式可重构智能超表面，使用可调相的反射放大器   研究来自于香港科技大学 发表于《IEEE Transactions on Microwave Theory and Techno">
+<meta property="og:locale">
+<meta property="og:image" content="https://loveapple.space/img-api/random-image?3598">
+<meta property="article:published_time" content="2026-11-08T10:05:21.000Z">
+<meta property="article:modified_time" content="2026-11-08T12:59:41.630Z">
+<meta property="article:author" content="LoveApple14434">
+<meta property="article:tag" content="EE">
+<meta property="article:tag" content="论文笔记">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://loveapple.space/img-api/random-image?3598"><script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "论文笔记（五）：反射式放大器应用于超表面",
+  "url": "https://loveapple.space/blog/article-note-5/",
+  "image": "https://loveapple.space/img-api/random-image?3598",
+  "datePublished": "2026-11-08T10:05:21.000Z",
+  "dateModified": "2026-11-08T12:59:41.630Z",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "LoveApple14434",
+      "url": "https://loveapple.space/blog"
+    }
+  ]
+}</script><link rel="shortcut icon" href="/blog/img/machinist.jpg"><link rel="canonical" href="https://loveapple.space/blog/article-note-5/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//www.google-analytics.com" crossorigin=""/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/blog/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><script>
+    (() => {
+      
+    const saveToLocal = {
+      set: (key, value, ttl) => {
+        if (!ttl) return
+        const expiry = Date.now() + ttl * 86400000
+        localStorage.setItem(key, JSON.stringify({ value, expiry }))
+      },
+      get: key => {
+        const itemStr = localStorage.getItem(key)
+        if (!itemStr) return undefined
+        const { value, expiry } = JSON.parse(itemStr)
+        if (Date.now() > expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return value
+      }
+    }
+
+    window.btf = {
+      saveToLocal,
+      getScript: (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        Object.entries(attr).forEach(([key, val]) => script.setAttribute(key, val))
+        script.onload = script.onreadystatechange = () => {
+          if (!script.readyState || /loaded|complete/.test(script.readyState)) resolve()
+        }
+        script.onerror = reject
+        document.head.appendChild(script)
+      }),
+      getCSS: (url, id) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onload = link.onreadystatechange = () => {
+          if (!link.readyState || /loaded|complete/.test(link.readyState)) resolve()
+        }
+        link.onerror = reject
+        document.head.appendChild(link)
+      }),
+      addGlobalFn: (key, fn, name = false, parent = window) => {
+        if (!false && key.startsWith('pjax')) return
+        const globalFn = parent.globalFn || {}
+        globalFn[key] = globalFn[key] || {}
+        globalFn[key][name || Object.keys(globalFn[key]).length] = fn
+        parent.globalFn = globalFn
+      }
+    }
+  
+      
+      const activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      const activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', 'ffffff')
+        }
+      }
+
+      btf.activateDarkMode = activateDarkMode
+      btf.activateLightMode = activateLightMode
+
+      const theme = saveToLocal.get('theme')
+    
+          theme === 'dark' ? activateDarkMode() : theme === 'light' ? activateLightMode() : null
+        
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        document.documentElement.classList.toggle('hide-aside', asideStatus === 'hide')
+      }
+    
+      
+    const detectApple = () => {
+      if (/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)) {
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+  
+    })()
+  </script><script async="async" src="https://www.googletagmanager.com/gtag/js?id=G-S7TKJ52XWZ"></script><script>window.dataLayer = window.dataLayer || []
+function gtag(){dataLayer.push(arguments)}
+gtag('js', new Date())
+gtag('config', 'G-S7TKJ52XWZ')
+btf.addGlobalFn('pjaxComplete', () => {
+  gtag('config', 'G-S7TKJ52XWZ', {'page_path': window.location.pathname})
+}, 'google_analytics')
+</script><script>const GLOBAL_CONFIG = {
+  root: '/blog/',
+  algolia: undefined,
+  localSearch: {"path":"/blog/search.json","preload":true,"top_n_per_article":1,"unescape":true,"languages":{"hits_empty":"No results found for: ${query}","hits_stats":"${hits} articles found"}},
+  translate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false,"highlightFullpage":false,"highlightMacStyle":false},
+  copy: {
+    success: 'Copy Successful',
+    error: 'Copy Failed',
+    noSupport: 'Browser Not Supported'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: 'days',
+  dateSuffix: {
+    just: 'Just now',
+    min: 'minutes ago',
+    hour: 'hours ago',
+    day: 'days ago',
+    month: 'months ago'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid/dist/infinitegrid.min.js',
+    buttonText: 'Load More'
+  },
+  isPhotoFigcaption: false,
+  islazyloadPlugin: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '论文笔记（五）：反射式放大器应用于超表面',
+  isHighlightShrink: false,
+  isToc: true,
+  pageType: 'post'
+}</script><meta name="baidu-site-verification" content="codeva-n0DdceBbXS" /><link rel="stylesheet" href=" /css/fonts.css" /><link rel="stylesheet" href=" /css/iconfont.css" /><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" /><meta name="generator" content="Hexo 8.1.2"><style>mjx-container[jax="SVG"] {
+  direction: ltr;
+}
+
+mjx-container[jax="SVG"] > svg {
+  overflow: visible;
+}
+
+mjx-container[jax="SVG"][display="true"] {
+  display: block;
+  text-align: center;
+  margin: 1em 0;
+}
+
+mjx-container[jax="SVG"][justify="left"] {
+  text-align: left;
+}
+
+mjx-container[jax="SVG"][justify="right"] {
+  text-align: right;
+}
+
+g[data-mml-node="merror"] > g {
+  fill: red;
+  stroke: red;
+}
+
+g[data-mml-node="merror"] > rect[data-background] {
+  fill: yellow;
+  stroke: none;
+}
+
+g[data-mml-node="mtable"] > line[data-line] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node="mtable"] > rect[data-frame] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node="mtable"] > .mjx-dashed {
+  stroke-dasharray: 140;
+}
+
+g[data-mml-node="mtable"] > .mjx-dotted {
+  stroke-linecap: round;
+  stroke-dasharray: 0,140;
+}
+
+g[data-mml-node="mtable"] > svg {
+  overflow: visible;
+}
+
+[jax="SVG"] mjx-tool {
+  display: inline-block;
+  position: relative;
+  width: 0;
+  height: 0;
+}
+
+[jax="SVG"] mjx-tool > mjx-tip {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+mjx-tool > mjx-tip {
+  display: inline-block;
+  padding: .2em;
+  border: 1px solid #888;
+  font-size: 70%;
+  background-color: #F8F8F8;
+  color: black;
+  box-shadow: 2px 2px 5px #AAAAAA;
+}
+
+g[data-mml-node="maction"][data-toggle] {
+  cursor: pointer;
+}
+
+mjx-status {
+  display: block;
+  position: fixed;
+  left: 1em;
+  bottom: 1em;
+  min-width: 25%;
+  padding: .2em .4em;
+  border: 1px solid #888;
+  font-size: 90%;
+  background-color: #F8F8F8;
+  color: black;
+}
+
+foreignObject[data-mjx-xml] {
+  font-family: initial;
+  line-height: normal;
+  overflow: visible;
+}
+
+.MathJax path {
+  stroke-width: 3;
+}
+
+mjx-container[display="true"] {
+  overflow: auto hidden;
+}
+
+mjx-container[display="true"] + br {
+  display: none;
+}
+</style><link rel="alternate" href="/blog/atom.xml" title="LoveApple14434的主页" type="application/atom+xml">
+<link rel="alternate" href="/blog/rss.xml" title="LoveApple14434的主页" type="application/rss+xml">
+</head><body><div id="web_bg" style="background: pink;"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img text-center"><img src="/blog/img/machinist.jpg" onerror="this.onerror=null;this.src='/blog/img/friend_404.gif'" alt="avatar"/></div><div class="site-data text-center"><a href="/blog/archives/"><div class="headline">Articles</div><div class="length-num">69</div></a><a href="/blog/tags/"><div class="headline">Tags</div><div class="length-num">65</div></a><a href="/blog/categories/"><div class="headline">Categories</div><div class="length-num">4</div></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/blog/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/blog/categories/"><i class="fa-fw fa-solid fa-layer-group"></i><span> Category</span></a></div><div class="menus_item"><a class="site-page" href="/blog/QSL-LOG/"><i class="fa-fw fa fa-tower-broadcast"></i><span> QSL</span></a></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fas fa-gamepad"></i><span> Features</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/blog/Draw/"><i class="fa-fw fa fa-paint-brush"></i><span> DrawBoard</span></a></li><li><a class="site-page child" href="/blog/mine-sweeper/"><i class="fa-fw fas fa-bomb"></i><span> Mine-Sweeper Records</span></a></li><li><a class="site-page child" href="/blog/../img-api/"><i class="fa-fw fa fa-image"></i><span> Image-API</span></a></li><li><a class="site-page child" href="/blog/../kana/"><i class="fa-fw fas fa-torii-gate"></i><span> Kana</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/blog/link/"><i class="fa-fw fa fa-link"></i><span> Link List</span></a></div><div class="menus_item"><a class="site-page" href="/blog/about"><i class="fa-fw fa-solid fa-circle-info"></i><span> About</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url(https://loveapple.space/img-api/random-image?3598);"><nav id="nav"><span id="blog-info"><a class="nav-site-title" href="/blog/"><span class="site-name">LoveApple14434的主页</span></a><a class="nav-page-title" href="/blog/"><span class="site-name">论文笔记（五）：反射式放大器应用于超表面</span><span class="site-name"><i class="fa-solid fa-circle-arrow-left"></i><span>  Back to Home</span></span></a></span><div id="menus"><div id="search-button"><span class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> Search</span></span></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/blog/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/blog/categories/"><i class="fa-fw fa-solid fa-layer-group"></i><span> Category</span></a></div><div class="menus_item"><a class="site-page" href="/blog/QSL-LOG/"><i class="fa-fw fa fa-tower-broadcast"></i><span> QSL</span></a></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fas fa-gamepad"></i><span> Features</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/blog/Draw/"><i class="fa-fw fa fa-paint-brush"></i><span> DrawBoard</span></a></li><li><a class="site-page child" href="/blog/mine-sweeper/"><i class="fa-fw fas fa-bomb"></i><span> Mine-Sweeper Records</span></a></li><li><a class="site-page child" href="/blog/../img-api/"><i class="fa-fw fa fa-image"></i><span> Image-API</span></a></li><li><a class="site-page child" href="/blog/../kana/"><i class="fa-fw fas fa-torii-gate"></i><span> Kana</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/blog/link/"><i class="fa-fw fa fa-link"></i><span> Link List</span></a></div><div class="menus_item"><a class="site-page" href="/blog/about"><i class="fa-fw fa-solid fa-circle-info"></i><span> About</span></a></div></div><div id="toggle-menu"><span class="site-page"><i class="fas fa-bars fa-fw"></i></span></div></div></nav><div id="post-info"><h1 class="post-title">论文笔记（五）：反射式放大器应用于超表面</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">Created</span><time class="post-meta-date-created" datetime="2026-11-08T10:05:21.000Z" title="Created 2026-11-08 18:05:21">2026-11-08</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">Updated</span><time class="post-meta-date-updated" datetime="2026-11-08T12:59:41.630Z" title="Updated 2026-11-08 20:59:41">2026-11-08</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/blog/categories/%E5%AF%84%E6%9C%AF/">寄术</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">Word Count:</span><span class="word-count">783</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">Reading Time:</span><span>2mins</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title=""><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">Post Views:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="container post-content" id="article-container"><h2 id="文献基本信息"><a href="#文献基本信息" class="headerlink" title="文献基本信息"></a>文献基本信息</h2><ul>
+<li>题目：An Active Reconfigurable Intelligent Surface Utilizing Phase-Reconfigurable Reflection Amplifiers<ul>
+<li>一种主动式可重构智能超表面，使用可调相的反射放大器</li>
+</ul>
+</li>
+<li>研究来自于香港科技大学</li>
+<li>发表于《IEEE Transactions on Microwave Theory and Technologies》</li>
+<li>频率在2.4GHz，窄带</li>
+</ul>
+<h2 id="关于为何要使用反射式放大器"><a href="#关于为何要使用反射式放大器" class="headerlink" title="关于为何要使用反射式放大器"></a>关于为何要使用反射式放大器</h2><blockquote>
+<p>一种实现有源超表面的方式是使用放大反射阵列（amplifying reflectarray），其可以将入射波以放大的散射场以及正交极化进行反射。可以制造拥有两种不同极化的二端口天线，并使用传统的功放将两个端口连接起来。为了维持天线不同端口间低互相耦合（low mutual coupling），不同端口的极化需要是正交的。因此带来的一个局限是它会改变散射波的极化方式。另一个局限是放大反射阵列关注固定的设计，缺少调谐部件，比如移相器。</p>
+</blockquote>
+<h2 id="架构"><a href="#架构" class="headerlink" title="架构"></a>架构</h2><p>如图，整体的超表面使用贴片天线接收/发射信号，并通过SMA接口与移相放大部分连接。因为采用了反射放大器，所以入射和反射信号都通过同一个SMA接口进行传输。</p>
+<p><img src="/blog/./article-note-5/overall.png" alt="整体架构"></p>
+<p><img src="/blog/./article-note-5/overall2.png" alt="整体架构"></p>
+<p>放大器部分，使用AsGa的N沟道晶体管构成共源放大电路，在源极和漏极分别加可调整尺寸的短截线，并在源极添加直流偏置电阻以使晶体管工作在稳定的工作点上，形成负反馈路径。在栅极与源极间添加电容以防止高频可能出现的自激振荡。</p>
+<p><img src="/blog/./article-note-5/amp.png" alt="放大器具体架构"></p>
+<p>移相器部分，使用单刀双掷开关切换传输路径进行相位调整。共四个SPDT，两个控制90°通路，两个控制45°通路，达到四状态相位控制。</p>
+<h2 id="反射式放大器理论分析"><a href="#反射式放大器理论分析" class="headerlink" title="反射式放大器理论分析"></a>反射式放大器理论分析</h2><p>反射式放大器只有一个端口。令该端口输入阻抗为 <mjx-container class="MathJax" jax="SVG" overflow="overflow"><svg style="vertical-align: -0.65ex;" xmlns="http://www.w3.org/2000/svg" width="4.789ex" height="2.195ex" role="img" focusable="false" viewbox="0 -683 2116.6 970.2"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math" data-latex="Z_{amp}"><g data-mml-node="msub" data-latex="Z_{amp}"><g data-mml-node="mi" data-latex="Z"><path data-c="1D44D" d="M720 653C722 662 723 668 723 670C723 679 718 683 707 683L277 683C252 683 249 680 243 660L189 483C187 478 186 472 185 467C188 459 190 453 201 453C206 453 212 457 218 465C239 530 267 577 302 604C337 631 389 644 457 644L609 644L62 33L58 13C58 4 64 0 75 0L516 0C542 0 545 2 551 23L621 242C622 246 625 253 625 257C625 267 619 272 608 272C601 272 594 263 588 244C566 176 539 126 506 94C471 59 413 42 333 42L173 42Z"/></g><g data-mml-node="TeXAtom" transform="translate(716,-150) scale(0.707)" data-latex="{a m p}" data-mjx-texclass="ORD"><g data-mml-node="mi" data-latex="a"><path data-c="1D44E" d="M498 144C498 153 493 158 482 158C474 158 468 151 465 137C445 58 421 18 394 18C377 18 368 32 368 60C368 73 372 97 381 132L438 357C443 376 445 387 445 392C445 412 434 422 412 422C391 422 377 410 370 387C349 424 319 442 281 442C216 442 159 409 109 343C63 281 40 217 40 150C40 63 91-11 175-11C218-11 260 12 300 58C311 20 345-11 392-11C461-11 482 70 498 144M341 374C350 353 355 339 355 330C355 326 354 321 353 314L304 122C301 111 294 99 285 87C248 41 212 18 177 18C138 18 118 48 118 107C118 131 124 167 136 215C157 300 187 357 224 388C244 405 263 413 282 413C309 413 329 400 341 374Z"/></g><g data-mml-node="mi" data-latex="m" transform="translate(529,0)"><path data-c="1D45A" d="M657 442C596 442 543 412 498 353C489 412 451 442 383 442C324 442 273 416 231 363C223 407 188 442 137 442C96 442 66 409 45 344C34 312 29 293 29 287C29 278 34 273 45 273C50 273 53 274 56 276C61 285 64 292 66 299C84 375 107 413 134 413C152 413 161 399 161 371C161 358 156 331 145 290L88 63C84 51 79 25 79 19C79-1 90-11 111-11C131-11 145-1 152 19C153 24 160 49 171 92L192 181L222 295C233 318 250 341 272 365C301 397 337 413 380 413C413 413 429 391 429 348C429 335 424 308 414 267L387 153C380 124 364 64 356 32C355 25 354 21 354 19C354-1 365-11 387-11C398-11 406-8 413-1C428 14 429 21 435 48L494 285C497 298 511 321 535 353C565 393 605 413 654 413C687 413 703 391 703 348C703 309 683 236 642 129C633 106 629 87 629 74C629 25 666-11 714-11C759-11 793 14 818 64C838 104 848 131 848 144C848 153 843 158 832 158C825 157 818 148 813 137C791 58 759 18 716 18C703 18 696 28 696 47C696 62 702 84 714 115C755 222 775 295 775 333C775 404 728 442 657 442Z"/></g><g data-mml-node="mi" data-latex="p" transform="translate(1407,0)"><path data-c="1D45D" d="M355 442C311 442 269 419 228 373C217 419 186 442 137 442C96 442 66 409 45 344C35 311 30 292 30 286C30 277 35 272 46 272C51 272 54 273 57 275C62 284 65 291 66 298C84 374 107 412 134 412C152 412 161 398 161 371C161 356 159 339 154 321L44-118C35-151 34-155-5-155C-23-155-32-163-32-178C-32-189-26-194-15-194C0-194 52-191 67-191C86-191 146-194 165-194C180-194 187-186 187-170C187-160 178-155 159-155C141-155 114-156 114-144C114-131 155 26 159 43C179 6 209-13 249-13C314-13 371 20 421 87C467 148 490 213 490 280C490 367 438 442 355 442M352 412C391 412 411 382 411 323C411 296 405 260 394 215C371 128 342 71 307 42C286 25 267 16 248 16C219 16 199 29 188 56C179 77 174 92 174 100L225 309C230 331 248 354 276 377C304 400 329 412 352 412Z"/></g></g></g></g></g></svg></mjx-container> ，而外部传输线的特性阻抗为 <mjx-container class="MathJax" jax="SVG" overflow="overflow"><svg style="vertical-align: -0.375ex;" xmlns="http://www.w3.org/2000/svg" width="2.533ex" height="1.92ex" role="img" focusable="false" viewbox="0 -683 1119.6 848.6"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math" data-latex="Z_0"><g data-mml-node="msub" data-latex="Z_0"><g data-mml-node="mi" data-latex="Z"><path data-c="1D44D" d="M720 653C722 662 723 668 723 670C723 679 718 683 707 683L277 683C252 683 249 680 243 660L189 483C187 478 186 472 185 467C188 459 190 453 201 453C206 453 212 457 218 465C239 530 267 577 302 604C337 631 389 644 457 644L609 644L62 33L58 13C58 4 64 0 75 0L516 0C542 0 545 2 551 23L621 242C622 246 625 253 625 257C625 267 619 272 608 272C601 272 594 263 588 244C566 176 539 126 506 94C471 59 413 42 333 42L173 42Z"/></g><g data-mml-node="mn" transform="translate(716,-150) scale(0.707)" data-latex="0"><path data-c="30" d="M249-22C390-22 460 92 460 320C460 473 428 575 365 625C330 652 291 666 250 666C109 666 39 551 39 320C39 136 88-22 249-22M361 524C368 489 371 425 371 332C371 240 367 172 360 128C347 48 310 8 249 8C226 8 203 17 182 34C155 57 139 104 132 176C129 201 128 253 128 332C128 419 131 480 136 513C145 568 163 603 191 618C213 630 232 636 249 636C314 636 350 583 361 524Z"/></g></g></g></g></svg></mjx-container> ，则有反射系数 <mjx-container class="MathJax" jax="SVG" overflow="overflow" display="true"><svg style="vertical-align: -0.452ex;" xmlns="http://www.w3.org/2000/svg" width="42.081ex" height="2.149ex" role="img" focusable="false" viewbox="0 -750 18600 950"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math" data-latex="\Tau=\frac{Z_{amp}-Z_0}{Z_{amp}+Z_0}"><g data-mml-node="merror" data-mjx-error="Undefined control sequence \Tau"><rect data-background="true" width="18600" height="950" y="-200"/><g data-mml-node="mtext" style="font-family: serif;"><text data-variant="-explicitFont" transform="scale(1,-1)" font-size="884px">Undefined control sequence \Tau</text></g></g></g></g></svg></mjx-container> 。为了使反射系数的模大于1，则需要输入阻抗的实部 <mjx-container class="MathJax" jax="SVG" overflow="overflow"><svg style="vertical-align: -0.65ex;" xmlns="http://www.w3.org/2000/svg" width="7.56ex" height="2.195ex" role="img" focusable="false" viewbox="0 -683 3341.6 970.2"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math" data-latex="Re{Z_{amp}}"><g data-mml-node="mi" data-latex="R"><path data-c="1D445" d="M739 531C739 582 713 621 662 649C621 672 572 683 517 683L235 683C212 683 202 682 202 659C202 652 205 647 211 646C221 645 229 644 234 644C264 643 281 641 286 640C291 639 294 636 294 631C294 629 293 623 290 613L158 82C153 60 143 46 128 41C121 39 103 38 72 38C50 38 41 37 41 15C41 4 47-1 59 0L183 3L309 0C325-1 333 8 333 23C333 33 322 38 301 38C261 38 241 43 241 52C241 52 242 54 244 68L308 327L423 327C492 327 527 298 527 241C527 232 522 210 513 174C502 132 497 104 497 89C497 13 556-22 632-22C660-22 687-9 714 16C741 41 755 68 755 96C755 106 750 111 739 111C732 111 726 106 723 95C712 64 698 41 682 28C666 15 651 8 636 8C613 8 601 27 601 64C601 88 604 125 611 176C614 197 615 212 615 223C615 276 587 315 531 339C625 362 739 429 739 531M609 616C629 603 639 581 639 550C639 530 635 507 626 480C599 398 531 357 422 357L316 357L379 610C384 631 392 642 403 643C408 644 428 644 463 644C528 644 566 642 609 616Z"/></g><g data-mml-node="mi" data-latex="e" transform="translate(759,0)"><path data-c="1D452" d="M124 129C124 153 129 186 139 227L188 227C253 227 303 235 339 250C372 264 394 284 405 309C412 326 415 342 415 355C415 410 363 442 307 442C268 442 229 432 190 412C113 372 46 281 46 171C46 69 105-11 204-11C257-11 304 2 345 27C379 48 404 69 420 90C427 99 430 106 430 109C430 120 425 126 414 126C409 126 404 122 398 114C365 70 324 42 277 30C246 22 223 18 206 18C149 18 124 72 124 129M375 355C375 289 311 256 182 256L147 256C166 322 194 366 232 387C262 404 287 413 307 413C343 413 375 391 375 355Z"/></g><g data-mml-node="TeXAtom" data-latex="{Z_{a m p}}" data-mjx-texclass="ORD" transform="translate(1225,0)"><g data-mml-node="msub" data-latex="Z_{a m p}"><g data-mml-node="mi" data-latex="Z"><path data-c="1D44D" d="M720 653C722 662 723 668 723 670C723 679 718 683 707 683L277 683C252 683 249 680 243 660L189 483C187 478 186 472 185 467C188 459 190 453 201 453C206 453 212 457 218 465C239 530 267 577 302 604C337 631 389 644 457 644L609 644L62 33L58 13C58 4 64 0 75 0L516 0C542 0 545 2 551 23L621 242C622 246 625 253 625 257C625 267 619 272 608 272C601 272 594 263 588 244C566 176 539 126 506 94C471 59 413 42 333 42L173 42Z"/></g><g data-mml-node="TeXAtom" transform="translate(716,-150) scale(0.707)" data-latex="{a m p}" data-mjx-texclass="ORD"><g data-mml-node="mi" data-latex="a"><path data-c="1D44E" d="M498 144C498 153 493 158 482 158C474 158 468 151 465 137C445 58 421 18 394 18C377 18 368 32 368 60C368 73 372 97 381 132L438 357C443 376 445 387 445 392C445 412 434 422 412 422C391 422 377 410 370 387C349 424 319 442 281 442C216 442 159 409 109 343C63 281 40 217 40 150C40 63 91-11 175-11C218-11 260 12 300 58C311 20 345-11 392-11C461-11 482 70 498 144M341 374C350 353 355 339 355 330C355 326 354 321 353 314L304 122C301 111 294 99 285 87C248 41 212 18 177 18C138 18 118 48 118 107C118 131 124 167 136 215C157 300 187 357 224 388C244 405 263 413 282 413C309 413 329 400 341 374Z"/></g><g data-mml-node="mi" data-latex="m" transform="translate(529,0)"><path data-c="1D45A" d="M657 442C596 442 543 412 498 353C489 412 451 442 383 442C324 442 273 416 231 363C223 407 188 442 137 442C96 442 66 409 45 344C34 312 29 293 29 287C29 278 34 273 45 273C50 273 53 274 56 276C61 285 64 292 66 299C84 375 107 413 134 413C152 413 161 399 161 371C161 358 156 331 145 290L88 63C84 51 79 25 79 19C79-1 90-11 111-11C131-11 145-1 152 19C153 24 160 49 171 92L192 181L222 295C233 318 250 341 272 365C301 397 337 413 380 413C413 413 429 391 429 348C429 335 424 308 414 267L387 153C380 124 364 64 356 32C355 25 354 21 354 19C354-1 365-11 387-11C398-11 406-8 413-1C428 14 429 21 435 48L494 285C497 298 511 321 535 353C565 393 605 413 654 413C687 413 703 391 703 348C703 309 683 236 642 129C633 106 629 87 629 74C629 25 666-11 714-11C759-11 793 14 818 64C838 104 848 131 848 144C848 153 843 158 832 158C825 157 818 148 813 137C791 58 759 18 716 18C703 18 696 28 696 47C696 62 702 84 714 115C755 222 775 295 775 333C775 404 728 442 657 442Z"/></g><g data-mml-node="mi" data-latex="p" transform="translate(1407,0)"><path data-c="1D45D" d="M355 442C311 442 269 419 228 373C217 419 186 442 137 442C96 442 66 409 45 344C35 311 30 292 30 286C30 277 35 272 46 272C51 272 54 273 57 275C62 284 65 291 66 298C84 374 107 412 134 412C152 412 161 398 161 371C161 356 159 339 154 321L44-118C35-151 34-155-5-155C-23-155-32-163-32-178C-32-189-26-194-15-194C0-194 52-191 67-191C86-191 146-194 165-194C180-194 187-186 187-170C187-160 178-155 159-155C141-155 114-156 114-144C114-131 155 26 159 43C179 6 209-13 249-13C314-13 371 20 421 87C467 148 490 213 490 280C490 367 438 442 355 442M352 412C391 412 411 382 411 323C411 296 405 260 394 215C371 128 342 71 307 42C286 25 267 16 248 16C219 16 199 29 188 56C179 77 174 92 174 100L225 309C230 331 248 354 276 377C304 400 329 412 352 412Z"/></g></g></g></g></g></g></svg></mjx-container> 为负数。</p>
+<p>关于反射式放大器更多的理论分析将在<a href="../article-note-6">论文笔记（六）</a>中展开。</p>
+<h2 id="实测效果"><a href="#实测效果" class="headerlink" title="实测效果"></a>实测效果</h2><h3 id="放大器部分"><a href="#放大器部分" class="headerlink" title="放大器部分"></a>放大器部分</h3><p>单独制造了反射式放大器的单板进行增益测试。左图为不同输入功率，压缩点在-20dBm附近。考虑到是对接受的无线信号进行放大，可以接受。右图是不同偏置电压下的增益曲线，控制效果比较明显。</p>
+<p><img src="/blog/./article-note-5/amp-gain.png" alt="放大器增益曲线"></p>
+<h3 id="移相器部分"><a href="#移相器部分" class="headerlink" title="移相器部分"></a>移相器部分</h3><p>单独制造了移相器的单板进行测试。</p>
+<ul>
+<li>图(a)展示回波都在-20dBm以下，几乎无反射；</li>
+<li>图(b)展示透射波在不同调相状态下的幅度一致性，四种状态的幅度差距不超过0.4dB；</li>
+<li>图(c)展示四种状态的相位曲线，可以看到两两相差约45°，不同状态间曲线区别明显；</li>
+<li>图(d)展示相位误差，工作频带内误差小于5°；</li>
+</ul>
+<p><img src="/blog/./article-note-5/phase-res.png" alt="移相器实测"></p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta"><i class="fas fa-circle-user fa-fw"></i>Author: </span><span class="post-copyright-info"><a href="https://loveapple.space/blog">LoveApple14434</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta"><i class="fas fa-square-arrow-up-right fa-fw"></i>Link: </span><span class="post-copyright-info"><a href="https://loveapple.space/blog/article-note-5/">https://loveapple.space/blog/article-note-5/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta"><i class="fas fa-circle-exclamation fa-fw"></i>Copyright Notice: </span><span class="post-copyright-info">All articles on this blog are licensed under <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> unless otherwise stated.</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/blog/tags/EE/">EE</a><a class="post-meta__tags" href="/blog/tags/%E8%AE%BA%E6%96%87%E7%AC%94%E8%AE%B0/">论文笔记</a></div><div class="post-share"><div class="social-share" data-image="https://loveapple.space/img-api/random-image?3598" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><div class="post-reward"><div class="reward-button"><i class="fas fa-qrcode"></i>要不要买点鱼食？</div><div class="reward-main"><ul class="reward-all"><li class="reward-item"><a href="/blog/img/wechat.jpg" target="_blank"><img class="post-qr-code-img" src="/blog/img/wechat.jpg" alt="wechat"/></a><div class="post-qr-code-desc">wechat</div></li><li class="reward-item"><a href="/blog/img/alipay.jpg" target="_blank"><img class="post-qr-code-img" src="/blog/img/alipay.jpg" alt="alipay"/></a><div class="post-qr-code-desc">alipay</div></li></ul></div></div><nav class="pagination-post" id="pagination"><a class="pagination-related" href="/blog/article-note-6/" title="论文笔记（六）：反射式放大器理论分析：带宽与稳定性"><img class="cover" src="https://loveapple.space/img-api/random-image?8987" onerror="onerror=null;src='/blog/img/404.jpg'" alt="cover of previous post"><div class="info"><div class="info-1"><div class="info-item-1">Previous</div><div class="info-item-2">论文笔记（六）：反射式放大器理论分析：带宽与稳定性</div></div><div class="info-2"><div class="info-item-1">文献基本信息 题目：Bandwidth and Stability of Reflection Amplifiers fo...</div></div></div></a><a class="pagination-related" href="/blog/R9000P-blackscreen/" title="神秘拯救者的神秘显卡神秘屏幕"><img class="cover" src="https://loveapple.space/img-api/random-image?4609" onerror="onerror=null;src='/blog/img/404.jpg'" alt="cover of next post"><div class="info text-right"><div class="info-1"><div class="info-item-1">Next</div><div class="info-item-2">神秘拯救者的神秘显卡神秘屏幕</div></div><div class="info-2"><div class="info-item-1">这篇维修记录讲述了IT侠处理一台R9000P高负载黑屏故障的过程。清灰后问题依旧，但外接屏幕稳定、切换刷新率可让原装屏恢复显示，最终怀疑是屏线过热或显卡体质问题，只能建议客户用小屏幕切换刷新率应急，充满维修现场的无奈与神奇。</div></div></div></a></nav><hr class="custom-hr"/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> Comments</span></div></div><div class="comment-wrap"><div><div id="giscus-wrap"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info text-center"><div class="avatar-img"><img src="/blog/img/machinist.jpg" onerror="this.onerror=null;this.src='/blog/img/friend_404.gif'" alt="avatar"/></div><div class="author-info-name">LoveApple14434</div><div class="author-info-description">技术实践 | 心得分享 | 开源生态<br>射频与微波 | 业余无线电<br>以及水煮鱼的生活记录！</div><div class="site-data"><a href="/blog/archives/"><div class="headline">Articles</div><div class="length-num">69</div></a><a href="/blog/tags/"><div class="headline">Tags</div><div class="length-num">65</div></a><a href="/blog/categories/"><div class="headline">Categories</div><div class="length-num">4</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/LoveApple14434"><i class="fa-brands fa-github"></i><span>My GitHub profile</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>Announcement</span></div><div class="announcement_content">封面图片已全面迁移至个人摄影图集。</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>Contents</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%96%87%E7%8C%AE%E5%9F%BA%E6%9C%AC%E4%BF%A1%E6%81%AF"><span class="toc-number">1.</span> <span class="toc-text">文献基本信息</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%85%B3%E4%BA%8E%E4%B8%BA%E4%BD%95%E8%A6%81%E4%BD%BF%E7%94%A8%E5%8F%8D%E5%B0%84%E5%BC%8F%E6%94%BE%E5%A4%A7%E5%99%A8"><span class="toc-number">2.</span> <span class="toc-text">关于为何要使用反射式放大器</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%9E%B6%E6%9E%84"><span class="toc-number">3.</span> <span class="toc-text">架构</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8F%8D%E5%B0%84%E5%BC%8F%E6%94%BE%E5%A4%A7%E5%99%A8%E7%90%86%E8%AE%BA%E5%88%86%E6%9E%90"><span class="toc-number">4.</span> <span class="toc-text">反射式放大器理论分析</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%9E%E6%B5%8B%E6%95%88%E6%9E%9C"><span class="toc-number">5.</span> <span class="toc-text">实测效果</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%94%BE%E5%A4%A7%E5%99%A8%E9%83%A8%E5%88%86"><span class="toc-number">5.1.</span> <span class="toc-text">放大器部分</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%A7%BB%E7%9B%B8%E5%99%A8%E9%83%A8%E5%88%86"><span class="toc-number">5.2.</span> <span class="toc-text">移相器部分</span></a></li></ol></li></ol></div></div></div></div></main><footer id="footer" style="background: pink;"><div class="footer-other"><div class="footer-copyright"><span class="copyright">&copy;&nbsp;2025 - 2026 By LoveApple14434</span><span class="framework-info"><span>Framework </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo 8.1.2</a><span class="footer-separator">|</span><span>Theme </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly 5.4.3</a></span></div><div class="footer_custom_text"><a href="https://icp.gov.moe/?keyword=20269505" target="_blank">萌ICP备20269505号</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="Reading Mode"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="Toggle Between Light and Dark Mode"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="Toggle Between Single-column and Double-column"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="Settings"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="Table of Contents"><i class="fas fa-list-ul"></i></button><a id="to_comment" href="#post-comment" title="Scroll to Comments"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="Back to Top"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/blog/js/utils.js"></script><script src="/blog/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.umd.min.js"></script><div class="js-pjax"><script>(() => {
+  const loadMathjax = () => {
+    if (!window.MathJax) {
+      window.MathJax = {
+        tex: {
+          inlineMath: [['$', '$'], ['\\(', '\\)']],
+          tags: 'none',
+        },
+        chtml: {
+          scale: 1.1
+        },
+        options: {
+          enableMenu: true,
+          renderActions: {
+            findScript: [10, doc => {
+              for (const node of document.querySelectorAll('script[type^="math/tex"]')) {
+                const display = !!node.type.match(/; *mode=display/)
+                const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display)
+                const text = document.createTextNode('')
+                node.parentNode.replaceChild(text, node)
+                math.start = {node: text, delim: '', n: 0}
+                math.end = {node: text, delim: '', n: 0}
+                doc.math.push(math)
+              }
+            }, '']
+          }
+        }
+      }
+
+      const script = document.createElement('script')
+      script.src = 'https://cdn.jsdelivr.net/npm/mathjax/es5/tex-mml-chtml.min.js'
+      script.id = 'MathJax-script'
+      script.async = true
+      document.head.appendChild(script)
+    } else {
+      MathJax.startup.document.state(0)
+      MathJax.texReset()
+      MathJax.typesetPromise()
+    }
+  }
+
+  btf.addGlobalFn('encrypt', loadMathjax, 'mathjax')
+  window.pjax ? loadMathjax() : window.addEventListener('load', loadMathjax)
+})()</script><script>(() => {
+  const isShuoshuo = GLOBAL_CONFIG_SITE.pageType === 'shuoshuo'
+  const option = {"data-input-position":"top"}
+
+  const getGiscusTheme = theme => theme === 'dark' ? 'dark' : 'light'
+
+  const createScriptElement = config => {
+    const ele = document.createElement('script')
+    Object.entries(config).forEach(([key, value]) => {
+      ele.setAttribute(key, value)
+    })
+    return ele
+  }
+
+  const loadGiscus = (el = document, key) => {
+    const mappingConfig = isShuoshuo
+      ? { 'data-mapping': 'specific', 'data-term': key }
+      : { 'data-mapping': (option && option['data-mapping']) || 'pathname' }
+
+    const giscusConfig = {
+      src: 'https://giscus.app/client.js',
+      'data-repo': 'loveapple14434/loveapple14434.github.io',
+      'data-repo-id': 'R_kgDOLVLb7Q',
+      'data-category-id': 'DIC_kwDOLVLb7c4CzLc8',
+      'data-theme': getGiscusTheme(document.documentElement.getAttribute('data-theme')),
+      'data-reactions-enabled': '1',
+      crossorigin: 'anonymous',
+      async: true,
+      ...option,
+      ...mappingConfig
+    }
+
+    const scriptElement = createScriptElement(giscusConfig)
+
+    el.querySelector('#giscus-wrap').appendChild(scriptElement)
+
+    if (isShuoshuo) {
+      window.shuoshuoComment.destroyGiscus = () => {
+        if (el.children.length) {
+          el.innerHTML = ''
+          el.classList.add('no-comment')
+        }
+      }
+    }
+  }
+
+  const changeGiscusTheme = theme => {
+    const iframe = document.querySelector('#giscus-wrap iframe')
+    if (iframe) {
+      const message = {
+        giscus: {
+          setConfig: {
+            theme: getGiscusTheme(theme)
+          }
+        }
+      }
+      iframe.contentWindow.postMessage(message, 'https://giscus.app')
+    }
+  }
+
+  btf.addGlobalFn('themeChange', changeGiscusTheme, 'giscus')
+
+  if (isShuoshuo) {
+    'Giscus' === 'Giscus'
+      ? window.shuoshuoComment = { loadComment: loadGiscus }
+      : window.loadOtherComment = loadGiscus
+    return
+  }
+
+  if ('Giscus' === 'Giscus' || !false) {
+    if (false) btf.loadComment(document.getElementById('giscus-wrap'), loadGiscus)
+    else loadGiscus()
+  } else {
+    window.loadOtherComment = loadGiscus
+  }
+})()</script></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">Search</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="text-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  Loading Database</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="Search for Posts" type="text"/></div></div><hr/><div id="local-search-results"></div><div id="local-search-stats-wrap"></div></div></div><div id="search-mask"></div><script src="/blog/js/search/local-search.js"></script></div></div></body></html>
