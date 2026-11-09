@@ -2,18 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://loveapple.space/blog/article-note-5/</loc>
+    <loc>https://loveapple.space/blog/article-note-6/</loc>
     
-    <lastmod>2026-11-08</lastmod>
+    <lastmod>2026-11-09</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://loveapple.space/blog/article-note-6/</loc>
+    <loc>https://loveapple.space/blog/article-note-5/</loc>
     
-    <lastmod>2026-11-08</lastmod>
+    <lastmod>2026-11-09</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://loveapple.space/blog/mounriver-install/</loc>
+    
+    <lastmod>2026-11-09</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
