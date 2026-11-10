@@ -12,7 +12,23 @@
     <![CDATA[开源技术实践者 & 射频电子新人 | LoveApple14434 的个人领地 | 一条爱苹果的水煮鱼。深度分享射频/微波、业余无线电硬核技术笔记，开源项目技术实践以及博客网站建设经验，IT侠笔记本维修随录，兼谈NJU校园趣闻与水煮鱼的生活思考。探索技术前沿，记录成长点滴。]]>
   </subtitle>
   <title>LoveApple14434的主页</title>
-  <updated>2026-11-10T12:20:39.650Z</updated>
+  <updated>2026-11-10T13:45:24.891Z</updated>
+  <entry>
+    <author>
+      <name>LoveApple14434</name>
+    </author>
+    <category term="寄术" scheme="https://loveapple.space/blog/categories/%E5%AF%84%E6%9C%AF/"/>
+    <category term="网站建设" scheme="https://loveapple.space/blog/tags/%E7%BD%91%E7%AB%99%E5%BB%BA%E8%AE%BE/"/>
+    <category term="Hexo" scheme="https://loveapple.space/blog/tags/Hexo/"/>
+    <category term="MathJax" scheme="https://loveapple.space/blog/tags/MathJax/"/>
+    <category term="前端" scheme="https://loveapple.space/blog/tags/%E5%89%8D%E7%AB%AF/"/>
+    <id>https://loveapple.space/blog/mathjax-inline-formula/</id>
+    <link href="https://loveapple.space/blog/mathjax-inline-formula/"/>
+    <published>2026-11-10T13:44:00.000Z</published>
+    <summary>行内公式在文章里被拆成两三行，表面看是 Markdown 写法问题，实际是 MathJax 4 的 inline linebreaking 与主题 inline-grid 叠加的结果。记录从错误假设、生成物检查到脚本修复的完整过程。</summary>
+    <title>一行公式，三行显示：一次 MathJax 行内公式排障</title>
+    <updated>2026-11-10T13:45:24.891Z</updated>
+  </entry>
   <entry>
     <author>
       <name>LoveApple14434</name>
@@ -56,7 +72,7 @@
       <![CDATA[这篇论文笔记分析了用于智能反射表面的反射式放大器的带宽与稳定性理论。文章从负阻实现反射增益的基本原理出发，以运放构成的电流负阻反射放大器为例，推导了其稳定工作条件 |Z_L| < -R_A，并借助史密斯图界定了稳定负载范围；进一步讨论了引入LC谐振回路与传输线后，为保证全频段稳定所需满足的条件，以及通过串联电阻最坏情况分析来确保稳定性的设计方法。]]>
     </summary>
     <title>论文笔记（六）：反射式放大器理论分析：带宽与稳定性</title>
-    <updated>2026-11-09T03:27:34.839Z</updated>
+    <updated>2026-11-10T13:32:03.448Z</updated>
   </entry>
   <entry>
     <author>
@@ -70,7 +86,7 @@
     <published>2026-11-08T10:05:21.000Z</published>
     <summary>这篇论文笔记介绍了香港科技大学提出的一种主动式可重构智能超表面。文章分析了采用反射式放大器的动机，梳理了贴片天线经SMA连接移相放大电路的整体架构，重点阐述了共源放大电路利用负阻实现反射放大的原理，以及通过SPDT开关实现四状态相位控制的设计，并概述了放大器增益与移相器性能的实测结果。</summary>
     <title>论文笔记（五）：反射式放大器应用于超表面</title>
-    <updated>2026-11-09T03:22:19.240Z</updated>
+    <updated>2026-11-10T13:32:03.448Z</updated>
   </entry>
   <entry>
     <author>
@@ -198,7 +214,7 @@
     <published>2026-09-28T16:19:07.000Z</published>
     <summary>系统介绍了调频连续波雷达的基本原理与关键参数。从线性调频波与回波延迟出发，引出去斜技术将延迟检测转化为频率差检测，并推导了距离分辨率、最大距离等公式与限制条件，最后简述了测速方法与多普勒效应的影响。</summary>
     <title>FMCW雷达入门笔记（一）</title>
-    <updated>2026-09-29T05:02:56.626Z</updated>
+    <updated>2026-11-10T13:32:03.449Z</updated>
   </entry>
   <entry>
     <author>
@@ -1003,7 +1019,7 @@
     <published>2025-07-19T05:09:00.000Z</published>
     <summary>利用DDS模块，实现高频信号同步，相位可调。</summary>
     <title>DDS实现高频信号同步</title>
-    <updated>2026-10-27T15:51:52.011Z</updated>
+    <updated>2026-11-10T13:32:03.446Z</updated>
   </entry>
   <entry>
     <author>
