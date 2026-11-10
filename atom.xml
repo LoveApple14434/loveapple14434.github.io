@@ -12,7 +12,7 @@
     <![CDATA[开源技术实践者 & 射频电子新人 | LoveApple14434 的个人领地 | 一条爱苹果的水煮鱼。深度分享射频/微波、业余无线电硬核技术笔记，开源项目技术实践以及博客网站建设经验，IT侠笔记本维修随录，兼谈NJU校园趣闻与水煮鱼的生活思考。探索技术前沿，记录成长点滴。]]>
   </subtitle>
   <title>LoveApple14434的主页</title>
-  <updated>2026-11-10T13:45:24.891Z</updated>
+  <updated>2026-11-10T13:49:48.173Z</updated>
   <entry>
     <author>
       <name>LoveApple14434</name>
@@ -27,7 +27,7 @@
     <published>2026-11-10T13:44:00.000Z</published>
     <summary>行内公式在文章里被拆成两三行，表面看是 Markdown 写法问题，实际是 MathJax 4 的 inline linebreaking 与主题 inline-grid 叠加的结果。记录从错误假设、生成物检查到脚本修复的完整过程。</summary>
     <title>一行公式，三行显示：一次 MathJax 行内公式排障</title>
-    <updated>2026-11-10T13:45:24.891Z</updated>
+    <updated>2026-11-10T13:49:48.173Z</updated>
   </entry>
   <entry>
     <author>
