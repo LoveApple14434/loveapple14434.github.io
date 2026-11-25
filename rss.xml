@@ -8,9 +8,19 @@
     </description>
     <language>zh</language>
     <copyright>All rights reserved 2026, LoveApple14434</copyright>
-    <lastBuildDate>Wed, 25 Nov 2026 06:54:56 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 25 Nov 2026 09:03:28 GMT</lastBuildDate>
     <generator>Hexo</generator>
     <atom:link href="https://loveapple.space/blog/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>论文笔记（八）：反射放大+移相，幅相解耦设计</title>
+      <link>https://loveapple.space/blog/article-note-8/</link>
+      <description>这篇论文笔记介绍了纽约州立大学布法罗分校提出的一种用于智能反射表面的宽带可调移相/放大链设计。文章分析了移相器与反射放大器级联时产生幅相耦合的机理，并采用π型阻抗变换网络结合数据驱动优化方法实现幅相解耦，工作频段覆盖4.5至5.5GHz。</description>
+      <author>LoveApple14434</author>
+      <category domain="https://loveapple.space/blog/categories/%E5%AF%84%E6%9C%AF/">寄术</category>
+      <category domain="https://loveapple.space/blog/tags/EE/">EE</category>
+      <category domain="https://loveapple.space/blog/tags/%E8%AE%BA%E6%96%87%E7%AC%94%E8%AE%B0/">论文笔记</category>
+      <pubDate>Wed, 25 Nov 2026 09:03:04 GMT</pubDate>
+    </item>
     <item>
       <title>OWON HSA2310频谱仪试用</title>
       <link>https://loveapple.space/blog/HSA2310-trail/</link>
