@@ -12,20 +12,20 @@
     <![CDATA[开源技术实践者 & 射频电子新人 | LoveApple14434 的个人领地 | 一条爱苹果的水煮鱼。深度分享射频/微波、业余无线电硬核技术笔记，开源项目技术实践以及博客网站建设经验，IT侠笔记本维修随录，兼谈NJU校园趣闻与水煮鱼的生活思考。探索技术前沿，记录成长点滴。]]>
   </subtitle>
   <title>LoveApple14434的主页</title>
-  <updated>2026-11-23T13:51:52.961Z</updated>
+  <updated>2026-11-25T06:54:56.422Z</updated>
   <entry>
     <author>
       <name>LoveApple14434</name>
     </author>
+    <category term="寄术" scheme="https://loveapple.space/blog/categories/%E5%AF%84%E6%9C%AF/"/>
+    <category term="EE" scheme="https://loveapple.space/blog/tags/EE/"/>
+    <category term="仪器仪表" scheme="https://loveapple.space/blog/tags/%E4%BB%AA%E5%99%A8%E4%BB%AA%E8%A1%A8/"/>
     <id>https://loveapple.space/blog/HSA2310-trail/</id>
     <link href="https://loveapple.space/blog/HSA2310-trail/"/>
     <published>2026-11-23T13:45:28.000Z</published>
-    <summary>
-      <![CDATA[<p>前段时间J老师给我一台手持频谱仪让我试用试用，是来自福建漳州的利利普公司生产的HSA2310手持式频谱仪。下面是体验与反馈。</p>
-<h2 id="形态与架构"><a href="#形态与架构" class="headerlink" title="形态与架构"></a>形]]>
-    </summary>
+    <summary>这篇博客记录了作者对利利普HSA2310手持频谱仪的试用体验。该设备集示波器、万用表、频谱仪于一体，作者测试了其输入匹配、底噪水平与充电表现，认为硬件底子不错，但交互与固件仍有较大优化空间，包括模式切换繁琐、按键功能不直观、参数无法保存、频率输入效率低，并疑似发现按住方向键导致扫描变慢的bug。</summary>
     <title>OWON HSA2310频谱仪试用</title>
-    <updated>2026-11-23T13:51:52.961Z</updated>
+    <updated>2026-11-25T06:54:56.422Z</updated>
   </entry>
   <entry>
     <author>

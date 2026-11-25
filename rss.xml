@@ -8,17 +8,17 @@
     </description>
     <language>zh</language>
     <copyright>All rights reserved 2026, LoveApple14434</copyright>
-    <lastBuildDate>Mon, 23 Nov 2026 13:51:52 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 25 Nov 2026 06:54:56 GMT</lastBuildDate>
     <generator>Hexo</generator>
     <atom:link href="https://loveapple.space/blog/rss.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>OWON HSA2310频谱仪试用</title>
       <link>https://loveapple.space/blog/HSA2310-trail/</link>
-      <description>
-        <![CDATA[<p>前段时间J老师给我一台手持频谱仪让我试用试用，是来自福建漳州的利利普公司生产的HSA2310手持式频谱仪。下面是体验与反馈。</p>
-<h2 id="形态与架构"><a href="#形态与架构" class="headerlink" title="形态与架构"></a>形]]>
-      </description>
+      <description>这篇博客记录了作者对利利普HSA2310手持频谱仪的试用体验。该设备集示波器、万用表、频谱仪于一体，作者测试了其输入匹配、底噪水平与充电表现，认为硬件底子不错，但交互与固件仍有较大优化空间，包括模式切换繁琐、按键功能不直观、参数无法保存、频率输入效率低，并疑似发现按住方向键导致扫描变慢的bug。</description>
       <author>LoveApple14434</author>
+      <category domain="https://loveapple.space/blog/categories/%E5%AF%84%E6%9C%AF/">寄术</category>
+      <category domain="https://loveapple.space/blog/tags/EE/">EE</category>
+      <category domain="https://loveapple.space/blog/tags/%E4%BB%AA%E5%99%A8%E4%BB%AA%E8%A1%A8/">仪器仪表</category>
       <pubDate>Mon, 23 Nov 2026 13:45:28 GMT</pubDate>
     </item>
     <item>
