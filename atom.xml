@@ -12,7 +12,21 @@
     <![CDATA[开源技术实践者 & 射频电子新人 | LoveApple14434 的个人领地 | 一条爱苹果的水煮鱼。深度分享射频/微波、业余无线电硬核技术笔记，开源项目技术实践以及博客网站建设经验，IT侠笔记本维修随录，兼谈NJU校园趣闻与水煮鱼的生活思考。探索技术前沿，记录成长点滴。]]>
   </subtitle>
   <title>LoveApple14434的主页</title>
-  <updated>2026-11-25T09:24:21.873Z</updated>
+  <updated>2026-11-26T08:56:11.897Z</updated>
+  <entry>
+    <author>
+      <name>LoveApple14434</name>
+    </author>
+    <category term="寄术" scheme="https://loveapple.space/blog/categories/%E5%AF%84%E6%9C%AF/"/>
+    <category term="EE" scheme="https://loveapple.space/blog/tags/EE/"/>
+    <category term="论文笔记" scheme="https://loveapple.space/blog/tags/%E8%AE%BA%E6%96%87%E7%AC%94%E8%AE%B0/"/>
+    <id>https://loveapple.space/blog/article-note-9/</id>
+    <link href="https://loveapple.space/blog/article-note-9/"/>
+    <published>2026-11-26T08:51:50.000Z</published>
+    <summary>这篇综述系统梳理了微波反射放大器的基本原理与工程要点。文章阐释了基于负阻抗实现反射增益的工作机制，分析了其在超表面中支持全极化、全双工的优势，对比了隧道二极管、晶体管、集成运放及环形器四种实现路径，并总结了稳定性条件与带宽限制，为理解前几篇论文笔记提供了整体的理论框架。</summary>
+    <title>论文笔记（九）：关于更多微波反射放大器的综述</title>
+    <updated>2026-11-26T08:56:11.897Z</updated>
+  </entry>
   <entry>
     <author>
       <name>LoveApple14434</name>
